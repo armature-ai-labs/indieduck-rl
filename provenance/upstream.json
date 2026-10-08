@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/JoyandAI/microduck_rl",
+  "commit": "22916b9d82f250caa563ed9a56976eb33243fb91",
+  "tree": "https://github.com/JoyandAI/microduck_rl/tree/22916b9d82f250caa563ed9a56976eb33243fb91",
+  "snapshot_kind": "filtered code import, no Git history included",
+  "source_files_modified": false,
+  "github_parent": "https://github.com/pollen-robotics/microduck_rl",
+  "included_files": 214,
+  "excluded_files": 759,
+  "modifications_file": "provenance/modifications.json",
+  "comparison_ancestry": {
+    "repo": "microduck_rl",
+    "joy_pin": "22916b9d82f250caa563ed9a56976eb33243fb91",
+    "pollen_comparison_pin": "273afe0b31c4ab365b9ff806a927b63ac92b5ddd",
+    "pollen_pin_is_ancestor": false,
+    "merge_base": "cb70b792312d559a4da09064d92009079671815f",
+    "commits_from_base_to_joy": "30",
+    "commits_from_base_to_pollen": "18",
+    "merge_base_description": "cb70b792312d559a4da09064d92009079671815f 2026-09-14T14:22:01+02:00 Revert \"fix yaw cmd\""
+  }
+}

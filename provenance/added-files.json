@@ -1,0 +1,17 @@
+[
+  {
+    "path": "UPSTREAM.md",
+    "kind": "IndieDuck snapshot preparation documentation",
+    "sha256": "49c48c293e662a803afc9aa35c01559eb16a98db1e50b11ce3c9d3c1142aec9c"
+  },
+  {
+    "path": "THIRD_PARTY_NOTICES.md",
+    "kind": "IndieDuck snapshot preparation documentation",
+    "sha256": "429950461dfe71f803fceb8694e594016294f5e87d5c2736612b294c58ab1795"
+  },
+  {
+    "path": "VALIDATION.md",
+    "kind": "IndieDuck snapshot preparation documentation",
+    "sha256": "f0680da4f86ca8eadf55909f835dfbb5773c13342c6a2d0500004ad2224df73b"
+  }
+]
