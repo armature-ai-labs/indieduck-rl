@@ -1,0 +1,1356 @@
+{
+  "model_id": "indieduck-r07",
+  "contract_sha256": "bca2a9edb18882bee2073046f1e4515350b7affc64ca34d57664fec176bf71eb",
+  "mujoco_version": "3.10.0",
+  "machine": "macOS-27.2-arm64-arm-64bit",
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "motor": "HD-1910-C001",
+  "fit": "m1",
+  "source": {
+    "repository": "https://github.com/JoyandAI/microduck_rl",
+    "commit": "22916b9d82f250caa563ed9a56976eb33243fb91",
+    "params_path": "vendor/bam/bam/params/hd1910/m1.json",
+    "params_sha256": "fda4366b2610bfb1911e67d8543ff157d86414c72dc4c2292683e995793f1c59",
+    "characterization_sha256": "2cd50112cf9b2d2db3254fc6c3d607513a7b39acc1ac5e3c8597bd21dbbde0c6",
+    "supply_voltage_V": 5.0,
+    "parameters": {
+      "kt": 0.692,
+      "R": 3.75,
+      "armature": 0.002198175551702664,
+      "q_offset": -0.015923948457141318,
+      "friction_base": 0.01561790591283927,
+      "friction_viscous": 0.00846227958436971,
+      "error_gain": 0.163,
+      "kd": 40.0,
+      "max_velocity": 8.0282,
+      "max_acceleration": 500.0,
+      "max_current": 3.25,
+      "command_delay": 0.03240342471539083,
+      "model": "m1",
+      "actuator": "hd1910"
+    },
+    "provenance": "Upstream measured/fitted identification; not remeasured on IndieDuck"
+  },
+  "configuration": {
+    "selected_decision": "D8, decisions-2026-10-06.md",
+    "volts": 5.0,
+    "firmware_kp": 32.0,
+    "selected_delay_s": 0.029,
+    "pinned_file_delay_s": 0.03240342471539083,
+    "delay_discrepancy": "D8 delay overrides only the standalone diagnostic baseline; pinned source file is unchanged. Pinned-file delay is a comparison, not a new hardware decision.",
+    "q_offset_applied": false,
+    "q_offset_reason": "Upstream bench rig alignment nuisance; does not replace R07 joint zero or hardware encoder calibration.",
+    "voltage_sag": "None; regulated 5.0 V diagnostic, not battery simulation",
+    "model_change": "Same canonical CAD/body/contact/sensor model; in-memory torque actuators, BAM armature and friction replace estimated XML position actuators."
+  },
+  "parameter_basis": {
+    "kt": "upstream no-load speed measurement",
+    "R": "upstream datasheet equivalent, not IndieDuck measured",
+    "error_gain": "upstream duty/error regression",
+    "armature": "upstream fitted",
+    "friction_base": "upstream fitted",
+    "friction_viscous": "upstream fitted",
+    "kp": "upstream register readback,32",
+    "kd": "upstream register readback,40; effective derivative gain/scaling unverified",
+    "command_delay": "m1 fitted file value, selected D8 override recorded separately",
+    "max_current": "upstream provisional limiter assumption, actual mode-4 limiting uncertain",
+    "max_velocity_and_acceleration": "retained source values, rate limiting disabled as in upstream HD1910 default"
+  },
+  "acceptance_boundary": "Finite execution and equation/delay/reset tests. No trained balance, hardware validation or mjlab GPU task integration.",
+  "performance_contract": {
+    "workload": "one complete R07 duck with ball/floor, 15 BAM motors; walking feet and passive inline skates",
+    "step_s": 0.005,
+    "cold_samples": 5,
+    "steady_samples": 5,
+    "warmup_steps": 200,
+    "measured_steps": 1000,
+    "target_steps_per_s": 200,
+    "scope": "Mac CPU only; not Radxa or GPU throughput"
+  },
+  "models": {
+    "scene.xml": {
+      "diagnostics": {
+        "D8_selected": {
+          "delay_s": 0.029,
+          "poses": [
+            {
+              "pose": "zero",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 2.059676870785838,
+              "max_motor_torque_Nm": 1.1856813613471973
+            },
+            {
+              "pose": "stand",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 1.9020077780695224,
+              "max_motor_torque_Nm": 1.165547480703329
+            },
+            {
+              "pose": "walk_left",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 1.9658512149616791,
+              "max_motor_torque_Nm": 1.1737001003203757
+            },
+            {
+              "pose": "walk_right",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 1.9423111235968773,
+              "max_motor_torque_Nm": 1.1706940997040254
+            },
+            {
+              "pose": "sit",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 2,
+              "max_velocity_rad_s": 6.995710898602755,
+              "max_motor_torque_Nm": 1.452680210367089
+            },
+            {
+              "pose": "sit_transition",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 6.583184564188728,
+              "max_motor_torque_Nm": 1.5227073644822622
+            },
+            {
+              "pose": "pickup",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 1.9315654535009472,
+              "max_motor_torque_Nm": 1.1693219091534073
+            },
+            {
+              "pose": "kick_left",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 2,
+              "max_velocity_rad_s": 6.460353418072454,
+              "max_motor_torque_Nm": 1.7147317681614183
+            },
+            {
+              "pose": "kick_right",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 6.385381702463428,
+              "max_motor_torque_Nm": 1.6224671813249496
+            },
+            {
+              "pose": "skating",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 6.73912173931446,
+              "max_motor_torque_Nm": 1.6078262281313203
+            },
+            {
+              "pose": "getup_back",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 1.8393865173710122,
+              "max_motor_torque_Nm": 1.1575509294011606
+            },
+            {
+              "pose": "getup_tuck",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 3.2640536903568695,
+              "max_motor_torque_Nm": 1.2381835408704016
+            },
+            {
+              "pose": "roll_tuck",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 4,
+              "max_velocity_rad_s": 4.625670320462682,
+              "max_motor_torque_Nm": 1.4946132425230596
+            },
+            {
+              "pose": "roll_contact",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 5.0287007425422825,
+              "max_motor_torque_Nm": 1.3093143650980097
+            },
+            {
+              "pose": "jaw_0",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 2.059676870785838,
+              "max_motor_torque_Nm": 1.1856813613471973
+            },
+            {
+              "pose": "jaw_15",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 4,
+              "max_velocity_rad_s": 1.9874197020366622,
+              "max_motor_torque_Nm": 1.176454332852289
+            },
+            {
+              "pose": "jaw_30",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 1.99965877645953,
+              "max_motor_torque_Nm": 1.1780172267548044
+            },
+            {
+              "pose": "sit_reduced",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 7.248014439678964,
+              "max_motor_torque_Nm": 1.8482168497713138
+            },
+            {
+              "pose": "pickup_neck_neutral",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 4,
+              "max_velocity_rad_s": 5.213582686806973,
+              "max_motor_torque_Nm": 1.1622125180933385
+            }
+          ]
+        },
+        "pinned_file_comparison": {
+          "delay_s": 0.03240342471539083,
+          "poses": [
+            {
+              "pose": "zero",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 2.059676870785838,
+              "max_motor_torque_Nm": 1.1856813613471973
+            },
+            {
+              "pose": "stand",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 1.9020077780695224,
+              "max_motor_torque_Nm": 1.165547480703329
+            },
+            {
+              "pose": "walk_left",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 1.9658512149616791,
+              "max_motor_torque_Nm": 1.1737001003203757
+            },
+            {
+              "pose": "walk_right",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 1.9423111235968773,
+              "max_motor_torque_Nm": 1.1706940997040254
+            },
+            {
+              "pose": "sit",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 2,
+              "max_velocity_rad_s": 6.995710898602755,
+              "max_motor_torque_Nm": 1.452680210367089
+            },
+            {
+              "pose": "sit_transition",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 6.583184564188728,
+              "max_motor_torque_Nm": 1.5227073644822622
+            },
+            {
+              "pose": "pickup",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 1.9315654535009419,
+              "max_motor_torque_Nm": 1.1693219091534066
+            },
+            {
+              "pose": "kick_left",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 2,
+              "max_velocity_rad_s": 6.460353418072454,
+              "max_motor_torque_Nm": 1.7147317681614183
+            },
+            {
+              "pose": "kick_right",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 6.385381702463428,
+              "max_motor_torque_Nm": 1.6224671813249496
+            },
+            {
+              "pose": "skating",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 6.73912173931446,
+              "max_motor_torque_Nm": 1.6078262281313203
+            },
+            {
+              "pose": "getup_back",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 1.8393865173710122,
+              "max_motor_torque_Nm": 1.1575509294011606
+            },
+            {
+              "pose": "getup_tuck",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 3.2640536903568695,
+              "max_motor_torque_Nm": 1.2381835408704016
+            },
+            {
+              "pose": "roll_tuck",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 4,
+              "max_velocity_rad_s": 4.625670320462682,
+              "max_motor_torque_Nm": 1.4946132425230596
+            },
+            {
+              "pose": "roll_contact",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 5.0287007425422825,
+              "max_motor_torque_Nm": 1.3093143650980097
+            },
+            {
+              "pose": "jaw_0",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 2.059676870785838,
+              "max_motor_torque_Nm": 1.1856813613471973
+            },
+            {
+              "pose": "jaw_15",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 4,
+              "max_velocity_rad_s": 1.9874197020366622,
+              "max_motor_torque_Nm": 1.176454332852289
+            },
+            {
+              "pose": "jaw_30",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 1.99965877645953,
+              "max_motor_torque_Nm": 1.1780172267548044
+            },
+            {
+              "pose": "sit_reduced",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 7.248014439678964,
+              "max_motor_torque_Nm": 1.8482168497713138
+            },
+            {
+              "pose": "pickup_neck_neutral",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 4,
+              "max_velocity_rad_s": 5.2135826868064585,
+              "max_motor_torque_Nm": 1.16221251809334
+            }
+          ]
+        }
+      },
+      "cold_load_s": [
+        0.026858916971832514,
+        0.01983158302027732,
+        0.016867625061422586,
+        0.017112666042521596,
+        0.018298999988473952
+      ],
+      "steady_elapsed_s": [
+        0.11145650001708418,
+        0.11100912489928305,
+        0.11006933404132724,
+        0.11077779100742191,
+        0.1161553330020979
+      ],
+      "steps_per_s": {
+        "median": 9008.268472589847,
+        "min": 8609.161320056986,
+        "max": 9085.182614301404,
+        "stddev": 189.60892503742338
+      }
+    },
+    "scene_skates.xml": {
+      "diagnostics": {
+        "D8_selected": {
+          "delay_s": 0.029,
+          "poses": [
+            {
+              "pose": "zero",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 49.18562997967373,
+              "max_motor_torque_Nm": 1.30347867488927
+            },
+            {
+              "pose": "stand",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 5.9824522302713765,
+              "max_motor_torque_Nm": 1.15037114337367
+            },
+            {
+              "pose": "walk_left",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 4,
+              "max_velocity_rad_s": 32.62571774391825,
+              "max_motor_torque_Nm": 1.4694897980714825
+            },
+            {
+              "pose": "walk_right",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 2,
+              "max_velocity_rad_s": 32.6537536688933,
+              "max_motor_torque_Nm": 1.6115227169308328
+            },
+            {
+              "pose": "sit",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 46.533646918466076,
+              "max_motor_torque_Nm": 2.1344973233244016
+            },
+            {
+              "pose": "sit_transition",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 4,
+              "max_velocity_rad_s": 49.574336173330195,
+              "max_motor_torque_Nm": 2.195706802427181
+            },
+            {
+              "pose": "pickup",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 7.501490440515459,
+              "max_motor_torque_Nm": 1.1725962340849496
+            },
+            {
+              "pose": "kick_left",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 4,
+              "max_velocity_rad_s": 47.302591276935146,
+              "max_motor_torque_Nm": 1.7841329790517502
+            },
+            {
+              "pose": "kick_right",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 2,
+              "max_velocity_rad_s": 47.74904387280647,
+              "max_motor_torque_Nm": 1.947907114875059
+            },
+            {
+              "pose": "skating",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 2,
+              "max_velocity_rad_s": 48.72886427322334,
+              "max_motor_torque_Nm": 1.1402839639221383
+            },
+            {
+              "pose": "getup_back",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 16.253589223670964,
+              "max_motor_torque_Nm": 1.196979316538496
+            },
+            {
+              "pose": "getup_tuck",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 16.176255592277933,
+              "max_motor_torque_Nm": 1.1796714859058086
+            },
+            {
+              "pose": "roll_tuck",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 38.88349570663488,
+              "max_motor_torque_Nm": 1.3923363842880063
+            },
+            {
+              "pose": "roll_contact",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 4.770144538555663,
+              "max_motor_torque_Nm": 1.3350875285176547
+            },
+            {
+              "pose": "jaw_0",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 49.18562997967373,
+              "max_motor_torque_Nm": 1.30347867488927
+            },
+            {
+              "pose": "jaw_15",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 48.524576160201946,
+              "max_motor_torque_Nm": 1.4636604065082528
+            },
+            {
+              "pose": "jaw_30",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 2,
+              "max_velocity_rad_s": 50.78707034013074,
+              "max_motor_torque_Nm": 1.144473440480137
+            },
+            {
+              "pose": "sit_reduced",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 2,
+              "max_velocity_rad_s": 47.90702206339841,
+              "max_motor_torque_Nm": 2.114363827611356
+            },
+            {
+              "pose": "pickup_neck_neutral",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 6,
+              "max_velocity_rad_s": 3.5211264326218195,
+              "max_motor_torque_Nm": 1.1294623521154636
+            }
+          ]
+        },
+        "pinned_file_comparison": {
+          "delay_s": 0.03240342471539083,
+          "poses": [
+            {
+              "pose": "zero",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 49.18562997967373,
+              "max_motor_torque_Nm": 1.30347867488927
+            },
+            {
+              "pose": "stand",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 5.9824522302713765,
+              "max_motor_torque_Nm": 1.15037114337367
+            },
+            {
+              "pose": "walk_left",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 4,
+              "max_velocity_rad_s": 32.62571774391825,
+              "max_motor_torque_Nm": 1.4694897980714825
+            },
+            {
+              "pose": "walk_right",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 2,
+              "max_velocity_rad_s": 32.6537536688933,
+              "max_motor_torque_Nm": 1.6115227169308328
+            },
+            {
+              "pose": "sit",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 46.533646918466076,
+              "max_motor_torque_Nm": 2.1344973233244016
+            },
+            {
+              "pose": "sit_transition",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 4,
+              "max_velocity_rad_s": 49.574336173330195,
+              "max_motor_torque_Nm": 2.195706802427181
+            },
+            {
+              "pose": "pickup",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 7.50149044051542,
+              "max_motor_torque_Nm": 1.1725962340849472
+            },
+            {
+              "pose": "kick_left",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 4,
+              "max_velocity_rad_s": 47.302591276935146,
+              "max_motor_torque_Nm": 1.7841329790517502
+            },
+            {
+              "pose": "kick_right",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 2,
+              "max_velocity_rad_s": 47.74904387280647,
+              "max_motor_torque_Nm": 1.947907114875059
+            },
+            {
+              "pose": "skating",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 2,
+              "max_velocity_rad_s": 48.72886427322334,
+              "max_motor_torque_Nm": 1.1402839639221383
+            },
+            {
+              "pose": "getup_back",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 16.253589223670964,
+              "max_motor_torque_Nm": 1.196979316538496
+            },
+            {
+              "pose": "getup_tuck",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 3,
+              "max_velocity_rad_s": 16.176255592277933,
+              "max_motor_torque_Nm": 1.1796714859058086
+            },
+            {
+              "pose": "roll_tuck",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 38.88349570663488,
+              "max_motor_torque_Nm": 1.3923363842880063
+            },
+            {
+              "pose": "roll_contact",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 4.770144538555663,
+              "max_motor_torque_Nm": 1.3350875285176547
+            },
+            {
+              "pose": "jaw_0",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 49.18562997967373,
+              "max_motor_torque_Nm": 1.30347867488927
+            },
+            {
+              "pose": "jaw_15",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 5,
+              "max_velocity_rad_s": 48.524576160201946,
+              "max_motor_torque_Nm": 1.4636604065082528
+            },
+            {
+              "pose": "jaw_30",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 2,
+              "max_velocity_rad_s": 50.78707034013074,
+              "max_motor_torque_Nm": 1.144473440480137
+            },
+            {
+              "pose": "sit_reduced",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 2,
+              "max_velocity_rad_s": 47.90702206339841,
+              "max_motor_torque_Nm": 2.114363827611356
+            },
+            {
+              "pose": "pickup_neck_neutral",
+              "finite": true,
+              "warnings": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "end_contacts": 6,
+              "max_velocity_rad_s": 3.521126432864892,
+              "max_motor_torque_Nm": 1.1294623521154632
+            }
+          ]
+        }
+      },
+      "cold_load_s": [
+        0.026102084084413946,
+        0.02167595806531608,
+        0.01887854200322181,
+        0.019311666022986174,
+        0.01904829195700586
+      ],
+      "steady_elapsed_s": [
+        0.1442966660251841,
+        0.15162733395118266,
+        0.13858595909550786,
+        0.13912504201289266,
+        0.13930616690777242
+      ],
+      "steps_per_s": {
+        "median": 7178.433103123492,
+        "min": 6595.116948517712,
+        "max": 7215.738207005807,
+        "stddev": 264.64563760963597
+      }
+    }
+  }
+}

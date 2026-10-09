@@ -98,7 +98,7 @@ def _resolve_weights(cfg: PublishConfig, workdir: Path) -> tuple[Path, dict]:
     if (cfg.onnx is None) == (not from_checkpoint):
         _fail("give exactly one source: --onnx <file>, or --task <id> with --wandb-run-path/--checkpoint-file")
 
-    training: dict = {"repo": "pollen-robotics/microduck_rl", **m.git_provenance()}
+    training: dict = {"repo": "armature-ai-labs/indieduck-rl", **m.git_provenance()}
     if cfg.onnx is not None:
         src = Path(cfg.onnx)
         training["source_file"] = src.name

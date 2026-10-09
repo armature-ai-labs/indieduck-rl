@@ -1,0 +1,644 @@
+{
+  "revision": "R07",
+  "status": "Original IndieDuck provisional skate study, physical retention unverified",
+  "wheel_centers_mm": {
+    "left_rear": [
+      -50.25,
+      46,
+      -20
+    ],
+    "left_front": [
+      14.75,
+      46,
+      -20
+    ],
+    "right_rear": [
+      -50.25,
+      -46,
+      -20
+    ],
+    "right_front": [
+      14.75,
+      -46,
+      -20
+    ]
+  },
+  "parts": [
+    {
+      "name": "SkateFrame_L",
+      "label": "SkateFrame_L",
+      "mesh": "mesh/SkateFrame_L.stl",
+      "bounds_mm": [
+        -56.0,
+        16.0,
+        -24.5,
+        21.0,
+        66.0,
+        0.0
+      ],
+      "volume_mm3": 16361.607061847502,
+      "center_of_mass_mm": [
+        -17.568396026606834,
+        42.97892846960418,
+        -3.407699015779332
+      ],
+      "color": [
+        0.3100000023841858,
+        0.5199999809265137,
+        0.5899999737739563
+      ],
+      "reference": false,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "RetainingKey_L",
+      "label": "RetainingKey_L",
+      "mesh": "mesh/RetainingKey_L.stl",
+      "bounds_mm": [
+        -27.0,
+        16.5,
+        0.0,
+        -13.0,
+        27.1,
+        18.5
+      ],
+      "volume_mm3": 617.555731146883,
+      "center_of_mass_mm": [
+        -20.000000000000004,
+        21.950295216207323,
+        7.469032127925075
+      ],
+      "color": [
+        0.3100000023841858,
+        0.5199999809265137,
+        0.5899999737739563
+      ],
+      "reference": false,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "KeyScrew_L",
+      "label": "KeyScrew_L",
+      "mesh": "mesh/KeyScrew_L.stl",
+      "bounds_mm": [
+        -21.9,
+        17.400000000000002,
+        -3.0,
+        -18.1,
+        21.2,
+        5.0
+      ],
+      "volume_mm3": 41.53185488045706,
+      "center_of_mass_mm": [
+        -20.0,
+        19.3,
+        2.184568835098336
+      ],
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "LocatorPin0_L",
+      "label": "LocatorPin0_L",
+      "mesh": "mesh/LocatorPin0_L.stl",
+      "bounds_mm": [
+        -37.5,
+        44.5,
+        -4.0,
+        -34.5,
+        47.5,
+        19.0
+      ],
+      "volume_mm3": 162.5774198232718,
+      "center_of_mass_mm": [
+        -36.0,
+        46.0,
+        7.499999999999998
+      ],
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "LocatorPin1_L",
+      "label": "LocatorPin1_L",
+      "mesh": "mesh/LocatorPin1_L.stl",
+      "bounds_mm": [
+        -0.5,
+        44.5,
+        -4.0,
+        2.5,
+        47.5,
+        19.0
+      ],
+      "volume_mm3": 162.57741982327184,
+      "center_of_mass_mm": [
+        0.9999999999999998,
+        46.0,
+        7.499999999999999
+      ],
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "RearTire_L",
+      "label": "RearTire_L",
+      "mesh": "mesh/RearTire_L.stl",
+      "bounds_mm": [
+        -65.25,
+        42.2,
+        -35.0,
+        -35.25,
+        49.800000000000004,
+        -5.0
+      ],
+      "volume_mm3": 2936.522051534066,
+      "center_of_mass_mm": [
+        -50.24999999999999,
+        46.0,
+        -19.999999999999996
+      ],
+      "color": [
+        0.11999999731779099,
+        0.17000000178813934,
+        0.1899999976158142
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "RearRim_L",
+      "label": "RearRim_L",
+      "mesh": "mesh/RearRim_L.stl",
+      "bounds_mm": [
+        -60.35,
+        42.2,
+        -30.1,
+        -40.15,
+        49.800000000000004,
+        -9.9
+      ],
+      "volume_mm3": 2370.5986925090538,
+      "center_of_mass_mm": [
+        -50.25,
+        45.99999999999999,
+        -20.0
+      ],
+      "color": [
+        1.0,
+        0.6600000262260437,
+        0.05000000074505806
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "RearAxle_L",
+      "label": "RearAxle_L",
+      "mesh": "mesh/RearAxle_L.stl",
+      "bounds_mm": [
+        -51.75,
+        38.0,
+        -21.5,
+        -48.75,
+        54.0,
+        -18.5
+      ],
+      "volume_mm3": 113.09733552923251,
+      "center_of_mass_mm": [
+        -50.24999999999999,
+        46.0,
+        -20.0
+      ],
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "FrontTire_L",
+      "label": "FrontTire_L",
+      "mesh": "mesh/FrontTire_L.stl",
+      "bounds_mm": [
+        -0.25,
+        42.2,
+        -35.0,
+        29.75,
+        49.800000000000004,
+        -5.0
+      ],
+      "volume_mm3": 2936.522051534066,
+      "center_of_mass_mm": [
+        14.749999999999998,
+        46.0,
+        -19.999999999999996
+      ],
+      "color": [
+        0.11999999731779099,
+        0.17000000178813934,
+        0.1899999976158142
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "FrontRim_L",
+      "label": "FrontRim_L",
+      "mesh": "mesh/FrontRim_L.stl",
+      "bounds_mm": [
+        4.65,
+        42.2,
+        -30.1,
+        24.85,
+        49.800000000000004,
+        -9.9
+      ],
+      "volume_mm3": 2370.5986925090533,
+      "center_of_mass_mm": [
+        14.750000000000002,
+        46.0,
+        -20.000000000000007
+      ],
+      "color": [
+        1.0,
+        0.6600000262260437,
+        0.05000000074505806
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "FrontAxle_L",
+      "label": "FrontAxle_L",
+      "mesh": "mesh/FrontAxle_L.stl",
+      "bounds_mm": [
+        13.25,
+        38.0,
+        -21.5,
+        16.25,
+        54.0,
+        -18.5
+      ],
+      "volume_mm3": 113.09733552923254,
+      "center_of_mass_mm": [
+        14.749999999999998,
+        46.0,
+        -20.0
+      ],
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "SkateFrame_R",
+      "label": "SkateFrame_R",
+      "mesh": "mesh/SkateFrame_R.stl",
+      "bounds_mm": [
+        -56.0,
+        -66.0,
+        -24.499999999999986,
+        21.0,
+        -16.0,
+        0.0
+      ],
+      "volume_mm3": 16361.607061847499,
+      "center_of_mass_mm": [
+        -17.56839602660683,
+        -42.97892846960419,
+        -3.4076990157793325
+      ],
+      "color": [
+        0.3100000023841858,
+        0.5199999809265137,
+        0.5899999737739563
+      ],
+      "reference": false,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "RetainingKey_R",
+      "label": "RetainingKey_R",
+      "mesh": "mesh/RetainingKey_R.stl",
+      "bounds_mm": [
+        -27.0,
+        -27.1,
+        0.0,
+        -13.0,
+        -16.5,
+        18.5
+      ],
+      "volume_mm3": 617.555731146883,
+      "center_of_mass_mm": [
+        -20.000000000000004,
+        -21.950295216207326,
+        7.469032127925073
+      ],
+      "color": [
+        0.3100000023841858,
+        0.5199999809265137,
+        0.5899999737739563
+      ],
+      "reference": false,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "KeyScrew_R",
+      "label": "KeyScrew_R",
+      "mesh": "mesh/KeyScrew_R.stl",
+      "bounds_mm": [
+        -21.9,
+        -21.2,
+        -3.0,
+        -18.1,
+        -17.400000000000002,
+        5.0
+      ],
+      "volume_mm3": 41.531854880457054,
+      "center_of_mass_mm": [
+        -20.0,
+        -19.300000000000004,
+        2.184568835098336
+      ],
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "LocatorPin0_R",
+      "label": "LocatorPin0_R",
+      "mesh": "mesh/LocatorPin0_R.stl",
+      "bounds_mm": [
+        -37.5,
+        -47.5,
+        -4.0,
+        -34.5,
+        -44.5,
+        19.0
+      ],
+      "volume_mm3": 162.5774198232718,
+      "center_of_mass_mm": [
+        -36.0,
+        -45.99999999999999,
+        7.500000000000001
+      ],
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "LocatorPin1_R",
+      "label": "LocatorPin1_R",
+      "mesh": "mesh/LocatorPin1_R.stl",
+      "bounds_mm": [
+        -0.5,
+        -47.5,
+        -4.0,
+        2.5,
+        -44.5,
+        19.0
+      ],
+      "volume_mm3": 162.57741982327184,
+      "center_of_mass_mm": [
+        1.0,
+        -46.0,
+        7.500000000000001
+      ],
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "RearTire_R",
+      "label": "RearTire_R",
+      "mesh": "mesh/RearTire_R.stl",
+      "bounds_mm": [
+        -65.25,
+        -49.80000000000001,
+        -34.99999999999998,
+        -35.25,
+        -42.199999999999996,
+        -4.999999999999979
+      ],
+      "volume_mm3": 2936.522051534066,
+      "center_of_mass_mm": [
+        -50.24999999999999,
+        -46.0,
+        -19.999999999999975
+      ],
+      "color": [
+        0.11999999731779099,
+        0.17000000178813934,
+        0.1899999976158142
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "RearRim_R",
+      "label": "RearRim_R",
+      "mesh": "mesh/RearRim_R.stl",
+      "bounds_mm": [
+        -60.35,
+        -49.80000000000001,
+        -30.09999999999998,
+        -40.15,
+        -42.199999999999996,
+        -9.899999999999979
+      ],
+      "volume_mm3": 2370.5986925090538,
+      "center_of_mass_mm": [
+        -50.25,
+        -45.99999999999999,
+        -19.99999999999998
+      ],
+      "color": [
+        1.0,
+        0.6600000262260437,
+        0.05000000074505806
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "RearAxle_R",
+      "label": "RearAxle_R",
+      "mesh": "mesh/RearAxle_R.stl",
+      "bounds_mm": [
+        -51.75,
+        -54.0,
+        -21.5,
+        -48.75,
+        -38.0,
+        -18.5
+      ],
+      "volume_mm3": 113.09733552923254,
+      "center_of_mass_mm": [
+        -50.25,
+        -46.0,
+        -20.0
+      ],
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "FrontTire_R",
+      "label": "FrontTire_R",
+      "mesh": "mesh/FrontTire_R.stl",
+      "bounds_mm": [
+        -0.25,
+        -49.80000000000001,
+        -34.99999999999998,
+        29.75,
+        -42.199999999999996,
+        -4.999999999999979
+      ],
+      "volume_mm3": 2936.522051534066,
+      "center_of_mass_mm": [
+        14.749999999999998,
+        -46.0,
+        -19.999999999999975
+      ],
+      "color": [
+        0.11999999731779099,
+        0.17000000178813934,
+        0.1899999976158142
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "FrontRim_R",
+      "label": "FrontRim_R",
+      "mesh": "mesh/FrontRim_R.stl",
+      "bounds_mm": [
+        4.65,
+        -49.80000000000001,
+        -30.09999999999998,
+        24.85,
+        -42.199999999999996,
+        -9.899999999999979
+      ],
+      "volume_mm3": 2370.5986925090538,
+      "center_of_mass_mm": [
+        14.75,
+        -45.99999999999999,
+        -19.99999999999998
+      ],
+      "color": [
+        1.0,
+        0.6600000262260437,
+        0.05000000074505806
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "name": "FrontAxle_R",
+      "label": "FrontAxle_R",
+      "mesh": "mesh/FrontAxle_R.stl",
+      "bounds_mm": [
+        13.25,
+        -54.0,
+        -21.5,
+        16.25,
+        -38.0,
+        -18.5
+      ],
+      "volume_mm3": 113.09733552923254,
+      "center_of_mass_mm": [
+        14.750000000000002,
+        -46.00000000000001,
+        -20.0
+      ],
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "valid": true,
+      "solids": 1
+    }
+  ]
+}

@@ -39,3 +39,10 @@ logdir/.claude/
 logdir/
 logdir/.claude/worktrees/
 *.bak_servoswap
+
+.venv-study/
+
+# Local browser dependencies
+node_modules/
+
+MUJOCO_LOG.TXT

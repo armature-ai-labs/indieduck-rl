@@ -1,16 +1,8 @@
-"""What a duck sees, in the format `mediad` captures.
+# Modified by Armature AI Labs for the IndieDuck R07 local study, 2026-10-08.
+"""Optional R07 camera stream: 640 x 480 UYVY at 15 frames per second.
 
-MuJoCo renders RGB; `mediad` pins its pipeline to UYVY because that is what `v4l2src` can drive at
-full rate off the rkisp — so the conversion happens here, on the side that knows it is a simulator.
-
-**Frames do not go down the JSON link.** 640x360 UYVY is 460,800 bytes, and at 15 fps that is 6.9
-MB/s — JSON would be absurd. So a camera is its own TCP port carrying length-prefixed raw frames:
-four bytes of little-endian length, then the bytes, forever. No handshake, because there is nothing
-to negotiate that both ends do not already have to agree on to be useful.
-
-**Opt in, per duck.** Rendering is the most expensive thing in the simulator by a wide margin —
-12.2 ms per 640x360 frame, measured, against 0.3 ms to step four ducks' physics. Four ducks with
-cameras at 15 fps is most of a core; four without is nothing. Most sessions do not need one.
+Each TCP frame has a four-byte little-endian payload length followed by raw UYVY bytes.
+The 4:3 study image matches the documented camera lens aspect. Hardware calibration is pending.
 """
 
 from __future__ import annotations
@@ -23,13 +15,11 @@ import threading
 import mujoco
 import numpy as np
 
-# 16:9 at a size the default offscreen framebuffer can hold — MuJoCo caps offscreen rendering at
-# the model's `<global offwidth/offheight>`, which is 640x480 unless the scene says otherwise.
+# Match the canonical camera aspect and offscreen buffer.
 WIDTH = 640
-HEIGHT = 360
+HEIGHT = 480
 
-# The sensor's rate is 30, but a rendered frame costs 12 ms and a duck that is being watched is
-# usually being watched rather than raced. 15 halves the cost for something nobody can see.
+# Local preview rate; device throughput is unmeasured.
 FPS = 15
 
 # BT.601, the same coefficients `duck_detect`'s one-pass sampler uses on the robot.

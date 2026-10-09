@@ -76,6 +76,9 @@ def _tiny_policy(path: Path, obs_len: int = m.OBS_LEN, action_len: int = m.ACTIO
     )
     model = helper.make_model(graph, opset_imports=[helper.make_opsetid("", 17)])
     model.ir_version = 8
+    for key, value in {"robot_model": m.ROBOT["model"], "cad_revision": m.ROBOT["cad_revision"],
+                       "contract_sha256": m.ROBOT["contract_sha256"]}.items():
+        entry = model.metadata_props.add(); entry.key = key; entry.value = value
     onnx.save(model, str(path))
     return path
 
@@ -87,7 +90,9 @@ def test_constants_are_the_daemons():
     """`duck_ipc_proto`: POLICY_OBS_LEN 61, POLICY_ACTION_LEN 14, ROBOT_MODEL microduck. A drift
     here is a refusal on every robot, before the download."""
     assert (m.OBS_LEN, m.ACTION_LEN) == (61, 14)
-    assert m.ROBOT["model"] == "microduck"
+    assert m.ROBOT["model"] == "indieduck"
+    assert m.ROBOT["cad_revision"] == "R20"
+    assert m.ROBOT["servos"] == "hd1910"
     assert m.MODEL_API == 1
     assert m.SCHEMA_VERSION == 2
 
@@ -101,12 +106,15 @@ def test_publish_is_a_declared_script():
 
 
 def test_the_flamingo_manifest_is_schema_2_and_valid():
-    m.validate_manifest(FLAMINGO)
+    with pytest.raises(m.ManifestError, match="robot.model"):
+        m.validate_manifest(FLAMINGO)
 
 
 def test_the_official_set_validates_per_entry():
-    m.validate_manifest(OFFICIAL_SET)
+    with pytest.raises(m.ManifestError, match="robot.model"):
+        m.validate_manifest(OFFICIAL_SET)
     broken = json.loads(json.dumps(OFFICIAL_SET))
+    broken["robot"] = m.ROBOT
     broken["policies"][3]["duration_s"] = None  # roulade: episodic constant with no length
     with pytest.raises(m.ManifestError, match="duration_s"):
         m.validate_manifest(broken)
@@ -240,6 +248,9 @@ def test_a_constant_network_fails_the_smoke_run(tmp_path):
     )
     model = helper.make_model(graph, opset_imports=[helper.make_opsetid("", 17)])
     model.ir_version = 8
+    for key, value in {"robot_model": m.ROBOT["model"], "cad_revision": m.ROBOT["cad_revision"],
+                       "contract_sha256": m.ROBOT["contract_sha256"]}.items():
+        entry = model.metadata_props.add(); entry.key = key; entry.value = value
     path = tmp_path / "dead.onnx"
     onnx.save(model, str(path))
     with pytest.raises(m.ManifestError, match="never changes"):
@@ -264,3 +275,13 @@ def test_the_cli_dry_run_writes_a_repo(tmp_path, monkeypatch):
     assert manifest["training"]["source_file"] == "out.onnx"
     assert "commit" in manifest["training"], "git provenance is filled from the checkout"
     assert "robotctl policy add bow someone/microduck-bow" in (out / "README.md").read_text()
+
+
+def test_r20_publisher_rejects_unidentified_or_stale_policy(tmp_path):
+    path = _tiny_policy(tmp_path / "wrong.onnx")
+    model = onnx.load(path)
+    for entry in model.metadata_props:
+        if entry.key == "contract_sha256": entry.value = "old-contract"
+    onnx.save(model, path)
+    with pytest.raises(m.ManifestError, match="contract_sha256"):
+        m.check_onnx(path)

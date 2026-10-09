@@ -1,0 +1,180 @@
+{
+  "poses": [
+    {
+      "id": "sit_reduced",
+      "label": "Reduced crouch clearance study",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.7,
+        "left_knee": 0.5,
+        "left_ankle": 1.2,
+        "neck_pitch": 0.15,
+        "head_pitch": 0.15,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": 0,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.7,
+        "right_knee": -0.5,
+        "right_ankle": -1.2
+      },
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.1343763361270265
+      ],
+      "support_rule": "seat lowest robot collision geometry on ground after FK",
+      "intended_contacts": [
+        "feet"
+      ],
+      "status": "Illustrative pose; sampled CAD clearance pass, floor sitting unverified",
+      "cad_clearance": {
+        "threshold_mm3": 0.5,
+        "status": "sampled clearance pass",
+        "hits": []
+      }
+    },
+    {
+      "id": "pickup_reduced",
+      "label": "Reduced neck pickup approach",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.8,
+        "left_knee": 0.6,
+        "left_ankle": 1.4,
+        "neck_pitch": -0.5,
+        "head_pitch": 0.5,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": -0.9641885924143188,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.8,
+        "right_knee": -0.6,
+        "right_ankle": -1.4
+      },
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.19671688251552735
+      ],
+      "support_rule": "seat lowest robot collision geometry on ground after FK",
+      "intended_contacts": [],
+      "status": "illustrative, interference requires redesign",
+      "cad_clearance": {
+        "threshold_mm3": 0.5,
+        "status": "interference found",
+        "hits": [
+          {
+            "a": "Trunk",
+            "b": "Neck",
+            "intersection_mm3": 17.7697
+          }
+        ]
+      }
+    },
+    {
+      "id": "pickup_limited",
+      "label": "Limited-neck pickup approach",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.8,
+        "left_knee": 0.6,
+        "left_ankle": 1.4,
+        "neck_pitch": -0.05,
+        "head_pitch": 0.5,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": -0.9641885924143188,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.8,
+        "right_knee": -0.6,
+        "right_ankle": -1.4
+      },
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.12741164785710574
+      ],
+      "support_rule": "seat lowest robot collision geometry on ground after FK",
+      "intended_contacts": [],
+      "status": "illustrative, interference requires redesign",
+      "cad_clearance": {
+        "threshold_mm3": 0.5,
+        "status": "interference found",
+        "hits": [
+          {
+            "a": "Neck",
+            "b": "ref_servo_right_hip_yaw",
+            "intersection_mm3": 5.2368
+          }
+        ]
+      }
+    },
+    {
+      "id": "pickup_neck_neutral",
+      "label": "Neutral-neck ball approach study",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.8,
+        "left_knee": 0.6,
+        "left_ankle": 1.4,
+        "neck_pitch": 0.0,
+        "head_pitch": 0.5,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": -0.9641885924143188,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.8,
+        "right_knee": -0.6,
+        "right_ankle": -1.4
+      },
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.12741164785710574
+      ],
+      "support_rule": "seat lowest robot collision geometry on ground after FK",
+      "intended_contacts": [
+        "feet"
+      ],
+      "status": "Illustrative pose; sampled CAD clearance pass, ground pickup and grip unverified",
+      "cad_clearance": {
+        "threshold_mm3": 0.5,
+        "status": "sampled clearance pass",
+        "hits": []
+      }
+    }
+  ]
+}

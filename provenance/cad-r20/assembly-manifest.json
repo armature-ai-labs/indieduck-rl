@@ -1,0 +1,5257 @@
+{
+  "revision": "R20",
+  "cad_source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a",
+  "units": "mm",
+  "coordinates": "CAD world x forward, y left, z up; complete published natural standing pose",
+  "standing_pose": {
+    "id": "stand",
+    "label": "R20 natural standing",
+    "joint_positions_rad": {
+      "left_hip_yaw": -0.2617993877991494,
+      "left_hip_roll": 0.0,
+      "left_hip_pitch": -0.4,
+      "left_knee": 0.4,
+      "left_ankle": 0.8,
+      "neck_pitch": 0,
+      "head_pitch": 0,
+      "head_yaw": 0.0,
+      "head_roll": 0.0,
+      "mouth": 0.0,
+      "right_hip_yaw": 0.2617993877991494,
+      "right_hip_roll": 0.0,
+      "right_hip_pitch": 0.4,
+      "right_knee": -0.4,
+      "right_ankle": -0.8
+    },
+    "base_quaternion_wxyz": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "base_position_m": [
+      0,
+      0,
+      0.14244672939817868
+    ],
+    "support_rule": "seat lowest robot collision geometry on ground after FK",
+    "intended_contacts": [],
+    "status": "Illustrative R20 pose; numerical execution and geometric clearance are separate checks; physical motion unverified",
+    "skates_base_position_m": [
+      0.0,
+      0.0,
+      0.17774672939817868
+    ]
+  },
+  "parts": [
+    {
+      "id": "A_Trunk",
+      "name": "Trunk",
+      "label": "A_Trunk",
+      "mesh": "meshes/A_Trunk.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "Trunk",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_Trunk.step",
+      "stl": "exports/R20/stl/R20_Trunk.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 44277.92739148435,
+      "center_of_mass_mm": [
+        -11.414085879173898,
+        0.4437686695932641,
+        124.37879216178231
+      ],
+      "bounds_mm": [
+        [
+          -51.00012098785549,
+          -32.40323460662207,
+          72.4466851543075
+        ],
+        [
+          53.04566372289907,
+          32.40323460662228,
+          164.4499640048008
+        ]
+      ],
+      "facets": 6690,
+      "source_sha256": "cda2606a42cc958787bb4ec5fea46ce16df81937ee0b8881faae5a6f25f00946",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_Neck",
+      "name": "Neck",
+      "label": "A_Neck",
+      "mesh": "meshes/A_Neck.stl",
+      "body": "neck_pitch_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "Neck",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_Neck.step",
+      "stl": "exports/R20/stl/R20_Neck.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 10690.188350035962,
+      "center_of_mass_mm": [
+        41.01170616830242,
+        -7.63706812523991,
+        176.2816355405666
+      ],
+      "bounds_mm": [
+        [
+          28.799999899999772,
+          -19.73093131361405,
+          140.24672929817848
+        ],
+        [
+          53.20000010000023,
+          5.500000100000229,
+          213.64672949817896
+        ]
+      ],
+      "facets": 1404,
+      "source_sha256": "55caa0de52a2a16beaf1ff877726f91aa86466dc20267edb3144d26a827a71bc",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_HeadPitch",
+      "name": "HeadPitch",
+      "label": "A_HeadPitch",
+      "mesh": "meshes/A_HeadPitch.stl",
+      "body": "head_pitch_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "R17_HeadPitch",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": "exports/R20/step/R20_HeadPitch.step",
+      "stl": "exports/R20/stl/R20_HeadPitch.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 4710.735652977389,
+      "center_of_mass_mm": [
+        40.92913925683528,
+        8.23308119068398,
+        212.38690653871765
+      ],
+      "bounds_mm": [
+        [
+          28.99997493095639,
+          -12.000025069043554,
+          189.94670432913514
+        ],
+        [
+          53.00002506904355,
+          16.53120357564771,
+          223.22793297382637
+        ]
+      ],
+      "facets": 1816,
+      "source_sha256": "10e0897b1e55eff8ad052784223b08953590fe7faa09f38872453d1205f1e34c",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_HeadYaw",
+      "name": "HeadYaw",
+      "label": "A_HeadYaw",
+      "mesh": "meshes/A_HeadYaw.stl",
+      "body": "head_yaw_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "R17_HeadYaw",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": "exports/R20/step/R20_HeadYaw.step",
+      "stl": "exports/R20/stl/R20_HeadYaw.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 11014.231494009255,
+      "center_of_mass_mm": [
+        35.20696142118292,
+        -5.886805306197436,
+        240.82630356166177
+      ],
+      "bounds_mm": [
+        [
+          21.084778692366896,
+          -26.70002880278716,
+          223.69670059539152
+        ],
+        [
+          57.100028802787094,
+          12.000028802787158,
+          251.40110559537325
+        ]
+      ],
+      "facets": 1410,
+      "source_sha256": "b9e40a4772fc3ae1511b6f0d4de163b75c56eae29d2811269da0f01fc8bfcbfb",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_Yaw_L",
+      "name": "Yaw_L",
+      "label": "A_Yaw_L",
+      "mesh": "meshes/A_Yaw_L.stl",
+      "body": "left_hip_yaw_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "Yaw_L",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_Yaw_L.step",
+      "stl": "exports/R20/stl/R20_Yaw_L.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 7221.906027288387,
+      "center_of_mass_mm": [
+        16.688405472018378,
+        16.612660920567983,
+        100.70627516302591
+      ],
+      "bounds_mm": [
+        [
+          1.818504630421076,
+          1.6519570083366373,
+          75.24672929817865
+        ],
+        [
+          34.748702365719645,
+          32.3901237219569,
+          118.4779329738264
+        ]
+      ],
+      "facets": 1258,
+      "source_sha256": "58ab4856ffa25bccd87305568d941fb12f4d5a3f6c4c8a2b924184d0406c5dfa",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_HipL_L",
+      "name": "HipL_L",
+      "label": "A_HipL_L",
+      "mesh": "meshes/A_HipL_L.stl",
+      "body": "left_hip_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "HipL_L",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_HipL_L.step",
+      "stl": "exports/R20/stl/R20_HipL_L.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 11620.808308232039,
+      "center_of_mass_mm": [
+        19.706878779350063,
+        40.104631151184755,
+        101.95984149395116
+      ],
+      "bounds_mm": [
+        [
+          -9.43641548386801,
+          0.05604830017092945,
+          88.72243523129151
+        ],
+        [
+          42.70609230624998,
+          80.06355817491855,
+          115.19417371576453
+        ]
+      ],
+      "facets": 3524,
+      "source_sha256": "19cf147e0a7fff7a619e120ab7b0d4b0dfaa6edd6798ed26b4bd4f2828b87c99",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_Thigh_L",
+      "name": "Thigh_L",
+      "label": "A_Thigh_L",
+      "mesh": "meshes/A_Thigh_L.stl",
+      "body": "left_hip_pitch_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "Thigh_L",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_Thigh_L.step",
+      "stl": "exports/R20/stl/R20_Thigh_L.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 12356.28974082658,
+      "center_of_mass_mm": [
+        -10.04372335998444,
+        53.06533129791093,
+        83.38352982814834
+      ],
+      "bounds_mm": [
+        [
+          -39.947783790878134,
+          31.834051039303326,
+          52.234326567545956
+        ],
+        [
+          25.897135512560386,
+          69.58723425519531,
+          117.73990594906104
+        ]
+      ],
+      "facets": 1634,
+      "source_sha256": "4bb2bc07cb6ee58be260ac8fd85e99def4e0361e2247b7366200e345c9533536",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_Shank_L",
+      "name": "Shank_L",
+      "label": "A_Shank_L",
+      "mesh": "meshes/A_Shank_L.stl",
+      "body": "left_knee_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "Shank_L",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_Shank_L.step",
+      "stl": "exports/R20/stl/R20_Shank_L.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 10245.797471616492,
+      "center_of_mass_mm": [
+        5.9129066715194725,
+        37.18131779131464,
+        50.41884622065166
+      ],
+      "bounds_mm": [
+        [
+          -28.32879903414992,
+          24.13662936908776,
+          21.59671252204662
+        ],
+        [
+          35.686666868600206,
+          59.06974572217571,
+          84.87398128333857
+        ]
+      ],
+      "facets": 1876,
+      "source_sha256": "95f3943a586932d72f70e16ccb7e5117f281ea90a3fd7cb5d4a911747215ee0c",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_RoundedFoot_L",
+      "name": "RoundedFoot_L",
+      "label": "A_RoundedFoot_L",
+      "mesh": "meshes/A_RoundedFoot_L.stl",
+      "body": "left_ankle_link",
+      "color": [
+        1.0,
+        0.6509803921568628,
+        0.03137254901960784
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R11_CompactFoot_L",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_RoundedFoot_L.step",
+      "stl": "exports/R20/stl/R20_RoundedFoot_L.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 28315.681046755963,
+      "center_of_mass_mm": [
+        16.05483428160078,
+        46.07143486740444,
+        20.934187093553717
+      ],
+      "bounds_mm": [
+        [
+          -14.303985012591125,
+          18.972250639237146,
+          12.981259680236104
+        ],
+        [
+          46.80403458676787,
+          73.01033364750185,
+          50.53033579812464
+        ]
+      ],
+      "facets": 3256,
+      "source_sha256": "72244a86adf7502bba9a568c17c70c2fbeaaa9f85146c10c86ab92e1ef3abe87",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_SoftHeadShell",
+      "name": "SoftHeadShell",
+      "label": "R20 head shell with band mount holes",
+      "mesh": "meshes/A_SoftHeadShell.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.9215686274509803,
+        0.9294117647058824,
+        0.9019607843137255
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_HeadBand.FCStd",
+      "native_object": "HeadShellWithBandMounts",
+      "native": "native/robot/IndieDuck_R20_HeadBand.FCStd",
+      "step": "exports/R20/step/R20_SoftHeadShell.step",
+      "stl": "exports/R20/stl/R20_SoftHeadShell.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 34997.97163123891,
+      "center_of_mass_mm": [
+        47.29527398366457,
+        -0.2171194242726298,
+        256.2778367687738
+      ],
+      "bounds_mm": [
+        [
+          -18.97314939962223,
+          -44.00000010000105,
+          226.99672928916928
+        ],
+        [
+          105.12510691152501,
+          44.00000010000111,
+          275.07801306751566
+        ]
+      ],
+      "facets": 24640,
+      "source_sha256": "13e3a4d9dc4267e339e842c091eedc607ab0493e4ff812deebe594888b3809c3",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_BodyFront",
+      "name": "BodyFront",
+      "label": "A_BodyFront",
+      "mesh": "meshes/A_BodyFront.stl",
+      "body": "trunk_base",
+      "color": [
+        0.9215686274509803,
+        0.9294117647058824,
+        0.9019607843137255
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R08_BodyFront",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_BodyFront.step",
+      "stl": "exports/R20/stl/R20_BodyFront.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 17587.18355558863,
+      "center_of_mass_mm": [
+        21.459392061087893,
+        0.36360761947255127,
+        155.87292252012472
+      ],
+      "bounds_mm": [
+        [
+          -14.448400303320792,
+          -36.56730326850784,
+          135.33425362957342
+        ],
+        [
+          55.27597162755499,
+          36.567303266804444,
+          178.04512970149946
+        ]
+      ],
+      "facets": 3384,
+      "source_sha256": "9607d6c2abb296e8e7c7167ee98d61de8553fa4f1234cd93d8e0a64987527cf4",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_BodyBack",
+      "name": "BodyBack",
+      "label": "A_BodyBack",
+      "mesh": "meshes/A_BodyBack.stl",
+      "body": "trunk_base",
+      "color": [
+        0.9215686274509803,
+        0.9294117647058824,
+        0.9019607843137255
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R08_BodyBack",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_BodyBack.step",
+      "stl": "exports/R20/stl/R20_BodyBack.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 13710.578381597226,
+      "center_of_mass_mm": [
+        -40.70409051011572,
+        0.00020598908833643797,
+        155.08449905113923
+      ],
+      "bounds_mm": [
+        [
+          -60.782207484914615,
+          -36.324510464909324,
+          135.35732520323933
+        ],
+        [
+          -13.813491849936765,
+          36.324510464907554,
+          177.7832375482419
+        ]
+      ],
+      "facets": 2946,
+      "source_sha256": "5cb5c675327124ef5476ebbd4a9251e77c03d1ba414da8ff4ce3ea6973e5a23f",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_RoundedSole_L",
+      "name": "RoundedSole_L",
+      "label": "A_RoundedSole_L",
+      "mesh": "meshes/A_RoundedSole_L.stl",
+      "body": "left_ankle_link",
+      "color": [
+        0.25882352941176473,
+        0.27058823529411763,
+        0.23921568627450981
+      ],
+      "category": "printed",
+      "material": "TPU 95A",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R11_CompactSole_L",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_RoundedSole_L.step",
+      "stl": "exports/R20/stl/R20_RoundedSole_L.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 29010.262001846408,
+      "center_of_mass_mm": [
+        16.26061189209259,
+        46.003405117987036,
+        6.730641790986325
+      ],
+      "bounds_mm": [
+        [
+          -14.19579470654007,
+          19.080427887341305,
+          -0.05656618866868257
+        ],
+        [
+          46.72276819531973,
+          72.92792297733563,
+          13.022831911449574
+        ]
+      ],
+      "facets": 1476,
+      "source_sha256": "cdf1c0547779935089e962966fb5004c57352a88ca30b418738af887e81e9fa1",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ThighPlate_L",
+      "name": "ThighPlate_L",
+      "label": "A_ThighPlate_L",
+      "mesh": "meshes/A_ThighPlate_L.stl",
+      "body": "left_hip_pitch_link",
+      "color": [
+        0.9215686274509803,
+        0.9294117647058824,
+        0.9019607843137255
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ThighPlate_L",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_ThighPlate_L.step",
+      "stl": "exports/R20/stl/R20_ThighPlate_L.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 6231.957271678283,
+      "center_of_mass_mm": [
+        -9.107018783443031,
+        70.26445437688892,
+        85.25763241096976
+      ],
+      "bounds_mm": [
+        [
+          -44.890799863628246,
+          59.75735819426813,
+          52.241914078003624
+        ],
+        [
+          26.616044535860627,
+          80.7552812845151,
+          118.29020352118177
+        ]
+      ],
+      "facets": 1192,
+      "source_sha256": "e111e4ae2289040b8b839e75e5310fdc440b6ac739812dc68813f11bf661bbb7",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_O2_HeadBase",
+      "name": "O2_HeadBase",
+      "label": "A_O2_HeadBase",
+      "mesh": "meshes/A_O2_HeadBase.stl",
+      "body": "head_roll_link",
+      "color": [
+        1.0,
+        0.6509803921568628,
+        0.03137254901960784
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R19_UpperBillYawClearance",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_O2_HeadBase.step",
+      "stl": "exports/R20/stl/R20_O2_HeadBase.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 31372.9121357434,
+      "center_of_mass_mm": [
+        37.35427835511352,
+        1.0291122252052989,
+        224.6147359898949
+      ],
+      "bounds_mm": [
+        [
+          -19.290048699243464,
+          -44.16416559682664,
+          218.43853118069913
+        ],
+        [
+          99.597915749414,
+          44.16428766713914,
+          233.9967294981787
+        ]
+      ],
+      "facets": 9804,
+      "source_sha256": "fa8bb690dab68f6ea3ddf4aef331ad7912b106626c7719d6f20c189bfbe0724a",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_O2_Jaw",
+      "name": "O2_Jaw",
+      "label": "A_O2_Jaw",
+      "mesh": "meshes/A_O2_Jaw.stl",
+      "body": "mouth_link",
+      "color": [
+        1.0,
+        0.6509803921568628,
+        0.03137254901960784
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R17_RepairedJaw",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_O2_Jaw.step",
+      "stl": "exports/R20/stl/R20_O2_Jaw.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 15146.492824678646,
+      "center_of_mass_mm": [
+        72.00667151718967,
+        -3.3673825974401725,
+        224.58163866018558
+      ],
+      "bounds_mm": [
+        [
+          31.903293509618713,
+          -44.00608858305324,
+          217.99672929817828
+        ],
+        [
+          98.79683695302812,
+          44.000000100000506,
+          247.283106451304
+        ]
+      ],
+      "facets": 2868,
+      "source_sha256": "22eb32f70f28cc50e4208a5984a00f727bebe2d93ca6222666547e8b0f5ab488",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_O2_UpperLip",
+      "name": "O2_UpperLip",
+      "label": "A_O2_UpperLip",
+      "mesh": "meshes/A_O2_UpperLip.stl",
+      "body": "head_roll_link",
+      "color": [
+        1.0,
+        0.6509803921568628,
+        0.03137254901960784
+      ],
+      "category": "printed",
+      "material": "TPU 95A",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "XGO_mouth_up_tpu_Source",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_O2_UpperLip.step",
+      "stl": "exports/R20/stl/R20_O2_UpperLip.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 3571.585431202827,
+      "center_of_mass_mm": [
+        83.9694927867288,
+        -0.0003143802376122848,
+        228.65697007349638
+      ],
+      "bounds_mm": [
+        [
+          70.3840559913081,
+          -42.16492090688529,
+          227.0967277722993
+        ],
+        [
+          97.5999985741221,
+          42.16492090688525,
+          229.49672949817923
+        ]
+      ],
+      "facets": 930,
+      "source_sha256": "b8c0d520a1fd78eeb4649cf8acaca1bc1f38d5cd6e1cb9b404aa6180df492c9d",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_O2_JawEdge",
+      "name": "O2_JawEdge",
+      "label": "A_O2_JawEdge",
+      "mesh": "meshes/A_O2_JawEdge.stl",
+      "body": "mouth_link",
+      "color": [
+        1.0,
+        0.6509803921568628,
+        0.03137254901960784
+      ],
+      "category": "printed",
+      "material": "TPU 95A",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "XGO_mouth_buttom_tpu_Source",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_O2_JawEdge.step",
+      "stl": "exports/R20/stl/R20_O2_JawEdge.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 13826.47980711213,
+      "center_of_mass_mm": [
+        82.23543964876274,
+        0.0008729388420947329,
+        224.14536094824285
+      ],
+      "bounds_mm": [
+        [
+          65.94072713388654,
+          -40.30318460927772,
+          220.7967323499362
+        ],
+        [
+          95.04018412099612,
+          40.303184609277764,
+          227.7967325499371
+        ]
+      ],
+      "facets": 4168,
+      "source_sha256": "88b5f1103315d89ab535a307e78200d6ab4d4431948ddf7bad66a7486c1cd059",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_Yaw_R",
+      "name": "Yaw_R",
+      "label": "A_Yaw_R",
+      "mesh": "meshes/A_Yaw_R.stl",
+      "body": "right_hip_yaw_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "Yaw_R",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_Yaw_R.step",
+      "stl": "exports/R20/stl/R20_Yaw_R.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 7221.906027288387,
+      "center_of_mass_mm": [
+        16.688405472018385,
+        -16.612660920567986,
+        100.70627516302595
+      ],
+      "bounds_mm": [
+        [
+          1.8185046304210923,
+          -32.3901237219569,
+          75.24672929817865
+        ],
+        [
+          34.748702365719645,
+          -1.6519570083366373,
+          118.4779329738264
+        ]
+      ],
+      "facets": 1258,
+      "source_sha256": "14e5666d7d8483fcb967ea79f78ce1c80ca7180bbae58e8289789559d27d34ee",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_HipL_R",
+      "name": "HipL_R",
+      "label": "A_HipL_R",
+      "mesh": "meshes/A_HipL_R.stl",
+      "body": "right_hip_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "HipL_R",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_HipL_R.step",
+      "stl": "exports/R20/stl/R20_HipL_R.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 11620.80830823204,
+      "center_of_mass_mm": [
+        19.706878779350074,
+        -40.10463115118475,
+        101.9598414939512
+      ],
+      "bounds_mm": [
+        [
+          -9.436415483867995,
+          -80.06355817491855,
+          88.72243523129151
+        ],
+        [
+          42.70609230625,
+          -0.05604830017093681,
+          115.19417371576453
+        ]
+      ],
+      "facets": 3524,
+      "source_sha256": "dcf82916585abe9de85383637dc5f3525b9cd98871ef8c77ec9e9a8ee2de802d",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_Thigh_R",
+      "name": "Thigh_R",
+      "label": "A_Thigh_R",
+      "mesh": "meshes/A_Thigh_R.stl",
+      "body": "right_hip_pitch_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "Thigh_R",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_Thigh_R.step",
+      "stl": "exports/R20/stl/R20_Thigh_R.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 12356.289740826573,
+      "center_of_mass_mm": [
+        -10.043723359984483,
+        -53.06533129791101,
+        83.38352982814835
+      ],
+      "bounds_mm": [
+        [
+          -39.947783790878255,
+          -69.58723425519534,
+          52.23432656754593
+        ],
+        [
+          25.89713551256036,
+          -31.83405103930329,
+          117.73990594906111
+        ]
+      ],
+      "facets": 1634,
+      "source_sha256": "37707ce720544569e455e16f90d787b51756e0d4b74c2c47e7995927b5db223b",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_Shank_R",
+      "name": "Shank_R",
+      "label": "A_Shank_R",
+      "mesh": "meshes/A_Shank_R.stl",
+      "body": "right_knee_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "Shank_R",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_Shank_R.step",
+      "stl": "exports/R20/stl/R20_Shank_R.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 10245.797471616488,
+      "center_of_mass_mm": [
+        5.912906671519444,
+        -37.18131779131467,
+        50.41884622065169
+      ],
+      "bounds_mm": [
+        [
+          -28.32879903414996,
+          -59.06974572217572,
+          21.596712522046655
+        ],
+        [
+          35.68666686860015,
+          -24.136629369087764,
+          84.8739812833386
+        ]
+      ],
+      "facets": 1876,
+      "source_sha256": "513bc360172f0eb76d606b3006c6aa06171a43612033691a3189f17b1b79691b",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_RoundedFoot_R",
+      "name": "RoundedFoot_R",
+      "label": "A_RoundedFoot_R",
+      "mesh": "meshes/A_RoundedFoot_R.stl",
+      "body": "right_ankle_link",
+      "color": [
+        1.0,
+        0.6509803921568628,
+        0.03137254901960784
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R11_CompactFoot_R",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_RoundedFoot_R.step",
+      "stl": "exports/R20/stl/R20_RoundedFoot_R.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 28315.68104675597,
+      "center_of_mass_mm": [
+        16.054834281600755,
+        -46.071434867404506,
+        20.934187093553767
+      ],
+      "bounds_mm": [
+        [
+          -14.303985012591147,
+          -73.01033364750187,
+          12.981259680236128
+        ],
+        [
+          46.80403458676784,
+          -18.972250639237142,
+          50.53033579812465
+        ]
+      ],
+      "facets": 3256,
+      "source_sha256": "fc3dfae3ffdf7e7a63d9c202c7071e449b54cc35895da65d55a3eb1a15d1d2ea",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_RoundedSole_R",
+      "name": "RoundedSole_R",
+      "label": "A_RoundedSole_R",
+      "mesh": "meshes/A_RoundedSole_R.stl",
+      "body": "right_ankle_link",
+      "color": [
+        0.25882352941176473,
+        0.27058823529411763,
+        0.23921568627450981
+      ],
+      "category": "printed",
+      "material": "TPU 95A",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R11_CompactSole_R",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_RoundedSole_R.step",
+      "stl": "exports/R20/stl/R20_RoundedSole_R.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 29010.262001846404,
+      "center_of_mass_mm": [
+        16.26061189209256,
+        -46.00340511798704,
+        6.730641790986353
+      ],
+      "bounds_mm": [
+        [
+          -14.195794706540097,
+          -72.92792297733563,
+          -0.1211038555706627
+        ],
+        [
+          46.78730586222173,
+          -19.080427887341298,
+          13.022831911449588
+        ]
+      ],
+      "facets": 1474,
+      "source_sha256": "146eae828624ec4384ea9a259979f0be7f188d88be5e31473b81a86447bcea06",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ThighPlate_R",
+      "name": "ThighPlate_R",
+      "label": "A_ThighPlate_R",
+      "mesh": "meshes/A_ThighPlate_R.stl",
+      "body": "right_hip_pitch_link",
+      "color": [
+        0.9215686274509803,
+        0.9294117647058824,
+        0.9019607843137255
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ThighPlate_R",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_ThighPlate_R.step",
+      "stl": "exports/R20/stl/R20_ThighPlate_R.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 6231.957271678284,
+      "center_of_mass_mm": [
+        -9.10701878344313,
+        -70.2644543768889,
+        85.25763241096979
+      ],
+      "bounds_mm": [
+        [
+          -44.89079986362834,
+          -80.75528128451514,
+          52.24191407800365
+        ],
+        [
+          26.616044535860535,
+          -59.75735819426813,
+          118.2902035211818
+        ]
+      ],
+      "facets": 1192,
+      "source_sha256": "4b0acc8be07cf97a486ad03446bc84a5547d4ba6c65cea5e0d40737b782ae98a",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_O2_EyeL",
+      "name": "O2_EyeL",
+      "label": "A_O2_EyeL",
+      "mesh": "meshes/A_O2_EyeL.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "O2_EyeL",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_O2_EyeL.step",
+      "stl": "exports/R20/stl/R20_O2_EyeL.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 648.6132192601491,
+      "center_of_mass_mm": [
+        95.05,
+        16.0,
+        246.09835328934744
+      ],
+      "bounds_mm": [
+        [
+          93.1703097055286,
+          9.770320991134296,
+          237.06866299487604
+        ],
+        [
+          96.92969029447141,
+          22.225562641626425,
+          255.12767026695596
+        ]
+      ],
+      "facets": 176,
+      "source_sha256": "03a2ebd631efbf5fd1d639ac6a89f41e50a83fbe93bbbb1110c1e25555db3c12",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_O2_EyeR",
+      "name": "O2_EyeR",
+      "label": "A_O2_EyeR",
+      "mesh": "meshes/A_O2_EyeR.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "O2_EyeR",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_O2_EyeR.step",
+      "stl": "exports/R20/stl/R20_O2_EyeR.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 402.6516472252967,
+      "center_of_mass_mm": [
+        95.05000000000001,
+        -16.0,
+        246.09835328934747
+      ],
+      "bounds_mm": [
+        [
+          93.17030970552861,
+          -22.229679008865702,
+          237.06866299487604
+        ],
+        [
+          96.9296902944714,
+          -9.774437358373573,
+          255.12767026695596
+        ]
+      ],
+      "facets": 324,
+      "source_sha256": "361da157aca8d65820ab4835004d2431796d0474915601d6d68ca7eb9e546f4b",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_servo_left_ankle",
+      "name": "ref_servo_left_ankle",
+      "label": "A_ref_servo_left_ankle",
+      "mesh": "meshes/A_ref_servo_left_ankle.stl",
+      "body": "left_knee_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_servo_left_ankle",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 15640.000000000011,
+      "center_of_mass_mm": [
+        10.678412365393832,
+        46.06057353343384,
+        43.725300320103756
+      ],
+      "bounds_mm": [
+        [
+          -10.807193964733656,
+          29.99290466524546,
+          24.707725252206696
+        ],
+        [
+          32.16401869552133,
+          62.128242401622224,
+          62.742875388000805
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "ba9ef0bd807af6947de16717a28621fa5ee2d610cddc65322b5f09b322f94b5a",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_horn_left_ankle",
+      "name": "ref_horn_left_ankle",
+      "label": "A_ref_horn_left_ankle",
+      "mesh": "meshes/A_ref_horn_left_ankle.stl",
+      "body": "left_ankle_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_horn_left_ankle",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.1857894892408,
+      "center_of_mass_mm": [
+        12.5106105904032,
+        60.0100999135299,
+        38.50000000000001
+      ],
+      "bounds_mm": [
+        [
+          4.36453289717083,
+          56.46021629801008,
+          30.469557484733965
+        ],
+        [
+          20.656688283635578,
+          63.55998352904972,
+          46.53044251526606
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "e7c650e33bc270281376ef018ef42d6c09c10d83525ddbc310f1acd4e8e51eac",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_servo_left_knee",
+      "name": "ref_servo_left_knee",
+      "label": "A_ref_servo_left_knee",
+      "mesh": "meshes/A_ref_servo_left_knee.stl",
+      "body": "left_hip_pitch_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_servo_left_knee",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 15640.000000000013,
+      "center_of_mass_mm": [
+        -18.37756902820221,
+        47.5925324074168,
+        74.66963924760259
+      ],
+      "bounds_mm": [
+        [
+          -36.645291142962144,
+          32.387093016072996,
+          55.11741882646701
+        ],
+        [
+          -0.1098469134422703,
+          62.797971798760614,
+          94.22185966873819
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "ca3e7d7a98c491815876cec47a97037cd4d909ed8f3bb1ff906cca099ad78139",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_horn_left_knee",
+      "name": "ref_horn_left_knee",
+      "label": "A_ref_horn_left_knee",
+      "mesh": "meshes/A_ref_horn_left_knee.stl",
+      "body": "left_knee_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_horn_left_knee",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.1857894892407,
+      "center_of_mass_mm": [
+        -12.191802186369909,
+        35.7914132919219,
+        67.76168179258096
+      ],
+      "bounds_mm": [
+        [
+          -20.317487929898718,
+          32.246993682857244,
+          59.75235057711515
+        ],
+        [
+          -4.066116442841119,
+          39.335832900986546,
+          75.77101300804678
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "888bcc0e7fc063a4ec7cdfd6b5da895ca01b6a9dfe655fa1169d16e123f6751e",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_servo_left_hip_pitch",
+      "name": "ref_servo_left_hip_pitch",
+      "label": "A_ref_servo_left_hip_pitch",
+      "mesh": "meshes/A_ref_servo_left_hip_pitch.stl",
+      "body": "left_hip_pitch_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_servo_left_hip_pitch",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 15640.000000000002,
+      "center_of_mass_mm": [
+        1.3016310757120593,
+        52.865558182951084,
+        99.0260918308638
+      ],
+      "bounds_mm": [
+        [
+          -20.560782612445742,
+          36.69692408747636,
+          83.19536997158787
+        ],
+        [
+          23.16404476386985,
+          69.0341922784258,
+          114.85681369013976
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "1ede9e29e2fd36836fc41ebc964ce279cb5f4f65783299bbd8321f3badd2424e",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_servo_left_hip_roll",
+      "name": "ref_servo_left_hip_roll",
+      "label": "A_ref_servo_left_hip_roll",
+      "mesh": "meshes/A_ref_servo_left_hip_roll.stl",
+      "body": "left_hip_yaw_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_servo_left_hip_roll",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 15640.000000000013,
+      "center_of_mass_mm": [
+        18.068148347421868,
+        16.98236190979496,
+        94.44672939817872
+      ],
+      "bounds_mm": [
+        [
+          4.371810794072356,
+          4.346684528225269,
+          77.44672929817871
+        ],
+        [
+          31.764485900771387,
+          29.618039291364653,
+          111.44672949817873
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "72d2e6ebd9a8a5a14f4138c2773ab9e1c588935600f3c101d20170550ed9ff62",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_horn_left_hip_roll",
+      "name": "ref_horn_left_hip_roll",
+      "label": "A_ref_horn_left_hip_roll",
+      "mesh": "meshes/A_ref_horn_left_hip_roll.stl",
+      "body": "left_hip_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_horn_left_hip_roll",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.1857894892405,
+      "center_of_mass_mm": [
+        30.62518408917976,
+        20.347009496127736,
+        101.94672939817872
+      ],
+      "bounds_mm": [
+        [
+          27.075300473659933,
+          12.200931802895344,
+          93.91628688291266
+        ],
+        [
+          34.175067704699586,
+          28.49308718936012,
+          109.97717191344478
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "b8d113548fbcd1becc0c1aa8cf2f34b9f82425c0057e9fdd1d1e7aa06eec90a4",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_horn_left_hip_pitch",
+      "name": "ref_horn_left_hip_pitch",
+      "label": "A_ref_horn_left_hip_pitch",
+      "mesh": "meshes/A_ref_horn_left_hip_pitch.stl",
+      "body": "left_hip_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_horn_left_hip_pitch",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.1857894892407,
+      "center_of_mass_mm": [
+        11.338853174756327,
+        42.09643339331074,
+        101.94672939817872
+      ],
+      "bounds_mm": [
+        [
+          3.192775481523934,
+          38.54654977779091,
+          93.91628688291267
+        ],
+        [
+          19.484930867988716,
+          45.646317008830565,
+          109.97717191344478
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "56072354d9dbf592c77b32ba1d5d22b6fba868cf4fb5d1ee54dc6e77583d1a8f",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_servo_left_hip_yaw",
+      "name": "ref_servo_left_hip_yaw",
+      "label": "A_ref_servo_left_hip_yaw",
+      "mesh": "meshes/A_ref_servo_left_hip_yaw.stl",
+      "body": "trunk_base",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_servo_left_hip_yaw",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 15640.0,
+      "center_of_mass_mm": [
+        12.499999999999996,
+        17.5,
+        132.9467293981787
+      ],
+      "bounds_mm": [
+        [
+          -4.500000100000029,
+          7.499999899999971,
+          121.44672929817867
+        ],
+        [
+          29.50000010000003,
+          27.500000100000033,
+          144.4467294981787
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "194df980e83c3cd3f9abf0aefd76f347082ef2c1f98aaa77532d1d5347bc4eaf",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_horn_left_hip_yaw",
+      "name": "ref_horn_left_hip_yaw",
+      "label": "A_ref_horn_left_hip_yaw",
+      "mesh": "meshes/A_ref_horn_left_hip_yaw.stl",
+      "body": "left_hip_yaw_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_horn_left_hip_yaw",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.1857894892407,
+      "center_of_mass_mm": [
+        20.000000000000004,
+        17.500000000000004,
+        119.94672939817872
+      ],
+      "bounds_mm": [
+        [
+          11.999999899999992,
+          9.499999899999997,
+          118.41628688291267
+        ],
+        [
+          28.000000100000012,
+          25.500000100000015,
+          121.47717191344476
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "8c7b2f08d690024bf71544312ad639fac56b33f6b539d7ad636f3ff78ec586a1",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_servo_right_hip_yaw",
+      "name": "ref_servo_right_hip_yaw",
+      "label": "A_ref_servo_right_hip_yaw",
+      "mesh": "meshes/A_ref_servo_right_hip_yaw.stl",
+      "body": "trunk_base",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_servo_right_hip_yaw",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 15640.0,
+      "center_of_mass_mm": [
+        12.499999999999996,
+        -17.5,
+        132.9467293981787
+      ],
+      "bounds_mm": [
+        [
+          -4.500000100000029,
+          -27.50000010000003,
+          121.44672929817867
+        ],
+        [
+          29.50000010000003,
+          -7.499999899999967,
+          144.4467294981787
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "2d281794439b90b5ad8030d93fc3e58ac4e92d3a9911b19fd5d44de30c9ea6cc",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_horn_right_hip_yaw",
+      "name": "ref_horn_right_hip_yaw",
+      "label": "A_ref_horn_right_hip_yaw",
+      "mesh": "meshes/A_ref_horn_right_hip_yaw.stl",
+      "body": "right_hip_yaw_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_horn_right_hip_yaw",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.1857894892402,
+      "center_of_mass_mm": [
+        20.000000000000004,
+        -17.500000000000004,
+        119.9467293981787
+      ],
+      "bounds_mm": [
+        [
+          11.999999900000002,
+          -25.500000100000012,
+          118.41628688291267
+        ],
+        [
+          28.00000010000001,
+          -9.499999899999997,
+          121.47717191344476
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "e4cef181f431774261f19c39d7c3db16a1ef411ae116fe4ce565eb948d9af1aa",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_servo_neck_pitch",
+      "name": "ref_servo_neck_pitch",
+      "label": "A_ref_servo_neck_pitch",
+      "mesh": "meshes/A_ref_servo_neck_pitch.stl",
+      "body": "neck_pitch_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_servo_neck_pitch",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 15640.000000000002,
+      "center_of_mass_mm": [
+        41.0,
+        -1.9999999999999982,
+        159.4467293981787
+      ],
+      "bounds_mm": [
+        [
+          30.99999989999997,
+          -13.500000100000028,
+          142.44672929817867
+        ],
+        [
+          51.00000010000003,
+          9.500000100000031,
+          176.4467294981787
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "ceacc06d4f407217d1289b64dffc615b3e1a997abfb566dc9a8e7227ceb970f2",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_horn_neck_pitch",
+      "name": "ref_horn_neck_pitch",
+      "label": "A_ref_horn_neck_pitch",
+      "mesh": "meshes/A_ref_horn_neck_pitch.stl",
+      "body": "trunk_base",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_horn_neck_pitch",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.1857894892404,
+      "center_of_mass_mm": [
+        41.0,
+        11.0,
+        151.9467293981787
+      ],
+      "bounds_mm": [
+        [
+          32.96955748473395,
+          9.469557484733944,
+          143.91628688291263
+        ],
+        [
+          49.03044251526605,
+          12.530442515266055,
+          159.97717191344475
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "dfb6d434adc93bd1518ab0aace485730c5710783476cebb6acdcacd5da1c5cc6",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_servo_head_pitch",
+      "name": "ref_servo_head_pitch",
+      "label": "A_ref_servo_head_pitch",
+      "mesh": "meshes/A_ref_servo_head_pitch.stl",
+      "body": "neck_pitch_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_servo_head_pitch",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 15640.0,
+      "center_of_mass_mm": [
+        41.0,
+        -2.0000000000000036,
+        194.4467293981787
+      ],
+      "bounds_mm": [
+        [
+          30.99999989999997,
+          -13.500000100000031,
+          177.44672929817867
+        ],
+        [
+          51.00000010000003,
+          9.500000100000028,
+          211.4467294981787
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "17e2c9f3c05f687f1bcd5c8c24f940fd8a5353ab81dc5bfd8de214664d170402",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_horn_head_pitch",
+      "name": "ref_horn_head_pitch",
+      "label": "A_ref_horn_head_pitch",
+      "mesh": "meshes/A_ref_horn_head_pitch.stl",
+      "body": "head_pitch_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_horn_head_pitch",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.1857894892404,
+      "center_of_mass_mm": [
+        41.0,
+        11.0,
+        201.9467293981787
+      ],
+      "bounds_mm": [
+        [
+          32.96955748473395,
+          9.469557484733945,
+          193.91628688291263
+        ],
+        [
+          49.03044251526605,
+          12.530442515266056,
+          209.97717191344475
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "66676517de99631812876185eee105511eed52234f74efc3b96bcd00b27b0ee1",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_servo_head_yaw",
+      "name": "ref_servo_head_yaw",
+      "label": "A_ref_servo_head_yaw",
+      "mesh": "meshes/A_ref_servo_head_yaw.stl",
+      "body": "head_yaw_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_servo_head_yaw",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 15640.0,
+      "center_of_mass_mm": [
+        41.0,
+        -7.4999999999999964,
+        237.6967293981787
+      ],
+      "bounds_mm": [
+        [
+          30.99999989999997,
+          -24.50000010000003,
+          226.19672929817867
+        ],
+        [
+          51.000000100000044,
+          9.500000100000038,
+          249.1967294981787
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "383cf0ebcf6744c4fdf17330599149edb0bb61458fae740d58a50cf68c24c60c",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_horn_head_yaw",
+      "name": "ref_horn_head_yaw",
+      "label": "A_ref_horn_head_yaw",
+      "mesh": "meshes/A_ref_horn_head_yaw.stl",
+      "body": "head_pitch_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_horn_head_yaw",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.1857894892403,
+      "center_of_mass_mm": [
+        41.0,
+        4.711932861427432e-16,
+        224.6967293981787
+      ],
+      "bounds_mm": [
+        [
+          32.96955748473396,
+          -8.03044251526604,
+          223.16628688291266
+        ],
+        [
+          49.03044251526604,
+          8.03044251526604,
+          226.22717191344472
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "4a6957f63905456533d99220c35c55748a9357e90477963014be9431837d9081",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_servo_head_roll",
+      "name": "ref_servo_head_roll",
+      "label": "A_ref_servo_head_roll",
+      "mesh": "meshes/A_ref_servo_head_roll.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_servo_head_roll",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 15640.0,
+      "center_of_mass_mm": [
+        6.600000000000003,
+        -7.5,
+        235.6967293981787
+      ],
+      "bounds_mm": [
+        [
+          -4.900000100000027,
+          -24.50000010000003,
+          225.69672929817867
+        ],
+        [
+          18.100000100000035,
+          9.50000010000003,
+          245.6967294981787
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "ea0df798b69a64ada10f7801f44bd548e36fcf9d342baf9be82d1e9bd119ad89",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_horn_head_roll",
+      "name": "ref_horn_head_roll",
+      "label": "A_ref_horn_head_roll",
+      "mesh": "meshes/A_ref_horn_head_roll.stl",
+      "body": "head_yaw_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_horn_head_roll",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.1857894892402,
+      "center_of_mass_mm": [
+        19.6,
+        2.7329210596279113e-15,
+        235.6967293981787
+      ],
+      "bounds_mm": [
+        [
+          18.06955748473394,
+          -8.030442515266058,
+          227.66628688291263
+        ],
+        [
+          21.130442515266058,
+          8.030442515266058,
+          243.72717191344475
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "12d7953d6d6ea93b6ee256898c41e5d054048e324b4e7866af59a0b4aacc74b4",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_servo_mouth",
+      "name": "ref_servo_mouth",
+      "label": "A_ref_servo_mouth",
+      "mesh": "meshes/A_ref_servo_mouth.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R16_MouthServo",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 15640.0,
+      "center_of_mass_mm": [
+        48.39999771118161,
+        26.1,
+        238.2967286352387
+      ],
+      "bounds_mm": [
+        [
+          31.399997611181576,
+          14.599999899999972,
+          228.29672853523869
+        ],
+        [
+          65.39999781118163,
+          37.60000010000004,
+          248.29672873523873
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "a186ef401ab832629f1335cc3375838445a6a13a501f327dea4fb24ef0f18652",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_horn_mouth",
+      "name": "ref_horn_mouth",
+      "label": "A_ref_horn_mouth",
+      "mesh": "meshes/A_ref_horn_mouth.stl",
+      "body": "mouth_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R16_MouthHorn",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.1857894892403,
+      "center_of_mass_mm": [
+        40.899997711181605,
+        39.1,
+        238.29672863523868
+      ],
+      "bounds_mm": [
+        [
+          32.86955519591555,
+          37.56955748473394,
+          230.26628611997265
+        ],
+        [
+          48.93044022644766,
+          40.630442515266054,
+          246.32717115050477
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "0e176cf6bb3544676a0669a9a34a8b1bf244e6df8909a9f728612b88d7c63041",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_Radxa_PCB",
+      "name": "ref_Radxa_PCB",
+      "label": "A_ref_Radxa_PCB",
+      "mesh": "meshes/A_ref_Radxa_PCB.stl",
+      "body": "trunk_base",
+      "color": [
+        0.10196078431372549,
+        0.4,
+        0.23921568627450981
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_Radxa_PCB",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 3080.591861753359,
+      "center_of_mass_mm": [
+        -12.499839142068595,
+        -0.0004796955060448186,
+        153.14672939817865
+      ],
+      "bounds_mm": [
+        [
+          -45.00000010000003,
+          -15.000000100000028,
+          152.34140187550713
+        ],
+        [
+          20.00000010000003,
+          15.000000100000028,
+          153.95205692085025
+        ]
+      ],
+      "facets": 604,
+      "source_sha256": "1c248afef3d60e34b2f6118d5056e7fd7493ec10b86d3e297b7d0fdfd812ec44",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_Radxa_GPIO",
+      "name": "ref_Radxa_GPIO",
+      "label": "A_ref_Radxa_GPIO",
+      "mesh": "meshes/A_ref_Radxa_GPIO.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_Radxa_GPIO",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 2232.5249999999996,
+      "center_of_mass_mm": [
+        -11.35,
+        11.65,
+        158.1967293981787
+      ],
+      "bounds_mm": [
+        [
+          -37.10000010000003,
+          9.099999899999972,
+          153.94672929817867
+        ],
+        [
+          14.400000100000026,
+          14.200000100000027,
+          162.4467294981787
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "5f8fc686d6fef9bd316b9191f4a0336a56981cd7aae439edba86ea63c8e993e9",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_HAT_PCB",
+      "name": "ref_HAT_PCB",
+      "label": "A_ref_HAT_PCB",
+      "mesh": "meshes/A_ref_HAT_PCB.stl",
+      "body": "trunk_base",
+      "color": [
+        0.10196078431372549,
+        0.4,
+        0.23921568627450981
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_HAT_PCB",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 1985.5977895553303,
+      "center_of_mass_mm": [
+        -12.499942329180247,
+        0.4552480445975197,
+        164.94672939817866
+      ],
+      "bounds_mm": [
+        [
+          -45.00000010000003,
+          -15.000000100000028,
+          164.44159214060255
+        ],
+        [
+          20.00000010000003,
+          15.900000100000026,
+          165.45186665575483
+        ]
+      ],
+      "facets": 604,
+      "source_sha256": "fc97d9ae3dd3f8926e0749399e6af25357526d4682e8a392a571e9d68314c0ff",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_HAT_GPIO",
+      "name": "ref_HAT_GPIO",
+      "label": "A_ref_HAT_GPIO",
+      "mesh": "meshes/A_ref_HAT_GPIO.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_HAT_GPIO",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 660.4800000000017,
+      "center_of_mass_mm": [
+        -12.5,
+        11.5,
+        162.2967293981787
+      ],
+      "bounds_mm": [
+        [
+          -38.1000001,
+          9.999999899999997,
+          160.14672929817868
+        ],
+        [
+          13.100000100000004,
+          13.000000100000003,
+          164.44672949817868
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "68adb5227199f89f230556573752dab916ea18b46fdac14c63c2b5f834ac6ad7",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_HAT_J1",
+      "name": "ref_HAT_J1",
+      "label": "A_ref_HAT_J1",
+      "mesh": "meshes/A_ref_HAT_J1.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_HAT_J1",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 283.0262400000005,
+      "center_of_mass_mm": [
+        -4.704999999999999,
+        -11.255000000000003,
+        169.4867293981787
+      ],
+      "bounds_mm": [
+        [
+          -7.485000100000028,
+          -14.405000100000027,
+          165.44672929817867
+        ],
+        [
+          -1.9249998999999685,
+          -8.104999899999973,
+          173.52672949817872
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "75bcde1ebf1c95bfc4e0ded5bed12ae3ecd810ca1fd996c7081d54c07aa6376f",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_HAT_J5",
+      "name": "ref_HAT_J5",
+      "label": "A_ref_HAT_J5",
+      "mesh": "meshes/A_ref_HAT_J5.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_HAT_J5",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 327.72480000000064,
+      "center_of_mass_mm": [
+        -40.742619,
+        4.699999,
+        169.48672939817868
+      ],
+      "bounds_mm": [
+        [
+          -44.64261910000003,
+          2.0999988999999717,
+          165.44672929817867
+        ],
+        [
+          -36.84261889999997,
+          7.299999100000028,
+          173.52672949817872
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "f6c3a08d099b2d0fd2975d9775b291798a8b80f95c33aeced7f40ce968f5babf",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_HAT_J14",
+      "name": "ref_HAT_J14",
+      "label": "A_ref_HAT_J14",
+      "mesh": "meshes/A_ref_HAT_J14.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_HAT_J14",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 426.6240000000005,
+      "center_of_mass_mm": [
+        -37.449999000000005,
+        -3.450001,
+        169.48672939817865
+      ],
+      "bounds_mm": [
+        [
+          -39.849999100000026,
+          -8.950001100000028,
+          165.44672929817867
+        ],
+        [
+          -35.04999889999997,
+          2.0499991000000284,
+          173.52672949817872
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "0473fe1b1f55132366537f52cf588cc5cf11a8de7297911798a74aed6d24f497",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_HAT_J9",
+      "name": "ref_HAT_J9",
+      "label": "A_ref_HAT_J9",
+      "mesh": "meshes/A_ref_HAT_J9.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_HAT_J9",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 283.0262400000005,
+      "center_of_mass_mm": [
+        11.165000000000001,
+        -11.255000000000003,
+        169.4867293981787
+      ],
+      "bounds_mm": [
+        [
+          8.38499989999997,
+          -14.405000100000027,
+          165.44672929817867
+        ],
+        [
+          13.945000100000028,
+          -8.104999899999973,
+          173.52672949817872
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "0e3d6013bed84bfe622c869cd791c1c65a9710ff6edec239d72f42e59116fb83",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_HAT_J6",
+      "name": "ref_HAT_J6",
+      "label": "A_ref_HAT_J6",
+      "mesh": "meshes/A_ref_HAT_J6.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_HAT_J6",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 327.72480000000076,
+      "center_of_mass_mm": [
+        -32.74261899999999,
+        4.709999,
+        169.48672939817868
+      ],
+      "bounds_mm": [
+        [
+          -36.642619100000026,
+          2.1099988999999697,
+          165.44672929817867
+        ],
+        [
+          -28.842618899999966,
+          7.30999910000003,
+          173.52672949817872
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "8a453cac9caf5634905183fd6e3a0728e57f2869089b1ff781e0452cc11fd07f",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_HAT_J3",
+      "name": "ref_HAT_J3",
+      "label": "A_ref_HAT_J3",
+      "mesh": "meshes/A_ref_HAT_J3.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_HAT_J3",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 523.5840000000005,
+      "center_of_mass_mm": [
+        -27.799999,
+        -7.750000999999999,
+        169.4867293981787
+      ],
+      "bounds_mm": [
+        [
+          -30.199999100000028,
+          -14.500001100000027,
+          165.44672929817867
+        ],
+        [
+          -25.39999889999997,
+          -1.0000008999999703,
+          173.52672949817872
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "0c95e7b9225f599f417f1ba526564f13975a9b591fa60b2503586d00827cc0fe",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_HAT_J7",
+      "name": "ref_HAT_J7",
+      "label": "A_ref_HAT_J7",
+      "mesh": "meshes/A_ref_HAT_J7.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_HAT_J7",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 327.7248000000006,
+      "center_of_mass_mm": [
+        -14.279998999999998,
+        3.4249990000000006,
+        169.48672939817868
+      ],
+      "bounds_mm": [
+        [
+          -18.17999910000003,
+          0.8249988999999716,
+          165.44672929817867
+        ],
+        [
+          -10.37999889999997,
+          6.02499910000003,
+          173.52672949817872
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "54af24563a8e2e1b5de6ad30d03fd97145d92284b7467af0b2d3a3f5444f52d4",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_HAT_J13",
+      "name": "ref_HAT_J13",
+      "label": "A_ref_HAT_J13",
+      "mesh": "meshes/A_ref_HAT_J13.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_HAT_J13",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 426.6240000000005,
+      "center_of_mass_mm": [
+        -42.24999899999999,
+        -3.450001,
+        169.48672939817868
+      ],
+      "bounds_mm": [
+        [
+          -44.64999910000003,
+          -8.95000110000003,
+          165.44672929817867
+        ],
+        [
+          -39.849998899999974,
+          2.0499991000000293,
+          173.52672949817872
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "4b81f9907c65a838841f43e940e762a269a8d8905e0dcbe90243eb0062fc2010",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_HAT_J8",
+      "name": "ref_HAT_J8",
+      "label": "A_ref_HAT_J8",
+      "mesh": "meshes/A_ref_HAT_J8.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_HAT_J8",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 327.72480000000076,
+      "center_of_mass_mm": [
+        -6.242619000000001,
+        3.439999000000001,
+        169.48672939817868
+      ],
+      "bounds_mm": [
+        [
+          -10.142619100000031,
+          0.8399988999999726,
+          165.44672929817867
+        ],
+        [
+          -2.342618899999971,
+          6.03999910000003,
+          173.52672949817872
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "4bf2eb41e101fedad92a5515d1619388a1292d0fe763df8f9e532d12a2137756",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_HAT_J11",
+      "name": "ref_HAT_J11",
+      "label": "A_ref_HAT_J11",
+      "mesh": "meshes/A_ref_HAT_J11.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_HAT_J11",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 523.584000000001,
+      "center_of_mass_mm": [
+        -32.599999,
+        -7.7500009999999975,
+        169.48672939817868
+      ],
+      "bounds_mm": [
+        [
+          -34.99999910000003,
+          -14.500001100000027,
+          165.44672929817867
+        ],
+        [
+          -30.199998899999972,
+          -1.0000008999999705,
+          173.52672949817872
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "c9893391673df06e9c1840e85394111486366fd7d4b3bef84e7e253a1aaf3ba4",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_HAT_J2",
+      "name": "ref_HAT_J2",
+      "label": "A_ref_HAT_J2",
+      "mesh": "meshes/A_ref_HAT_J2.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_HAT_J2",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 283.0262400000005,
+      "center_of_mass_mm": [
+        5.295000000000003,
+        -11.255000000000003,
+        169.4867293981787
+      ],
+      "bounds_mm": [
+        [
+          2.5149998999999728,
+          -14.405000100000027,
+          165.44672929817867
+        ],
+        [
+          8.07500010000003,
+          -8.104999899999973,
+          173.52672949817872
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "e3c38808cfbbbbe0adab16b6c011d82946b497127ccdde9531d2f7fc50575aec",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_HAT_IMU",
+      "name": "ref_HAT_IMU",
+      "label": "A_ref_HAT_IMU",
+      "mesh": "meshes/A_ref_HAT_IMU.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_HAT_IMU",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 6.750000000000043,
+      "center_of_mass_mm": [
+        -21.5,
+        2.5,
+        165.8967293981787
+      ],
+      "bounds_mm": [
+        [
+          -22.75000010000003,
+          0.9999998999999716,
+          165.44672929817867
+        ],
+        [
+          -20.24999989999997,
+          4.000000100000029,
+          166.34672949817872
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "26412d5f33b27f58275c126821fe74c96d308fdb0250c3a0c72a7ba14db787b5",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_servo_right_hip_roll",
+      "name": "ref_servo_right_hip_roll",
+      "label": "A_ref_servo_right_hip_roll",
+      "mesh": "meshes/A_ref_servo_right_hip_roll.stl",
+      "body": "right_hip_yaw_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_servo_right_hip_roll",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 15640.000000000002,
+      "center_of_mass_mm": [
+        18.068148347421896,
+        -16.98236190979494,
+        94.44672939817868
+      ],
+      "bounds_mm": [
+        [
+          4.371810794072394,
+          -29.618039291364624,
+          77.44672929817867
+        ],
+        [
+          31.76448590077141,
+          -4.346684528225263,
+          111.44672949817871
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "a3c85c5ad4d6a3f23200aa6a346b93a9fa7dddb0207fae5fcf16601e694a5841",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_horn_right_hip_roll",
+      "name": "ref_horn_right_hip_roll",
+      "label": "A_ref_horn_right_hip_roll",
+      "mesh": "meshes/A_ref_horn_right_hip_roll.stl",
+      "body": "right_hip_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_horn_right_hip_roll",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.1857894892403,
+      "center_of_mass_mm": [
+        30.625184089179783,
+        -20.347009496127697,
+        101.94672939817869
+      ],
+      "bounds_mm": [
+        [
+          27.075300473659983,
+          -28.493087189360068,
+          93.91628688291264
+        ],
+        [
+          34.175067704699586,
+          -12.200931802895322,
+          109.97717191344474
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "38ff469cea5e2c557b7efe0b34cad2bed9b91565ab055d2355365f50057cf4dc",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_servo_right_hip_pitch",
+      "name": "ref_servo_right_hip_pitch",
+      "label": "A_ref_servo_right_hip_pitch",
+      "mesh": "meshes/A_ref_servo_right_hip_pitch.stl",
+      "body": "right_hip_pitch_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_servo_right_hip_pitch",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 15640.0,
+      "center_of_mass_mm": [
+        1.3016310757120735,
+        -52.865558182951084,
+        99.0260918308638
+      ],
+      "bounds_mm": [
+        [
+          -20.56078261244575,
+          -69.03419227842582,
+          83.19536997158788
+        ],
+        [
+          23.164044763869853,
+          -36.69692408747638,
+          114.8568136901398
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "818697f1c2d1d488e51f721a62946ae7ef512ea87e3b117d1de92ac69a5967c9",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_horn_right_hip_pitch",
+      "name": "ref_horn_right_hip_pitch",
+      "label": "A_ref_horn_right_hip_pitch",
+      "mesh": "meshes/A_ref_horn_right_hip_pitch.stl",
+      "body": "right_hip_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_horn_right_hip_pitch",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.1857894892403,
+      "center_of_mass_mm": [
+        11.338853174756386,
+        -42.096433393310726,
+        101.9467293981787
+      ],
+      "bounds_mm": [
+        [
+          3.1927754815240106,
+          -45.64631700883054,
+          93.91628688291264
+        ],
+        [
+          19.48493086798876,
+          -38.546549777790936,
+          109.97717191344474
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "a5417d940c075827b97d78a0f28a6d7c91f4711a07ed4fb706fb027bdb68bf88",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_servo_right_knee",
+      "name": "ref_servo_right_knee",
+      "label": "A_ref_servo_right_knee",
+      "mesh": "meshes/A_ref_servo_right_knee.stl",
+      "body": "right_hip_pitch_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_servo_right_knee",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 15640.000000000007,
+      "center_of_mass_mm": [
+        -18.37756902820221,
+        -47.592532407416805,
+        74.66963924760263
+      ],
+      "bounds_mm": [
+        [
+          -36.645291142962165,
+          -62.79797179876061,
+          55.11741882646703
+        ],
+        [
+          -0.10984691344227719,
+          -32.38709301607299,
+          94.22185966873825
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "348e61c9c8155634e24e9a7d8f477d6a180de340bf5d9d59110264ef3851d947",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_horn_right_knee",
+      "name": "ref_horn_right_knee",
+      "label": "A_ref_horn_right_knee",
+      "mesh": "meshes/A_ref_horn_right_knee.stl",
+      "body": "right_knee_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_horn_right_knee",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.1857894892407,
+      "center_of_mass_mm": [
+        -12.19180218636987,
+        -35.791413291921906,
+        67.76168179258103
+      ],
+      "bounds_mm": [
+        [
+          -20.317487929898707,
+          -39.33583290098657,
+          59.75235057711517
+        ],
+        [
+          -4.066116442841087,
+          -32.246993682857244,
+          75.77101300804685
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "a46952b7713625c68b3ce444ebdbb9bf61e9723dd55778f9755061c8d736e7e9",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_servo_right_ankle",
+      "name": "ref_servo_right_ankle",
+      "label": "A_ref_servo_right_ankle",
+      "mesh": "meshes/A_ref_servo_right_ankle.stl",
+      "body": "right_knee_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_servo_right_ankle",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 15640.000000000004,
+      "center_of_mass_mm": [
+        10.678412365393847,
+        -46.06057353343382,
+        43.72530032010381
+      ],
+      "bounds_mm": [
+        [
+          -10.807193964733655,
+          -62.12824240162222,
+          24.70772525220674
+        ],
+        [
+          32.16401869552132,
+          -29.992904665245447,
+          62.742875388000876
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "e46d47589c4d3559221f26e59ad14d469fa5c3fdce4623450d90a4f49e63d179",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_horn_right_ankle",
+      "name": "ref_horn_right_ankle",
+      "label": "A_ref_horn_right_ankle",
+      "mesh": "meshes/A_ref_horn_right_ankle.stl",
+      "body": "right_ankle_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_horn_right_ankle",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.1857894892406,
+      "center_of_mass_mm": [
+        12.51061059040326,
+        -60.01009991352995,
+        38.50000000000003
+      ],
+      "bounds_mm": [
+        [
+          4.364532897170876,
+          -63.559983529049745,
+          30.469557484733983
+        ],
+        [
+          20.656688283635635,
+          -56.460216298010124,
+          46.53044251526608
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "b34267ecb5a88315d6d8067b9b6dae86eee7d9d3ce07f6df8af863595a0f0e82",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_Battery_Provisional",
+      "name": "ref_Battery_Provisional",
+      "label": "A_ref_Battery_Provisional",
+      "mesh": "meshes/A_ref_Battery_Provisional.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_Battery_Provisional",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 51679.99999999999,
+      "center_of_mass_mm": [
+        -36.00000000000001,
+        0.0,
+        108.4467293981787
+      ],
+      "bounds_mm": [
+        [
+          -46.000000100000015,
+          -19.000000100000015,
+          74.44672929817868
+        ],
+        [
+          -25.999999899999985,
+          19.000000100000015,
+          142.4467294981787
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "386b0c9d8e9905da2ec3cc656873c879711a77bdbffd11e2a9782eb89a2f2632",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_CameraPCB",
+      "name": "ref_CameraPCB",
+      "label": "A_ref_CameraPCB",
+      "mesh": "meshes/A_ref_CameraPCB.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078431372549,
+        0.4,
+        0.23921568627450981
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_CameraPCB",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 1638.3999999999976,
+      "center_of_mass_mm": [
+        75.8,
+        -16.0,
+        246.09835328934744
+      ],
+      "bounds_mm": [
+        [
+          74.99999989999998,
+          -32.00000010000003,
+          230.09835318934742
+        ],
+        [
+          76.60000010000002,
+          1.0000002864289338e-07,
+          262.09835338934744
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "23c20693e9a953a31a646583971771ba27759b3a865c9b5cc66d8c7a86f4d145",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_CameraLens",
+      "name": "ref_CameraLens",
+      "label": "A_ref_CameraLens",
+      "mesh": "meshes/A_ref_CameraLens.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_CameraLens",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 2864.3333888493567,
+      "center_of_mass_mm": [
+        84.59000000000003,
+        -16.000000000000004,
+        246.09835328934747
+      ],
+      "bounds_mm": [
+        [
+          76.57477327516595,
+          -23.025226724834038,
+          239.08713761166211
+        ],
+        [
+          92.60522672483404,
+          -8.974773275165965,
+          253.12358001418144
+        ]
+      ],
+      "facets": 100,
+      "source_sha256": "6defcfd8f7d69a48c829c7ad7bf6e7074e798cd85f0971e5e1527daf6759db7f",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_ToFPCB",
+      "name": "ref_ToFPCB",
+      "label": "A_ref_ToFPCB",
+      "mesh": "meshes/A_ref_ToFPCB.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078431372549,
+        0.4,
+        0.23921568627450981
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_ToFPCB",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 896.9999999999995,
+      "center_of_mass_mm": [
+        89.5,
+        0.0,
+        247.09835328934744
+      ],
+      "bounds_mm": [
+        [
+          87.99999989999998,
+          -6.500000100000029,
+          235.59835318934742
+        ],
+        [
+          91.00000010000002,
+          6.500000100000029,
+          258.59835338934744
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "dc2578f0f40f0e9d11f3dc56b778376995d5bb37884baf4a0607213eae151684",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_ToFOptics",
+      "name": "ref_ToFOptics",
+      "label": "A_ref_ToFOptics",
+      "mesh": "meshes/A_ref_ToFOptics.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_ToFOptics",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 21.287431820724454,
+      "center_of_mass_mm": [
+        91.7,
+        1.3687428024946988e-16,
+        247.09835328934747
+      ],
+      "bounds_mm": [
+        [
+          90.99162823580183,
+          -2.2083717641981773,
+          244.88998152514927
+        ],
+        [
+          92.40837176419818,
+          2.2083717641981773,
+          249.30672505354562
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "93a0e8e4a093a59c76b8253087db3041a71359b4e32a1f543b98662d27e8193b",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_HeadIMU",
+      "name": "ref_HeadIMU",
+      "label": "A_ref_HeadIMU",
+      "mesh": "meshes/A_ref_HeadIMU.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_HeadIMU",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 232.2576000000011,
+      "center_of_mass_mm": [
+        54.525,
+        -14.19,
+        265.3983532893475
+      ],
+      "bounds_mm": [
+        [
+          44.99999989999994,
+          -18.000000100000058,
+          264.5983531893474
+        ],
+        [
+          64.05000010000005,
+          -10.379999899999941,
+          266.1983533893476
+        ]
+      ],
+      "facets": 12,
+      "source_sha256": "50699711ea76a854e4abfe95a0008432e357f9a61c54a767b146c99a13a1bcf3",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_CameraLED",
+      "name": "ref_CameraLED",
+      "label": "A_ref_CameraLED",
+      "mesh": "meshes/A_ref_CameraLED.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "ref_CameraLED",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 6.283185307179572,
+      "center_of_mass_mm": [
+        95.0,
+        2.8563096241130306e-17,
+        262.5983532893475
+      ],
+      "bounds_mm": [
+        [
+          93.99619459809172,
+          -1.003805401908282,
+          261.5945478874392
+        ],
+        [
+          96.00380540190828,
+          1.003805401908282,
+          263.60215869125574
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "499d52f55c2c8f29523dae453b7d523fa5209ce1f2d3a21d97f06d753e9383c7",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R10_EyeRing_L",
+      "name": "R10_EyeRing_L",
+      "label": "A_R10_EyeRing_L",
+      "mesh": "meshes/A_R10_EyeRing_L.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R10_EyeRing_L",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_R10_EyeRing_L.step",
+      "stl": "exports/R20/stl/R20_R10_EyeRing_L.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 366.2908515721695,
+      "center_of_mass_mm": [
+        96.17324858882333,
+        16.00000000000006,
+        246.0983534843826
+      ],
+      "bounds_mm": [
+        [
+          94.96975399730034,
+          6.935409971255024,
+          233.51472590241343
+        ],
+        [
+          97.48362738693399,
+          25.05669375938192,
+          258.6815709665077
+        ]
+      ],
+      "facets": 2152,
+      "source_sha256": "d4ef79fcbc8bb281ebb7f868a00ca261a5357a95a4b2d1de6c141a193830115e",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R10_EyeRing_R",
+      "name": "R10_EyeRing_R",
+      "label": "A_R10_EyeRing_R",
+      "mesh": "meshes/A_R10_EyeRing_R.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R10_EyeRing_R",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_R10_EyeRing_R.step",
+      "stl": "exports/R20/stl/R20_R10_EyeRing_R.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 366.2908515721425,
+      "center_of_mass_mm": [
+        96.17324858882333,
+        -16.000000000000142,
+        246.0983534843827
+      ],
+      "bounds_mm": [
+        [
+          94.96975399729023,
+          -25.03302110071088,
+          233.54629483051104
+        ],
+        [
+          97.4520584588364,
+          -6.974875168742471,
+          258.6500020384171
+        ]
+      ],
+      "facets": 2080,
+      "source_sha256": "18fe33177bb373449ee8c3ff208596ab4b84a519029de1a7a0e98ab3ed1c365e",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R16_TwoEyeFace",
+      "name": "R16_TwoEyeFace",
+      "label": "A_R16_TwoEyeFace",
+      "mesh": "meshes/A_R16_TwoEyeFace.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.9215686274509803,
+        0.9294117647058824,
+        0.9019607843137255
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R17_FastenedFace",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": "exports/R20/step/R20_R16_TwoEyeFace.step",
+      "stl": "exports/R20/stl/R20_R16_TwoEyeFace.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 4539.9881757989115,
+      "center_of_mass_mm": [
+        93.89628518387532,
+        2.7272455831766646e-06,
+        250.60793872843652
+      ],
+      "bounds_mm": [
+        [
+          92.7696659003724,
+          -39.248807167802845,
+          232.7467292981786
+        ],
+        [
+          95.04052001985602,
+          39.248807167802845,
+          270.74671120809995
+        ]
+      ],
+      "facets": 2144,
+      "source_sha256": "f8edc3807cc0572e79c75b6f6a825cb653d6479347d83a26a7588784d7e150ae",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R17_HeadYawClampCap",
+      "name": "R17_HeadYawClampCap",
+      "label": "A_R17_HeadYawClampCap",
+      "mesh": "meshes/A_R17_HeadYawClampCap.stl",
+      "body": "head_yaw_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "R17_HeadYawClampCap",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": "exports/R20/step/R20_R17_HeadYawClampCap.step",
+      "stl": "exports/R20/stl/R20_R17_HeadYawClampCap.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 2735.7781483846793,
+      "center_of_mass_mm": [
+        40.71446305907417,
+        -8.66835036713316,
+        252.64282766413086
+      ],
+      "bounds_mm": [
+        [
+          24.89999989999997,
+          -26.70000010000003,
+          251.38835763398052
+        ],
+        [
+          57.10000010000003,
+          11.700000100000027,
+          253.90510116237684
+        ]
+      ],
+      "facets": 616,
+      "source_sha256": "b761dfc6dbc05b21a08873769d1db32e0029c4f2b47c31eb71873f4e408fc1cf",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R17_RollServoCradle",
+      "name": "R17_RollServoCradle",
+      "label": "A_R17_RollServoCradle",
+      "mesh": "meshes/A_R17_RollServoCradle.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "R17_RollServoCradleV2",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": "exports/R20/step/R20_R17_RollServoCradle.step",
+      "stl": "exports/R20/stl/R20_R17_RollServoCradle.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 4171.938268164332,
+      "center_of_mass_mm": [
+        5.001498929594383,
+        -7.074415980564558,
+        229.58391654705053
+      ],
+      "bounds_mm": [
+        [
+          -6.904376197194514,
+          -32.62507709464997,
+          223.47165230352874
+        ],
+        [
+          14.10002468316146,
+          17.625077094649967,
+          245.91079703203965
+        ]
+      ],
+      "facets": 1940,
+      "source_sha256": "c239a5c2c0817441a8229d8d87e021ab1a82a9912fb7c6d55cff949ca8a48c50",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R17_RollCradleTopClamp",
+      "name": "R17_RollCradleTopClamp",
+      "label": "A_R17_RollCradleTopClamp",
+      "mesh": "meshes/A_R17_RollCradleTopClamp.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "R17_RollCradleTopClamp",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": "exports/R20/step/R20_R17_RollCradleTopClamp.step",
+      "stl": "exports/R20/stl/R20_R17_RollCradleTopClamp.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 585.5904057892809,
+      "center_of_mass_mm": [
+        9.050000000000002,
+        -7.175198500272747,
+        246.7981066219169
+      ],
+      "bounds_mm": [
+        [
+          5.935182085655981,
+          -30.914817914344013,
+          245.69672929817867
+        ],
+        [
+          12.164817914344022,
+          16.614817914344016,
+          247.91154731252269
+        ]
+      ],
+      "facets": 1144,
+      "source_sha256": "ed9f41ac8ced4131237ebaf9888e600abd775b8b12b4f88931b054e92fa33cca",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R17_MouthServoCradle",
+      "name": "R17_MouthServoCradle",
+      "label": "A_R17_MouthServoCradle",
+      "mesh": "meshes/A_R17_MouthServoCradle.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "R17_MouthServoCradle",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": "exports/R20/step/R20_R17_MouthServoCradle.step",
+      "stl": "exports/R20/stl/R20_R17_MouthServoCradle.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 4577.959993462735,
+      "center_of_mass_mm": [
+        69.0644073558848,
+        24.226518447508592,
+        238.71890420250844
+      ],
+      "bounds_mm": [
+        [
+          60.19999989999986,
+          12.095623802805482,
+          227.0967292981786
+        ],
+        [
+          77.00000010000014,
+          40.100018418365394,
+          250.2967478165441
+        ]
+      ],
+      "facets": 960,
+      "source_sha256": "02e18225eb4b74de7335c3c40cd6fc39352b92fd15a9ac43d235d521380cf6f1",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R17_MouthServoKeeper",
+      "name": "R17_MouthServoKeeper",
+      "label": "A_R17_MouthServoKeeper",
+      "mesh": "meshes/A_R17_MouthServoKeeper.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "R17_MouthServoKeeper",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": "exports/R20/step/R20_R17_MouthServoKeeper.step",
+      "stl": "exports/R20/stl/R20_R17_MouthServoKeeper.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 428.3903549613251,
+      "center_of_mass_mm": [
+        65.97932023186623,
+        38.597969761391575,
+        238.92553224627673
+      ],
+      "bounds_mm": [
+        [
+          59.59771671885501,
+          37.59581406790085,
+          230.44672929817858
+        ],
+        [
+          72.60228328114498,
+          39.60418593209912,
+          247.54901267932365
+        ]
+      ],
+      "facets": 344,
+      "source_sha256": "6bbd347527eeabbf279303a73350ff231daee2712ea99c558b9450868a3052d5",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R17_JawBearingTower",
+      "name": "R17_JawBearingTower",
+      "label": "A_R17_JawBearingTower",
+      "mesh": "meshes/A_R17_JawBearingTower.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "TowerFootMount1",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": "exports/R20/step/R20_R17_JawBearingTower.step",
+      "stl": "exports/R20/stl/R20_R17_JawBearingTower.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 2244.0511096061327,
+      "center_of_mass_mm": [
+        40.89999771118161,
+        -35.008758896713196,
+        232.6403415730707
+      ],
+      "bounds_mm": [
+        [
+          15.89999761118108,
+          -39.10000010000052,
+          223.4923532009842
+        ],
+        [
+          65.89999781118212,
+          -31.651671029673142,
+          251.84497540641564
+        ]
+      ],
+      "facets": 1208,
+      "source_sha256": "e2789fec0c7af25c010813aa32dd02d29b1e0883383d65db644680b3628f9ed4",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R17_JawBearingKeeper",
+      "name": "R17_JawBearingKeeper",
+      "label": "A_R17_JawBearingKeeper",
+      "mesh": "meshes/A_R17_JawBearingKeeper.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "KeeperClearance1",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": "exports/R20/step/R20_R17_JawBearingKeeper.step",
+      "stl": "exports/R20/stl/R20_R17_JawBearingKeeper.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 579.6925364195823,
+      "center_of_mass_mm": [
+        40.89999771118159,
+        -30.700000000000006,
+        238.2967286352387
+      ],
+      "bounds_mm": [
+        [
+          23.19999761118154,
+          -31.748246771176966,
+          224.74848186406172
+        ],
+        [
+          58.61105282843174,
+          -29.651753228823033,
+          251.84497540641564
+        ]
+      ],
+      "facets": 756,
+      "source_sha256": "65ddb5ca9dbae72ddbb74ee3f426942021ba5190d4193fa00ef9f6b60f38f9da",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R17_JawBearingPlug",
+      "name": "R17_JawBearingPlug",
+      "label": "A_R17_JawBearingPlug",
+      "mesh": "meshes/A_R17_JawBearingPlug.stl",
+      "body": "mouth_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "PlugNutPocket",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": "exports/R20/step/R20_R17_JawBearingPlug.step",
+      "stl": "exports/R20/stl/R20_R17_JawBearingPlug.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 1125.096766189229,
+      "center_of_mass_mm": [
+        40.899997711181605,
+        -33.34786134613351,
+        238.29672863523874
+      ],
+      "bounds_mm": [
+        [
+          31.96613042419811,
+          -40.31864607935047,
+          229.3628613482552
+        ],
+        [
+          49.83386499816508,
+          -29.26613271301651,
+          247.23059592222216
+        ]
+      ],
+      "facets": 456,
+      "source_sha256": "39367193efc8241efd835561687d0ee3d5a1c4282864a31fd4855d0cfaa7aad7",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_R17_JawBearing16x22x4",
+      "name": "ref_R17_JawBearing16x22x4",
+      "label": "A_ref_R17_JawBearing16x22x4",
+      "mesh": "meshes/A_ref_R17_JawBearing16x22x4.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "Bearing16x22x4",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 716.2831250184734,
+      "center_of_mass_mm": [
+        40.89999771118161,
+        -33.89999999999999,
+        238.29672863523868
+      ],
+      "bounds_mm": [
+        [
+          29.85813929019078,
+          -35.94185842099082,
+          227.25487021424786
+        ],
+        [
+          51.94185613217242,
+          -31.85814157900918,
+          249.3385870562295
+        ]
+      ],
+      "facets": 288,
+      "source_sha256": "a12ad3ca3f3a59c4ebe3838d08f838a76425924b6b18954fafb3b531d420ae8e",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R17_FaceCarrier",
+      "name": "R17_FaceCarrier",
+      "label": "A_R17_FaceCarrier",
+      "mesh": "meshes/A_R17_FaceCarrier.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "R17Face_Carrier_80",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": "exports/R20/step/R20_R17_FaceCarrier.step",
+      "stl": "exports/R20/stl/R20_R17_FaceCarrier.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 3018.4113859271242,
+      "center_of_mass_mm": [
+        88.82047425053344,
+        -3.276808101074197e-13,
+        248.3466121469089
+      ],
+      "bounds_mm": [
+        [
+          79.39999989999959,
+          -33.100038126945144,
+          232.89224838510697
+        ],
+        [
+          92.81125366074302,
+          33.10003812694514,
+          263.9467821043091
+        ]
+      ],
+      "facets": 2448,
+      "source_sha256": "109359e30ac36a47058c6b6372292ffd54297f50dcadce99e3b7b3923b7de86e",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_R17_FaceFasteners",
+      "name": "ref_R17_FaceFasteners",
+      "label": "A_ref_R17_FaceFasteners",
+      "mesh": "meshes/A_ref_R17_FaceFasteners.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R17Face_FastenerEnvelopes_84",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 307.794584525797,
+      "center_of_mass_mm": [
+        88.05416697671987,
+        7.3871889524481e-16,
+        243.73942679812248
+      ],
+      "bounds_mm": [
+        [
+          81.19059882324143,
+          -31.309401176758538,
+          229.65677673922295
+        ],
+        [
+          94.73995265895576,
+          31.309401176758538,
+          261.44672949817874
+        ]
+      ],
+      "facets": 2232,
+      "source_sha256": "a62942c14cc49abe3a8800a346ba7bfaf4f85f1291ec3587e6d7ac6e6188b04f",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_R17_FixedCarrierFasteners",
+      "name": "ref_R17_FixedCarrierFasteners",
+      "label": "A_ref_R17_FixedCarrierFasteners",
+      "mesh": "meshes/A_ref_R17_FixedCarrierFasteners.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "ref_R17_FixedCarrierFasteners",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 138.90866077112634,
+      "center_of_mass_mm": [
+        41.0,
+        -18.07151257463362,
+        251.3836391141187
+      ],
+      "bounds_mm": [
+        [
+          25.942769826374317,
+          -24.407230173625692,
+          245.8929239962704
+        ],
+        [
+          56.05723017362568,
+          -13.092769826374314,
+          255.30395957180437
+        ]
+      ],
+      "facets": 1136,
+      "source_sha256": "49e1acbfbe932486d7b089a33a7633677ba63ed1a7e5b84a9e4f8814d251e43c",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_R17_HeadModuleFasteners",
+      "name": "ref_R17_HeadModuleFasteners",
+      "label": "A_ref_R17_HeadModuleFasteners",
+      "mesh": "meshes/A_ref_R17_HeadModuleFasteners.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "ref_R17_HeadModuleFasteners",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 687.2422425286892,
+      "center_of_mass_mm": [
+        32.82608765191177,
+        -3.5780074603667917,
+        233.15685375967502
+      ],
+      "bounds_mm": [
+        [
+          -8.307230173625701,
+          -37.60761070381652,
+          218.49292399627043
+        ],
+        [
+          75.4072301736257,
+          41.0072301736257,
+          249.30395957180437
+        ]
+      ],
+      "facets": 5112,
+      "source_sha256": "ba3a03df1d888658da561a4513c9f69ce66ab7466c61d000ff1ca0f1290eece2",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_ref_R17_JawFasteners",
+      "name": "ref_R17_JawFasteners",
+      "label": "A_ref_R17_JawFasteners",
+      "mesh": "meshes/A_ref_R17_JawFasteners.stl",
+      "body": "mouth_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "ref_R17_JawFasteners",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 184.37221885755113,
+      "center_of_mass_mm": [
+        40.899997711199994,
+        -39.672523961661334,
+        238.29672863527864
+      ],
+      "bounds_mm": [
+        [
+          38.13953303095227,
+          -47.01046468024773,
+          235.53626395503096
+        ],
+        [
+          43.66046239144773,
+          -27.994291947137597,
+          241.05719331552643
+        ]
+      ],
+      "facets": 284,
+      "source_sha256": "f729f45aa49b24330a8e7feeda3b3a96c610730b45bc5a8ce4fe1fcf3c32064c",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18_NeckBearingRetainer",
+      "name": "R18_NeckBearingRetainer",
+      "label": "A_R18_NeckBearingRetainer",
+      "mesh": "meshes/A_R18_NeckBearingRetainer.stl",
+      "body": "trunk_base",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "R18_NeckBearingRetainer",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": "exports/R20/step/R20_R18_NeckBearingRetainer.step",
+      "stl": "exports/R20/stl/R20_R18_NeckBearingRetainer.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 406.7385185212833,
+      "center_of_mass_mm": [
+        40.99999999999998,
+        -26.699999999999953,
+        147.3362716029983
+      ],
+      "bounds_mm": [
+        [
+          32.99999989999981,
+          -27.72009629679388,
+          139.9467292981786
+        ],
+        [
+          49.00000010000011,
+          -25.679903703206122,
+          157.65695611143877
+        ]
+      ],
+      "facets": 564,
+      "source_sha256": "f7aade0d66d8a4235a1fa0e32732bdebb58fae33c888a65d6a87901e251e9c2f",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18_NeckBearing693",
+      "name": "R18_NeckBearing693",
+      "label": "A_R18_NeckBearing693",
+      "mesh": "meshes/A_R18_NeckBearing693.stl",
+      "body": "trunk_base",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "R18_NeckBearing693",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 172.7875959474385,
+      "center_of_mass_mm": [
+        41.0,
+        -23.69999999999998,
+        151.94672939817872
+      ],
+      "bounds_mm": [
+        [
+          36.98477869236696,
+          -25.715221307633087,
+          147.93150809054563
+        ],
+        [
+          45.01522130763304,
+          -21.68477869236694,
+          155.96195070581174
+        ]
+      ],
+      "facets": 288,
+      "source_sha256": "a4380dc9492018bb64632d7d8ba2e122ad82d920939a37075b593622efdbb372",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18_NeckSpacerOuter",
+      "name": "R18_NeckSpacerOuter",
+      "label": "A_R18_NeckSpacerOuter",
+      "mesh": "meshes/A_R18_NeckSpacerOuter.stl",
+      "body": "trunk_base",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "R18_NeckSpacerOuter",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 15.76686813020379,
+      "center_of_mass_mm": [
+        41.00000000000001,
+        -26.949999999999967,
+        151.94672939817866
+      ],
+      "bounds_mm": [
+        [
+          38.89200876599264,
+          -28.207991234007405,
+          149.83873816417133
+        ],
+        [
+          43.10799123400735,
+          -25.69200876599262,
+          154.05472063218605
+        ]
+      ],
+      "facets": 288,
+      "source_sha256": "0b34655fe21509148e6afb09636ed018be2b97313807a773b0c9b93d394a475e",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18_NeckSpacerInner",
+      "name": "R18_NeckSpacerInner",
+      "label": "A_R18_NeckSpacerInner",
+      "mesh": "meshes/A_R18_NeckSpacerInner.stl",
+      "body": "neck_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "R18_NeckSpacerInner",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 12.613494504163032,
+      "center_of_mass_mm": [
+        41.0,
+        -20.69999999999996,
+        151.9467293981787
+      ],
+      "bounds_mm": [
+        [
+          38.89200876599264,
+          -21.707991234007405,
+          149.83873816417133
+        ],
+        [
+          43.10799123400735,
+          -19.69200876599262,
+          154.05472063218605
+        ]
+      ],
+      "facets": 288,
+      "source_sha256": "ce742374308a41d764e872a0253217ec566772db6e5768fc8d925745965c00ef",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18_NeckShoulderPin",
+      "name": "R18_NeckShoulderPin",
+      "label": "A_R18_NeckShoulderPin",
+      "mesh": "meshes/A_R18_NeckShoulderPin.stl",
+      "body": "neck_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "R18_NeckShoulderPin",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 130.4153650321463,
+      "center_of_mass_mm": [
+        40.99999999999999,
+        -24.328184281842805,
+        151.9467293981787
+      ],
+      "bounds_mm": [
+        [
+          38.239535319752285,
+          -30.010464680247747,
+          149.18626471793098
+        ],
+        [
+          43.760464680247715,
+          -15.794291947137598,
+          154.7071940784264
+        ]
+      ],
+      "facets": 284,
+      "source_sha256": "4ee024b80a248ec565df8e1d8a31621eca0541a86ebe6f7b2abb69c37184a878",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18_NeckM3Nut",
+      "name": "R18_NeckM3Nut",
+      "label": "A_R18_NeckM3Nut",
+      "mesh": "meshes/A_R18_NeckM3Nut.stl",
+      "body": "neck_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "R18_NeckM3Nut",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 45.90884398536515,
+      "center_of_mass_mm": [
+        41.0,
+        -17.099999999999987,
+        151.9467293981786
+      ],
+      "bounds_mm": [
+        [
+          37.82457341945695,
+          -18.305708052862357,
+          149.19672929817858
+        ],
+        [
+          44.17542658054305,
+          -15.89429194713752,
+          154.6967294981788
+        ]
+      ],
+      "facets": 168,
+      "source_sha256": "56c6b1d4a96e9a98cabbc17ef0cf8dd4e33ad341b1ae9c6ca41553f29a8195da",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18_NeckRetainerM2Screw0",
+      "name": "R18_NeckRetainerM2Screw0",
+      "label": "A_R18_NeckRetainerM2Screw0",
+      "mesh": "meshes/A_R18_NeckRetainerM2Screw0.stl",
+      "body": "trunk_base",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "R18_NeckRetainerM2Screw0",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 45.23893421169306,
+      "center_of_mass_mm": [
+        37.0,
+        -25.833333333333318,
+        143.94672939817872
+      ],
+      "bounds_mm": [
+        [
+          34.99238929618346,
+          -29.307610703816575,
+          141.93911869436215
+        ],
+        [
+          39.00761070381654,
+          -19.696194598091733,
+          145.95434010199523
+        ]
+      ],
+      "facets": 284,
+      "source_sha256": "4e78254911f05f0bb49601d21d80a6ccc7bd43d9246b4f304fbc8136da63f5df",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18_NeckRetainerM2Nut0",
+      "name": "R18_NeckRetainerM2Nut0",
+      "label": "A_R18_NeckRetainerM2Nut0",
+      "mesh": "meshes/A_R18_NeckRetainerM2Nut0.stl",
+      "body": "trunk_base",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "R18_NeckRetainerM2Nut0",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 17.14370209113791,
+      "center_of_mass_mm": [
+        36.99999999999999,
+        -21.399999999999963,
+        143.9467293981786
+      ],
+      "bounds_mm": [
+        [
+          34.69059882324137,
+          -22.203805401908227,
+          141.94672929817855
+        ],
+        [
+          39.30940117675864,
+          -20.596194598091653,
+          145.94672949817883
+        ]
+      ],
+      "facets": 168,
+      "source_sha256": "b70ea8a3eb66080f4bcec79411eb11c6498bd7c1b03ecb39351009ed8e8acb05",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18_NeckRetainerM2Screw1",
+      "name": "R18_NeckRetainerM2Screw1",
+      "label": "A_R18_NeckRetainerM2Screw1",
+      "mesh": "meshes/A_R18_NeckRetainerM2Screw1.stl",
+      "body": "trunk_base",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "R18_NeckRetainerM2Screw1",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 45.23893421169306,
+      "center_of_mass_mm": [
+        45.0,
+        -25.833333333333318,
+        143.94672939817872
+      ],
+      "bounds_mm": [
+        [
+          42.99238929618346,
+          -29.307610703816575,
+          141.93911869436215
+        ],
+        [
+          47.00761070381654,
+          -19.696194598091733,
+          145.95434010199523
+        ]
+      ],
+      "facets": 284,
+      "source_sha256": "15bc28f75bf8ccb47a7fa67472ea01e1048850bed84af839c6023b0f69f7bafb",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18_NeckRetainerM2Nut1",
+      "name": "R18_NeckRetainerM2Nut1",
+      "label": "A_R18_NeckRetainerM2Nut1",
+      "mesh": "meshes/A_R18_NeckRetainerM2Nut1.stl",
+      "body": "trunk_base",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Interfaces.FCStd",
+      "native_object": "R18_NeckRetainerM2Nut1",
+      "native": "native/robot/IndieDuck_R20_Interfaces.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 17.14370209113791,
+      "center_of_mass_mm": [
+        45.00000000000001,
+        -21.39999999999997,
+        143.9467293981786
+      ],
+      "bounds_mm": [
+        [
+          42.69059882324137,
+          -22.203805401908227,
+          141.94672929817855
+        ],
+        [
+          47.30940117675864,
+          -20.596194598091653,
+          145.94672949817883
+        ]
+      ],
+      "facets": 168,
+      "source_sha256": "530d4341b0b9493a8281ac27843c2a77898a870a8afa8bd41200f4d9c20fa789",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18C_RollBearing_L",
+      "name": "R18C_RollBearing_L",
+      "label": "A_R18C_RollBearing_L",
+      "mesh": "meshes/A_R18C_RollBearing_L.stl",
+      "body": "left_hip_roll_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R18C_RollBearing",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 716.2831250184727,
+      "center_of_mass_mm": [
+        4.545186779374914,
+        13.358895278359668,
+        101.94672939817865
+      ],
+      "bounds_mm": [
+        [
+          -0.2755327903217462,
+          2.174214677984066,
+          90.90487097718788
+        ],
+        [
+          9.365906349071581,
+          24.54357587873527,
+          112.9885878191695
+        ]
+      ],
+      "facets": 288,
+      "source_sha256": "df233b20717bdb868595c6730ad592048ed0e81a8dce62758921d82b4f0ede52",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18C_RollBearing_R",
+      "name": "R18C_RollBearing_R",
+      "label": "A_R18C_RollBearing_R",
+      "mesh": "meshes/A_R18C_RollBearing_R.stl",
+      "body": "right_hip_roll_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R18C_RollBearing_R",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 716.2831250184729,
+      "center_of_mass_mm": [
+        4.54518677937492,
+        -13.358895278359672,
+        101.94672939817866
+      ],
+      "bounds_mm": [
+        [
+          -0.2755327903217358,
+          -24.543575878735275,
+          90.90487097718788
+        ],
+        [
+          9.365906349071587,
+          -2.174214677984064,
+          112.9885878191695
+        ]
+      ],
+      "facets": 288,
+      "source_sha256": "2e706cdfcef90aa91ee63ebd36e88aaaedf5b54218ae530263cdfb0b13fee632",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18C_RollIdler_L",
+      "name": "R18C_RollIdler_L",
+      "label": "A_R18C_RollIdler_L",
+      "mesh": "meshes/A_R18C_RollIdler_L.stl",
+      "body": "left_hip_roll_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R18C_RollIdler",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.1857894892403,
+      "center_of_mass_mm": [
+        5.511112605663994,
+        13.61771432346219,
+        101.94672939817869
+      ],
+      "bounds_mm": [
+        [
+          1.961228990144188,
+          5.471636630229817,
+          93.91628688291264
+        ],
+        [
+          9.060996221183801,
+          21.76379201669456,
+          109.97717191344474
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "d734971990a77b26f32bf72bce07afe2839b7b683b39f7ee229672a602682ff6",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18C_RollIdler_R",
+      "name": "R18C_RollIdler_R",
+      "label": "A_R18C_RollIdler_R",
+      "mesh": "meshes/A_R18C_RollIdler_R.stl",
+      "body": "right_hip_roll_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R18C_RollIdler_R",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.1857894892402,
+      "center_of_mass_mm": [
+        5.511112605664001,
+        -13.617714323462188,
+        101.94672939817868
+      ],
+      "bounds_mm": [
+        [
+          1.9612289901441955,
+          -21.763792016694563,
+          93.91628688291264
+        ],
+        [
+          9.060996221183807,
+          -5.471636630229815,
+          109.97717191344474
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "5cf14ef7de867f52be0432bb67f5b5a45fd81349a2767e8986f17a0b1f0d27f8",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18C_RollClampScrew_L",
+      "name": "R18C_RollClampScrew_L",
+      "label": "A_R18C_RollClampScrew_L",
+      "mesh": "meshes/A_R18C_RollClampScrew_L.stl",
+      "body": "left_hip_roll_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R18C_RollClampScrew",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 53.57672111432033,
+      "center_of_mass_mm": [
+        -1.5208345594314288,
+        27.883818173753838,
+        103.93229290234194
+      ],
+      "bounds_mm": [
+        [
+          -3.4208346594314363,
+          25.983818073753834,
+          95.94292399627042
+        ],
+        [
+          0.3791655405685775,
+          29.783818273753862,
+          109.35395957180438
+        ]
+      ],
+      "facets": 284,
+      "source_sha256": "c8c5c1fa9bc056fb105f017fec7e2ce3651bd6d9ce42eec4862ef17a56cc3b2c",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18C_RollClampScrew_R",
+      "name": "R18C_RollClampScrew_R",
+      "label": "A_R18C_RollClampScrew_R",
+      "mesh": "meshes/A_R18C_RollClampScrew_R.stl",
+      "body": "right_hip_roll_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R18C_RollClampScrew_R",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 53.57672111432034,
+      "center_of_mass_mm": [
+        -1.5208345594314183,
+        -27.88381817375386,
+        103.93229290234193
+      ],
+      "bounds_mm": [
+        [
+          -3.4208346594314243,
+          -29.78381827375386,
+          95.94292399627042
+        ],
+        [
+          0.37916554056858764,
+          -25.983818073753845,
+          109.35395957180438
+        ]
+      ],
+      "facets": 284,
+      "source_sha256": "6b0e1cf42802e9949c08f4c39a83a50bbb3f1a6aae1ba9a9417500f4eac0a821",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18C_RollClampNut_L",
+      "name": "R18C_RollClampNut_L",
+      "label": "A_R18C_RollClampNut_L",
+      "mesh": "meshes/A_R18C_RollClampNut_L.stl",
+      "body": "left_hip_roll_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R18C_RollClampNut",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 17.14370209113797,
+      "center_of_mass_mm": [
+        -1.5208345594314308,
+        27.883818173753852,
+        96.84672939817868
+      ],
+      "bounds_mm": [
+        [
+          -3.7515448027322824,
+          25.65310793045299,
+          96.04292399627039
+        ],
+        [
+          0.7098756838694199,
+          30.114528417054714,
+          97.65053480008692
+        ]
+      ],
+      "facets": 168,
+      "source_sha256": "6556d690cd39a5d6b177587ab456d99c13b99e9ab217c145460190e65f906850",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18C_RollClampNut_R",
+      "name": "R18C_RollClampNut_R",
+      "label": "A_R18C_RollClampNut_R",
+      "mesh": "meshes/A_R18C_RollClampNut_R.stl",
+      "body": "right_hip_roll_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R18C_RollClampNut_R",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 17.143702091137975,
+      "center_of_mass_mm": [
+        -1.5208345594314192,
+        -27.88381817375386,
+        96.84672939817868
+      ],
+      "bounds_mm": [
+        [
+          -3.7515448027322575,
+          -30.114528417054704,
+          96.04292399627039
+        ],
+        [
+          0.7098756838694227,
+          -25.653107930453007,
+          97.65053480008692
+        ]
+      ],
+      "facets": 168,
+      "source_sha256": "67dbc046984f05fc9c7f8d61f4e08ad3d5809cfd78061f306320236cd9d4b2c5",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18C_PitchBearing_L",
+      "name": "R18C_PitchBearing_L",
+      "label": "A_R18C_PitchBearing_L",
+      "mesh": "meshes/A_R18C_PitchBearing_L.stl",
+      "body": "left_hip_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R18C_PitchBearing",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 716.2831250184731,
+      "center_of_mass_mm": [
+        4.350738956988321,
+        68.17643070311567,
+        101.94672939817865
+      ],
+      "bounds_mm": [
+        [
+          -6.833941643387281,
+          63.355711133418936,
+          90.90487097718788
+        ],
+        [
+          15.535419557363932,
+          72.9971502728122,
+          112.9885878191695
+        ]
+      ],
+      "facets": 288,
+      "source_sha256": "539b3eec9dac2075c0d819ba1a05486ce68a2c95c7d214b9b18ee5539d87d0b9",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18C_PitchBearing_R",
+      "name": "R18C_PitchBearing_R",
+      "label": "A_R18C_PitchBearing_R",
+      "mesh": "meshes/A_R18C_PitchBearing_R.stl",
+      "body": "right_hip_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R18C_PitchBearing_R",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 716.283125018473,
+      "center_of_mass_mm": [
+        4.35073895698836,
+        -68.17643070311561,
+        101.94672939817873
+      ],
+      "bounds_mm": [
+        [
+          -6.833941643387247,
+          -72.99715027281225,
+          90.9048709771879
+        ],
+        [
+          15.535419557363964,
+          -63.355711133418914,
+          112.98858781916951
+        ]
+      ],
+      "facets": 288,
+      "source_sha256": "8ceada4b6a8e27a0b8e6f4023ac8c98d8d7a282580f163a9ac75476466f15f95",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18C_PitchIdler_L",
+      "name": "R18C_PitchIdler_L",
+      "label": "A_R18C_PitchIdler_L",
+      "mesh": "meshes/A_R18C_PitchIdler_L.stl",
+      "body": "left_hip_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R18C_PitchIdler",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.1857894892398,
+      "center_of_mass_mm": [
+        4.609558002090878,
+        67.21050487682653,
+        101.9467293981787
+      ],
+      "bounds_mm": [
+        [
+          -3.526498300395745,
+          63.6633064848641,
+          93.9266617900463
+        ],
+        [
+          12.745614304577515,
+          70.75770326878899,
+          109.96679700631111
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "75a27268d4176cb94530a126ae974c033fe07dfaeec88bd108e5d62724611a75",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18C_PitchIdler_R",
+      "name": "R18C_PitchIdler_R",
+      "label": "A_R18C_PitchIdler_R",
+      "mesh": "meshes/A_R18C_PitchIdler_R.stl",
+      "body": "right_hip_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R18C_PitchIdler_R",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 603.185789489241,
+      "center_of_mass_mm": [
+        4.6095580020908,
+        -67.21050487682653,
+        101.9467293981787
+      ],
+      "bounds_mm": [
+        [
+          -3.526498300395858,
+          -70.75770326878897,
+          93.9266617900463
+        ],
+        [
+          12.745614304577444,
+          -63.66330648486405,
+          109.96679700631114
+        ]
+      ],
+      "facets": 140,
+      "source_sha256": "1a692807416465d4943363f8af5d7f4cf439c3264fc277fe80bd5570f568f032",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18C_PitchClampScrew_L",
+      "name": "R18C_PitchClampScrew_L",
+      "label": "A_R18C_PitchClampScrew_L",
+      "mesh": "meshes/A_R18C_PitchClampScrew_L.stl",
+      "body": "left_hip_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R18C_PitchClampScrew",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 41.01035049996115,
+      "center_of_mass_mm": [
+        18.875661852382514,
+        74.24245204192192,
+        103.76638620835183
+      ],
+      "bounds_mm": [
+        [
+          16.975661752382496,
+          72.34245194192191,
+          97.94292399627042
+        ],
+        [
+          20.775661952382524,
+          76.14245214192195,
+          107.3539595718044
+        ]
+      ],
+      "facets": 284,
+      "source_sha256": "a30f977c812e5d077883f39e758f9c01f5970e37d23ab36695dedc0e594537ae",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18C_PitchClampScrew_R",
+      "name": "R18C_PitchClampScrew_R",
+      "label": "A_R18C_PitchClampScrew_R",
+      "mesh": "meshes/A_R18C_PitchClampScrew_R.stl",
+      "body": "right_hip_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R18C_PitchClampScrew_R",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 41.010350499961135,
+      "center_of_mass_mm": [
+        18.875661852382546,
+        -74.24245204192192,
+        103.7663862083518
+      ],
+      "bounds_mm": [
+        [
+          16.975661752382518,
+          -76.14245214192194,
+          97.94292399627041
+        ],
+        [
+          20.77566195238256,
+          -72.34245194192191,
+          107.3539595718044
+        ]
+      ],
+      "facets": 284,
+      "source_sha256": "6d3eb834d2b8f22b72bd372118a42a936239f30f2586e9062d2564c3ae2ec80b",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18C_PitchClampNut_L",
+      "name": "R18C_PitchClampNut_L",
+      "label": "A_R18C_PitchClampNut_L",
+      "mesh": "meshes/A_R18C_PitchClampNut_L.stl",
+      "body": "left_hip_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R18C_PitchClampNut",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 17.143702091137982,
+      "center_of_mass_mm": [
+        18.87566185238251,
+        74.24245204192191,
+        98.84672939817865
+      ],
+      "bounds_mm": [
+        [
+          16.644951609081648,
+          72.01174179862107,
+          98.0429239962704
+        ],
+        [
+          21.106372095683387,
+          76.4731622852228,
+          99.65053480008696
+        ]
+      ],
+      "facets": 168,
+      "source_sha256": "a4481c2bb534dc0a0100be9498a8dda66490788d3a0c96230ad1c2a94edef27d",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R18C_PitchClampNut_R",
+      "name": "R18C_PitchClampNut_R",
+      "label": "A_R18C_PitchClampNut_R",
+      "mesh": "meshes/A_R18C_PitchClampNut_R.stl",
+      "body": "right_hip_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0
+      ],
+      "category": "purchased",
+      "material": "Purchased hardware envelope, material estimate",
+      "native_file": "IndieDuck_R20_Structure.FCStd",
+      "native_object": "R18C_PitchClampNut_R",
+      "native": "native/robot/IndieDuck_R20_Structure.FCStd",
+      "step": null,
+      "stl": null,
+      "reference": true,
+      "provisional": true,
+      "volume_mm3": 17.143702091137996,
+      "center_of_mass_mm": [
+        18.875661852382542,
+        -74.24245204192192,
+        98.84672939817867
+      ],
+      "bounds_mm": [
+        [
+          16.644951609081694,
+          -76.47316228522278,
+          98.04292399627042
+        ],
+        [
+          21.106372095683398,
+          -72.01174179862107,
+          99.65053480008694
+        ]
+      ],
+      "facets": 168,
+      "source_sha256": "442b9afc67adb2a86319783cb245a3b2e2a2baa2de7f5574874f676de63cf6b3",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    },
+    {
+      "id": "A_R20_RemovableRearBand",
+      "name": "R20_RemovableRearBand",
+      "label": "R20 removable rear colour band",
+      "mesh": "meshes/A_R20_RemovableRearBand.stl",
+      "body": "head_roll_link",
+      "color": [
+        1.0,
+        0.6509803921568628,
+        0.03137254901960784
+      ],
+      "category": "printed",
+      "material": "PLA initial fit test",
+      "native_file": "IndieDuck_R20_HeadBand.FCStd",
+      "native_object": "RemovableRearBand",
+      "native": "native/robot/IndieDuck_R20_HeadBand.FCStd",
+      "step": "exports/R20/step/R20_R20_RemovableRearBand.step",
+      "stl": "exports/R20/stl/R20_R20_RemovableRearBand.stl",
+      "reference": false,
+      "provisional": false,
+      "volume_mm3": 7729.233772642248,
+      "center_of_mass_mm": [
+        -14.279274419026295,
+        0.660358619523378,
+        245.64836257023188
+      ],
+      "bounds_mm": [
+        [
+          -25.147929680526598,
+          -31.631067882612875,
+          235.20106857544994
+        ],
+        [
+          5.726427965995305,
+          31.62461214680495,
+          255.49758048749408
+        ]
+      ],
+      "facets": 3640,
+      "source_sha256": "9448bdec93e691e3ca68719c58fc4cb9a7062a952e154b5f84db31822a332909",
+      "source_commit": "7bcdd1696516f9cff6bdefbc34e42f259c87749a"
+    }
+  ],
+  "limitations": "Visualization tessellation, not print meshes. Hardware envelopes and dimensions provisional; no physical assembly validation. See THIRD_PARTY_NOTICES.md."
+}

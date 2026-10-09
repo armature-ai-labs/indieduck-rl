@@ -1,0 +1,630 @@
+{
+  "status": "PASS",
+  "parts": 124,
+  "printed": 41,
+  "pose": "published R20 natural stance with exact CAD root, not seated collision-proxy pose",
+  "max_bounds_error_mm": 0.035080994334829585,
+  "tolerance_mm": 0.15,
+  "details": [
+    {
+      "name": "Trunk",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 1.1871155058962302e-05
+    },
+    {
+      "name": "Neck",
+      "body": "neck_pitch_link",
+      "bounds_max_error_mm": 6.74934030886476e-06
+    },
+    {
+      "name": "HeadPitch",
+      "body": "head_pitch_link",
+      "bounds_max_error_mm": 9.372151554831731e-06
+    },
+    {
+      "name": "HeadYaw",
+      "body": "head_yaw_link",
+      "bounds_max_error_mm": 9.530528255474735e-06
+    },
+    {
+      "name": "Yaw_L",
+      "body": "left_hip_yaw_link",
+      "bounds_max_error_mm": 2.9008677404629424e-06
+    },
+    {
+      "name": "HipL_L",
+      "body": "left_hip_roll_link",
+      "bounds_max_error_mm": 0.035080994334829585
+    },
+    {
+      "name": "Thigh_L",
+      "body": "left_hip_pitch_link",
+      "bounds_max_error_mm": 5.210395864763129e-06
+    },
+    {
+      "name": "Shank_L",
+      "body": "left_knee_link",
+      "bounds_max_error_mm": 2.7405283806181124e-06
+    },
+    {
+      "name": "RoundedFoot_L",
+      "body": "left_ankle_link",
+      "bounds_max_error_mm": 0.011150850572197446
+    },
+    {
+      "name": "SoftHeadShell",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 1.1214809025883454e-05
+    },
+    {
+      "name": "BodyFront",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 8.429565240275494e-06
+    },
+    {
+      "name": "BodyBack",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 8.629385955805091e-06
+    },
+    {
+      "name": "RoundedSole_L",
+      "body": "left_ankle_link",
+      "bounds_max_error_mm": 0.00913253436404804
+    },
+    {
+      "name": "ThighPlate_L",
+      "body": "left_hip_pitch_link",
+      "bounds_max_error_mm": 0.0049724243768728416
+    },
+    {
+      "name": "O2_HeadBase",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 5.81949308187113e-06
+    },
+    {
+      "name": "O2_Jaw",
+      "body": "mouth_link",
+      "bounds_max_error_mm": 5.898427107853266e-06
+    },
+    {
+      "name": "O2_UpperLip",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 5.4913923963617606e-06
+    },
+    {
+      "name": "O2_JawEdge",
+      "body": "mouth_link",
+      "bounds_max_error_mm": 9.477906182109308e-06
+    },
+    {
+      "name": "Yaw_R",
+      "body": "right_hip_yaw_link",
+      "bounds_max_error_mm": 2.900867768218518e-06
+    },
+    {
+      "name": "HipL_R",
+      "body": "right_hip_roll_link",
+      "bounds_max_error_mm": 0.035080994334822646
+    },
+    {
+      "name": "Thigh_R",
+      "body": "right_hip_pitch_link",
+      "bounds_max_error_mm": 5.210395864763129e-06
+    },
+    {
+      "name": "Shank_R",
+      "body": "right_knee_link",
+      "bounds_max_error_mm": 2.7405283736792185e-06
+    },
+    {
+      "name": "RoundedFoot_R",
+      "body": "right_ankle_link",
+      "bounds_max_error_mm": 0.011150803553808264
+    },
+    {
+      "name": "RoundedSole_R",
+      "body": "right_ankle_link",
+      "bounds_max_error_mm": 0.009132294754909953
+    },
+    {
+      "name": "ThighPlate_R",
+      "body": "right_hip_pitch_link",
+      "bounds_max_error_mm": 0.004972424376900597
+    },
+    {
+      "name": "O2_EyeL",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 0.005678203195629006
+    },
+    {
+      "name": "O2_EyeR",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 0.005679090256394126
+    },
+    {
+      "name": "ref_servo_left_ankle",
+      "body": "left_knee_link",
+      "bounds_max_error_mm": 3.587355724976593e-06
+    },
+    {
+      "name": "ref_horn_left_ankle",
+      "body": "left_ankle_link",
+      "bounds_max_error_mm": 0.012284407997147778
+    },
+    {
+      "name": "ref_servo_left_knee",
+      "body": "left_hip_pitch_link",
+      "bounds_max_error_mm": 5.227339047730872e-06
+    },
+    {
+      "name": "ref_horn_left_knee",
+      "body": "left_knee_link",
+      "bounds_max_error_mm": 0.020593857162617968
+    },
+    {
+      "name": "ref_servo_left_hip_pitch",
+      "body": "left_hip_pitch_link",
+      "bounds_max_error_mm": 3.962767565479641e-06
+    },
+    {
+      "name": "ref_servo_left_hip_roll",
+      "body": "left_hip_yaw_link",
+      "bounds_max_error_mm": 2.6755359316954497e-06
+    },
+    {
+      "name": "ref_horn_left_hip_roll",
+      "body": "left_hip_roll_link",
+      "bounds_max_error_mm": 0.01229188599498332
+    },
+    {
+      "name": "ref_horn_left_hip_pitch",
+      "body": "left_hip_roll_link",
+      "bounds_max_error_mm": 0.011866776520520761
+    },
+    {
+      "name": "ref_servo_left_hip_yaw",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 4.962240507389026e-06
+    },
+    {
+      "name": "ref_horn_left_hip_yaw",
+      "body": "left_hip_yaw_link",
+      "bounds_max_error_mm": 0.02098670475443945
+    },
+    {
+      "name": "ref_servo_right_hip_yaw",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 4.962240507389026e-06
+    },
+    {
+      "name": "ref_horn_right_hip_yaw",
+      "body": "right_hip_yaw_link",
+      "bounds_max_error_mm": 0.02839816236864176
+    },
+    {
+      "name": "ref_servo_neck_pitch",
+      "body": "neck_pitch_link",
+      "bounds_max_error_mm": 9.662317862479952e-06
+    },
+    {
+      "name": "ref_horn_neck_pitch",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 0.012272705429972053
+    },
+    {
+      "name": "ref_servo_head_pitch",
+      "body": "neck_pitch_link",
+      "bounds_max_error_mm": 5.238843331367704e-06
+    },
+    {
+      "name": "ref_horn_head_pitch",
+      "body": "head_pitch_link",
+      "bounds_max_error_mm": 0.012283439154908704
+    },
+    {
+      "name": "ref_servo_head_yaw",
+      "body": "head_yaw_link",
+      "bounds_max_error_mm": 5.646762640809655e-06
+    },
+    {
+      "name": "ref_horn_head_yaw",
+      "body": "head_pitch_link",
+      "bounds_max_error_mm": 0.012285671204610021
+    },
+    {
+      "name": "ref_servo_head_roll",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 5.462360758157203e-06
+    },
+    {
+      "name": "ref_horn_head_roll",
+      "body": "head_yaw_link",
+      "bounds_max_error_mm": 0.012285834428455919
+    },
+    {
+      "name": "ref_servo_mouth",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 9.438800491201604e-06
+    },
+    {
+      "name": "ref_horn_mouth",
+      "body": "mouth_link",
+      "bounds_max_error_mm": 0.01228635628551522
+    },
+    {
+      "name": "ref_Radxa_PCB",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 5.5443171165237e-06
+    },
+    {
+      "name": "ref_Radxa_GPIO",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 5.544317144279276e-06
+    },
+    {
+      "name": "ref_HAT_PCB",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 1.028816667969501e-05
+    },
+    {
+      "name": "ref_HAT_GPIO",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 1.0288166624183859e-05
+    },
+    {
+      "name": "ref_HAT_J1",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 4.6129945696637975e-06
+    },
+    {
+      "name": "ref_HAT_J5",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 4.6129945696637975e-06
+    },
+    {
+      "name": "ref_HAT_J14",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 4.6129945696637975e-06
+    },
+    {
+      "name": "ref_HAT_J9",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 4.6129945696637975e-06
+    },
+    {
+      "name": "ref_HAT_J6",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 4.6129945696637975e-06
+    },
+    {
+      "name": "ref_HAT_J3",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 4.6129945696637975e-06
+    },
+    {
+      "name": "ref_HAT_J7",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 4.6129945696637975e-06
+    },
+    {
+      "name": "ref_HAT_J13",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 4.6129945696637975e-06
+    },
+    {
+      "name": "ref_HAT_J8",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 4.6129945696637975e-06
+    },
+    {
+      "name": "ref_HAT_J11",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 4.6129945696637975e-06
+    },
+    {
+      "name": "ref_HAT_J2",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 4.6129945696637975e-06
+    },
+    {
+      "name": "ref_HAT_IMU",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 4.6129945696637975e-06
+    },
+    {
+      "name": "ref_servo_right_hip_roll",
+      "body": "right_hip_yaw_link",
+      "bounds_max_error_mm": 2.6755359316954497e-06
+    },
+    {
+      "name": "ref_horn_right_hip_roll",
+      "body": "right_hip_roll_link",
+      "bounds_max_error_mm": 0.01229188599498332
+    },
+    {
+      "name": "ref_servo_right_hip_pitch",
+      "body": "right_hip_pitch_link",
+      "bounds_max_error_mm": 3.962767572418535e-06
+    },
+    {
+      "name": "ref_horn_right_hip_pitch",
+      "body": "right_hip_roll_link",
+      "bounds_max_error_mm": 0.011866776520513822
+    },
+    {
+      "name": "ref_servo_right_knee",
+      "body": "right_hip_pitch_link",
+      "bounds_max_error_mm": 5.227339047730872e-06
+    },
+    {
+      "name": "ref_horn_right_knee",
+      "body": "right_knee_link",
+      "bounds_max_error_mm": 0.020593857162617968
+    },
+    {
+      "name": "ref_servo_right_ankle",
+      "body": "right_knee_link",
+      "bounds_max_error_mm": 3.587355724976593e-06
+    },
+    {
+      "name": "ref_horn_right_ankle",
+      "body": "right_ankle_link",
+      "bounds_max_error_mm": 0.012284407997147778
+    },
+    {
+      "name": "ref_Battery_Provisional",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 9.900736536172516e-06
+    },
+    {
+      "name": "ref_CameraPCB",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 2.0363521924249284e-05
+    },
+    {
+      "name": "ref_CameraLens",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 0.0003232487508445653
+    },
+    {
+      "name": "ref_ToFPCB",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 2.0327142136178367e-05
+    },
+    {
+      "name": "ref_ToFOptics",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 0.0023795249733510847
+    },
+    {
+      "name": "ref_HeadIMU",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 2.0363521924249284e-05
+    },
+    {
+      "name": "ref_CameraLED",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 0.0023264503820317767
+    },
+    {
+      "name": "R10_EyeRing_L",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 0.001047013696315463
+    },
+    {
+      "name": "R10_EyeRing_R",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 0.0010460091349855094
+    },
+    {
+      "name": "R16_TwoEyeFace",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 1.1804948074622956e-05
+    },
+    {
+      "name": "R17_HeadYawClampCap",
+      "body": "head_yaw_link",
+      "bounds_max_error_mm": 1.8877699126118586e-05
+    },
+    {
+      "name": "R17_RollServoCradle",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 0.004723012960006212
+    },
+    {
+      "name": "R17_RollCradleTopClamp",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 0.0025130836266464007
+    },
+    {
+      "name": "R17_MouthServoCradle",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 9.76952224673866e-06
+    },
+    {
+      "name": "R17_MouthServoKeeper",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 2.4452594477031298e-05
+    },
+    {
+      "name": "R17_JawBearingTower",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 0.003506563499178217
+    },
+    {
+      "name": "R17_JawBearingKeeper",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 0.010968282863670076
+    },
+    {
+      "name": "R17_JawBearingPlug",
+      "body": "mouth_link",
+      "bounds_max_error_mm": 0.00764938459413278
+    },
+    {
+      "name": "ref_R17_JawBearing16x22x4",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 0.018655922019147897
+    },
+    {
+      "name": "R17_FaceCarrier",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 9.398825773221375e-06
+    },
+    {
+      "name": "ref_R17_FaceFasteners",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 9.512366283548346e-06
+    },
+    {
+      "name": "ref_R17_FixedCarrierFasteners",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 0.00206652455993217
+    },
+    {
+      "name": "ref_R17_HeadModuleFasteners",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 0.002532320109334407
+    },
+    {
+      "name": "ref_R17_JawFasteners",
+      "body": "mouth_link",
+      "bounds_max_error_mm": 0.004663985505123924
+    },
+    {
+      "name": "R18_NeckBearingRetainer",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 0.0069978806590542675
+    },
+    {
+      "name": "R18_NeckBearing693",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 0.009303922496206596
+    },
+    {
+      "name": "R18_NeckSpacerOuter",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 0.0035706815608160802
+    },
+    {
+      "name": "R18_NeckSpacerInner",
+      "body": "neck_pitch_link",
+      "bounds_max_error_mm": 0.003570791600376877
+    },
+    {
+      "name": "R18_NeckShoulderPin",
+      "body": "neck_pitch_link",
+      "bounds_max_error_mm": 0.00466785792775648
+    },
+    {
+      "name": "R18_NeckM3Nut",
+      "body": "neck_pitch_link",
+      "bounds_max_error_mm": 5.5454136282939714e-06
+    },
+    {
+      "name": "R18_NeckRetainerM2Screw0",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 0.003069549477777156
+    },
+    {
+      "name": "R18_NeckRetainerM2Nut0",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 9.612515117218834e-06
+    },
+    {
+      "name": "R18_NeckRetainerM2Screw1",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 0.0030697363582604664
+    },
+    {
+      "name": "R18_NeckRetainerM2Nut1",
+      "body": "trunk_base",
+      "bounds_max_error_mm": 9.593289662657156e-06
+    },
+    {
+      "name": "R18C_RollBearing_L",
+      "body": "left_hip_roll_link",
+      "bounds_max_error_mm": 0.018650990492072306
+    },
+    {
+      "name": "R18C_RollBearing_R",
+      "body": "right_hip_roll_link",
+      "bounds_max_error_mm": 0.018650990492072306
+    },
+    {
+      "name": "R18C_RollIdler_L",
+      "body": "left_hip_roll_link",
+      "bounds_max_error_mm": 0.01228091481844662
+    },
+    {
+      "name": "R18C_RollIdler_R",
+      "body": "right_hip_roll_link",
+      "bounds_max_error_mm": 0.01228091481844662
+    },
+    {
+      "name": "R18C_RollClampScrew_L",
+      "body": "left_hip_roll_link",
+      "bounds_max_error_mm": 0.006431248651506821
+    },
+    {
+      "name": "R18C_RollClampScrew_R",
+      "body": "right_hip_roll_link",
+      "bounds_max_error_mm": 0.006431248651503352
+    },
+    {
+      "name": "R18C_RollClampNut_L",
+      "body": "left_hip_roll_link",
+      "bounds_max_error_mm": 5.425107849066357e-06
+    },
+    {
+      "name": "R18C_RollClampNut_R",
+      "body": "right_hip_roll_link",
+      "bounds_max_error_mm": 5.425107849066357e-06
+    },
+    {
+      "name": "R18C_PitchBearing_L",
+      "body": "left_hip_pitch_link",
+      "bounds_max_error_mm": 0.01802195437347609
+    },
+    {
+      "name": "R18C_PitchBearing_R",
+      "body": "right_hip_pitch_link",
+      "bounds_max_error_mm": 0.01802195437347262
+    },
+    {
+      "name": "R18C_PitchIdler_L",
+      "body": "left_hip_pitch_link",
+      "bounds_max_error_mm": 0.008963432962649093
+    },
+    {
+      "name": "R18C_PitchIdler_R",
+      "body": "right_hip_pitch_link",
+      "bounds_max_error_mm": 0.008963432962654297
+    },
+    {
+      "name": "R18C_PitchClampScrew_L",
+      "body": "left_hip_pitch_link",
+      "bounds_max_error_mm": 0.006433139072989369
+    },
+    {
+      "name": "R18C_PitchClampScrew_R",
+      "body": "right_hip_pitch_link",
+      "bounds_max_error_mm": 0.006433134014161013
+    },
+    {
+      "name": "R18C_PitchClampNut_L",
+      "body": "left_hip_pitch_link",
+      "bounds_max_error_mm": 4.819298196623301e-06
+    },
+    {
+      "name": "R18C_PitchClampNut_R",
+      "body": "right_hip_pitch_link",
+      "bounds_max_error_mm": 4.846104614819602e-06
+    },
+    {
+      "name": "R20_RemovableRearBand",
+      "body": "head_roll_link",
+      "bounds_max_error_mm": 9.449903054514763e-06
+    }
+  ]
+}

@@ -1,0 +1,5117 @@
+{
+  "model_id": "indieduck-r20",
+  "cad_revision": "R20",
+  "mesh_coordinates": "SI body-local, orientation equal CAD world at zero",
+  "parts": [
+    {
+      "name": "Trunk",
+      "label": "A_Trunk",
+      "mesh": "meshes/Trunk.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.05490462996544059,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.051,
+          -0.03240000152587891,
+          0.073
+        ],
+        [
+          0.053,
+          0.03240000152587891,
+          0.165
+        ]
+      ],
+      "com_world_m": [
+        -0.011401738394625162,
+        0.0004457564897713872,
+        0.12493558340081033
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "88ccee1e1f42ddd28938d7e0aaf7bb661ace5d8fcc12a85b395b260f5f4f61ba"
+    },
+    {
+      "name": "Neck",
+      "label": "A_Neck",
+      "mesh": "meshes/Neck.stl",
+      "body": "neck_pitch_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.013255833554044593,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.028799999237060548,
+          -0.019700000762939453,
+          0.1408000030517578
+        ],
+        [
+          0.05320000076293945,
+          0.0055,
+          0.21419999694824218
+        ]
+      ],
+      "com_world_m": [
+        0.04101313513934163,
+        -0.0076381062960309085,
+        0.17682928482206212
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "44333323639fe795483caf9624d107fc8f9f3a363b41d3706f8a37cb090b6ca4"
+    },
+    {
+      "name": "HeadPitch",
+      "label": "A_HeadPitch",
+      "mesh": "meshes/HeadPitch.stl",
+      "body": "head_pitch_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.005841312209691962,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.029,
+          -0.012,
+          0.1905
+        ],
+        [
+          0.053,
+          0.0165,
+          0.22375
+        ]
+      ],
+      "com_world_m": [
+        0.04093245928797104,
+        0.00823942546508602,
+        0.21294871237340254
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "41ea0d93c5331b0afe1948b3cd3936e22cc16916a6cfcdc123f999c022410f3d"
+    },
+    {
+      "name": "HeadYaw",
+      "label": "A_HeadYaw",
+      "mesh": "meshes/HeadYaw.stl",
+      "body": "head_yaw_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.013657647052571475,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.021100000381469728,
+          -0.026700000762939453,
+          0.22425
+        ],
+        [
+          0.057099998474121096,
+          0.012,
+          0.25194999694824216
+        ]
+      ],
+      "com_world_m": [
+        0.03521300981982509,
+        -0.005892162082905541,
+        0.24138353392212683
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "f6a32c2d3a3a5231ea728a3a2ea615cf03e826e2bdbec40a8ac9ab57287ef0aa"
+    },
+    {
+      "name": "Yaw_L",
+      "label": "A_Yaw_L",
+      "mesh": "meshes/Yaw_L.stl",
+      "body": "left_hip_yaw_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0089551634738376,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.0045,
+          0.005300000190734864,
+          0.07580000305175781
+        ],
+        [
+          0.032,
+          0.029700000762939452,
+          0.119
+        ]
+      ],
+      "com_world_m": [
+        0.0165715743829682,
+        0.017499999999999797,
+        0.10124098130707522
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "2c2fb8b3d6be965adc41c6a32228e6b6862382c3cae7607001c45954b906a0ed"
+    },
+    {
+      "name": "HipL_L",
+      "label": "A_HipL_L",
+      "mesh": "meshes/HipL_L.stl",
+      "body": "left_hip_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.014409802302207729,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -3.375077994860476e-17,
+          0.004320772171020508,
+          0.08930233764648438
+        ],
+        [
+          0.049,
+          0.0745,
+          0.11569999694824219
+        ]
+      ],
+      "com_world_m": [
+        0.025540695695633404,
+        0.039426250083773456,
+        0.10251353438659755
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "f4919bb6e68971cc2114c6c654174e55231179bdeda143c7e9a46082c133f9a4"
+    },
+    {
+      "name": "Thigh_L",
+      "label": "A_Thigh_L",
+      "mesh": "meshes/Thigh_L.stl",
+      "body": "left_hip_pitch_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.015321799278624959,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.029950000762939452,
+          0.04520000076293945,
+          0.06880000305175782
+        ],
+        [
+          0.029700000762939452,
+          0.075,
+          0.11469999694824219
+        ]
+      ],
+      "com_world_m": [
+        -0.00563798309374232,
+        0.05963154992706247,
+        0.09233855865661167
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "248920a525905eb485c53dfcdd28daf8fde6ad6df35d1feb8feb581f522d8634"
+    },
+    {
+      "name": "Shank_L",
+      "label": "A_Shank_L",
+      "mesh": "meshes/Shank_L.stl",
+      "body": "left_knee_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.01270478886480445,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.032,
+          0.03,
+          0.026799999237060546
+        ],
+        [
+          -0.0035,
+          0.055,
+          0.0925
+        ]
+      ],
+      "com_world_m": [
+        -0.01775703588996275,
+        0.040153110505501154,
+        0.05558895827217662
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "3157529a3ed1393f4c25ceb856ee469169f18855109e1b26c78143dc178e5621"
+    },
+    {
+      "name": "RoundedFoot_L",
+      "label": "A_RoundedFoot_L",
+      "mesh": "meshes/RoundedFoot_L.stl",
+      "body": "left_ankle_link",
+      "color": [
+        1.0,
+        0.6509803921568628,
+        0.03137254901960784,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.035111444497977394,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.04475,
+          0.024,
+          0.013
+        ],
+        [
+          0.00925,
+          0.068,
+          0.05049845504760742
+        ]
+      ],
+      "com_world_m": [
+        -0.017931848424393777,
+        0.04612062766453558,
+        0.02094246441872319
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "28920faf1ef5fa6affc2592e669b62dd3a99e19cd02e798a5bcbe96b0c96991e"
+    },
+    {
+      "name": "SoftHeadShell",
+      "label": "R20 head shell with band mount holes",
+      "mesh": "meshes/SoftHeadShell.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.9215686274509803,
+        0.9294117647058824,
+        0.9019607843137255,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.04339748482273624,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.0189731502532959,
+          -0.044,
+          0.22755000305175782
+        ],
+        [
+          0.10512510681152344,
+          0.044,
+          0.27563128662109376
+        ]
+      ],
+      "com_world_m": [
+        0.04729529120528522,
+        -0.00021711786392260526,
+        0.2568310787427629
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "3111b01b765fbfd51e38a9ce3b8b0532222bf0a60e00e96982a1ebb140c2da52"
+    },
+    {
+      "name": "BodyFront",
+      "label": "A_BodyFront",
+      "mesh": "meshes/BodyFront.stl",
+      "body": "trunk_base",
+      "color": [
+        0.9215686274509803,
+        0.9294117647058824,
+        0.9019607843137255,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0218081076089299,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.013850000381469727,
+          -0.0360740966796875,
+          0.136
+        ],
+        [
+          0.055099998474121094,
+          0.0360740966796875,
+          0.178
+        ]
+      ],
+      "com_world_m": [
+        0.02145927636209495,
+        0.00036358963184357094,
+        0.15642663834331885
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "e09a8781cff130edf2582509f3f724d89a84017350c2b5f8040f60d298b4a29d"
+    },
+    {
+      "name": "BodyBack",
+      "label": "A_BodyBack",
+      "mesh": "meshes/BodyBack.stl",
+      "body": "trunk_base",
+      "color": [
+        0.9215686274509803,
+        0.9294117647058824,
+        0.9019607843137255,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.01700111719318056,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.06015108489990234,
+          -0.0360740966796875,
+          0.136
+        ],
+        [
+          -0.014149999618530274,
+          0.0360740966796875,
+          0.178
+        ]
+      ],
+      "com_world_m": [
+        -0.040703970023693775,
+        1.7641810336271887e-07,
+        0.1556379326264395
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "3a94fc6c20909cbcbc8a540e1a5889c66ce67d6d9b4ee07c4f1c431d792a8356"
+    },
+    {
+      "name": "RoundedSole_L",
+      "label": "A_RoundedSole_L",
+      "mesh": "meshes/RoundedSole_L.stl",
+      "body": "left_ankle_link",
+      "color": [
+        0.25882352941176473,
+        0.27058823529411763,
+        0.23921568627450981,
+        1.0
+      ],
+      "material": "TPU 95A fit study",
+      "mass_kg": 0.03481231440221569,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.04475,
+          0.024,
+          -2.818511618757694e-17
+        ],
+        [
+          0.00925,
+          0.068,
+          0.013
+        ]
+      ],
+      "com_world_m": [
+        -0.017751676174924163,
+        0.046000000000000006,
+        0.006731292812927002
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "e81501a254cdf68d5827bca1b0c53553cd5e2527ede45e4ae1a45e3758c869e5"
+    },
+    {
+      "name": "ThighPlate_L",
+      "label": "A_ThighPlate_L",
+      "mesh": "meshes/ThighPlate_L.stl",
+      "body": "left_hip_pitch_link",
+      "color": [
+        0.9215686274509803,
+        0.9294117647058824,
+        0.9019607843137255,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.007727627016881071,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.032,
+          0.075,
+          0.067
+        ],
+        [
+          0.032,
+          0.077,
+          0.117
+        ]
+      ],
+      "com_world_m": [
+        2.898189704133358e-05,
+        0.07600000000000003,
+        0.09198069174469971
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "a7158f4bc7b15dde34d5755c9f63a4c46c703667b9308355532bcf9a0525b8cf"
+    },
+    {
+      "name": "O2_HeadBase",
+      "label": "A_O2_HeadBase",
+      "mesh": "meshes/O2_HeadBase.stl",
+      "body": "head_roll_link",
+      "color": [
+        1.0,
+        0.6509803921568628,
+        0.03137254901960784,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.03890241104832182,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.019290048599243163,
+          -0.04416416549682617,
+          0.2190500030517578
+        ],
+        [
+          0.09959791564941406,
+          0.04416428756713867,
+          0.2345500030517578
+        ]
+      ],
+      "com_world_m": [
+        0.03735715568351253,
+        0.0010288816834494736,
+        0.22516820775323612
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "0caa4ed4749ac9a0dd9d027bf9ce3bfdc9bf869f91024f97beb5997536be79bb"
+    },
+    {
+      "name": "O2_Jaw",
+      "label": "A_O2_Jaw",
+      "mesh": "meshes/O2_Jaw.stl",
+      "body": "mouth_link",
+      "color": [
+        1.0,
+        0.6509803921568628,
+        0.03137254901960784,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.01878165110260152,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.03190329360961914,
+          -0.044,
+          0.2185500030517578
+        ],
+        [
+          0.09879683685302734,
+          0.044,
+          0.2478363800048828
+        ]
+      ],
+      "com_world_m": [
+        0.07194065409436967,
+        -0.003382556835467845,
+        0.22516521554187768
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "7d5626e1376f2c9f8427e4507514ad1a26674978a3daca976b645cb6a95dfb6e"
+    },
+    {
+      "name": "O2_UpperLip",
+      "label": "A_O2_UpperLip",
+      "mesh": "meshes/O2_UpperLip.stl",
+      "body": "head_roll_link",
+      "color": [
+        1.0,
+        0.6509803921568628,
+        0.03137254901960784,
+        1.0
+      ],
+      "material": "TPU 95A fit study",
+      "mass_kg": 0.004285902517443392,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.0703840560913086,
+          -0.04216492080688477,
+          0.22764999389648438
+        ],
+        [
+          0.0975999984741211,
+          0.04216492080688477,
+          0.23005000305175782
+        ]
+      ],
+      "com_world_m": [
+        0.08396949278672886,
+        -3.143802380205249e-07,
+        0.22921024067531792
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "560862907fc243d1c66e27af2d7aba840b31c7c301f56abeb52daa9519f42723"
+    },
+    {
+      "name": "O2_JawEdge",
+      "label": "A_O2_JawEdge",
+      "mesh": "meshes/O2_JawEdge.stl",
+      "body": "mouth_link",
+      "color": [
+        1.0,
+        0.6509803921568628,
+        0.03137254901960784,
+        1.0
+      ],
+      "material": "TPU 95A fit study",
+      "mass_kg": 0.016591775768534555,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.06594072723388672,
+          -0.04030318450927734,
+          0.22135000610351563
+        ],
+        [
+          0.0950401840209961,
+          0.04030318450927734,
+          0.22835000610351563
+        ]
+      ],
+      "com_world_m": [
+        0.08223543964876276,
+        8.729388421286258e-07,
+        0.22469863155006425
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "17c5441f396a69eef70bc501d1a30ff957a7acafb598b1b1360db8097644d762"
+    },
+    {
+      "name": "Yaw_R",
+      "label": "A_Yaw_R",
+      "mesh": "meshes/Yaw_R.stl",
+      "body": "right_hip_yaw_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0089551634738376,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.0045,
+          -0.029700000762939452,
+          0.07580000305175781
+        ],
+        [
+          0.032,
+          -0.005300000190734864,
+          0.119
+        ]
+      ],
+      "com_world_m": [
+        0.016571574382968215,
+        -0.017499999999999807,
+        0.10124098130707532
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "6c6c5483f773a268d6603b1f316a755be21afb4ef47ce37164903edfb7c6af99"
+    },
+    {
+      "name": "HipL_R",
+      "label": "A_HipL_R",
+      "mesh": "meshes/HipL_R.stl",
+      "body": "right_hip_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.01440980230220773,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -2.842170943040401e-17,
+          -0.0745,
+          0.08930233764648438
+        ],
+        [
+          0.049,
+          -0.004320772171020508,
+          0.11569999694824219
+        ]
+      ],
+      "com_world_m": [
+        0.02554069569563477,
+        -0.039426250083775184,
+        0.10251353438659755
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "f6a10e7dff5a699daf730c57a41e03261dc5561723d10be8a999f21b3b7caf6d"
+    },
+    {
+      "name": "Thigh_R",
+      "label": "A_Thigh_R",
+      "mesh": "meshes/Thigh_R.stl",
+      "body": "right_hip_pitch_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.01532179927862495,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.029950000762939452,
+          -0.075,
+          0.06880000305175782
+        ],
+        [
+          0.029700000762939452,
+          -0.04520000076293945,
+          0.11469999694824219
+        ]
+      ],
+      "com_world_m": [
+        -0.005637983093742343,
+        -0.059631549927062544,
+        0.09233855865661175
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "b14f0280a0360e30d97d5c2058e642a15b16854b75dfcd10daf8d245448837fa"
+    },
+    {
+      "name": "Shank_R",
+      "label": "A_Shank_R",
+      "mesh": "meshes/Shank_R.stl",
+      "body": "right_knee_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.012704788864804445,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.032,
+          -0.055,
+          0.026799999237060546
+        ],
+        [
+          -0.0035,
+          -0.03,
+          0.0925
+        ]
+      ],
+      "com_world_m": [
+        -0.017757035889962823,
+        -0.04015311050549865,
+        0.0555889582721679
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "535c067b73d05078cd569e9b8477a706e6b9453ea0a353856127792220d33f67"
+    },
+    {
+      "name": "RoundedFoot_R",
+      "label": "A_RoundedFoot_R",
+      "mesh": "meshes/RoundedFoot_R.stl",
+      "body": "right_ankle_link",
+      "color": [
+        1.0,
+        0.6509803921568628,
+        0.03137254901960784,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0351114444979774,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.04475,
+          -0.068,
+          0.013
+        ],
+        [
+          0.00925,
+          -0.024,
+          0.05049845504760742
+        ]
+      ],
+      "com_world_m": [
+        -0.01793184842427329,
+        -0.04612062766458094,
+        0.020942464418726933
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "8d6033010af8aae97d3cacf40a32c8c133eed55f528232e9e39eb3613122b1a7"
+    },
+    {
+      "name": "RoundedSole_R",
+      "label": "A_RoundedSole_R",
+      "mesh": "meshes/RoundedSole_R.stl",
+      "body": "right_ankle_link",
+      "color": [
+        0.25882352941176473,
+        0.27058823529411763,
+        0.23921568627450981,
+        1.0
+      ],
+      "material": "TPU 95A fit study",
+      "mass_kg": 0.03481231440221568,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.04475,
+          -0.068,
+          -3.7751318252552715e-18
+        ],
+        [
+          0.00925,
+          -0.024,
+          0.013
+        ]
+      ],
+      "com_world_m": [
+        -0.017751676174924163,
+        -0.04600000000000003,
+        0.006731292812927032
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "97bd60d7a5345738761420d7001a248e827bd699fa185b12a25fc65bbbf20f9a"
+    },
+    {
+      "name": "ThighPlate_R",
+      "label": "A_ThighPlate_R",
+      "mesh": "meshes/ThighPlate_R.stl",
+      "body": "right_hip_pitch_link",
+      "color": [
+        0.9215686274509803,
+        0.9294117647058824,
+        0.9019607843137255,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.007727627016881072,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.032,
+          -0.077,
+          0.067
+        ],
+        [
+          0.032,
+          -0.075,
+          0.117
+        ]
+      ],
+      "com_world_m": [
+        2.8981897041255424e-05,
+        -0.07600000000000007,
+        0.09198069174469982
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "45d65d5c240fc0060a39112baae7bf3cb3b1f1802dfd67479fe7319f63f223bb"
+    },
+    {
+      "name": "O2_EyeL",
+      "label": "A_O2_EyeL",
+      "mesh": "meshes/O2_EyeL.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0008042803918825849,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.09319999694824219,
+          0.009805689811706543,
+          0.23765162658691405
+        ],
+        [
+          0.09690000152587891,
+          0.022198200225830078,
+          0.25564726257324216
+        ]
+      ],
+      "com_world_m": [
+        0.09505,
+        0.015999999999999997,
+        0.24658782083511244
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "21ec576ef32a939f7c56b6b2a9ca5bfe1ce4ea4f927e1995caca47cc165f2d45"
+    },
+    {
+      "name": "O2_EyeR",
+      "label": "A_O2_EyeR",
+      "mesh": "meshes/O2_EyeR.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0004992880425593679,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.09319999694824219,
+          -0.022194311141967772,
+          0.23765162658691405
+        ],
+        [
+          0.09690000152587891,
+          -0.009801799774169923,
+          0.25564726257324216
+        ]
+      ],
+      "com_world_m": [
+        0.09505000000000001,
+        -0.016,
+        0.24661012800718055
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "6e528d4ac2a4d500314bcb7be3ac54cc62f2d6c0fa83dd7dc1dcb8dc08c010c8"
+    },
+    {
+      "name": "ref_servo_left_ankle",
+      "label": "A_ref_servo_left_ankle",
+      "mesh": "meshes/ref_servo_left_ankle.stl",
+      "body": "left_knee_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.021,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.02775,
+          0.036,
+          0.029
+        ],
+        [
+          -0.00775,
+          0.059,
+          0.063
+        ]
+      ],
+      "com_world_m": [
+        -0.017749999999999964,
+        0.0475,
+        0.04599999999999997
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "b482cf63896d1824b202dfaaa4ad739058aec6d122844847ca02b1e553cb3586"
+    },
+    {
+      "name": "ref_horn_left_ankle",
+      "label": "A_ref_horn_left_ankle",
+      "mesh": "meshes/ref_horn_left_ankle.stl",
+      "body": "left_ankle_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.001,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.02573871040344238,
+          0.059,
+          0.030512285232543946
+        ],
+        [
+          -0.009760130882263183,
+          0.062,
+          0.0465
+        ]
+      ],
+      "com_world_m": [
+        -0.01774999999999996,
+        0.06049999999999998,
+        0.03855671382760556
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "bfc26794462de44199b319a3a3f1aeb3bf267e02e0efb8dda0c04c6d1e66b172"
+    },
+    {
+      "name": "ref_servo_left_knee",
+      "label": "A_ref_servo_left_knee",
+      "mesh": "meshes/ref_servo_left_knee.stl",
+      "body": "left_hip_pitch_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.021,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.02775,
+          0.045,
+          0.071
+        ],
+        [
+          -0.00775,
+          0.068,
+          0.105
+        ]
+      ],
+      "com_world_m": [
+        -0.017749999999999985,
+        0.0565,
+        0.088
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "f17c4d9a6e31af6e716432287061f33516654e48014ff032c4fd64a3f43e9619"
+    },
+    {
+      "name": "ref_horn_left_knee",
+      "label": "A_ref_horn_left_knee",
+      "mesh": "meshes/ref_horn_left_knee.stl",
+      "body": "left_knee_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.001,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.0257398681640625,
+          0.042,
+          0.07251228332519531
+        ],
+        [
+          -0.009761290550231934,
+          0.045,
+          0.0885
+        ]
+      ],
+      "com_world_m": [
+        -0.017749999999999985,
+        0.0435,
+        0.08055671382760556
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "721f698832607d3bcd95741df51dd0ae3982e6581265eb1d1f5cd52c6d4bc7cf"
+    },
+    {
+      "name": "ref_servo_left_hip_pitch",
+      "label": "A_ref_servo_left_hip_pitch",
+      "mesh": "meshes/ref_servo_left_hip_pitch.stl",
+      "body": "left_hip_pitch_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.021,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.0065,
+          0.045,
+          0.0925
+        ],
+        [
+          0.0275,
+          0.068,
+          0.1125
+        ]
+      ],
+      "com_world_m": [
+        0.010500000000000015,
+        0.056499999999999995,
+        0.1025
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "2813618d733c2e497749e0e7fba441f66281df1c89c5993bc253d26696a45054"
+    },
+    {
+      "name": "ref_servo_left_hip_roll",
+      "label": "A_ref_servo_left_hip_roll",
+      "mesh": "meshes/ref_servo_left_hip_roll.stl",
+      "body": "left_hip_yaw_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.021,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.0065,
+          0.0075,
+          0.078
+        ],
+        [
+          0.0295,
+          0.0275,
+          0.112
+        ]
+      ],
+      "com_world_m": [
+        0.017999999999999995,
+        0.0175,
+        0.09500000000000003
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "b497769982fe3aa790edf835bfbe9383859bda0772c1dbed8f1a90d3c07550ef"
+    },
+    {
+      "name": "ref_horn_left_hip_roll",
+      "label": "A_ref_horn_left_hip_roll",
+      "mesh": "meshes/ref_horn_left_hip_roll.stl",
+      "body": "left_hip_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.001,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.0295,
+          0.009511290550231933,
+          0.0945
+        ],
+        [
+          0.0325,
+          0.0254898681640625,
+          0.11048771667480468
+        ]
+      ],
+      "com_world_m": [
+        0.031000000000000007,
+        0.0175,
+        0.10244328617239447
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "26acafe8e23658db1e6ea4a8055c8afe79496b189a618680bc5f6a6dc5bfeb18"
+    },
+    {
+      "name": "ref_horn_left_hip_pitch",
+      "label": "A_ref_horn_left_hip_pitch",
+      "mesh": "meshes/ref_horn_left_hip_pitch.stl",
+      "body": "left_hip_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.001,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.01,
+          0.042,
+          0.0945101318359375
+        ],
+        [
+          0.025987714767456056,
+          0.045,
+          0.11048870849609375
+        ]
+      ],
+      "com_world_m": [
+        0.01794328617239444,
+        0.0435,
+        0.10250000000000005
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "83d218b2cb891a1738728ce958547fd4a836660255c75746e6475ff45d3770e9"
+    },
+    {
+      "name": "ref_servo_left_hip_yaw",
+      "label": "A_ref_servo_left_hip_yaw",
+      "mesh": "meshes/ref_servo_left_hip_yaw.stl",
+      "body": "trunk_base",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.021,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.0045,
+          0.0075,
+          0.122
+        ],
+        [
+          0.0295,
+          0.0275,
+          0.145
+        ]
+      ],
+      "com_world_m": [
+        0.0125,
+        0.0175,
+        0.1335
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "718ac9eea7ca92ae18ae1f57d4787e1501d7878adb4f04c69b20eb29e1b620de"
+    },
+    {
+      "name": "ref_horn_left_hip_yaw",
+      "label": "A_ref_horn_left_hip_yaw",
+      "mesh": "meshes/ref_horn_left_hip_yaw.stl",
+      "body": "left_hip_yaw_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.001,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.012,
+          0.009511290550231933,
+          0.119
+        ],
+        [
+          0.027987714767456054,
+          0.0254898681640625,
+          0.122
+        ]
+      ],
+      "com_world_m": [
+        0.01994328617239444,
+        0.0175,
+        0.12050000000000004
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "e47cec9f6257ffc7bbd5090148af8933163936b77958adec362c28945f9d373c"
+    },
+    {
+      "name": "ref_servo_right_hip_yaw",
+      "label": "A_ref_servo_right_hip_yaw",
+      "mesh": "meshes/ref_servo_right_hip_yaw.stl",
+      "body": "trunk_base",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.021,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.0045,
+          -0.0275,
+          0.122
+        ],
+        [
+          0.0295,
+          -0.0075,
+          0.145
+        ]
+      ],
+      "com_world_m": [
+        0.0125,
+        -0.0175,
+        0.1335
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "8193344ebf4445ac8d92efa67e56058ad75b500e7b268f50595f8c1a692020a2"
+    },
+    {
+      "name": "ref_horn_right_hip_yaw",
+      "label": "A_ref_horn_right_hip_yaw",
+      "mesh": "meshes/ref_horn_right_hip_yaw.stl",
+      "body": "right_hip_yaw_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.001,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.012,
+          -0.02548871040344238,
+          0.119
+        ],
+        [
+          0.027987714767456054,
+          -0.009510130882263183,
+          0.122
+        ]
+      ],
+      "com_world_m": [
+        0.019943286172394444,
+        -0.017500000000000005,
+        0.12050000000000002
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "dbeb14d8489b9f2c57ee603bdbef46b37ed61c0b251972a56fc458a6ef100cb1"
+    },
+    {
+      "name": "ref_servo_neck_pitch",
+      "label": "A_ref_servo_neck_pitch",
+      "mesh": "meshes/ref_servo_neck_pitch.stl",
+      "body": "neck_pitch_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.021,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.031,
+          -0.0135,
+          0.143
+        ],
+        [
+          0.051,
+          0.0095,
+          0.177
+        ]
+      ],
+      "com_world_m": [
+        0.041,
+        -0.0019999999999999983,
+        0.16
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "c79a20d087226a311b3e17e2b3381ffdf29efff4ad1079904157a29601b27a2d"
+    },
+    {
+      "name": "ref_horn_neck_pitch",
+      "label": "A_ref_horn_neck_pitch",
+      "mesh": "meshes/ref_horn_neck_pitch.stl",
+      "body": "trunk_base",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.001,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.03301129150390625,
+          0.0095,
+          0.1445122833251953
+        ],
+        [
+          0.0489898681640625,
+          0.0125,
+          0.1605
+        ]
+      ],
+      "com_world_m": [
+        0.041,
+        0.011,
+        0.15255671382760555
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "610d36587ccbeb6597d5fe3e11a508a4583b50d731a1c886ab9f8f5a1db98630"
+    },
+    {
+      "name": "ref_servo_head_pitch",
+      "label": "A_ref_servo_head_pitch",
+      "mesh": "meshes/ref_servo_head_pitch.stl",
+      "body": "neck_pitch_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.021,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.031,
+          -0.0135,
+          0.178
+        ],
+        [
+          0.051,
+          0.0095,
+          0.212
+        ]
+      ],
+      "com_world_m": [
+        0.041,
+        -0.0020000000000000035,
+        0.195
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "d60b1ee328cb100a1aa999721b62881e2221c3e6b33e4c1501fae290b9b43d80"
+    },
+    {
+      "name": "ref_horn_head_pitch",
+      "label": "A_ref_horn_head_pitch",
+      "mesh": "meshes/ref_horn_head_pitch.stl",
+      "body": "head_pitch_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.001,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.0330101318359375,
+          0.0095,
+          0.1945
+        ],
+        [
+          0.04898870849609375,
+          0.0125,
+          0.21048771667480468
+        ]
+      ],
+      "com_world_m": [
+        0.041,
+        0.011,
+        0.20244328617239443
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "ad99a9f9003ed7125d7c92a4f42c5cf4f38105199f2506de26a91fa14f89ce06"
+    },
+    {
+      "name": "ref_servo_head_yaw",
+      "label": "A_ref_servo_head_yaw",
+      "mesh": "meshes/ref_servo_head_yaw.stl",
+      "body": "head_yaw_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.021,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.031,
+          -0.0245,
+          0.22675
+        ],
+        [
+          0.051,
+          0.0095,
+          0.24975
+        ]
+      ],
+      "com_world_m": [
+        0.041,
+        -0.007499999999999993,
+        0.23825
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "f60f164d26a6080d4d3ad79b66abe16cac7cb4929540012d1bc3392983b16601"
+    },
+    {
+      "name": "ref_horn_head_yaw",
+      "label": "A_ref_horn_head_yaw",
+      "mesh": "meshes/ref_horn_head_yaw.stl",
+      "body": "head_pitch_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.001,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.0330101318359375,
+          -0.008,
+          0.22375
+        ],
+        [
+          0.04898870849609375,
+          0.007987714290618897,
+          0.22675
+        ]
+      ],
+      "com_world_m": [
+        0.041,
+        -5.6713827605554824e-05,
+        0.22525000000000003
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "6b387486663bbcb087050831cd8365d7d9f5f94d898e9852f3453b539923a35f"
+    },
+    {
+      "name": "ref_servo_head_roll",
+      "label": "A_ref_servo_head_roll",
+      "mesh": "meshes/ref_servo_head_roll.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.021,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.004900000095367432,
+          -0.0245,
+          0.22625
+        ],
+        [
+          0.018100000381469725,
+          0.0095,
+          0.24625
+        ]
+      ],
+      "com_world_m": [
+        0.006600000000000003,
+        -0.007499999999999996,
+        0.23625
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "82fcee440af850c5a92af89c5ced24cfc0466f0e1e79a1ea25d5fefd8481ff41"
+    },
+    {
+      "name": "ref_horn_head_roll",
+      "label": "A_ref_horn_head_roll",
+      "mesh": "meshes/ref_horn_head_roll.stl",
+      "body": "head_yaw_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.001,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.018100000381469725,
+          -0.008,
+          0.2282601318359375
+        ],
+        [
+          0.021100000381469728,
+          0.007987714290618897,
+          0.24423870849609375
+        ]
+      ],
+      "com_world_m": [
+        0.019600000000000003,
+        -5.67138276055652e-05,
+        0.23625
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "b3c4c1bef66d1f1d7101cd987fe7a685984c28beba465dc4bc6c89130ef1eada"
+    },
+    {
+      "name": "ref_servo_mouth",
+      "label": "A_ref_servo_mouth",
+      "mesh": "meshes/ref_servo_mouth.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.021,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.03139999771118164,
+          0.014600000381469726,
+          0.22885000610351564
+        ],
+        [
+          0.06539999389648438,
+          0.03759999847412109,
+          0.24885000610351563
+        ]
+      ],
+      "com_world_m": [
+        0.048399997711181614,
+        0.026100000000000005,
+        0.23884999923706002
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "2d7f6e5d9e6fdd51067aebfabf38d4489ff9951e58d858b72ef737c0c47dea5b"
+    },
+    {
+      "name": "ref_horn_mouth",
+      "label": "A_ref_horn_mouth",
+      "mesh": "meshes/ref_horn_mouth.stl",
+      "body": "mouth_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.001,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.03291228485107422,
+          0.03759999847412109,
+          0.23086012268066405
+        ],
+        [
+          0.04889999771118164,
+          0.040599998474121095,
+          0.24683871459960938
+        ]
+      ],
+      "com_world_m": [
+        0.04095671153878717,
+        0.0391,
+        0.23884999923706005
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "88f8db615447e67ce055c447c6ef745fdfc78f496ae50b40828856436a20fa5e"
+    },
+    {
+      "name": "ref_Radxa_PCB",
+      "label": "A_ref_Radxa_PCB",
+      "mesh": "meshes/ref_Radxa_PCB.stl",
+      "body": "trunk_base",
+      "color": [
+        0.10196078431372549,
+        0.4,
+        0.23921568627450981,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.012,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.045,
+          -0.015,
+          0.15289999389648437
+        ],
+        [
+          0.02,
+          0.015,
+          0.1545
+        ]
+      ],
+      "com_world_m": [
+        -0.01249284937162054,
+        -4.695394938687756e-07,
+        0.1537
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "1dc308081156f384e055a68e0bc8d8d132d629081a5b45f65768af5bd5e6b69b"
+    },
+    {
+      "name": "ref_Radxa_GPIO",
+      "label": "A_ref_Radxa_GPIO",
+      "mesh": "meshes/ref_Radxa_GPIO.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.03709999847412109,
+          0.009100000381469726,
+          0.1545
+        ],
+        [
+          0.014399999618530274,
+          0.014199999809265137,
+          0.163
+        ]
+      ],
+      "com_world_m": [
+        -0.011350000000000004,
+        0.01165,
+        0.15875
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "fddedd554458992a6f73bdb313e0b71a3e3991fe31abca28762d539b1798c049"
+    },
+    {
+      "name": "ref_HAT_PCB",
+      "label": "A_ref_HAT_PCB",
+      "mesh": "meshes/ref_HAT_PCB.stl",
+      "body": "trunk_base",
+      "color": [
+        0.10196078431372549,
+        0.4,
+        0.23921568627450981,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.009,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.045,
+          -0.015,
+          0.165
+        ],
+        [
+          0.02,
+          0.015899999618530274,
+          0.166
+        ]
+      ],
+      "com_world_m": [
+        -0.012493346734838612,
+        0.0004552182702774156,
+        0.16549999999999998
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "4d2dbf5df32841dba9c1091eaf6845819af2f49389cc5d2181434fe339a93c74"
+    },
+    {
+      "name": "ref_HAT_GPIO",
+      "label": "A_ref_HAT_GPIO",
+      "mesh": "meshes/ref_HAT_GPIO.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.03809999847412109,
+          0.01,
+          0.1606999969482422
+        ],
+        [
+          0.013100000381469726,
+          0.013,
+          0.165
+        ]
+      ],
+      "com_world_m": [
+        -0.012499999999999999,
+        0.011499999999999998,
+        0.16284999999999994
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "005c666517ac83dbda8aca2d3e1a26055835fa46184e4f1048fde34bda55673c"
+    },
+    {
+      "name": "ref_HAT_J1",
+      "label": "A_ref_HAT_J1",
+      "mesh": "meshes/ref_HAT_J1.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.007485000133514405,
+          -0.01440499973297119,
+          0.166
+        ],
+        [
+          -0.0019249999523162841,
+          -0.008104999542236329,
+          0.17408000183105468
+        ]
+      ],
+      "com_world_m": [
+        -0.004704999999999998,
+        -0.011255,
+        0.17004000000000005
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "22b265954b3561eca4efdd97f1da899e7cafc51136c249363968e8215393355c"
+    },
+    {
+      "name": "ref_HAT_J5",
+      "label": "A_ref_HAT_J5",
+      "mesh": "meshes/ref_HAT_J5.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.04464262008666992,
+          0.002099998950958252,
+          0.166
+        ],
+        [
+          -0.036842620849609375,
+          0.007299999237060547,
+          0.17408000183105468
+        ]
+      ],
+      "com_world_m": [
+        -0.040742619,
+        0.004699999,
+        0.17004
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "2f23db195350383aebf115cde3ecd1564c87718b876c84f748c384d58d94bc21"
+    },
+    {
+      "name": "ref_HAT_J14",
+      "label": "A_ref_HAT_J14",
+      "mesh": "meshes/ref_HAT_J14.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.039849998474121094,
+          -0.008950000762939453,
+          0.166
+        ],
+        [
+          -0.03504999923706055,
+          0.0020499989986419677,
+          0.17408000183105468
+        ]
+      ],
+      "com_world_m": [
+        -0.037449999000000005,
+        -0.0034500010000000003,
+        0.17004000000000005
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "b427d7d8a7b57343132ea4d99bd0ed834dbcb6776d2533afb537bbc8ee62b5bc"
+    },
+    {
+      "name": "ref_HAT_J9",
+      "label": "A_ref_HAT_J9",
+      "mesh": "meshes/ref_HAT_J9.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.008385000228881835,
+          -0.01440499973297119,
+          0.166
+        ],
+        [
+          0.013944999694824219,
+          -0.008104999542236329,
+          0.17408000183105468
+        ]
+      ],
+      "com_world_m": [
+        0.011165,
+        -0.011255,
+        0.17004000000000005
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "d7685c878acc33318de854fcbc6d67b145b86a431d9beaea98f415608e18cfa8"
+    },
+    {
+      "name": "ref_HAT_J6",
+      "label": "A_ref_HAT_J6",
+      "mesh": "meshes/ref_HAT_J6.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.03664262008666992,
+          0.002109998941421509,
+          0.166
+        ],
+        [
+          -0.028842618942260742,
+          0.007309998989105225,
+          0.17408000183105468
+        ]
+      ],
+      "com_world_m": [
+        -0.032742618999999994,
+        0.004709999,
+        0.17004000000000002
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "b9717a079a5549af4b37cec37d18c5650d701647e51a66598a17b215ea04946f"
+    },
+    {
+      "name": "ref_HAT_J3",
+      "label": "A_ref_HAT_J3",
+      "mesh": "meshes/ref_HAT_J3.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.03019999885559082,
+          -0.014500000953674316,
+          0.166
+        ],
+        [
+          -0.025399999618530275,
+          -0.0010000009536743164,
+          0.17408000183105468
+        ]
+      ],
+      "com_world_m": [
+        -0.027799998999999995,
+        -0.007750000999999999,
+        0.17004000000000002
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "3082ac8571a4c234fa5825a995fc7292d8c73bb37892ee0a2b0533020df9af95"
+    },
+    {
+      "name": "ref_HAT_J7",
+      "label": "A_ref_HAT_J7",
+      "mesh": "meshes/ref_HAT_J7.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.01817999839782715,
+          0.0008249989748001098,
+          0.166
+        ],
+        [
+          -0.010379999160766602,
+          0.006024999141693115,
+          0.17408000183105468
+        ]
+      ],
+      "com_world_m": [
+        -0.014279998999999998,
+        0.003424999,
+        0.17004000000000002
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "eb8794c06a8c9cf58bda45b43c6a69517392aa6e1d3e18c34d9844d5374a4509"
+    },
+    {
+      "name": "ref_HAT_J13",
+      "label": "A_ref_HAT_J13",
+      "mesh": "meshes/ref_HAT_J13.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.04464999771118164,
+          -0.008950000762939453,
+          0.166
+        ],
+        [
+          -0.039849998474121094,
+          0.0020499989986419677,
+          0.17408000183105468
+        ]
+      ],
+      "com_world_m": [
+        -0.042249999,
+        -0.0034500010000000003,
+        0.17004000000000005
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "e12aec3fa8e74ce9dd05f1ba67595ace2560bc3d0c9cc4a95fa8c18ad881af55"
+    },
+    {
+      "name": "ref_HAT_J8",
+      "label": "A_ref_HAT_J8",
+      "mesh": "meshes/ref_HAT_J8.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.010142619132995606,
+          0.0008399990200996399,
+          0.166
+        ],
+        [
+          -0.0023426189422607424,
+          0.006039999008178711,
+          0.17408000183105468
+        ]
+      ],
+      "com_world_m": [
+        -0.006242619000000001,
+        0.0034399990000000013,
+        0.17004000000000002
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "ca75f8279d364ce5bbde12d0172c4c2945fd88b5456f7574fd363e61efc57a06"
+    },
+    {
+      "name": "ref_HAT_J11",
+      "label": "A_ref_HAT_J11",
+      "mesh": "meshes/ref_HAT_J11.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.035,
+          -0.014500000953674316,
+          0.166
+        ],
+        [
+          -0.03019999885559082,
+          -0.0010000009536743164,
+          0.17408000183105468
+        ]
+      ],
+      "com_world_m": [
+        -0.032599999000000005,
+        -0.007750000999999999,
+        0.17004000000000002
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "2d675155ac5d602e04568af72369b0f3cc7e65a3b0258ebf9e75a4045e45831c"
+    },
+    {
+      "name": "ref_HAT_J2",
+      "label": "A_ref_HAT_J2",
+      "mesh": "meshes/ref_HAT_J2.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.0025150001049041746,
+          -0.01440499973297119,
+          0.166
+        ],
+        [
+          0.008074999809265137,
+          -0.008104999542236329,
+          0.17408000183105468
+        ]
+      ],
+      "com_world_m": [
+        0.005295000000000003,
+        -0.011255,
+        0.17004000000000005
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "6afe0bd0d59ef1b5d4a2a59618ca3add1e2bc178dcb52bc4d79c771afce82924"
+    },
+    {
+      "name": "ref_HAT_IMU",
+      "label": "A_ref_HAT_IMU",
+      "mesh": "meshes/ref_HAT_IMU.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.02275,
+          0.001,
+          0.166
+        ],
+        [
+          -0.02025,
+          0.004,
+          0.16689999389648438
+        ]
+      ],
+      "com_world_m": [
+        -0.021500000000000005,
+        0.0025000000000000005,
+        0.16644999999999993
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "430c2e5d3a303e8af48ee8c426336e7f9deee1bffe04e6d40a348dc53502dab3"
+    },
+    {
+      "name": "ref_servo_right_hip_roll",
+      "label": "A_ref_servo_right_hip_roll",
+      "mesh": "meshes/ref_servo_right_hip_roll.stl",
+      "body": "right_hip_yaw_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.021,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.0065,
+          -0.0275,
+          0.078
+        ],
+        [
+          0.0295,
+          -0.0075,
+          0.112
+        ]
+      ],
+      "com_world_m": [
+        0.01800000000000003,
+        -0.017499999999999977,
+        0.09500000000000001
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "2eb7ebcf96fb22f3db0a036e23c2b0da4c6f71e9f9886067179da9cfb6f1f8a4"
+    },
+    {
+      "name": "ref_horn_right_hip_roll",
+      "label": "A_ref_horn_right_hip_roll",
+      "mesh": "meshes/ref_horn_right_hip_roll.stl",
+      "body": "right_hip_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.001,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.0295,
+          -0.0254898681640625,
+          0.0945
+        ],
+        [
+          0.0325,
+          -0.009511290550231933,
+          0.11048771667480468
+        ]
+      ],
+      "com_world_m": [
+        0.03100000000000002,
+        -0.017499999999999957,
+        0.10244328617239445
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "75e6cd8b4c79fd7beb59ded24a6efbd9bb2f9980b91ef95e7d3719e5a04775db"
+    },
+    {
+      "name": "ref_servo_right_hip_pitch",
+      "label": "A_ref_servo_right_hip_pitch",
+      "mesh": "meshes/ref_servo_right_hip_pitch.stl",
+      "body": "right_hip_pitch_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.021,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.0065,
+          -0.068,
+          0.0925
+        ],
+        [
+          0.0275,
+          -0.045,
+          0.1125
+        ]
+      ],
+      "com_world_m": [
+        0.010500000000000021,
+        -0.05650000000000001,
+        0.1025
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "62b84274de9e05087f6047d3011a174d4382b279e4212be06b9c1eefc5375c62"
+    },
+    {
+      "name": "ref_horn_right_hip_pitch",
+      "label": "A_ref_horn_right_hip_pitch",
+      "mesh": "meshes/ref_horn_right_hip_pitch.stl",
+      "body": "right_hip_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.001,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.01,
+          -0.045,
+          0.0945101318359375
+        ],
+        [
+          0.025987714767456056,
+          -0.042,
+          0.11048870849609375
+        ]
+      ],
+      "com_world_m": [
+        0.017943286172394497,
+        -0.04349999999999998,
+        0.1025
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "a89616e918fc549b461d62411bf58a5b5b99e37d1521602f3b6343b9dd889fbe"
+    },
+    {
+      "name": "ref_servo_right_knee",
+      "label": "A_ref_servo_right_knee",
+      "mesh": "meshes/ref_servo_right_knee.stl",
+      "body": "right_hip_pitch_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.021,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.02775,
+          -0.068,
+          0.071
+        ],
+        [
+          -0.00775,
+          -0.045,
+          0.105
+        ]
+      ],
+      "com_world_m": [
+        -0.017749999999999978,
+        -0.05650000000000001,
+        0.088
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "c5a50eeac8ab868cf2fc7344bf2be2e8950e92e8cec4d34dc9b27f2805ab6d5a"
+    },
+    {
+      "name": "ref_horn_right_knee",
+      "label": "A_ref_horn_right_knee",
+      "mesh": "meshes/ref_horn_right_knee.stl",
+      "body": "right_knee_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.001,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.0257398681640625,
+          -0.045,
+          0.07251228332519531
+        ],
+        [
+          -0.009761290550231934,
+          -0.042,
+          0.0885
+        ]
+      ],
+      "com_world_m": [
+        -0.0177499999999999,
+        -0.0435,
+        0.08055671382760558
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "f391294ae4884b86bf22580530eda57e0fc2e45db83bfe90d723c0429570061f"
+    },
+    {
+      "name": "ref_servo_right_ankle",
+      "label": "A_ref_servo_right_ankle",
+      "mesh": "meshes/ref_servo_right_ankle.stl",
+      "body": "right_knee_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.021,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.02775,
+          -0.059,
+          0.029
+        ],
+        [
+          -0.00775,
+          -0.036,
+          0.063
+        ]
+      ],
+      "com_world_m": [
+        -0.017749999999999943,
+        -0.0475,
+        0.046000000000000006
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "e8d69c09ad443566d76f736f56899f142697f4469bfb51a64cd35dca48aa724f"
+    },
+    {
+      "name": "ref_horn_right_ankle",
+      "label": "A_ref_horn_right_ankle",
+      "mesh": "meshes/ref_horn_right_ankle.stl",
+      "body": "right_ankle_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.001,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.02573871040344238,
+          -0.062,
+          0.030512285232543946
+        ],
+        [
+          -0.009760130882263183,
+          -0.059,
+          0.0465
+        ]
+      ],
+      "com_world_m": [
+        -0.017749999999999887,
+        -0.0605,
+        0.03855671382760559
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "dce99323cf7103c0942850501f8213f44f66250e7875e08377e828d8e7a66d73"
+    },
+    {
+      "name": "ref_Battery_Provisional",
+      "label": "A_ref_Battery_Provisional",
+      "mesh": "meshes/ref_Battery_Provisional.stl",
+      "body": "trunk_base",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.095,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.046,
+          -0.019,
+          0.075
+        ],
+        [
+          -0.026,
+          0.019,
+          0.143
+        ]
+      ],
+      "com_world_m": [
+        -0.036,
+        0.0,
+        0.109
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "a608de956a7e030944de915267ce9ad2b96a50d34417f9f22afd6397a829dd86"
+    },
+    {
+      "name": "ref_CameraPCB",
+      "label": "A_ref_CameraPCB",
+      "mesh": "meshes/ref_CameraPCB.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078431372549,
+        0.4,
+        0.23921568627450981,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0015,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.075,
+          -0.032,
+          0.23065162658691407
+        ],
+        [
+          0.07659999847412109,
+          0.0,
+          0.262651611328125
+        ]
+      ],
+      "com_world_m": [
+        0.07579999999999999,
+        -0.016,
+        0.24665162389116876
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "a33076e36db8dfd5f095b54abe65d5b6319c2a0e07aa4bc4eecea9e9557f3289"
+    },
+    {
+      "name": "ref_CameraLens",
+      "label": "A_ref_CameraLens",
+      "mesh": "meshes/ref_CameraLens.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.07659999847412109,
+          -0.022999677658081055,
+          0.23965162658691405
+        ],
+        [
+          0.09258000183105469,
+          -0.009000322341918946,
+          0.25365130615234377
+        ]
+      ],
+      "com_world_m": [
+        0.08459000000000001,
+        -0.016000000000000004,
+        0.24665162389116874
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "584b6dce4093da2fa52c98ec4dfa1e9302b4a05955cc9dd03d109ed3520cfe81"
+    },
+    {
+      "name": "ref_ToFPCB",
+      "label": "A_ref_ToFPCB",
+      "mesh": "meshes/ref_ToFPCB.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078431372549,
+        0.4,
+        0.23921568627450981,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0015,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.088,
+          -0.0065,
+          0.23615162658691408
+        ],
+        [
+          0.091,
+          0.0065,
+          0.259151611328125
+        ]
+      ],
+      "com_world_m": [
+        0.0895,
+        0.0,
+        0.24765162389116874
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "33e9e5815af8e1eb126abf7329ba0ef0549eb30f80eaa90000a911e522f824dd"
+    },
+    {
+      "name": "ref_ToFOptics",
+      "label": "A_ref_ToFOptics",
+      "mesh": "meshes/ref_ToFOptics.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.091,
+          -0.002199777364730835,
+          0.24545162963867187
+        ],
+        [
+          0.0924000015258789,
+          0.002197620391845703,
+          0.2498512878417969
+        ]
+      ],
+      "com_world_m": [
+        0.09169999999999999,
+        -1.6833614344001918e-18,
+        0.2476360275885772
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "c1fe8de5c3b4d16bd8b8f919b118596a2b316c1e5b28e4703761d31e4c4d43bb"
+    },
+    {
+      "name": "ref_HeadIMU",
+      "label": "A_ref_HeadIMU",
+      "mesh": "meshes/ref_HeadIMU.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.045,
+          -0.018,
+          0.265151611328125
+        ],
+        [
+          0.06405000305175781,
+          -0.010380000114440917,
+          0.2667516174316406
+        ]
+      ],
+      "com_world_m": [
+        0.054525,
+        -0.01419,
+        0.26595162389116883
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "6c9c1bacd6be352095a67868960696a9dd032712cebff97bba17ec811e72267a"
+    },
+    {
+      "name": "ref_CameraLED",
+      "label": "A_ref_CameraLED",
+      "mesh": "meshes/ref_CameraLED.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.094,
+          -0.0009976736307144166,
+          0.262151611328125
+        ],
+        [
+          0.096,
+          0.000998353660106659,
+          0.2641514587402344
+        ]
+      ],
+      "com_world_m": [
+        0.095,
+        -3.1185790079409123e-18,
+        0.2631445346627181
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "59dc658dacaf65f30076034da182dcd1f4e25ea1a164e372db2c3d44495fb59c"
+    },
+    {
+      "name": "R10_EyeRing_L",
+      "label": "A_R10_EyeRing_L",
+      "mesh": "meshes/R10_EyeRing_L.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0004542006559494902,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.095,
+          0.007019037246704101,
+          0.23415162658691407
+        ],
+        [
+          0.09740000152587891,
+          0.024985130310058595,
+          0.25915155029296877
+        ]
+      ],
+      "com_world_m": [
+        0.09617189534157389,
+        0.015999999999998685,
+        0.24659563584163163
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "c885a0e4bedd35ba949aa08bdae6fbf22a42d3a85f8e8e2887dfb01ccde0fb74"
+    },
+    {
+      "name": "R10_EyeRing_R",
+      "label": "A_R10_EyeRing_R",
+      "mesh": "meshes/R10_EyeRing_R.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078431372549,
+        0.10980392156862745,
+        0.12156862745098039,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.00045420065594945673,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.095,
+          -0.024980962753295897,
+          0.23415162658691407
+        ],
+        [
+          0.09740000152587891,
+          -0.0070148687362670895,
+          0.25915155029296877
+        ]
+      ],
+      "com_world_m": [
+        0.09617189534156548,
+        -0.0160000000000179,
+        0.2465956358415962
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "e7dff5b20454695e47dd3cb54203aa8dd11df538363c206aac2db9ccfed86155"
+    },
+    {
+      "name": "R16_TwoEyeFace",
+      "label": "A_R16_TwoEyeFace",
+      "mesh": "meshes/R16_TwoEyeFace.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.9215686274509803,
+        0.9294117647058824,
+        0.9019607843137255,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0056295853379906505,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.09280000305175781,
+          -0.03924880599975586,
+          0.23330000305175783
+        ],
+        [
+          0.095,
+          0.03924880599975586,
+          0.27129998779296877
+        ]
+      ],
+      "com_world_m": [
+        0.09389633569344062,
+        2.731729719656239e-09,
+        0.25115218493439756
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "fc00da6bc2d4372644d79eb4530454a5ee55c3d2f310d34427bd9bce31f2a658"
+    },
+    {
+      "name": "R17_HeadYawClampCap",
+      "label": "A_R17_HeadYawClampCap",
+      "mesh": "meshes/R17_HeadYawClampCap.stl",
+      "body": "head_yaw_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0033923649039970024,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.024899999618530275,
+          -0.026700000762939453,
+          0.25194999694824216
+        ],
+        [
+          0.057099998474121096,
+          0.011699999809265137,
+          0.25444999694824216
+        ]
+      ],
+      "com_world_m": [
+        0.04071561546460257,
+        -0.008662814626854724,
+        0.2531960828429827
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "cafe0d898e06857338708bb7f0a9e46646c60ba38801254a6894ea9be784f3b5"
+    },
+    {
+      "name": "R17_RollServoCradle",
+      "label": "A_R17_RollServoCradle",
+      "mesh": "meshes/R17_RollServoCradle.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.005173203452523771,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.006900000095367432,
+          -0.032599903106689455,
+          0.22405000305175782
+        ],
+        [
+          0.014100000381469727,
+          0.01759527587890625,
+          0.24644999694824218
+        ]
+      ],
+      "com_world_m": [
+        0.005008204935723494,
+        -0.00702891304630534,
+        0.23015275173456984
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "4bb224d88e684e7706d8d2a293dcd976185c10814adbbd19a38fe133c45ccb9c"
+    },
+    {
+      "name": "R17_RollCradleTopClamp",
+      "label": "A_R17_RollCradleTopClamp",
+      "mesh": "meshes/R17_RollCradleTopClamp.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0007261321031787083,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.005949999809265137,
+          -0.03089748764038086,
+          0.24625
+        ],
+        [
+          0.012149999618530274,
+          0.01659748649597168,
+          0.24844999694824219
+        ]
+      ],
+      "com_world_m": [
+        0.009050017182654423,
+        -0.007175095026716607,
+        0.2473514403858455
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "c852d24b5f9221c5c3a02de504178e6400e6c55128af4614e2f1e33677c6c413"
+    },
+    {
+      "name": "R17_MouthServoCradle",
+      "label": "A_R17_MouthServoCradle",
+      "mesh": "meshes/R17_MouthServoCradle.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.005676670391893791,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.06020000076293945,
+          0.012100000381469727,
+          0.22764999389648438
+        ],
+        [
+          0.077,
+          0.040099998474121094,
+          0.2508500061035156
+        ]
+      ],
+      "com_world_m": [
+        0.06906449418978632,
+        0.024226523127435527,
+        0.23927182055697122
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "14bfc08a4462c7361bbb44ca33618547d6009975a0a493c5ab31807c8b29c219"
+    },
+    {
+      "name": "R17_MouthServoKeeper",
+      "label": "A_R17_MouthServoKeeper",
+      "mesh": "meshes/R17_MouthServoKeeper.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0005312040401520431,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.05959999847412109,
+          0.03759999847412109,
+          0.231
+        ],
+        [
+          0.07259999847412109,
+          0.039599998474121094,
+          0.24810000610351562
+        ]
+      ],
+      "com_world_m": [
+        0.06597910411725903,
+        0.03859796806729193,
+        0.2394784786244814
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "84cfd4274ac8e787bf0b8692ecc1a81af8fdf6809e31b0f3d9aba3519e6d778b"
+    },
+    {
+      "name": "R17_JawBearingTower",
+      "label": "A_R17_JawBearingTower",
+      "mesh": "meshes/R17_JawBearingTower.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0027826233759116045,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.01589999771118164,
+          -0.039099998474121093,
+          0.22405000305175782
+        ],
+        [
+          0.06589999389648438,
+          -0.031700000762939454,
+          0.25234648132324217
+        ]
+      ],
+      "com_world_m": [
+        0.0409049961475827,
+        -0.03501093252166531,
+        0.23311748778055177
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "dac87eb8ae9f76c39c22ba2031d53761c79c2b4b7d6b79399dc18a5ba634b6cc"
+    },
+    {
+      "name": "R17_JawBearingKeeper",
+      "label": "A_R17_JawBearingKeeper",
+      "mesh": "meshes/R17_JawBearingKeeper.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0007188187451602821,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.023201065063476564,
+          -0.031700000762939454,
+          0.225353515625
+        ],
+        [
+          0.0585999984741211,
+          -0.029700000762939452,
+          0.25234648132324217
+        ]
+      ],
+      "com_world_m": [
+        0.040893901897337874,
+        -0.03069999999999999,
+        0.2388499992370599
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "4bbcc7715fcdaa3a3017c609fdce9a8fecc9eef22a1f5a233cf1d3e41f51b804"
+    },
+    {
+      "name": "R17_JawBearingPlug",
+      "label": "A_R17_JawBearingPlug",
+      "mesh": "meshes/R17_JawBearingPlug.stl",
+      "body": "mouth_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0013951199900746438,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.032000019073486326,
+          -0.04029999923706055,
+          0.22995625305175782
+        ],
+        [
+          0.04979999923706055,
+          -0.02929999923706055,
+          0.24774235534667968
+        ]
+      ],
+      "com_world_m": [
+        0.04090817476800806,
+        -0.03334388431010235,
+        0.23884999923706002
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "b90a65e6bdddbe5c068b492b231dd281d8e9b8a14d4eead4721865e23d4cf413"
+    },
+    {
+      "name": "ref_R17_JawBearing16x22x4",
+      "label": "A_ref_R17_JawBearing16x22x4",
+      "mesh": "meshes/ref_R17_JawBearing16x22x4.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.02991865348815918,
+          -0.035900001525878904,
+          0.22786715698242188
+        ],
+        [
+          0.05189999771118164,
+          -0.031899999618530274,
+          0.24984938049316407
+        ]
+      ],
+      "com_world_m": [
+        0.04096060873982559,
+        -0.03389999999999999,
+        0.2388499992370599
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "598b8895a2adff24f299d5ad5df74e9a31d16907627ff104a7b1e9a5d89cfa4f"
+    },
+    {
+      "name": "R17_FaceCarrier",
+      "label": "A_R17_FaceCarrier",
+      "mesh": "meshes/R17_FaceCarrier.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.7019607843137254,
+        0.7294117647058823,
+        0.7490196078431373,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.003742830118549634,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.07940000152587891,
+          -0.033099998474121095,
+          0.23345008850097657
+        ],
+        [
+          0.09280000305175781,
+          0.033099998474121095,
+          0.2645
+        ]
+      ],
+      "com_world_m": [
+        0.08882026047387143,
+        -1.1086327947021121e-13,
+        0.24890479028085802
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "4271385ba9fa1b62d5df072cddcf7680996f40a7a55911ba6ca461005680d05c"
+    },
+    {
+      "name": "ref_R17_FaceFasteners",
+      "label": "A_ref_R17_FaceFasteners",
+      "mesh": "meshes/ref_R17_FaceFasteners.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.08119059753417969,
+          -0.03130940055847168,
+          0.23025
+        ],
+        [
+          0.09469999694824219,
+          0.03130940055847168,
+          0.262
+        ]
+      ],
+      "com_world_m": [
+        0.08805808014319161,
+        -1.6174149211417176e-17,
+        0.2442881660321459
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "2afeabe8975f2d31535fa967d10abba5c6053777fe00b47cc91a7443e362d2c0"
+    },
+    {
+      "name": "ref_R17_FixedCarrierFasteners",
+      "label": "A_ref_R17_FixedCarrierFasteners",
+      "mesh": "meshes/ref_R17_FixedCarrierFasteners.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.02595000648498535,
+          -0.024398326873779297,
+          0.24644999694824218
+        ],
+        [
+          0.05604999923706055,
+          -0.01310206699371338,
+          0.2558500061035156
+        ]
+      ],
+      "com_world_m": [
+        0.04101043149914513,
+        -0.01807130937244218,
+        0.2519368279966505
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "db675b5ea0185ac6fdc47c4ea33c04f385bb3b0f44c9ebe1deb4642184d2f211"
+    },
+    {
+      "name": "ref_R17_HeadModuleFasteners",
+      "label": "A_ref_R17_HeadModuleFasteners",
+      "mesh": "meshes/ref_R17_HeadModuleFasteners.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.008300000190734864,
+          -0.03759746551513672,
+          0.2190500030517578
+        ],
+        [
+          0.0754000015258789,
+          0.041,
+          0.24985000610351563
+        ]
+      ],
+      "com_world_m": [
+        0.032835477920784784,
+        -0.0035774833140497964,
+        0.23371094356896796
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "84e727008e82ee03bceafc6fe614f2387cd38855001868c9358ec3d844135e90"
+    },
+    {
+      "name": "ref_R17_JawFasteners",
+      "label": "A_ref_R17_JawFasteners",
+      "mesh": "meshes/ref_R17_JawFasteners.stl",
+      "body": "mouth_link",
+      "color": [
+        0.6196078431372549,
+        0.6588235294117647,
+        0.7019607843137254,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.0381546630859375,
+          -0.047,
+          0.23610015869140624
+        ],
+        [
+          0.04364999771118164,
+          -0.028,
+          0.24159571838378907
+        ]
+      ],
+      "com_world_m": [
+        0.04091537617069302,
+        -0.03967354042727231,
+        0.23884999923710004
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "398e7624d571c5aa5c2ac4d52d42af3895b07a4ee3a8e145cb9a596c49835693"
+    },
+    {
+      "name": "R18_NeckBearingRetainer",
+      "label": "A_R18_NeckBearingRetainer",
+      "mesh": "meshes/R18_NeckBearingRetainer.stl",
+      "body": "trunk_base",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0005043557629663913,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.033,
+          -0.027700000762939454,
+          0.1405
+        ],
+        [
+          0.049,
+          -0.025700000762939452,
+          0.15819711303710937
+        ]
+      ],
+      "com_world_m": [
+        0.04099971710660061,
+        -0.026699726122979946,
+        0.14790263239638224
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "873dd7123c9f1643bb6aa2edcb2a64fa519b3965a65827062cd54a9f013f0ae4"
+    },
+    {
+      "name": "R18_NeckBearing693",
+      "label": "A_R18_NeckBearing693",
+      "mesh": "meshes/R18_NeckBearing693.stl",
+      "body": "trunk_base",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.0370006103515625,
+          -0.025700000762939452,
+          0.148506591796875
+        ],
+        [
+          0.045,
+          -0.021700000762939452,
+          0.15649069213867187
+        ]
+      ],
+      "com_world_m": [
+        0.04101755694373685,
+        -0.0237,
+        0.15250000000000002
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "2eec87399f56bcefd5dc457c474502a1e130092f3f81f838770c0075d6eb1c5b"
+    },
+    {
+      "name": "R18_NeckSpacerOuter",
+      "label": "A_R18_NeckSpacerOuter",
+      "mesh": "meshes/R18_NeckSpacerOuter.stl",
+      "body": "trunk_base",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.03890172958374023,
+          -0.028200000762939454,
+          0.15040357971191406
+        ],
+        [
+          0.0430999984741211,
+          -0.025700000762939452,
+          0.15460000610351562
+        ]
+      ],
+      "com_world_m": [
+        0.04101164212043684,
+        -0.02695,
+        0.15249999999999997
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "2038f3f38a981abee60c79f22ff76b1c7a9eac0692a6fafd6fe30a9da36010ae"
+    },
+    {
+      "name": "R18_NeckSpacerInner",
+      "label": "A_R18_NeckSpacerInner",
+      "mesh": "meshes/R18_NeckSpacerInner.stl",
+      "body": "neck_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.03890172958374023,
+          -0.021700000762939452,
+          0.15040357971191406
+        ],
+        [
+          0.0430999984741211,
+          -0.019700000762939453,
+          0.15460000610351562
+        ]
+      ],
+      "com_world_m": [
+        0.041011642120436835,
+        -0.020699999999999996,
+        0.15250000000000002
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "c156f28183b22e4703fc4995c3ac415dd5b2facbffde3699cdb4b2d5fbbca0b0"
+    },
+    {
+      "name": "R18_NeckShoulderPin",
+      "label": "A_R18_NeckShoulderPin",
+      "mesh": "meshes/R18_NeckShoulderPin.stl",
+      "body": "neck_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.03825466537475586,
+          -0.03,
+          0.14975428771972657
+        ],
+        [
+          0.04375,
+          -0.015800000190734863,
+          0.15524984741210937
+        ]
+      ],
+      "com_world_m": [
+        0.04101547062466326,
+        -0.024330014037636852,
+        0.15249999999999997
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "a4bda568472d0024813842397912b3926c7e7def28af04766e8c7ecd2a1b02db"
+    },
+    {
+      "name": "R18_NeckM3Nut",
+      "label": "A_R18_NeckM3Nut",
+      "mesh": "meshes/R18_NeckM3Nut.stl",
+      "body": "neck_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.037824573516845705,
+          -0.018299999237060546,
+          0.14975
+        ],
+        [
+          0.0441754264831543,
+          -0.015899999618530274,
+          0.15525
+        ]
+      ],
+      "com_world_m": [
+        0.041000258009960044,
+        -0.01709999999999997,
+        0.15249999999999989
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "07dfe1f34d376f3dfd0cb79a6cac1727db7bb8abddd1e528e0340f37e5a1ae64"
+    },
+    {
+      "name": "R18_NeckRetainerM2Screw0",
+      "label": "A_R18_NeckRetainerM2Screw0",
+      "mesh": "meshes/R18_NeckRetainerM2Screw0.stl",
+      "body": "trunk_base",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.035003070831298826,
+          -0.02929999923706055,
+          0.14250282287597657
+        ],
+        [
+          0.039,
+          -0.019700000762939453,
+          0.14649746704101563
+        ]
+      ],
+      "com_world_m": [
+        0.037010828903657776,
+        -0.02583299164707693,
+        0.1445
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "a3fd7870721ca4bcd99adfb125d07720b5c2c14e1bcede8c686bc4f89fa3aed4"
+    },
+    {
+      "name": "R18_NeckRetainerM2Nut0",
+      "label": "A_R18_NeckRetainerM2Nut0",
+      "mesh": "meshes/R18_NeckRetainerM2Nut0.stl",
+      "body": "trunk_base",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.03469059753417969,
+          -0.022200000762939452,
+          0.1425
+        ],
+        [
+          0.03930940246582031,
+          -0.020600000381469728,
+          0.1465
+        ]
+      ],
+      "com_world_m": [
+        0.037000136379752205,
+        -0.021399999999999964,
+        0.1444999999999999
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "f034f186f8fa37fbb46e5f216503ee2a0d035857ae9a1e3a6a3c88e3bf1b954c"
+    },
+    {
+      "name": "R18_NeckRetainerM2Screw1",
+      "label": "A_R18_NeckRetainerM2Screw1",
+      "mesh": "meshes/R18_NeckRetainerM2Screw1.stl",
+      "body": "trunk_base",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.043003070831298826,
+          -0.02929999923706055,
+          0.14250282287597657
+        ],
+        [
+          0.047,
+          -0.019700000762939453,
+          0.14649746704101563
+        ]
+      ],
+      "com_world_m": [
+        0.045010828903657776,
+        -0.02583299164707694,
+        0.14449999999999996
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "71e67005d32f06c55c7bd3ef77e90c97777ab40a31c45a2ac7883b46ee32c803"
+    },
+    {
+      "name": "R18_NeckRetainerM2Nut1",
+      "label": "A_R18_NeckRetainerM2Nut1",
+      "mesh": "meshes/R18_NeckRetainerM2Nut1.stl",
+      "body": "trunk_base",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.04269059753417969,
+          -0.022200000762939452,
+          0.1425
+        ],
+        [
+          0.04730940246582031,
+          -0.020600000381469728,
+          0.1465
+        ]
+      ],
+      "com_world_m": [
+        0.04500013637975221,
+        -0.021399999999999964,
+        0.14449999999999988
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "bc5ada791d6292a24e6d7920b9faf5378be339f513ad01983aa0c99cfe752eaa"
+    },
+    {
+      "name": "R18C_RollBearing_L",
+      "label": "A_R18C_RollBearing_L",
+      "mesh": "meshes/R18C_RollBearing_L.stl",
+      "body": "left_hip_roll_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.002,
+          0.006500617504119873,
+          0.0915186538696289
+        ],
+        [
+          0.006,
+          0.028482845306396484,
+          0.1135
+        ]
+      ],
+      "com_world_m": [
+        0.004000000000000017,
+        0.017499999999999984,
+        0.10256061102864396
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "5040b52df70ebc16bb91f3531a267aec1ce3cea05e14a922b87660e3e0b80d1b"
+    },
+    {
+      "name": "R18C_RollBearing_R",
+      "label": "A_R18C_RollBearing_R",
+      "mesh": "meshes/R18C_RollBearing_R.stl",
+      "body": "right_hip_roll_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.002,
+          -0.028482845306396484,
+          0.0915186538696289
+        ],
+        [
+          0.006,
+          -0.006500617504119873,
+          0.1135
+        ]
+      ],
+      "com_world_m": [
+        0.004000000000000016,
+        -0.017499999999999995,
+        0.10256061102864394
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "39a493366b3e2307b0b7cf598b229c3229eb22a9d7df9a289393d7734da172fc"
+    },
+    {
+      "name": "R18C_RollIdler_L",
+      "label": "A_R18C_RollIdler_L",
+      "mesh": "meshes/R18C_RollIdler_L.stl",
+      "body": "left_hip_roll_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.0035,
+          0.009510130882263183,
+          0.09451228332519532
+        ],
+        [
+          0.0065,
+          0.02548871040344238,
+          0.1105
+        ]
+      ],
+      "com_world_m": [
+        0.005000000000000025,
+        0.017499999999999995,
+        0.10255671382760556
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "de9d2fa4e083480a3b5689c60591b4e6d48a6cc3a7fb0f16d5b17b16111e9bb5"
+    },
+    {
+      "name": "R18C_RollIdler_R",
+      "label": "A_R18C_RollIdler_R",
+      "mesh": "meshes/R18C_RollIdler_R.stl",
+      "body": "right_hip_roll_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.0035,
+          -0.02548871040344238,
+          0.09451228332519532
+        ],
+        [
+          0.0065,
+          -0.009510130882263183,
+          0.1105
+        ]
+      ],
+      "com_world_m": [
+        0.005000000000000025,
+        -0.017499999999999995,
+        0.10255671382760556
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "e6949e18a1cacf165de639250a9184d9164ba71043983c9194f7cd66484e1109"
+    },
+    {
+      "name": "R18C_RollClampScrew_L",
+      "label": "A_R18C_RollClampScrew_L",
+      "mesh": "meshes/R18C_RollClampScrew_L.stl",
+      "body": "left_hip_roll_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          5.845017767569516e-09,
+          0.03120167350769043,
+          0.0965
+        ],
+        [
+          0.003799999952316284,
+          0.03499793243408203,
+          0.10990000152587891
+        ]
+      ],
+      "com_world_m": [
+        0.0019106142200787629,
+        0.033100000000000004,
+        0.1044877546674042
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "edfa8941cf3612503ab115de42aef2ed38f6528d90711b24f4558286d6ff1cf8"
+    },
+    {
+      "name": "R18C_RollClampScrew_R",
+      "label": "A_R18C_RollClampScrew_R",
+      "mesh": "meshes/R18C_RollClampScrew_R.stl",
+      "body": "right_hip_roll_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          5.845017767569516e-09,
+          -0.03499793243408203,
+          0.0965
+        ],
+        [
+          0.003799999952316284,
+          -0.03120167350769043,
+          0.10990000152587891
+        ]
+      ],
+      "com_world_m": [
+        0.0019106142200787746,
+        -0.03310000000000001,
+        0.10448775466740419
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "2e156ca1e9c9ab1a7857cce82760bceda4051862e33aa2a5095f3793b7ef1c93"
+    },
+    {
+      "name": "R18C_RollClampNut_L",
+      "label": "A_R18C_RollClampNut_L",
+      "mesh": "meshes/R18C_RollClampNut_L.stl",
+      "body": "left_hip_roll_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.00010000000149011611,
+          0.030790599822998047,
+          0.0965999984741211
+        ],
+        [
+          0.0039000000953674317,
+          0.0354094009399414,
+          0.09819999694824219
+        ]
+      ],
+      "com_world_m": [
+        0.0018995990306034194,
+        0.033100000000000004,
+        0.09739999999999999
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "3993dc90fb1e5dfdbb7a5b96fdac1ed379e719fb77a320f3145d2fb21669d550"
+    },
+    {
+      "name": "R18C_RollClampNut_R",
+      "label": "A_R18C_RollClampNut_R",
+      "mesh": "meshes/R18C_RollClampNut_R.stl",
+      "body": "right_hip_roll_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.00010000000149011611,
+          -0.0354094009399414,
+          0.0965999984741211
+        ],
+        [
+          0.0039000000953674317,
+          -0.030790599822998047,
+          0.09819999694824219
+        ]
+      ],
+      "com_world_m": [
+        0.0018995990306034313,
+        -0.03309999999999999,
+        0.09739999999999997
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "e305f84a0854da238d42dad3781463643cf2bedbd5779a725fae05dd9677e7e8"
+    },
+    {
+      "name": "R18C_PitchBearing_L",
+      "label": "A_R18C_PitchBearing_L",
+      "mesh": "meshes/R18C_PitchBearing_L.stl",
+      "body": "left_hip_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.007001331329345703,
+          0.0685,
+          0.09150315093994141
+        ],
+        [
+          0.028983930587768554,
+          0.0725,
+          0.11349189758300782
+        ]
+      ],
+      "com_world_m": [
+        0.018055826454290446,
+        0.07049999999999995,
+        0.10247639695369978
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "6343adb66128f3a8543ded8696c9174050c45e8b747c91999e8fbb3001017a89"
+    },
+    {
+      "name": "R18C_PitchBearing_R",
+      "label": "A_R18C_PitchBearing_R",
+      "mesh": "meshes/R18C_PitchBearing_R.stl",
+      "body": "right_hip_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.007001331329345703,
+          -0.0725,
+          0.09150315093994141
+        ],
+        [
+          0.028983930587768554,
+          -0.0685,
+          0.11349189758300782
+        ]
+      ],
+      "com_world_m": [
+        0.018055826454290474,
+        -0.07049999999999995,
+        0.10247639695369984
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "97f9f38788f5709c1f86344a04cac1bed2c248fb6db1d317fc8ab33bfdfb3fda"
+    },
+    {
+      "name": "R18C_PitchIdler_L",
+      "label": "A_R18C_PitchIdler_L",
+      "mesh": "meshes/R18C_PitchIdler_L.stl",
+      "body": "left_hip_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.010012285232543945,
+          0.068,
+          0.09451129150390625
+        ],
+        [
+          0.026,
+          0.071,
+          0.1104898681640625
+        ]
+      ],
+      "com_world_m": [
+        0.018056713827605667,
+        0.0695,
+        0.10249999999999995
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "7ba6ce2e6bf2e8b9aecfa9f07ad6dc88c97b9327cc93c7e5a062b3413795b74b"
+    },
+    {
+      "name": "R18C_PitchIdler_R",
+      "label": "A_R18C_PitchIdler_R",
+      "mesh": "meshes/R18C_PitchIdler_R.stl",
+      "body": "right_hip_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.010012285232543945,
+          -0.071,
+          0.09451129150390625
+        ],
+        [
+          0.026,
+          -0.068,
+          0.1104898681640625
+        ]
+      ],
+      "com_world_m": [
+        0.018056713827605587,
+        -0.06949999999999999,
+        0.10249999999999997
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "1e84264a2528bab1a7b3efdc9374960ed9f68d6a35c03fbc8e60ece49d493e8d"
+    },
+    {
+      "name": "R18C_PitchClampScrew_L",
+      "label": "A_R18C_PitchClampScrew_L",
+      "mesh": "meshes/R18C_PitchClampScrew_L.stl",
+      "body": "left_hip_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.029889957427978515,
+          0.07070167541503906,
+          0.09235140991210937
+        ],
+        [
+          0.03622142791748047,
+          0.07449793243408204,
+          0.10213869476318359
+        ]
+      ],
+      "com_world_m": [
+        0.033087008898165765,
+        0.07259999999999997,
+        0.0980973936628102
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "9862b7a10a085831d8eb0a6692bf6bd162ba47ab27a90497f4a9b628f817f536"
+    },
+    {
+      "name": "R18C_PitchClampScrew_R",
+      "label": "A_R18C_PitchClampScrew_R",
+      "mesh": "meshes/R18C_PitchClampScrew_R.stl",
+      "body": "right_hip_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.029889957427978515,
+          -0.07449793243408204,
+          0.09235140991210937
+        ],
+        [
+          0.03622142791748047,
+          -0.07070167541503906,
+          0.10213869476318359
+        ]
+      ],
+      "com_world_m": [
+        0.03308700889816579,
+        -0.07259999999999996,
+        0.0980973936628102
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "afb7028257c3532956629d3d4bff37fa39766de25a502516bd64af6a3142e48e"
+    },
+    {
+      "name": "R18C_PitchClampNut_L",
+      "label": "A_R18C_PitchClampNut_L",
+      "mesh": "meshes/R18C_PitchClampNut_L.stl",
+      "body": "left_hip_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.028722721099853514,
+          0.0705999984741211,
+          0.0919336166381836
+        ],
+        [
+          0.033599987030029296,
+          0.07459999847412109,
+          0.09520595550537109
+        ]
+      ],
+      "com_world_m": [
+        0.031160865716214875,
+        0.07259999999999996,
+        0.09356999149447275
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "9a3d3f1bbf78b7c24c9f97785c6e5d2303e94b5d51d192d900f763e954ded978"
+    },
+    {
+      "name": "R18C_PitchClampNut_R",
+      "label": "A_R18C_PitchClampNut_R",
+      "mesh": "meshes/R18C_PitchClampNut_R.stl",
+      "body": "right_hip_pitch_link",
+      "color": [
+        0.4,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.028722721099853514,
+          -0.07459999847412109,
+          0.0919336166381836
+        ],
+        [
+          0.033599987030029296,
+          -0.0705999984741211,
+          0.09520595550537109
+        ]
+      ],
+      "com_world_m": [
+        0.031160865716214906,
+        -0.07259999999999994,
+        0.09356999149447272
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "86c4330290f56a938a163c1b7c39bfa56995b816ad59f781dfd727a4f7ef6331"
+    },
+    {
+      "name": "R20_RemovableRearBand",
+      "label": "R20 removable rear colour band",
+      "mesh": "meshes/R20_RemovableRearBand.stl",
+      "body": "head_roll_link",
+      "color": [
+        1.0,
+        0.6509803921568628,
+        0.03137254901960784,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.009584249878076387,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.024938020706176758,
+          -0.0314211597442627,
+          0.23596424865722657
+        ],
+        [
+          0.005516519546508789,
+          0.03141470336914062,
+          0.2558409423828125
+        ]
+      ],
+      "com_world_m": [
+        -0.014279516940073522,
+        0.0006625344979976443,
+        0.24620163473064216
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "05b1852a47e71b5534bce979810e37018ae6edeeab900897f871b15474c3a25b"
+    },
+    {
+      "name": "SkateFrame_L",
+      "label": "SkateFrame_L",
+      "mesh": "meshes/SkateFrame_L.stl",
+      "body": "left_ankle_link",
+      "color": [
+        0.3100000023841858,
+        0.5199999809265137,
+        0.5899999737739563,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.020288392756690903,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.056,
+          0.016,
+          -0.024487417221069337
+        ],
+        [
+          0.021,
+          0.066,
+          0.0
+        ]
+      ],
+      "com_world_m": [
+        -0.017568396026606835,
+        0.042978928469604175,
+        -0.003407699015779332
+      ],
+      "reference": false,
+      "include_when": "skates",
+      "source_sha256": "30b12021eccb7762b5ade8fa545ff76532e2146aa638cdb1f3b420c590e947e9"
+    },
+    {
+      "name": "RetainingKey_L",
+      "label": "RetainingKey_L",
+      "mesh": "meshes/RetainingKey_L.stl",
+      "body": "left_ankle_link",
+      "color": [
+        0.3100000023841858,
+        0.5199999809265137,
+        0.5899999737739563,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0007657691066221349,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.027,
+          0.0165,
+          0.0
+        ],
+        [
+          -0.013,
+          0.027100000381469726,
+          0.0185
+        ]
+      ],
+      "com_world_m": [
+        -0.020000000000000004,
+        0.021950295216207324,
+        0.0074690321279250755
+      ],
+      "reference": false,
+      "include_when": "skates",
+      "source_sha256": "4f0904409ebcb05ae1f49adb58731abf2bc5752d03073fe3d19106503fa772ba"
+    },
+    {
+      "name": "KeyScrew_L",
+      "label": "KeyScrew_L",
+      "mesh": "meshes/KeyScrew_L.stl",
+      "body": "left_ankle_link",
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.021899999618530272,
+          0.01740531349182129,
+          -0.003
+        ],
+        [
+          -0.018100000381469725,
+          0.02119468688964844,
+          0.005
+        ]
+      ],
+      "com_world_m": [
+        -0.02,
+        0.0193,
+        0.002184568835098336
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "source_sha256": "5663499ee4f7f9097e5e0cfc098b205fdf8bbaaf8a45e965d7f6d7289cf71ac2"
+    },
+    {
+      "name": "LocatorPin0_L",
+      "label": "LocatorPin0_L",
+      "mesh": "meshes/LocatorPin0_L.stl",
+      "body": "left_ankle_link",
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0012762327456126835,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.0375,
+          0.04450419616699219,
+          -0.004
+        ],
+        [
+          -0.0345,
+          0.04749580383300781,
+          0.019
+        ]
+      ],
+      "com_world_m": [
+        -0.036,
+        0.046,
+        0.007499999999999998
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "source_sha256": "492200dacf79337e5bc6db4d66dbf6fd77b2da3d09b5c39c0c30d86bcdaa6715"
+    },
+    {
+      "name": "LocatorPin1_L",
+      "label": "LocatorPin1_L",
+      "mesh": "meshes/LocatorPin1_L.stl",
+      "body": "left_ankle_link",
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0012762327456126838,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.0005,
+          0.04450419616699219,
+          -0.004
+        ],
+        [
+          0.0025,
+          0.04749580383300781,
+          0.019
+        ]
+      ],
+      "com_world_m": [
+        0.0009999999999999998,
+        0.046,
+        0.007499999999999999
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "source_sha256": "ff2b6bbf936c4ff11190593e36d9fafb2fd5feb3c509f495bab1522576f4a3fd"
+    },
+    {
+      "name": "RearTire_L",
+      "label": "RearTire_L",
+      "mesh": "meshes/RearTire_L.stl",
+      "body": "left_rear_wheel_link",
+      "color": [
+        0.11999999731779099,
+        0.17000000178813934,
+        0.1899999976158142,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.003523826461840879,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.06522554016113281,
+          0.042200000762939456,
+          -0.034993881225585936
+        ],
+        [
+          -0.03525,
+          0.04979999923706055,
+          -0.005006117343902588
+        ]
+      ],
+      "com_world_m": [
+        -0.050249999999999996,
+        0.046,
+        -0.019999999999999997
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "source_sha256": "3da2a529691dc9a0682e24753e8c56305f41f77b3f7410e247de543fea172d01"
+    },
+    {
+      "name": "RearRim_L",
+      "label": "RearRim_L",
+      "mesh": "meshes/RearRim_L.stl",
+      "body": "left_rear_wheel_link",
+      "color": [
+        1.0,
+        0.6600000262260437,
+        0.05000000074505806,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0029395423787112267,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.06032539749145508,
+          0.042200000762939456,
+          -0.030093847274780275
+        ],
+        [
+          -0.04015000152587891,
+          0.04979999923706055,
+          -0.009906152725219726
+        ]
+      ],
+      "com_world_m": [
+        -0.05025,
+        0.04599999999999999,
+        -0.02
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "source_sha256": "ab7618a1b9d8624abcb5092aba4fd30d352a584ba58fbd4e2e702b6c36841701"
+    },
+    {
+      "name": "RearAxle_L",
+      "label": "RearAxle_L",
+      "mesh": "meshes/RearAxle_L.stl",
+      "body": "left_ankle_link",
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0008878140839044752,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.05175,
+          0.038,
+          -0.021495805740356446
+        ],
+        [
+          -0.04875,
+          0.054,
+          -0.018504194259643555
+        ]
+      ],
+      "com_world_m": [
+        -0.050249999999999996,
+        0.046,
+        -0.02
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "source_sha256": "ba4ba1f33a93871b98204c6edf32286b67398d4363dafea77584a0c409c0be25"
+    },
+    {
+      "name": "FrontTire_L",
+      "label": "FrontTire_L",
+      "mesh": "meshes/FrontTire_L.stl",
+      "body": "left_front_wheel_link",
+      "color": [
+        0.11999999731779099,
+        0.17000000178813934,
+        0.1899999976158142,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.003523826461840879,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.0002255365550518036,
+          0.042200000762939456,
+          -0.034993881225585936
+        ],
+        [
+          0.02975,
+          0.04979999923706055,
+          -0.005006117343902588
+        ]
+      ],
+      "com_world_m": [
+        0.014749999999999997,
+        0.046,
+        -0.019999999999999997
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "source_sha256": "24c56294140ea2fcbfe4bc746a195c886010689866197a7ccff8e730ba941cbc"
+    },
+    {
+      "name": "FrontRim_L",
+      "label": "FrontRim_L",
+      "mesh": "meshes/FrontRim_L.stl",
+      "body": "left_front_wheel_link",
+      "color": [
+        1.0,
+        0.6600000262260437,
+        0.05000000074505806,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.002939542378711226,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.00467460298538208,
+          0.042200000762939456,
+          -0.030093847274780275
+        ],
+        [
+          0.024850000381469728,
+          0.04979999923706055,
+          -0.009906152725219726
+        ]
+      ],
+      "com_world_m": [
+        0.014750000000000001,
+        0.046,
+        -0.020000000000000007
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "source_sha256": "c2265c6258090b025923c6a47bb2a4c20663a7522c5b6bfd724f20d0f38c1a6f"
+    },
+    {
+      "name": "FrontAxle_L",
+      "label": "FrontAxle_L",
+      "mesh": "meshes/FrontAxle_L.stl",
+      "body": "left_ankle_link",
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0008878140839044754,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.01325,
+          0.038,
+          -0.021495805740356446
+        ],
+        [
+          0.01625,
+          0.054,
+          -0.018504194259643555
+        ]
+      ],
+      "com_world_m": [
+        0.014749999999999997,
+        0.046,
+        -0.02
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "source_sha256": "b948d3821638227e591a0f75d728faafeb877523d8e136022f02da9fa4f15d87"
+    },
+    {
+      "name": "SkateFrame_R",
+      "label": "SkateFrame_R",
+      "mesh": "meshes/SkateFrame_R.stl",
+      "body": "right_ankle_link",
+      "color": [
+        0.3100000023841858,
+        0.5199999809265137,
+        0.5899999737739563,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0202883927566909,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.056,
+          -0.066,
+          -0.024487417221069337
+        ],
+        [
+          0.021,
+          -0.016,
+          0.0
+        ]
+      ],
+      "com_world_m": [
+        -0.01756839602660683,
+        -0.04297892846960419,
+        -0.0034076990157793324
+      ],
+      "reference": false,
+      "include_when": "skates",
+      "source_sha256": "8d4fc66984f9cfe34c90e38aaf9dfb5e5df871abfed0faa9d174336afa28c42f"
+    },
+    {
+      "name": "RetainingKey_R",
+      "label": "RetainingKey_R",
+      "mesh": "meshes/RetainingKey_R.stl",
+      "body": "right_ankle_link",
+      "color": [
+        0.3100000023841858,
+        0.5199999809265137,
+        0.5899999737739563,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0007657691066221349,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.027,
+          -0.027100000381469726,
+          0.0
+        ],
+        [
+          -0.013,
+          -0.0165,
+          0.0185
+        ]
+      ],
+      "com_world_m": [
+        -0.020000000000000004,
+        -0.021950295216207328,
+        0.007469032127925073
+      ],
+      "reference": false,
+      "include_when": "skates",
+      "source_sha256": "94ebb29392502a028fb44219e433347335d4d28fcdccae35138ce90a3e57a7f1"
+    },
+    {
+      "name": "KeyScrew_R",
+      "label": "KeyScrew_R",
+      "mesh": "meshes/KeyScrew_R.stl",
+      "body": "right_ankle_link",
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.021899999618530272,
+          -0.02119468688964844,
+          -0.003
+        ],
+        [
+          -0.018100000381469725,
+          -0.01740531349182129,
+          0.005
+        ]
+      ],
+      "com_world_m": [
+        -0.02,
+        -0.019300000000000005,
+        0.002184568835098336
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "source_sha256": "d5da536511a2717711e8c7ad7124be6cab24be11a416fc7fa1db9334c8ac34c2"
+    },
+    {
+      "name": "LocatorPin0_R",
+      "label": "LocatorPin0_R",
+      "mesh": "meshes/LocatorPin0_R.stl",
+      "body": "right_ankle_link",
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0012762327456126835,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.0375,
+          -0.04749580383300781,
+          -0.004
+        ],
+        [
+          -0.0345,
+          -0.04450419616699219,
+          0.019
+        ]
+      ],
+      "com_world_m": [
+        -0.036,
+        -0.04599999999999999,
+        0.007500000000000001
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "source_sha256": "089f7712574df2b32fb0aeb44b7e07c51fa374181d4954775d026afbd32a6c92"
+    },
+    {
+      "name": "LocatorPin1_R",
+      "label": "LocatorPin1_R",
+      "mesh": "meshes/LocatorPin1_R.stl",
+      "body": "right_ankle_link",
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0012762327456126838,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.0005,
+          -0.04749580383300781,
+          -0.004
+        ],
+        [
+          0.0025,
+          -0.04450419616699219,
+          0.019
+        ]
+      ],
+      "com_world_m": [
+        0.001,
+        -0.046,
+        0.007500000000000001
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "source_sha256": "f4887d228308a6c8c1f3b743f45d7440e3e85e6305dacc28623938975c997720"
+    },
+    {
+      "name": "RearTire_R",
+      "label": "RearTire_R",
+      "mesh": "meshes/RearTire_R.stl",
+      "body": "right_rear_wheel_link",
+      "color": [
+        0.11999999731779099,
+        0.17000000178813934,
+        0.1899999976158142,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.003523826461840879,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.06522554016113281,
+          -0.04979999923706055,
+          -0.034993881225585936
+        ],
+        [
+          -0.03525,
+          -0.042200000762939456,
+          -0.005006117343902588
+        ]
+      ],
+      "com_world_m": [
+        -0.050249999999999996,
+        -0.046,
+        -0.019999999999999976
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "source_sha256": "23005d61ee835a83c1f0db24aaf0ef41d1d4126fb7bd879a363593d2632b8196"
+    },
+    {
+      "name": "RearRim_R",
+      "label": "RearRim_R",
+      "mesh": "meshes/RearRim_R.stl",
+      "body": "right_rear_wheel_link",
+      "color": [
+        1.0,
+        0.6600000262260437,
+        0.05000000074505806,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0029395423787112267,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.06032539749145508,
+          -0.04979999923706055,
+          -0.030093847274780275
+        ],
+        [
+          -0.04015000152587891,
+          -0.042200000762939456,
+          -0.009906152725219726
+        ]
+      ],
+      "com_world_m": [
+        -0.05025,
+        -0.04599999999999999,
+        -0.01999999999999998
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "source_sha256": "7637e559a102c0c64c072b075d7e588796d3dd388461690c65b3b64630af3af2"
+    },
+    {
+      "name": "RearAxle_R",
+      "label": "RearAxle_R",
+      "mesh": "meshes/RearAxle_R.stl",
+      "body": "right_ankle_link",
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0008878140839044754,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.05175,
+          -0.054,
+          -0.021495805740356446
+        ],
+        [
+          -0.04875,
+          -0.038,
+          -0.018504194259643555
+        ]
+      ],
+      "com_world_m": [
+        -0.05025,
+        -0.046,
+        -0.02
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "source_sha256": "5e35ae580a41fa0f18c39f72d89921c76a26e942b110f5ce9d10aed2da8bbbd6"
+    },
+    {
+      "name": "FrontTire_R",
+      "label": "FrontTire_R",
+      "mesh": "meshes/FrontTire_R.stl",
+      "body": "right_front_wheel_link",
+      "color": [
+        0.11999999731779099,
+        0.17000000178813934,
+        0.1899999976158142,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.003523826461840879,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.0002255365550518036,
+          -0.04979999923706055,
+          -0.034993881225585936
+        ],
+        [
+          0.02975,
+          -0.042200000762939456,
+          -0.005006117343902588
+        ]
+      ],
+      "com_world_m": [
+        0.014749999999999997,
+        -0.046,
+        -0.019999999999999976
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "source_sha256": "f4e64b11a845950626606b09e5580779c640b8ad5213b6488867f99ac41ef17b"
+    },
+    {
+      "name": "FrontRim_R",
+      "label": "FrontRim_R",
+      "mesh": "meshes/FrontRim_R.stl",
+      "body": "right_front_wheel_link",
+      "color": [
+        1.0,
+        0.6600000262260437,
+        0.05000000074505806,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0029395423787112267,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.00467460298538208,
+          -0.04979999923706055,
+          -0.030093847274780275
+        ],
+        [
+          0.024850000381469728,
+          -0.042200000762939456,
+          -0.009906152725219726
+        ]
+      ],
+      "com_world_m": [
+        0.01475,
+        -0.04599999999999999,
+        -0.01999999999999998
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "source_sha256": "e16b6b7e4c3ef4ba892af72ccbd47a81e0e676ff3c706f9154f7f81b933f7509"
+    },
+    {
+      "name": "FrontAxle_R",
+      "label": "FrontAxle_R",
+      "mesh": "meshes/FrontAxle_R.stl",
+      "body": "right_ankle_link",
+      "color": [
+        0.6800000071525574,
+        0.7099999785423279,
+        0.7400000095367432,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0008878140839044754,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.01325,
+          -0.054,
+          -0.021495805740356446
+        ],
+        [
+          0.01625,
+          -0.038,
+          -0.018504194259643555
+        ]
+      ],
+      "com_world_m": [
+        0.014750000000000001,
+        -0.046000000000000006,
+        -0.02
+      ],
+      "reference": true,
+      "include_when": "skates",
+      "source_sha256": "19153ed6b883fb17059bdc02a629de303d6ab5d6e35f2394b7facf2dd576377e"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "zero": {
+    "min_z_mm": 0.29999990000001103,
+    "near_floor_parts": [
+      "RoundedSole_L",
+      "RoundedSole_R"
+    ],
+    "below_floor_parts": []
+  },
+  "stand": {
+    "min_z_mm": 0.2999998999999765,
+    "near_floor_parts": [
+      "RoundedSole_L",
+      "RoundedSole_R"
+    ],
+    "below_floor_parts": []
+  },
+  "walk_left": {
+    "min_z_mm": 0.2999998999999765,
+    "near_floor_parts": [
+      "RoundedSole_L"
+    ],
+    "below_floor_parts": []
+  },
+  "walk_right": {
+    "min_z_mm": 0.29999989999999277,
+    "near_floor_parts": [
+      "RoundedSole_R"
+    ],
+    "below_floor_parts": []
+  },
+  "sit": {
+    "min_z_mm": 0.29999989999997173,
+    "near_floor_parts": [
+      "RoundedSole_L",
+      "RoundedSole_R"
+    ],
+    "below_floor_parts": []
+  },
+  "sit_transition": {
+    "min_z_mm": 0.2999998999999791,
+    "near_floor_parts": [
+      "RoundedSole_L",
+      "RoundedSole_R"
+    ],
+    "below_floor_parts": []
+  },
+  "pickup": {
+    "min_z_mm": 0.29999989999996,
+    "near_floor_parts": [
+      "RoundedSole_L",
+      "RoundedSole_R"
+    ],
+    "below_floor_parts": []
+  },
+  "kick_left": {
+    "min_z_mm": 0.29999989999999277,
+    "near_floor_parts": [
+      "RoundedSole_L",
+      "RoundedSole_R"
+    ],
+    "below_floor_parts": []
+  },
+  "kick_right": {
+    "min_z_mm": 0.2999998999999765,
+    "near_floor_parts": [
+      "RoundedSole_L",
+      "RoundedSole_R"
+    ],
+    "below_floor_parts": []
+  },
+  "skating": {
+    "min_z_mm": 0.29969634945260487,
+    "near_floor_parts": [
+      "RoundedSole_L",
+      "RoundedSole_R"
+    ],
+    "below_floor_parts": []
+  },
+  "getup_back": {
+    "min_z_mm": 0.2938077740710921,
+    "near_floor_parts": [
+      "BodyBack"
+    ],
+    "below_floor_parts": []
+  },
+  "getup_tuck": {
+    "min_z_mm": -6.117956275157098,
+    "near_floor_parts": [],
+    "below_floor_parts": [
+      {
+        "name": "Trunk",
+        "min_z_mm": -6.117956275157098
+      }
+    ]
+  },
+  "roll_tuck": {
+    "min_z_mm": 0.2999999000000007,
+    "near_floor_parts": [
+      "RoundedSole_L",
+      "RoundedSole_R"
+    ],
+    "below_floor_parts": []
+  },
+  "roll_contact": {
+    "min_z_mm": -3.6349327553828403,
+    "near_floor_parts": [],
+    "below_floor_parts": [
+      {
+        "name": "SoftHeadShell",
+        "min_z_mm": -3.6349327553828403
+      }
+    ]
+  },
+  "jaw_0": {
+    "min_z_mm": -1.0000000036082248e-07,
+    "near_floor_parts": [
+      "RoundedSole_L",
+      "RoundedSole_R"
+    ],
+    "below_floor_parts": []
+  },
+  "jaw_15": {
+    "min_z_mm": -1.0000000036082248e-07,
+    "near_floor_parts": [
+      "RoundedSole_L",
+      "RoundedSole_R"
+    ],
+    "below_floor_parts": []
+  },
+  "jaw_30": {
+    "min_z_mm": -1.0000000036082248e-07,
+    "near_floor_parts": [
+      "RoundedSole_L",
+      "RoundedSole_R"
+    ],
+    "below_floor_parts": []
+  },
+  "sit_reduced": {
+    "min_z_mm": 0.29999990000000654,
+    "near_floor_parts": [
+      "RoundedSole_L",
+      "RoundedSole_R"
+    ],
+    "below_floor_parts": []
+  },
+  "pickup_reduced": {
+    "min_z_mm": 69.6052345584216,
+    "near_floor_parts": [],
+    "below_floor_parts": []
+  },
+  "pickup_limited": {
+    "min_z_mm": 0.29999989999998844,
+    "near_floor_parts": [
+      "RoundedSole_L",
+      "RoundedSole_R"
+    ],
+    "below_floor_parts": []
+  },
+  "pickup_neck_neutral": {
+    "min_z_mm": 0.29999989999998844,
+    "near_floor_parts": [
+      "RoundedSole_L",
+      "RoundedSole_R"
+    ],
+    "below_floor_parts": []
+  }
+}

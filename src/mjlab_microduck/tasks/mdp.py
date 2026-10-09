@@ -82,7 +82,7 @@ def _get_base_metadata_no_passive(env, run_path):
     joint_action = env.action_manager.get_term("joint_pos")
     assert isinstance(joint_action, _JointAction)
     full_names = list(robot.joint_names)
-    keep_idx = [i for i, n in enumerate(full_names) if not n.startswith("passive_")]
+    keep_idx = [i for i, n in enumerate(full_names) if not n.startswith("passive_") and n != "mouth"]
     joint_names = [full_names[i] for i in keep_idx]
     joint_name_to_ctrl_id = {a.target.split("/")[-1]: a.id for a in robot.spec.actuators}
     ctrl_ids = [joint_name_to_ctrl_id[n] for n in joint_names]
@@ -111,7 +111,7 @@ try:
 except Exception:
     pass
 
-print("[mdp] Patch 4 active: ONNX export filters passive_* joints")
+print("[mdp] Patch 4 active: ONNX export filters passive_* joints and separate mouth")
 
 # Patch 5: warm start. MjlabOnPolicyRunner.load restores env.common_step_counter
 # (and rsl_rl restores the iteration) from the checkpoint so a RESUMED run keeps
@@ -171,7 +171,7 @@ def _servo_joint_ids(env: "ManagerBasedRlEnv", asset: Entity) -> list:
     key = id(asset)
     ids = cache.get(key)
     if ids is None:
-        ids, _ = asset.find_joints(r"^(?!passive_).*")
+        ids, _ = asset.find_joints(r"^(?!passive_|mouth$).*")
         cache[key] = ids
     return ids
 

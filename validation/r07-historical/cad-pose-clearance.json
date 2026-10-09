@@ -1,0 +1,962 @@
+{
+  "threshold_mm3": 0.5,
+  "exclusion": "Only hardware-reference pairs on the same rigid body. All cross-body reference pairs and printable pairs checked.",
+  "poses": [
+    {
+      "pose": "zero",
+      "label": "CAD zero",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": 0,
+        "left_knee": 0,
+        "left_ankle": 0,
+        "neck_pitch": 0,
+        "head_pitch": 0,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": 0,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0,
+        "right_knee": 0,
+        "right_ankle": 0
+      },
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.1433
+      ],
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "candidate_pairs": 201,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [],
+      "jaw_open_deg": 0.0,
+      "rod_length_mm": 12.0,
+      "elapsed_s": 16.221,
+      "status": "sampled CAD clearance pass; motion, balance and physical fit unverified"
+    },
+    {
+      "pose": "stand",
+      "label": "Bent standing",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.4,
+        "left_knee": 0.4,
+        "left_ankle": 0.8,
+        "neck_pitch": 0.15,
+        "head_pitch": 0.15,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": 0,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.4,
+        "right_knee": -0.4,
+        "right_ankle": -0.8
+      },
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.14274672939817867
+      ],
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "candidate_pairs": 210,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [],
+      "jaw_open_deg": 0.0,
+      "rod_length_mm": 12.0,
+      "elapsed_s": 15.993,
+      "status": "sampled CAD clearance pass; motion, balance and physical fit unverified"
+    },
+    {
+      "pose": "walk_left",
+      "label": "Walking: left support",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.4,
+        "left_knee": 0.4,
+        "left_ankle": 0.8,
+        "neck_pitch": 0.15,
+        "head_pitch": 0.15,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": 0,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.65,
+        "right_knee": -0.8,
+        "right_ankle": -1.05
+      },
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.14274672939817867
+      ],
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "candidate_pairs": 215,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [],
+      "jaw_open_deg": 0.0,
+      "rod_length_mm": 12.0,
+      "elapsed_s": 17.921,
+      "status": "sampled CAD clearance pass; motion, balance and physical fit unverified"
+    },
+    {
+      "pose": "walk_right",
+      "label": "Walking: right support",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.65,
+        "left_knee": 0.8,
+        "left_ankle": 1.05,
+        "neck_pitch": 0.15,
+        "head_pitch": 0.15,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": 0,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.4,
+        "right_knee": -0.4,
+        "right_ankle": -0.8
+      },
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.14274672939817867
+      ],
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "candidate_pairs": 215,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [],
+      "jaw_open_deg": 0.0,
+      "rod_length_mm": 12.0,
+      "elapsed_s": 12.774,
+      "status": "sampled CAD clearance pass; motion, balance and physical fit unverified"
+    },
+    {
+      "pose": "sit",
+      "label": "Sitting study",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.85,
+        "left_knee": 0.7,
+        "left_ankle": 1.5499999999999998,
+        "neck_pitch": 0.35,
+        "head_pitch": 0.35,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": 0,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.85,
+        "right_knee": -0.7,
+        "right_ankle": -1.5499999999999998
+      },
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.12155128646096496
+      ],
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "candidate_pairs": 216,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [
+        {
+          "a": "Trunk",
+          "b": "Neck",
+          "intersection_mm3": 43.4021
+        },
+        {
+          "a": "Shank_L",
+          "b": "RoundedFoot_L",
+          "intersection_mm3": 56.983
+        },
+        {
+          "a": "Shank_R",
+          "b": "RoundedFoot_R",
+          "intersection_mm3": 56.983
+        }
+      ],
+      "jaw_open_deg": 0.0,
+      "rod_length_mm": 12.0,
+      "elapsed_s": 12.482,
+      "status": "illustrative, interference requires redesign"
+    },
+    {
+      "pose": "sit_transition",
+      "label": "Sit-to-stand midpoint",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.6,
+        "left_knee": 0.6,
+        "left_ankle": 1.2,
+        "neck_pitch": 0.15,
+        "head_pitch": 0.15,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": 0,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.6,
+        "right_knee": -0.6,
+        "right_ankle": -1.2
+      },
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.13286237763990572
+      ],
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "candidate_pairs": 214,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [],
+      "jaw_open_deg": 0.0,
+      "rod_length_mm": 12.0,
+      "elapsed_s": 12.717,
+      "status": "sampled CAD clearance pass; motion, balance and physical fit unverified"
+    },
+    {
+      "pose": "pickup",
+      "label": "Ground pickup approach",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.8,
+        "left_knee": 0.6,
+        "left_ankle": 1.4,
+        "neck_pitch": -0.7,
+        "head_pitch": 0.5,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": -0.9641885924143188,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.8,
+        "right_knee": -0.6,
+        "right_ankle": -1.4
+      },
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.1274116478571057
+      ],
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "candidate_pairs": 255,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [
+        {
+          "a": "Trunk",
+          "b": "Neck",
+          "intersection_mm3": 6.1793
+        }
+      ],
+      "jaw_open_deg": 29.999999888719202,
+      "rod_length_mm": 11.99999999999998,
+      "elapsed_s": 13.846,
+      "status": "illustrative, interference requires redesign"
+    },
+    {
+      "pose": "kick_left",
+      "label": "Left kick",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.95,
+        "left_knee": 0.1,
+        "left_ankle": 1.05,
+        "neck_pitch": 0.15,
+        "head_pitch": 0.15,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": 0,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.4,
+        "right_knee": -0.4,
+        "right_ankle": -0.8
+      },
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.14274672939817867
+      ],
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "candidate_pairs": 213,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [],
+      "jaw_open_deg": 0.0,
+      "rod_length_mm": 12.0,
+      "elapsed_s": 12.093,
+      "status": "sampled CAD clearance pass; motion, balance and physical fit unverified"
+    },
+    {
+      "pose": "kick_right",
+      "label": "Right kick",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.4,
+        "left_knee": 0.4,
+        "left_ankle": 0.8,
+        "neck_pitch": 0.15,
+        "head_pitch": 0.15,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": 0,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.95,
+        "right_knee": -0.1,
+        "right_ankle": -1.05
+      },
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.14274672939817867
+      ],
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "candidate_pairs": 212,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [],
+      "jaw_open_deg": 0.0,
+      "rod_length_mm": 12.0,
+      "elapsed_s": 11.927,
+      "status": "sampled CAD clearance pass; motion, balance and physical fit unverified"
+    },
+    {
+      "pose": "skating",
+      "label": "Skating crouch",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": -0.1,
+        "left_hip_pitch": -0.55,
+        "left_knee": 0.55,
+        "left_ankle": 1.1,
+        "neck_pitch": 0.15,
+        "head_pitch": 0.15,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": 0,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.1,
+        "right_hip_pitch": 0.55,
+        "right_knee": -0.55,
+        "right_ankle": -1.1
+      },
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.1408317479180373
+      ],
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "candidate_pairs": 236,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [],
+      "jaw_open_deg": 0.0,
+      "rod_length_mm": 12.0,
+      "elapsed_s": 12.121,
+      "status": "sampled CAD clearance pass; motion, balance and physical fit unverified"
+    },
+    {
+      "pose": "getup_back",
+      "label": "Get-up: back contact",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.7,
+        "left_knee": 0.7,
+        "left_ankle": 1.4,
+        "neck_pitch": 0.15,
+        "head_pitch": 0.15,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": 0,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.7,
+        "right_knee": -0.7,
+        "right_ankle": -1.4
+      },
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.06046426850000001
+      ],
+      "base_quaternion_wxyz": [
+        0.7071067811865476,
+        0,
+        -0.7071067811865476,
+        0
+      ],
+      "candidate_pairs": 209,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [],
+      "jaw_open_deg": 0.0,
+      "rod_length_mm": 12.0,
+      "elapsed_s": 11.518,
+      "status": "sampled CAD clearance pass; motion, balance and physical fit unverified"
+    },
+    {
+      "pose": "getup_tuck",
+      "label": "Get-up: tuck",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.9,
+        "left_knee": 0.65,
+        "left_ankle": 1.55,
+        "neck_pitch": 0.7,
+        "head_pitch": 0.7,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": 0,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.9,
+        "right_knee": -0.65,
+        "right_ankle": -1.55
+      },
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.06398496266463694
+      ],
+      "base_quaternion_wxyz": [
+        0.8253356149096783,
+        0,
+        -0.5646424733950354,
+        0
+      ],
+      "candidate_pairs": 347,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [
+        {
+          "a": "Trunk",
+          "b": "Neck",
+          "intersection_mm3": 96.2926
+        },
+        {
+          "a": "Trunk",
+          "b": "ref_servo_neck_pitch",
+          "intersection_mm3": 194.1907
+        },
+        {
+          "a": "Neck",
+          "b": "BodyFront",
+          "intersection_mm3": 121.5118
+        },
+        {
+          "a": "Neck",
+          "b": "ref_HAT_PCB",
+          "intersection_mm3": 54.4354
+        },
+        {
+          "a": "Neck",
+          "b": "ref_HAT_J9",
+          "intersection_mm3": 112.2511
+        },
+        {
+          "a": "Neck",
+          "b": "ref_HAT_J2",
+          "intersection_mm3": 5.4086
+        },
+        {
+          "a": "HeadPitch",
+          "b": "BodyFront",
+          "intersection_mm3": 33.5076
+        },
+        {
+          "a": "Shank_L",
+          "b": "RoundedFoot_L",
+          "intersection_mm3": 56.983
+        },
+        {
+          "a": "BodyFront",
+          "b": "ref_servo_head_pitch",
+          "intersection_mm3": 137.2828
+        },
+        {
+          "a": "BodyFront",
+          "b": "ref_horn_head_pitch",
+          "intersection_mm3": 0.6964
+        },
+        {
+          "a": "Shank_R",
+          "b": "RoundedFoot_R",
+          "intersection_mm3": 56.983
+        },
+        {
+          "a": "ref_servo_neck_pitch",
+          "b": "ref_HAT_PCB",
+          "intersection_mm3": 36.7189
+        },
+        {
+          "a": "ref_servo_head_pitch",
+          "b": "ref_HAT_PCB",
+          "intersection_mm3": 4.0051
+        },
+        {
+          "a": "ref_servo_head_pitch",
+          "b": "ref_HAT_J9",
+          "intersection_mm3": 56.3908
+        }
+      ],
+      "jaw_open_deg": 0.0,
+      "rod_length_mm": 12.0,
+      "elapsed_s": 17.854,
+      "status": "illustrative, interference requires redesign"
+    },
+    {
+      "pose": "roll_tuck",
+      "label": "Forward roll: tuck",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.9,
+        "left_knee": 0.65,
+        "left_ankle": 1.55,
+        "neck_pitch": -0.8,
+        "head_pitch": 0.6,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": 0,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.9,
+        "right_knee": -0.65,
+        "right_ankle": -1.55
+      },
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.15810893688711172
+      ],
+      "base_quaternion_wxyz": [
+        0.9004471023526769,
+        0,
+        0.43496553411123023,
+        0
+      ],
+      "candidate_pairs": 320,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [
+        {
+          "a": "Trunk",
+          "b": "Neck",
+          "intersection_mm3": 7.1573
+        },
+        {
+          "a": "Shank_L",
+          "b": "RoundedFoot_L",
+          "intersection_mm3": 56.983
+        },
+        {
+          "a": "Shank_R",
+          "b": "RoundedFoot_R",
+          "intersection_mm3": 56.983
+        }
+      ],
+      "jaw_open_deg": 0.0,
+      "rod_length_mm": 12.0,
+      "elapsed_s": 17.271,
+      "status": "illustrative, interference requires redesign"
+    },
+    {
+      "pose": "roll_contact",
+      "label": "Forward roll: head contact",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.9,
+        "left_knee": 0.65,
+        "left_ankle": 1.55,
+        "neck_pitch": -0.8,
+        "head_pitch": 0.6,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": 0,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.9,
+        "right_knee": -0.65,
+        "right_ankle": -1.55
+      },
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.12311039875674766
+      ],
+      "base_quaternion_wxyz": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "candidate_pairs": 242,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [
+        {
+          "a": "Trunk",
+          "b": "Neck",
+          "intersection_mm3": 7.1573
+        },
+        {
+          "a": "Shank_L",
+          "b": "RoundedFoot_L",
+          "intersection_mm3": 56.983
+        },
+        {
+          "a": "Shank_R",
+          "b": "RoundedFoot_R",
+          "intersection_mm3": 56.983
+        }
+      ],
+      "jaw_open_deg": 0.0,
+      "rod_length_mm": 12.0,
+      "elapsed_s": 13.344,
+      "status": "illustrative, interference requires redesign"
+    },
+    {
+      "pose": "jaw_0",
+      "label": "Jaw 0 degrees",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": 0,
+        "left_knee": 0,
+        "left_ankle": 0,
+        "neck_pitch": 0,
+        "head_pitch": 0,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": 0.0,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0,
+        "right_knee": 0,
+        "right_ankle": 0
+      },
+      "base_position_m": [
+        0,
+        0,
+        0.143
+      ],
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "candidate_pairs": 201,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [],
+      "jaw_open_deg": 0.0,
+      "rod_length_mm": 12.0,
+      "elapsed_s": 12.626,
+      "status": "sampled CAD clearance pass; motion, balance and physical fit unverified"
+    },
+    {
+      "pose": "jaw_15",
+      "label": "Jaw 15 degrees",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": 0,
+        "left_knee": 0,
+        "left_ankle": 0,
+        "neck_pitch": 0,
+        "head_pitch": 0,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": -0.43998200126898357,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0,
+        "right_knee": 0,
+        "right_ankle": 0
+      },
+      "base_position_m": [
+        0,
+        0,
+        0.143
+      ],
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "candidate_pairs": 199,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [],
+      "jaw_open_deg": 14.99999999999957,
+      "rod_length_mm": 11.999999999999934,
+      "elapsed_s": 12.363,
+      "status": "sampled CAD clearance pass; motion, balance and physical fit unverified"
+    },
+    {
+      "pose": "jaw_30",
+      "label": "Jaw 30 degrees",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": 0,
+        "left_knee": 0,
+        "left_ankle": 0,
+        "neck_pitch": 0,
+        "head_pitch": 0,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": -0.9641885978943355,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0,
+        "right_knee": 0,
+        "right_ankle": 0
+      },
+      "base_position_m": [
+        0,
+        0,
+        0.143
+      ],
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "candidate_pairs": 199,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [],
+      "jaw_open_deg": 29.99999999999957,
+      "rod_length_mm": 11.999999999999917,
+      "elapsed_s": 11.997,
+      "status": "sampled CAD clearance pass; motion, balance and physical fit unverified"
+    },
+    {
+      "pose": "sit_reduced",
+      "label": "Reduced sitting range study",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.7,
+        "left_knee": 0.5,
+        "left_ankle": 1.2,
+        "neck_pitch": 0.15,
+        "head_pitch": 0.15,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": 0,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.7,
+        "right_knee": -0.5,
+        "right_ankle": -1.2
+      },
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.1343763361270265
+      ],
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "candidate_pairs": 214,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [],
+      "jaw_open_deg": 0.0,
+      "rod_length_mm": 12.0,
+      "elapsed_s": 13.64,
+      "status": "sampled CAD clearance pass; motion, balance and physical fit unverified"
+    },
+    {
+      "pose": "pickup_reduced",
+      "label": "Reduced neck pickup approach",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.8,
+        "left_knee": 0.6,
+        "left_ankle": 1.4,
+        "neck_pitch": -0.5,
+        "head_pitch": 0.5,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": -0.9641885924143188,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.8,
+        "right_knee": -0.6,
+        "right_ankle": -1.4
+      },
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.19671688251552735
+      ],
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "candidate_pairs": 271,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [
+        {
+          "a": "Trunk",
+          "b": "Neck",
+          "intersection_mm3": 17.7697
+        }
+      ],
+      "jaw_open_deg": 29.999999888719202,
+      "rod_length_mm": 11.99999999999998,
+      "elapsed_s": 15.402,
+      "status": "illustrative, interference requires redesign"
+    },
+    {
+      "pose": "pickup_limited",
+      "label": "Limited-neck pickup approach",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.8,
+        "left_knee": 0.6,
+        "left_ankle": 1.4,
+        "neck_pitch": -0.05,
+        "head_pitch": 0.5,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": -0.9641885924143188,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.8,
+        "right_knee": -0.6,
+        "right_ankle": -1.4
+      },
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.12741164785710574
+      ],
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "candidate_pairs": 245,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [
+        {
+          "a": "Neck",
+          "b": "ref_servo_right_hip_yaw",
+          "intersection_mm3": 5.2368
+        }
+      ],
+      "jaw_open_deg": 29.999999888719202,
+      "rod_length_mm": 11.99999999999998,
+      "elapsed_s": 13.794,
+      "status": "illustrative, interference requires redesign"
+    },
+    {
+      "pose": "pickup_neck_neutral",
+      "label": "Neutral-neck ball approach study",
+      "joint_positions_rad": {
+        "left_hip_yaw": 0.0,
+        "left_hip_roll": 0.0,
+        "left_hip_pitch": -0.8,
+        "left_knee": 0.6,
+        "left_ankle": 1.4,
+        "neck_pitch": 0.0,
+        "head_pitch": 0.5,
+        "head_yaw": 0.0,
+        "head_roll": 0.0,
+        "mouth": -0.9641885924143188,
+        "right_hip_yaw": 0.0,
+        "right_hip_roll": 0.0,
+        "right_hip_pitch": 0.8,
+        "right_knee": -0.6,
+        "right_ankle": -1.4
+      },
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.12741164785710574
+      ],
+      "base_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "candidate_pairs": 243,
+      "excluded_same_body_hardware_pairs": 287,
+      "hits_over_0p5mm3": [],
+      "jaw_open_deg": 29.999999888719202,
+      "rod_length_mm": 11.99999999999998,
+      "elapsed_s": 13.749,
+      "status": "sampled CAD clearance pass; motion, balance and physical fit unverified"
+    }
+  ]
+}

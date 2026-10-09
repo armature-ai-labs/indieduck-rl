@@ -1,21 +1,18 @@
-# Validation and current limitations
+# R20 validation
 
-This is a filtered source integration base. RL tasks cannot currently be imported or trained from this snapshot because the upstream robot models are deliberately omitted. No IndieDuck model has been invented or supplied, and no policy-transfer claim is made.
+Current evidence is in `validation/r20-*.json`. Retained R07 reports are historical and do not validate this geometry. No physical robot or trained policy was tested.
 
-## Checks performed
+- `r20-cad-standing-parity.json`: all 124 visible CAD components map explicitly into simulation. At the exact published CAD standing root, axis-aligned bounds computed from transformed MuJoCo **mesh vertices** match bounds computed from posed FreeCAD-exported **STL vertices** within 0.0351 mm; tolerance 0.15 mm. This is a visual tessellation registration check, not an exact BRep surface-distance test. Transforming a local bounding box or using spline bounds gives a different, looser metric.
+- `r20-native.json`: positive masses/inertias, 15 actuators, 14 policy actions, 61-observation contract, finite sensors and 38 one-second pose/scene integrations. Approximate PD model runs about 14,120 steps/s with feet and 11,572 with skates on this Mac. These are desktop measurements, not Radxa performance.
+- `r20-bam-native.json`: 76 bounded native BAM cases across 19 poses, two foot scenes and two command-delay interpretations. Median throughput about 7,467 steps/s with feet and 5,772 with skates. Selected model is inherited HD-1910 m1, nominal regulated 5 V, selected 29 ms delay; the source-file delay remains separately tested.
+- Browser `npm test`: 4 tests pass, including all 38 native/WASM fixture comparisons at 1e-7 m body-position tolerance, mode switching and direct-drive pose replay. Production build succeeds with relative assets. Vite reports expected WASM-package Node-module externalization and bundle-size advisories; actual browser loading is checked separately.
+- Retained source regression suite: 63 tests pass for numerical guards, observations, head bias, job flags and policy publication. The publisher requires matching R20 ONNX model/revision/contract metadata; synthetic tests reject stale metadata and MicroDuck manifests. No policy was uploaded.
+- Native `tests/test_indieduck_r07.py` (retained filename, now R20 cases) plus BAM tests: 17 pass. Tests cover direct-drive joint topology, protocol handshake, invalid commands, torque, reset, disconnect, sensors and finite keyframes.
+- `r20-training-smoke.json`: clean `uv sync --frozen` installation, explicit R20 task registration, model compilation, 14 actions and 61 actor observations, export metadata joint ordering, root reset height and two finite CPU environment steps. Critic observations have 76 entries. The test does not train or assess a policy.
+- Train, play and ONNX export entrypoints accept the R20 task and display help. Actual checkpoint export and GPU training remain untested because no trained R20 checkpoint is included.
 
-- All 214 imported upstream files match their pinned source hashes; source files were not modified.
-- All 142 imported Python files parse with Python 3.14.6. The package declares Python 3.12; target-version execution and dependency installation were not tested.
-- `pyproject.toml` retains `uv.lock` and the vendored BAM dependency source. It also retains upstream command entry points; their presence is not validation of those commands.
-- A bounded scan found no GitHub/Hugging Face token patterns or private-key blocks. Public upstream examples and script defaults containing developer paths are recorded in `provenance/validation.json`. Scripts with those defaults need explicit path configuration before use.
-- No GitHub Actions workflows, Git history, binary model weights or 3D model assets are present.
+The nominal standing simulation root is 0.142746729398 m, giving 0.3 mm conservative collision-proxy floor clearance. The exact CAD root is 0.142446729398 m and is retained in the assembly manifest for registration checks. Training reset adds 0..5 mm to the simulation home height, not the inherited upstream absolute-height value. The training delay approximates 29 ms as 6 x 5 ms = 30 ms.
 
-## Known execution blockers
+The 124 robot entries comprise 41 printed pieces and 83 purchased/custom-hardware reference entries. Another 22 skate parts are explicitly labelled provisional R07 accessory geometry. Printed-part density estimates use PLA 1.24 g/cm3 and TPU 1.20 g/cm3; bought-module masses are nominal estimates. Inertias use conservative aggregate bounding-box estimates. Ground/prop collision proxies do not certify self-clearance. Existing neck, deep-pose, cable, sensor-mount and physical-fit limits remain. The browser uses approximate PD; native BAM is a distinct diagnostic.
 
-`src/mjlab_microduck/robot/microduck_constants.py:38-46` asserts the presence of omitted robot XML files at import time. `src/mjlab_microduck/robot/testbench_constants.py:24` similarly asserts the omitted test-bench XML. Registered tasks import these modules. Consequently training, simulation and model-dependent evaluation are blocked before an IndieDuck robot model is integrated.
-
-Full tests were not run because they require these omitted assets and the simulator/dependency environment. No dependencies were installed, no cloud jobs or training runs were submitted, no model was uploaded, and no motors or printers were contacted.
-
-The actual environment configurations, observations and rewards (`tasks/mdp.py`), actuator implementation (`actuator/friction_dr_bam.py`), training code, evaluation scripts and ONNX-export code are present. Their upstream joint names, body names, dimensions, hardware assumptions and defaults still require deliberate IndieDuck adaptation. The numerical actuator parameters retain their upstream meaning and have not been measured on IndieDuck.
-
-Before execution, supply one canonical appropriately licensed simulator model, map and validate the mechanical and control interfaces, review upstream hardware/cloud/publishing defaults, install the declared Python 3.12 environment, run relevant tests and simulation, then perform controlled hardware validation. Repository publication alone does not complete these steps.
+Reproduce native checks using the README instructions and `tools/verify_r20_training.py`. Reproduce browser checks with Node 22.12 or later and the committed npm lockfile. Runtime connection evidence is maintained in `indieduck-runtime/validation/` and public rendered/deployment evidence in the main project release record.

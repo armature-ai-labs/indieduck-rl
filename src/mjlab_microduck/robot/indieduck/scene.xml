@@ -1,0 +1,532 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="indieduck-r20">
+  <compiler angle="radian" autolimits="true" meshdir="meshes" inertiafromgeom="false" fusestatic="false" />
+  <option timestep=".005" gravity="0 0 -9.81" integrator="implicitfast" iterations="50" />
+  <visual>
+    <global offwidth="640" offheight="480" />
+    <map znear=".001" zfar="10" />
+    <headlight ambient=".4 .4 .4" diffuse=".7 .7 .7" />
+  </visual>
+  <default>
+    <joint damping=".008" armature=".0002" frictionloss=".014" />
+    <geom condim="3" friction="0.8 0.005 0.0001" solref=".01 1" solimp=".9 .95 .001" />
+  </default>
+  <asset>
+    <mesh name="Trunk" file="Trunk.stl" />
+    <mesh name="Neck" file="Neck.stl" />
+    <mesh name="HeadPitch" file="HeadPitch.stl" />
+    <mesh name="HeadYaw" file="HeadYaw.stl" />
+    <mesh name="Yaw_L" file="Yaw_L.stl" />
+    <mesh name="HipL_L" file="HipL_L.stl" />
+    <mesh name="Thigh_L" file="Thigh_L.stl" />
+    <mesh name="Shank_L" file="Shank_L.stl" />
+    <mesh name="RoundedFoot_L" file="RoundedFoot_L.stl" />
+    <mesh name="SoftHeadShell" file="SoftHeadShell.stl" />
+    <mesh name="BodyFront" file="BodyFront.stl" />
+    <mesh name="BodyBack" file="BodyBack.stl" />
+    <mesh name="RoundedSole_L" file="RoundedSole_L.stl" />
+    <mesh name="ThighPlate_L" file="ThighPlate_L.stl" />
+    <mesh name="O2_HeadBase" file="O2_HeadBase.stl" />
+    <mesh name="O2_Jaw" file="O2_Jaw.stl" />
+    <mesh name="O2_UpperLip" file="O2_UpperLip.stl" />
+    <mesh name="O2_JawEdge" file="O2_JawEdge.stl" />
+    <mesh name="Yaw_R" file="Yaw_R.stl" />
+    <mesh name="HipL_R" file="HipL_R.stl" />
+    <mesh name="Thigh_R" file="Thigh_R.stl" />
+    <mesh name="Shank_R" file="Shank_R.stl" />
+    <mesh name="RoundedFoot_R" file="RoundedFoot_R.stl" />
+    <mesh name="RoundedSole_R" file="RoundedSole_R.stl" />
+    <mesh name="ThighPlate_R" file="ThighPlate_R.stl" />
+    <mesh name="O2_EyeL" file="O2_EyeL.stl" />
+    <mesh name="O2_EyeR" file="O2_EyeR.stl" />
+    <mesh name="ref_servo_left_ankle" file="ref_servo_left_ankle.stl" />
+    <mesh name="ref_horn_left_ankle" file="ref_horn_left_ankle.stl" />
+    <mesh name="ref_servo_left_knee" file="ref_servo_left_knee.stl" />
+    <mesh name="ref_horn_left_knee" file="ref_horn_left_knee.stl" />
+    <mesh name="ref_servo_left_hip_pitch" file="ref_servo_left_hip_pitch.stl" />
+    <mesh name="ref_servo_left_hip_roll" file="ref_servo_left_hip_roll.stl" />
+    <mesh name="ref_horn_left_hip_roll" file="ref_horn_left_hip_roll.stl" />
+    <mesh name="ref_horn_left_hip_pitch" file="ref_horn_left_hip_pitch.stl" />
+    <mesh name="ref_servo_left_hip_yaw" file="ref_servo_left_hip_yaw.stl" />
+    <mesh name="ref_horn_left_hip_yaw" file="ref_horn_left_hip_yaw.stl" />
+    <mesh name="ref_servo_right_hip_yaw" file="ref_servo_right_hip_yaw.stl" />
+    <mesh name="ref_horn_right_hip_yaw" file="ref_horn_right_hip_yaw.stl" />
+    <mesh name="ref_servo_neck_pitch" file="ref_servo_neck_pitch.stl" />
+    <mesh name="ref_horn_neck_pitch" file="ref_horn_neck_pitch.stl" />
+    <mesh name="ref_servo_head_pitch" file="ref_servo_head_pitch.stl" />
+    <mesh name="ref_horn_head_pitch" file="ref_horn_head_pitch.stl" />
+    <mesh name="ref_servo_head_yaw" file="ref_servo_head_yaw.stl" />
+    <mesh name="ref_horn_head_yaw" file="ref_horn_head_yaw.stl" />
+    <mesh name="ref_servo_head_roll" file="ref_servo_head_roll.stl" />
+    <mesh name="ref_horn_head_roll" file="ref_horn_head_roll.stl" />
+    <mesh name="ref_servo_mouth" file="ref_servo_mouth.stl" />
+    <mesh name="ref_horn_mouth" file="ref_horn_mouth.stl" />
+    <mesh name="ref_Radxa_PCB" file="ref_Radxa_PCB.stl" />
+    <mesh name="ref_Radxa_GPIO" file="ref_Radxa_GPIO.stl" />
+    <mesh name="ref_HAT_PCB" file="ref_HAT_PCB.stl" />
+    <mesh name="ref_HAT_GPIO" file="ref_HAT_GPIO.stl" />
+    <mesh name="ref_HAT_J1" file="ref_HAT_J1.stl" />
+    <mesh name="ref_HAT_J5" file="ref_HAT_J5.stl" />
+    <mesh name="ref_HAT_J14" file="ref_HAT_J14.stl" />
+    <mesh name="ref_HAT_J9" file="ref_HAT_J9.stl" />
+    <mesh name="ref_HAT_J6" file="ref_HAT_J6.stl" />
+    <mesh name="ref_HAT_J3" file="ref_HAT_J3.stl" />
+    <mesh name="ref_HAT_J7" file="ref_HAT_J7.stl" />
+    <mesh name="ref_HAT_J13" file="ref_HAT_J13.stl" />
+    <mesh name="ref_HAT_J8" file="ref_HAT_J8.stl" />
+    <mesh name="ref_HAT_J11" file="ref_HAT_J11.stl" />
+    <mesh name="ref_HAT_J2" file="ref_HAT_J2.stl" />
+    <mesh name="ref_HAT_IMU" file="ref_HAT_IMU.stl" />
+    <mesh name="ref_servo_right_hip_roll" file="ref_servo_right_hip_roll.stl" />
+    <mesh name="ref_horn_right_hip_roll" file="ref_horn_right_hip_roll.stl" />
+    <mesh name="ref_servo_right_hip_pitch" file="ref_servo_right_hip_pitch.stl" />
+    <mesh name="ref_horn_right_hip_pitch" file="ref_horn_right_hip_pitch.stl" />
+    <mesh name="ref_servo_right_knee" file="ref_servo_right_knee.stl" />
+    <mesh name="ref_horn_right_knee" file="ref_horn_right_knee.stl" />
+    <mesh name="ref_servo_right_ankle" file="ref_servo_right_ankle.stl" />
+    <mesh name="ref_horn_right_ankle" file="ref_horn_right_ankle.stl" />
+    <mesh name="ref_Battery_Provisional" file="ref_Battery_Provisional.stl" />
+    <mesh name="ref_CameraPCB" file="ref_CameraPCB.stl" />
+    <mesh name="ref_CameraLens" file="ref_CameraLens.stl" />
+    <mesh name="ref_ToFPCB" file="ref_ToFPCB.stl" />
+    <mesh name="ref_ToFOptics" file="ref_ToFOptics.stl" />
+    <mesh name="ref_HeadIMU" file="ref_HeadIMU.stl" />
+    <mesh name="ref_CameraLED" file="ref_CameraLED.stl" />
+    <mesh name="R10_EyeRing_L" file="R10_EyeRing_L.stl" />
+    <mesh name="R10_EyeRing_R" file="R10_EyeRing_R.stl" />
+    <mesh name="R16_TwoEyeFace" file="R16_TwoEyeFace.stl" />
+    <mesh name="R17_HeadYawClampCap" file="R17_HeadYawClampCap.stl" />
+    <mesh name="R17_RollServoCradle" file="R17_RollServoCradle.stl" />
+    <mesh name="R17_RollCradleTopClamp" file="R17_RollCradleTopClamp.stl" />
+    <mesh name="R17_MouthServoCradle" file="R17_MouthServoCradle.stl" />
+    <mesh name="R17_MouthServoKeeper" file="R17_MouthServoKeeper.stl" />
+    <mesh name="R17_JawBearingTower" file="R17_JawBearingTower.stl" />
+    <mesh name="R17_JawBearingKeeper" file="R17_JawBearingKeeper.stl" />
+    <mesh name="R17_JawBearingPlug" file="R17_JawBearingPlug.stl" />
+    <mesh name="ref_R17_JawBearing16x22x4" file="ref_R17_JawBearing16x22x4.stl" />
+    <mesh name="R17_FaceCarrier" file="R17_FaceCarrier.stl" />
+    <mesh name="ref_R17_FaceFasteners" file="ref_R17_FaceFasteners.stl" />
+    <mesh name="ref_R17_FixedCarrierFasteners" file="ref_R17_FixedCarrierFasteners.stl" />
+    <mesh name="ref_R17_HeadModuleFasteners" file="ref_R17_HeadModuleFasteners.stl" />
+    <mesh name="ref_R17_JawFasteners" file="ref_R17_JawFasteners.stl" />
+    <mesh name="R18_NeckBearingRetainer" file="R18_NeckBearingRetainer.stl" />
+    <mesh name="R18_NeckBearing693" file="R18_NeckBearing693.stl" />
+    <mesh name="R18_NeckSpacerOuter" file="R18_NeckSpacerOuter.stl" />
+    <mesh name="R18_NeckSpacerInner" file="R18_NeckSpacerInner.stl" />
+    <mesh name="R18_NeckShoulderPin" file="R18_NeckShoulderPin.stl" />
+    <mesh name="R18_NeckM3Nut" file="R18_NeckM3Nut.stl" />
+    <mesh name="R18_NeckRetainerM2Screw0" file="R18_NeckRetainerM2Screw0.stl" />
+    <mesh name="R18_NeckRetainerM2Nut0" file="R18_NeckRetainerM2Nut0.stl" />
+    <mesh name="R18_NeckRetainerM2Screw1" file="R18_NeckRetainerM2Screw1.stl" />
+    <mesh name="R18_NeckRetainerM2Nut1" file="R18_NeckRetainerM2Nut1.stl" />
+    <mesh name="R18C_RollBearing_L" file="R18C_RollBearing_L.stl" />
+    <mesh name="R18C_RollBearing_R" file="R18C_RollBearing_R.stl" />
+    <mesh name="R18C_RollIdler_L" file="R18C_RollIdler_L.stl" />
+    <mesh name="R18C_RollIdler_R" file="R18C_RollIdler_R.stl" />
+    <mesh name="R18C_RollClampScrew_L" file="R18C_RollClampScrew_L.stl" />
+    <mesh name="R18C_RollClampScrew_R" file="R18C_RollClampScrew_R.stl" />
+    <mesh name="R18C_RollClampNut_L" file="R18C_RollClampNut_L.stl" />
+    <mesh name="R18C_RollClampNut_R" file="R18C_RollClampNut_R.stl" />
+    <mesh name="R18C_PitchBearing_L" file="R18C_PitchBearing_L.stl" />
+    <mesh name="R18C_PitchBearing_R" file="R18C_PitchBearing_R.stl" />
+    <mesh name="R18C_PitchIdler_L" file="R18C_PitchIdler_L.stl" />
+    <mesh name="R18C_PitchIdler_R" file="R18C_PitchIdler_R.stl" />
+    <mesh name="R18C_PitchClampScrew_L" file="R18C_PitchClampScrew_L.stl" />
+    <mesh name="R18C_PitchClampScrew_R" file="R18C_PitchClampScrew_R.stl" />
+    <mesh name="R18C_PitchClampNut_L" file="R18C_PitchClampNut_L.stl" />
+    <mesh name="R18C_PitchClampNut_R" file="R18C_PitchClampNut_R.stl" />
+    <mesh name="R20_RemovableRearBand" file="R20_RemovableRearBand.stl" />
+  </asset>
+  <worldbody>
+    <light pos="1 -1 2" dir="-1 1 -2" directional="true" />
+    <geom name="ground" type="plane" size="2 2 .02" rgba=".25 .28 .29 1" group="0" contype="1" conaffinity="2" />
+    <body name="test_ball" pos=".22 0 .021">
+      <freejoint name="ball_freejoint" />
+      <inertial mass=".02" pos="0 0 0" diaginertia="0.0000032 0.0000032 0.0000032" />
+      <geom name="test_ball_geom" type="sphere" size=".02" rgba=".9 .35 .1 1" contype="1" conaffinity="3" />
+    </body>
+    <body name="trunk_base" pos="0 0 0.143">
+      <freejoint name="trunk_base_freejoint" />
+      <body name="left_hip_yaw_link" pos="0.02 0.0175 -0.026">
+        <joint name="left_hip_yaw" type="hinge" axis="0 0 -1" range="-0.436332313 0.5235987756" />
+        <body name="left_hip_roll_link" pos="0.0145 0 -0.0145">
+          <joint name="left_hip_roll" type="hinge" axis="1 0 0" range="-0.3839724354 0.3839724354" />
+          <body name="left_hip_pitch_link" pos="-0.0165 0.0225 0">
+            <joint name="left_hip_pitch" type="hinge" axis="0 1 0" range="-1.570796327 1.570796327" />
+            <body name="left_knee_link" pos="-0.03575 0 -0.022">
+              <joint name="left_knee" type="hinge" axis="0 -1 0" range="-1.570796327 1.570796327" />
+              <body name="left_ankle_link" pos="0 0.024 -0.042">
+                <joint name="left_ankle" type="hinge" axis="0 1 0" range="-1.570796327 1.570796327" />
+                <inertial mass="0.07092375890019308" pos="-9.084843342e-05 -0.0177358373 -0.0242846117" diaginertia="2.651422055e-05 3.230632753e-05 2.867683985e-05" />
+                <geom name="RoundedFoot_L_visual" type="mesh" mesh="RoundedFoot_L" rgba="1 0.6509803922 0.03137254902 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="RoundedSole_L_visual" type="mesh" mesh="RoundedSole_L" rgba="0.2588235294 0.2705882353 0.2392156863 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="ref_horn_left_ankle_visual" type="mesh" mesh="ref_horn_left_ankle" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="left_foot_collision" type="box" pos="0 -0.018 -0.032" size="0.027 0.022 0.0065" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+                <site name="left_foot" pos="0.01275 0 -0.0385" size=".001" />
+              </body>
+              <inertial mass="0.03470478886480445" pos="-2.575710712e-06 0.004695180175 -0.02999392435" diaginertia="1.491580042e-05 1.483265353e-05 4.781307683e-06" />
+              <geom name="Shank_L_visual" type="mesh" mesh="Shank_L" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_servo_left_ankle_visual" type="mesh" mesh="ref_servo_left_ankle" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_horn_left_knee_visual" type="mesh" mesh="ref_horn_left_knee" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="Shank_L_collision" type="box" pos="-3.469446952e-18 0.0025 -0.02085000038" size="0.01425 0.0125 0.03285000038" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+            </body>
+            <inertial mass="0.06704942629550603" pos="-0.02080733016 0.01990449902 -0.008175446004" diaginertia="1.969018152e-05 3.9973545e-05 3.172646557e-05" />
+            <geom name="Thigh_L_visual" type="mesh" mesh="Thigh_L" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="ThighPlate_L_visual" type="mesh" mesh="ThighPlate_L" rgba="0.9215686275 0.9294117647 0.9019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="ref_servo_left_knee_visual" type="mesh" mesh="ref_servo_left_knee" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="ref_servo_left_hip_pitch_visual" type="mesh" mesh="ref_servo_left_hip_pitch" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="R18C_PitchBearing_L_visual" type="mesh" mesh="R18C_PitchBearing_L" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="R18C_PitchIdler_L_visual" type="mesh" mesh="R18C_PitchIdler_L" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="R18C_PitchClampScrew_L_visual" type="mesh" mesh="R18C_PitchClampScrew_L" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="R18C_PitchClampNut_L_visual" type="mesh" mesh="R18C_PitchClampNut_L" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="Thigh_L_collision" type="box" pos="-0.018125 0.02010000038 -0.01075" size="0.02982500076 0.01489999962 0.02294999695" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+          </body>
+          <inertial mass="0.018409802302207727" pos="-0.01150220994 0.01942187771 -7.382731266e-05" diaginertia="8.62493168e-06 4.767596346e-06 1.125442458e-05" />
+          <geom name="HipL_L_visual" type="mesh" mesh="HipL_L" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="ref_horn_left_hip_roll_visual" type="mesh" mesh="ref_horn_left_hip_roll" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="ref_horn_left_hip_pitch_visual" type="mesh" mesh="ref_horn_left_hip_pitch" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="R18C_RollBearing_L_visual" type="mesh" mesh="R18C_RollBearing_L" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="R18C_RollIdler_L_visual" type="mesh" mesh="R18C_RollIdler_L" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="R18C_RollClampScrew_L_visual" type="mesh" mesh="R18C_RollClampScrew_L" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="R18C_RollClampNut_L_visual" type="mesh" mesh="R18C_RollClampNut_L" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+        </body>
+        <inertial mass="0.030955163473837602" pos="-0.002350458454 -5.898059818e-17 -0.01937074534" diaginertia="7.041783116e-06 7.456814398e-06 3.486609114e-06" />
+        <geom name="Yaw_L_visual" type="mesh" mesh="Yaw_L" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="ref_servo_left_hip_roll_visual" type="mesh" mesh="ref_servo_left_hip_roll" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="ref_horn_left_hip_yaw_visual" type="mesh" mesh="ref_horn_left_hip_yaw" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="Yaw_L_collision" type="box" pos="-0.00175 4.768371566e-10 -0.01959999847" size="0.01375 0.01220000029 0.02159999847" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+      </body>
+      <body name="neck_pitch_link" pos="0.041 0.0145 0.0095">
+        <joint name="neck_pitch" type="hinge" axis="0 -1 0" range="-1.570796327 1.047197551" />
+        <body name="head_pitch_link" pos="0 0 0.05">
+          <joint name="head_pitch" type="hinge" axis="0 1 0" range="-1.570796327 1.570796327" />
+          <body name="head_yaw_link" pos="0 -0.0145 0.01925">
+            <joint name="head_yaw" type="hinge" axis="0 0 1" range="-1.570796327 1.570796327" />
+            <body name="head_roll_link" pos="-0.0179 0 0.0145">
+              <joint name="head_roll" type="hinge" axis="-1 0 0" range="-0.436332313 0.436332313" />
+              <body name="mouth_link" pos="0.01779999771 0 0.002599999237">
+                <joint name="mouth" type="hinge" axis="0 1 0" range="0 0.5235987756" />
+                <inertial mass="0.03826854686121072" pos="0.03315775166 -0.002371948138 -0.01285178541" diaginertia="2.914370486e-05 1.70053878e-05 4.06786557e-05" />
+                <geom name="O2_Jaw_visual" type="mesh" mesh="O2_Jaw" rgba="1 0.6509803922 0.03137254902 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="O2_JawEdge_visual" type="mesh" mesh="O2_JawEdge" rgba="1 0.6509803922 0.03137254902 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="ref_horn_mouth_visual" type="mesh" mesh="ref_horn_mouth" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="R17_JawBearingPlug_visual" type="mesh" mesh="R17_JawBearingPlug" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="ref_R17_JawFasteners_visual" type="mesh" mesh="ref_R17_JawFasteners" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="O2_Jaw_collision" type="box" pos="0.02445006752 0 -0.005656807709" size="0.03344677162 0.044 0.01464318848" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+              </body>
+              <inertial mass="0.17236308557827923" pos="0.01792504363 0.002103292578 0.00468974318" diaginertia="0.0001580477176 0.0002889646847 0.0003550440087" />
+              <geom name="SoftHeadShell_visual" type="mesh" mesh="SoftHeadShell" rgba="0.9215686275 0.9294117647 0.9019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="O2_HeadBase_visual" type="mesh" mesh="O2_HeadBase" rgba="1 0.6509803922 0.03137254902 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="O2_UpperLip_visual" type="mesh" mesh="O2_UpperLip" rgba="1 0.6509803922 0.03137254902 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="O2_EyeL_visual" type="mesh" mesh="O2_EyeL" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="O2_EyeR_visual" type="mesh" mesh="O2_EyeR" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_servo_head_roll_visual" type="mesh" mesh="ref_servo_head_roll" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_servo_mouth_visual" type="mesh" mesh="ref_servo_mouth" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_CameraPCB_visual" type="mesh" mesh="ref_CameraPCB" rgba="0.1019607843 0.4 0.2392156863 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_CameraLens_visual" type="mesh" mesh="ref_CameraLens" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_ToFPCB_visual" type="mesh" mesh="ref_ToFPCB" rgba="0.1019607843 0.4 0.2392156863 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_ToFOptics_visual" type="mesh" mesh="ref_ToFOptics" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_HeadIMU_visual" type="mesh" mesh="ref_HeadIMU" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_CameraLED_visual" type="mesh" mesh="ref_CameraLED" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="R10_EyeRing_L_visual" type="mesh" mesh="R10_EyeRing_L" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="R10_EyeRing_R_visual" type="mesh" mesh="R10_EyeRing_R" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="R16_TwoEyeFace_visual" type="mesh" mesh="R16_TwoEyeFace" rgba="0.9215686275 0.9294117647 0.9019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="R17_RollServoCradle_visual" type="mesh" mesh="R17_RollServoCradle" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="R17_RollCradleTopClamp_visual" type="mesh" mesh="R17_RollCradleTopClamp" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="R17_MouthServoCradle_visual" type="mesh" mesh="R17_MouthServoCradle" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="R17_MouthServoKeeper_visual" type="mesh" mesh="R17_MouthServoKeeper" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="R17_JawBearingTower_visual" type="mesh" mesh="R17_JawBearingTower" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="R17_JawBearingKeeper_visual" type="mesh" mesh="R17_JawBearingKeeper" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_R17_JawBearing16x22x4_visual" type="mesh" mesh="ref_R17_JawBearing16x22x4" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="R17_FaceCarrier_visual" type="mesh" mesh="R17_FaceCarrier" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_R17_FaceFasteners_visual" type="mesh" mesh="ref_R17_FaceFasteners" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_R17_FixedCarrierFasteners_visual" type="mesh" mesh="ref_R17_FixedCarrierFasteners" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_R17_HeadModuleFasteners_visual" type="mesh" mesh="ref_R17_HeadModuleFasteners" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="R20_RemovableRearBand_visual" type="mesh" mesh="R20_RemovableRearBand" rgba="1 0.6509803922 0.03137254902 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="SoftHeadShell_collision" type="box" pos="0.01997597828 0 0.01534064484" size="0.05584421568 0.0396 0.02163657761" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+              <geom name="O2_HeadBase_collision" type="box" pos="0.01705393353 6.103515625e-08 -0.009449996948" size="0.05944398212 0.04416422653 0.00775" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+              <site name="head_camera" pos="0.06958000183 -0.016 0.01040146637" size=".001" rgba=".1 .7 .7 1" />
+              <camera name="head_camera" pos="0.06958000183 -0.016 0.01040146637" xyaxes="0 -1 0 0 0 1" fovy="49" />
+              <site name="tof" pos="0.06940000153 -1.078486443e-06 0.01140145874" size=".001" rgba=".1 .7 .7 1" />
+              <site name="tof_0_0" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.8865052267 0.3171966421 0.3368898534" size=".0003" group="4" />
+              <site name="tof_0_1" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9133271695 0.2287765463 0.3368898534" size=".0003" group="4" />
+              <site name="tof_0_2" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9313532724 0.1381532074 0.3368898534" size=".0003" group="4" />
+              <site name="tof_0_3" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9404099341 0.04619937756 0.3368898534" size=".0003" group="4" />
+              <site name="tof_0_4" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9404099341 -0.04619937756 0.3368898534" size=".0003" group="4" />
+              <site name="tof_0_5" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9313532724 -0.1381532074 0.3368898534" size=".0003" group="4" />
+              <site name="tof_0_6" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9133271695 -0.2287765463 0.3368898534" size=".0003" group="4" />
+              <site name="tof_0_7" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.8865052267 -0.3171966421 0.3368898534" size=".0003" group="4" />
+              <site name="tof_1_0" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9133271695 0.3267936867 0.2429801799" size=".0003" group="4" />
+              <site name="tof_1_1" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9409606322 0.2356983684 0.2429801799" size=".0003" group="4" />
+              <site name="tof_1_2" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9595321296 0.142333146 0.2429801799" size=".0003" group="4" />
+              <site name="tof_1_3" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9688628081 0.04759717762 0.2429801799" size=".0003" group="4" />
+              <site name="tof_1_4" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9688628081 -0.04759717762 0.2429801799" size=".0003" group="4" />
+              <site name="tof_1_5" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9595321296 -0.142333146 0.2429801799" size=".0003" group="4" />
+              <site name="tof_1_6" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9409606322 -0.2356983684 0.2429801799" size=".0003" group="4" />
+              <site name="tof_1_7" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9133271695 -0.3267936867 0.2429801799" size=".0003" group="4" />
+              <site name="tof_2_0" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9313532724 0.3332435294 0.1467304745" size=".0003" group="4" />
+              <site name="tof_2_1" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9595321296 0.2403502863 0.1467304745" size=".0003" group="4" />
+              <site name="tof_2_2" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9784701679 0.1451423386 0.1467304745" size=".0003" group="4" />
+              <site name="tof_2_3" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9879850035 0.04853659084 0.1467304745" size=".0003" group="4" />
+              <site name="tof_2_4" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9879850035 -0.04853659084 0.1467304745" size=".0003" group="4" />
+              <site name="tof_2_5" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9784701679 -0.1451423386 0.1467304745" size=".0003" group="4" />
+              <site name="tof_2_6" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9595321296 -0.2403502863 0.1467304745" size=".0003" group="4" />
+              <site name="tof_2_7" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9313532724 -0.3332435294 0.1467304745" size=".0003" group="4" />
+              <site name="tof_3_0" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9404099341 0.3364840548 0.04906767433" size=".0003" group="4" />
+              <site name="tof_3_1" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9688628081 0.2426874996 0.04906767433" size=".0003" group="4" />
+              <site name="tof_3_2" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9879850035 0.1465537312 0.04906767433" size=".0003" group="4" />
+              <site name="tof_3_3" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9975923633 0.04900857016 0.04906767433" size=".0003" group="4" />
+              <site name="tof_3_4" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9975923633 -0.04900857016 0.04906767433" size=".0003" group="4" />
+              <site name="tof_3_5" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9879850035 -0.1465537312 0.04906767433" size=".0003" group="4" />
+              <site name="tof_3_6" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9688628081 -0.2426874996 0.04906767433" size=".0003" group="4" />
+              <site name="tof_3_7" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9404099341 -0.3364840548 0.04906767433" size=".0003" group="4" />
+              <site name="tof_4_0" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9404099341 0.3364840548 -0.04906767433" size=".0003" group="4" />
+              <site name="tof_4_1" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9688628081 0.2426874996 -0.04906767433" size=".0003" group="4" />
+              <site name="tof_4_2" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9879850035 0.1465537312 -0.04906767433" size=".0003" group="4" />
+              <site name="tof_4_3" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9975923633 0.04900857016 -0.04906767433" size=".0003" group="4" />
+              <site name="tof_4_4" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9975923633 -0.04900857016 -0.04906767433" size=".0003" group="4" />
+              <site name="tof_4_5" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9879850035 -0.1465537312 -0.04906767433" size=".0003" group="4" />
+              <site name="tof_4_6" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9688628081 -0.2426874996 -0.04906767433" size=".0003" group="4" />
+              <site name="tof_4_7" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9404099341 -0.3364840548 -0.04906767433" size=".0003" group="4" />
+              <site name="tof_5_0" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9313532724 0.3332435294 -0.1467304745" size=".0003" group="4" />
+              <site name="tof_5_1" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9595321296 0.2403502863 -0.1467304745" size=".0003" group="4" />
+              <site name="tof_5_2" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9784701679 0.1451423386 -0.1467304745" size=".0003" group="4" />
+              <site name="tof_5_3" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9879850035 0.04853659084 -0.1467304745" size=".0003" group="4" />
+              <site name="tof_5_4" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9879850035 -0.04853659084 -0.1467304745" size=".0003" group="4" />
+              <site name="tof_5_5" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9784701679 -0.1451423386 -0.1467304745" size=".0003" group="4" />
+              <site name="tof_5_6" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9595321296 -0.2403502863 -0.1467304745" size=".0003" group="4" />
+              <site name="tof_5_7" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9313532724 -0.3332435294 -0.1467304745" size=".0003" group="4" />
+              <site name="tof_6_0" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9133271695 0.3267936867 -0.2429801799" size=".0003" group="4" />
+              <site name="tof_6_1" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9409606322 0.2356983684 -0.2429801799" size=".0003" group="4" />
+              <site name="tof_6_2" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9595321296 0.142333146 -0.2429801799" size=".0003" group="4" />
+              <site name="tof_6_3" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9688628081 0.04759717762 -0.2429801799" size=".0003" group="4" />
+              <site name="tof_6_4" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9688628081 -0.04759717762 -0.2429801799" size=".0003" group="4" />
+              <site name="tof_6_5" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9595321296 -0.142333146 -0.2429801799" size=".0003" group="4" />
+              <site name="tof_6_6" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9409606322 -0.2356983684 -0.2429801799" size=".0003" group="4" />
+              <site name="tof_6_7" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9133271695 -0.3267936867 -0.2429801799" size=".0003" group="4" />
+              <site name="tof_7_0" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.8865052267 0.3171966421 -0.3368898534" size=".0003" group="4" />
+              <site name="tof_7_1" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9133271695 0.2287765463 -0.3368898534" size=".0003" group="4" />
+              <site name="tof_7_2" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9313532724 0.1381532074 -0.3368898534" size=".0003" group="4" />
+              <site name="tof_7_3" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9404099341 0.04619937756 -0.3368898534" size=".0003" group="4" />
+              <site name="tof_7_4" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9404099341 -0.04619937756 -0.3368898534" size=".0003" group="4" />
+              <site name="tof_7_5" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9313532724 -0.1381532074 -0.3368898534" size=".0003" group="4" />
+              <site name="tof_7_6" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.9133271695 -0.2287765463 -0.3368898534" size=".0003" group="4" />
+              <site name="tof_7_7" pos="0.06940000153 -1.078486443e-06 0.01140145874" zaxis="0.8865052267 -0.3171966421 -0.3368898534" size=".0003" group="4" />
+              <site name="head_imu" pos="0.03142500153 -0.01419000006 0.02970161438" size=".001" rgba=".1 .7 .7 1" />
+            </body>
+            <inertial mass="0.03905001195656848" pos="-0.002596706132 -0.00684806992 0.01884313033" diaginertia="7.841665035e-06 7.917519007e-06 9.823323091e-06" />
+            <geom name="HeadYaw_visual" type="mesh" mesh="HeadYaw" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="ref_servo_head_yaw_visual" type="mesh" mesh="ref_servo_head_yaw" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="ref_horn_head_roll_visual" type="mesh" mesh="ref_horn_head_roll" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="R17_HeadYawClampCap_visual" type="mesh" mesh="R17_HeadYawClampCap" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+          </body>
+          <inertial mass="0.007841312209691961" pos="-5.031382188e-05 -0.006966523311 0.010677738" diaginertia="1.389423347e-06 1.235047513e-06 9.071418063e-07" />
+          <geom name="HeadPitch_visual" type="mesh" mesh="HeadPitch" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="ref_horn_head_pitch_visual" type="mesh" mesh="ref_horn_head_pitch" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="ref_horn_head_yaw_visual" type="mesh" mesh="ref_horn_head_yaw" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+        </body>
+        <inertial mass="0.056755833554044594" pos="3.308956747e-06 -0.01831131699 0.02418262343" diaginertia="3.286072476e-05 2.829713042e-05 1.019528722e-05" />
+        <geom name="Neck_visual" type="mesh" mesh="Neck" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="ref_servo_neck_pitch_visual" type="mesh" mesh="ref_servo_neck_pitch" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="ref_servo_head_pitch_visual" type="mesh" mesh="ref_servo_head_pitch" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="R18_NeckSpacerInner_visual" type="mesh" mesh="R18_NeckSpacerInner" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="R18_NeckShoulderPin_visual" type="mesh" mesh="R18_NeckShoulderPin" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="R18_NeckM3Nut_visual" type="mesh" mesh="R18_NeckM3Nut" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+      </body>
+      <body name="right_hip_yaw_link" pos="0.02 -0.0175 -0.026">
+        <joint name="right_hip_yaw" type="hinge" axis="0 0 -1" range="-0.5235987756 0.436332313" />
+        <body name="right_hip_roll_link" pos="0.0145 0 -0.0145">
+          <joint name="right_hip_roll" type="hinge" axis="1 0 0" range="-0.3839724354 0.3839724354" />
+          <body name="right_hip_pitch_link" pos="-0.0165 -0.0225 0">
+            <joint name="right_hip_pitch" type="hinge" axis="0 -1 0" range="-1.570796327 1.570796327" />
+            <body name="right_knee_link" pos="-0.03575 0 -0.022">
+              <joint name="right_knee" type="hinge" axis="0 1 0" range="-1.570796327 1.570796327" />
+              <body name="right_ankle_link" pos="0 -0.024 -0.042">
+                <joint name="right_ankle" type="hinge" axis="0 -1 0" range="-1.570796327 1.570796327" />
+                <inertial mass="0.07092375890019308" pos="-9.084843336e-05 0.0177358373 -0.0242846117" diaginertia="2.651422055e-05 3.230632753e-05 2.867683985e-05" />
+                <geom name="RoundedFoot_R_visual" type="mesh" mesh="RoundedFoot_R" rgba="1 0.6509803922 0.03137254902 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="RoundedSole_R_visual" type="mesh" mesh="RoundedSole_R" rgba="0.2588235294 0.2705882353 0.2392156863 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="ref_horn_right_ankle_visual" type="mesh" mesh="ref_horn_right_ankle" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="right_foot_collision" type="box" pos="0 0.018 -0.032" size="0.027 0.022 0.0065" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+                <site name="right_foot" pos="0.01275 0 -0.0385" size=".001" />
+              </body>
+              <inertial mass="0.034704788864804444" pos="-2.575710712e-06 -0.004695180175 -0.02999392435" diaginertia="1.491580042e-05 1.483265353e-05 4.781307683e-06" />
+              <geom name="Shank_R_visual" type="mesh" mesh="Shank_R" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_horn_right_knee_visual" type="mesh" mesh="ref_horn_right_knee" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_servo_right_ankle_visual" type="mesh" mesh="ref_servo_right_ankle" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="Shank_R_collision" type="box" pos="-3.469446952e-18 -0.0025 -0.02085000038" size="0.01425 0.0125 0.03285000038" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+            </body>
+            <inertial mass="0.06704942629550603" pos="-0.02080733016 -0.01990449902 -0.008175446004" diaginertia="1.969018152e-05 3.9973545e-05 3.172646557e-05" />
+            <geom name="Thigh_R_visual" type="mesh" mesh="Thigh_R" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="ThighPlate_R_visual" type="mesh" mesh="ThighPlate_R" rgba="0.9215686275 0.9294117647 0.9019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="ref_servo_right_hip_pitch_visual" type="mesh" mesh="ref_servo_right_hip_pitch" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="ref_servo_right_knee_visual" type="mesh" mesh="ref_servo_right_knee" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="R18C_PitchBearing_R_visual" type="mesh" mesh="R18C_PitchBearing_R" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="R18C_PitchIdler_R_visual" type="mesh" mesh="R18C_PitchIdler_R" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="R18C_PitchClampScrew_R_visual" type="mesh" mesh="R18C_PitchClampScrew_R" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="R18C_PitchClampNut_R_visual" type="mesh" mesh="R18C_PitchClampNut_R" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="Thigh_R_collision" type="box" pos="-0.018125 -0.02010000038 -0.01075" size="0.02982500076 0.01489999962 0.02294999695" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+          </body>
+          <inertial mass="0.01840980230220773" pos="-0.01150220994 -0.01942187771 -7.382731266e-05" diaginertia="8.62493168e-06 4.767596346e-06 1.125442458e-05" />
+          <geom name="HipL_R_visual" type="mesh" mesh="HipL_R" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="ref_horn_right_hip_roll_visual" type="mesh" mesh="ref_horn_right_hip_roll" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="ref_horn_right_hip_pitch_visual" type="mesh" mesh="ref_horn_right_hip_pitch" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="R18C_RollBearing_R_visual" type="mesh" mesh="R18C_RollBearing_R" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="R18C_RollIdler_R_visual" type="mesh" mesh="R18C_RollIdler_R" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="R18C_RollClampScrew_R_visual" type="mesh" mesh="R18C_RollClampScrew_R" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="R18C_RollClampNut_R_visual" type="mesh" mesh="R18C_RollClampNut_R" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+        </body>
+        <inertial mass="0.030955163473837602" pos="-0.002350458454 7.285838599e-17 -0.01937074534" diaginertia="7.041783116e-06 7.456814398e-06 3.486609114e-06" />
+        <geom name="Yaw_R_visual" type="mesh" mesh="Yaw_R" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="ref_horn_right_hip_yaw_visual" type="mesh" mesh="ref_horn_right_hip_yaw" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="ref_servo_right_hip_roll_visual" type="mesh" mesh="ref_servo_right_hip_roll" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="Yaw_R_collision" type="box" pos="-0.00175 -4.768371566e-10 -0.01959999847" size="0.01375 0.01220000029 0.02159999847" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+      </body>
+      <inertial mass="0.26321821053051747" pos="-0.01503139432 -0.0001734170675 -0.0135988964" diaginertia="0.0003560105659 0.0005331882362 0.0004055353402" />
+      <geom name="Trunk_visual" type="mesh" mesh="Trunk" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="BodyFront_visual" type="mesh" mesh="BodyFront" rgba="0.9215686275 0.9294117647 0.9019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="BodyBack_visual" type="mesh" mesh="BodyBack" rgba="0.9215686275 0.9294117647 0.9019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_servo_left_hip_yaw_visual" type="mesh" mesh="ref_servo_left_hip_yaw" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_servo_right_hip_yaw_visual" type="mesh" mesh="ref_servo_right_hip_yaw" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_horn_neck_pitch_visual" type="mesh" mesh="ref_horn_neck_pitch" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_Radxa_PCB_visual" type="mesh" mesh="ref_Radxa_PCB" rgba="0.1019607843 0.4 0.2392156863 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_Radxa_GPIO_visual" type="mesh" mesh="ref_Radxa_GPIO" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_PCB_visual" type="mesh" mesh="ref_HAT_PCB" rgba="0.1019607843 0.4 0.2392156863 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_GPIO_visual" type="mesh" mesh="ref_HAT_GPIO" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J1_visual" type="mesh" mesh="ref_HAT_J1" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J5_visual" type="mesh" mesh="ref_HAT_J5" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J14_visual" type="mesh" mesh="ref_HAT_J14" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J9_visual" type="mesh" mesh="ref_HAT_J9" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J6_visual" type="mesh" mesh="ref_HAT_J6" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J3_visual" type="mesh" mesh="ref_HAT_J3" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J7_visual" type="mesh" mesh="ref_HAT_J7" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J13_visual" type="mesh" mesh="ref_HAT_J13" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J8_visual" type="mesh" mesh="ref_HAT_J8" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J11_visual" type="mesh" mesh="ref_HAT_J11" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J2_visual" type="mesh" mesh="ref_HAT_J2" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_IMU_visual" type="mesh" mesh="ref_HAT_IMU" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_Battery_Provisional_visual" type="mesh" mesh="ref_Battery_Provisional" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="R18_NeckBearingRetainer_visual" type="mesh" mesh="R18_NeckBearingRetainer" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="R18_NeckBearing693_visual" type="mesh" mesh="R18_NeckBearing693" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="R18_NeckSpacerOuter_visual" type="mesh" mesh="R18_NeckSpacerOuter" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="R18_NeckRetainerM2Screw0_visual" type="mesh" mesh="R18_NeckRetainerM2Screw0" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="R18_NeckRetainerM2Nut0_visual" type="mesh" mesh="R18_NeckRetainerM2Nut0" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="R18_NeckRetainerM2Screw1_visual" type="mesh" mesh="R18_NeckRetainerM2Screw1" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="R18_NeckRetainerM2Nut1_visual" type="mesh" mesh="R18_NeckRetainerM2Nut1" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="Trunk_collision" type="box" pos="0.001 0 -0.024" size="0.037 0.023 0.035" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+      <geom name="BodyFront_collision" type="box" pos="0.02062499905 0 0.014" size="0.03447499943 0.03607409668 0.021" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+      <geom name="BodyBack_collision" type="box" pos="-0.03715054226 0 0.014" size="0.02300054264 0.03607409668 0.021" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+      <site name="body_imu" pos="-0.0215 0.0025 0.02344999695" size=".001" rgba=".1 .7 .7 1" />
+    </body>
+  </worldbody>
+  <sensor>
+    <rangefinder name="tof_0_0" site="tof_0_0" cutoff="4" />
+    <rangefinder name="tof_0_1" site="tof_0_1" cutoff="4" />
+    <rangefinder name="tof_0_2" site="tof_0_2" cutoff="4" />
+    <rangefinder name="tof_0_3" site="tof_0_3" cutoff="4" />
+    <rangefinder name="tof_0_4" site="tof_0_4" cutoff="4" />
+    <rangefinder name="tof_0_5" site="tof_0_5" cutoff="4" />
+    <rangefinder name="tof_0_6" site="tof_0_6" cutoff="4" />
+    <rangefinder name="tof_0_7" site="tof_0_7" cutoff="4" />
+    <rangefinder name="tof_1_0" site="tof_1_0" cutoff="4" />
+    <rangefinder name="tof_1_1" site="tof_1_1" cutoff="4" />
+    <rangefinder name="tof_1_2" site="tof_1_2" cutoff="4" />
+    <rangefinder name="tof_1_3" site="tof_1_3" cutoff="4" />
+    <rangefinder name="tof_1_4" site="tof_1_4" cutoff="4" />
+    <rangefinder name="tof_1_5" site="tof_1_5" cutoff="4" />
+    <rangefinder name="tof_1_6" site="tof_1_6" cutoff="4" />
+    <rangefinder name="tof_1_7" site="tof_1_7" cutoff="4" />
+    <rangefinder name="tof_2_0" site="tof_2_0" cutoff="4" />
+    <rangefinder name="tof_2_1" site="tof_2_1" cutoff="4" />
+    <rangefinder name="tof_2_2" site="tof_2_2" cutoff="4" />
+    <rangefinder name="tof_2_3" site="tof_2_3" cutoff="4" />
+    <rangefinder name="tof_2_4" site="tof_2_4" cutoff="4" />
+    <rangefinder name="tof_2_5" site="tof_2_5" cutoff="4" />
+    <rangefinder name="tof_2_6" site="tof_2_6" cutoff="4" />
+    <rangefinder name="tof_2_7" site="tof_2_7" cutoff="4" />
+    <rangefinder name="tof_3_0" site="tof_3_0" cutoff="4" />
+    <rangefinder name="tof_3_1" site="tof_3_1" cutoff="4" />
+    <rangefinder name="tof_3_2" site="tof_3_2" cutoff="4" />
+    <rangefinder name="tof_3_3" site="tof_3_3" cutoff="4" />
+    <rangefinder name="tof_3_4" site="tof_3_4" cutoff="4" />
+    <rangefinder name="tof_3_5" site="tof_3_5" cutoff="4" />
+    <rangefinder name="tof_3_6" site="tof_3_6" cutoff="4" />
+    <rangefinder name="tof_3_7" site="tof_3_7" cutoff="4" />
+    <rangefinder name="tof_4_0" site="tof_4_0" cutoff="4" />
+    <rangefinder name="tof_4_1" site="tof_4_1" cutoff="4" />
+    <rangefinder name="tof_4_2" site="tof_4_2" cutoff="4" />
+    <rangefinder name="tof_4_3" site="tof_4_3" cutoff="4" />
+    <rangefinder name="tof_4_4" site="tof_4_4" cutoff="4" />
+    <rangefinder name="tof_4_5" site="tof_4_5" cutoff="4" />
+    <rangefinder name="tof_4_6" site="tof_4_6" cutoff="4" />
+    <rangefinder name="tof_4_7" site="tof_4_7" cutoff="4" />
+    <rangefinder name="tof_5_0" site="tof_5_0" cutoff="4" />
+    <rangefinder name="tof_5_1" site="tof_5_1" cutoff="4" />
+    <rangefinder name="tof_5_2" site="tof_5_2" cutoff="4" />
+    <rangefinder name="tof_5_3" site="tof_5_3" cutoff="4" />
+    <rangefinder name="tof_5_4" site="tof_5_4" cutoff="4" />
+    <rangefinder name="tof_5_5" site="tof_5_5" cutoff="4" />
+    <rangefinder name="tof_5_6" site="tof_5_6" cutoff="4" />
+    <rangefinder name="tof_5_7" site="tof_5_7" cutoff="4" />
+    <rangefinder name="tof_6_0" site="tof_6_0" cutoff="4" />
+    <rangefinder name="tof_6_1" site="tof_6_1" cutoff="4" />
+    <rangefinder name="tof_6_2" site="tof_6_2" cutoff="4" />
+    <rangefinder name="tof_6_3" site="tof_6_3" cutoff="4" />
+    <rangefinder name="tof_6_4" site="tof_6_4" cutoff="4" />
+    <rangefinder name="tof_6_5" site="tof_6_5" cutoff="4" />
+    <rangefinder name="tof_6_6" site="tof_6_6" cutoff="4" />
+    <rangefinder name="tof_6_7" site="tof_6_7" cutoff="4" />
+    <rangefinder name="tof_7_0" site="tof_7_0" cutoff="4" />
+    <rangefinder name="tof_7_1" site="tof_7_1" cutoff="4" />
+    <rangefinder name="tof_7_2" site="tof_7_2" cutoff="4" />
+    <rangefinder name="tof_7_3" site="tof_7_3" cutoff="4" />
+    <rangefinder name="tof_7_4" site="tof_7_4" cutoff="4" />
+    <rangefinder name="tof_7_5" site="tof_7_5" cutoff="4" />
+    <rangefinder name="tof_7_6" site="tof_7_6" cutoff="4" />
+    <rangefinder name="tof_7_7" site="tof_7_7" cutoff="4" />
+    <gyro name="body_imu_gyro" site="body_imu" />
+    <accelerometer name="body_imu_accel" site="body_imu" />
+    <framequat name="body_imu_quat" objtype="site" objname="body_imu" />
+    <gyro name="head_imu_gyro" site="head_imu" />
+    <accelerometer name="head_imu_accel" site="head_imu" />
+    <framequat name="head_imu_quat" objtype="site" objname="head_imu" />
+  </sensor>
+  <actuator>
+    <position name="left_hip_yaw" joint="left_hip_yaw" kp="4" kv=".08" ctrlrange="-0.436332313 0.5235987756" forcerange="-.85 .85" />
+    <position name="left_hip_roll" joint="left_hip_roll" kp="4" kv=".08" ctrlrange="-0.3839724354 0.3839724354" forcerange="-.85 .85" />
+    <position name="left_hip_pitch" joint="left_hip_pitch" kp="4" kv=".08" ctrlrange="-1.570796327 1.570796327" forcerange="-.85 .85" />
+    <position name="left_knee" joint="left_knee" kp="4" kv=".08" ctrlrange="-1.570796327 1.570796327" forcerange="-.85 .85" />
+    <position name="left_ankle" joint="left_ankle" kp="4" kv=".08" ctrlrange="-1.570796327 1.570796327" forcerange="-.85 .85" />
+    <position name="neck_pitch" joint="neck_pitch" kp="4" kv=".08" ctrlrange="-1.570796327 1.047197551" forcerange="-.85 .85" />
+    <position name="head_pitch" joint="head_pitch" kp="4" kv=".08" ctrlrange="-1.570796327 1.570796327" forcerange="-.85 .85" />
+    <position name="head_yaw" joint="head_yaw" kp="4" kv=".08" ctrlrange="-1.570796327 1.570796327" forcerange="-.85 .85" />
+    <position name="head_roll" joint="head_roll" kp="4" kv=".08" ctrlrange="-0.436332313 0.436332313" forcerange="-.85 .85" />
+    <position name="mouth" joint="mouth" kp="4" kv=".08" ctrlrange="0 0.5235987756" forcerange="-.85 .85" />
+    <position name="right_hip_yaw" joint="right_hip_yaw" kp="4" kv=".08" ctrlrange="-0.5235987756 0.436332313" forcerange="-.85 .85" />
+    <position name="right_hip_roll" joint="right_hip_roll" kp="4" kv=".08" ctrlrange="-0.3839724354 0.3839724354" forcerange="-.85 .85" />
+    <position name="right_hip_pitch" joint="right_hip_pitch" kp="4" kv=".08" ctrlrange="-1.570796327 1.570796327" forcerange="-.85 .85" />
+    <position name="right_knee" joint="right_knee" kp="4" kv=".08" ctrlrange="-1.570796327 1.570796327" forcerange="-.85 .85" />
+    <position name="right_ankle" joint="right_ankle" kp="4" kv=".08" ctrlrange="-1.570796327 1.570796327" forcerange="-.85 .85" />
+  </actuator>
+  <keyframe>
+    <key name="zero" qpos="0.22 0 0.021 1 0 0 0 0 0 0.1433 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" ctrl="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" />
+    <key name="stand" qpos="0.22 0 0.021 1 0 0 0 0 0 0.142746729398 1 0 0 0 -0.261799387799 0 -0.4 0.4 0.8 0 0 0 0 0 0.261799387799 0 0.4 -0.4 -0.8" ctrl="-0.261799387799 0 -0.4 0.4 0.8 0 0 0 0 0 0.261799387799 0 0.4 -0.4 -0.8" />
+    <key name="walk_left" qpos="0.22 0 0.021 1 0 0 0 0 0 0.142746729398 1 0 0 0 0 0 -0.4 0.4 0.8 0.15 0.15 0 0 0 0 0 0.65 -0.8 -1.05" ctrl="0 0 -0.4 0.4 0.8 0.15 0.15 0 0 0 0 0 0.65 -0.8 -1.05" />
+    <key name="walk_right" qpos="0.22 0 0.021 1 0 0 0 0 0 0.142746729398 1 0 0 0 0 0 -0.65 0.8 1.05 0.15 0.15 0 0 0 0 0 0.4 -0.4 -0.8" ctrl="0 0 -0.65 0.8 1.05 0.15 0.15 0 0 0 0 0 0.4 -0.4 -0.8" />
+    <key name="sit" qpos="0.22 0 0.021 1 0 0 0 0 0 0.121551286461 1 0 0 0 0 0 -0.85 0.7 1.55 0.35 0.35 0 0 0 0 0 0.85 -0.7 -1.55" ctrl="0 0 -0.85 0.7 1.55 0.35 0.35 0 0 0 0 0 0.85 -0.7 -1.55" />
+    <key name="sit_transition" qpos="0.22 0 0.021 1 0 0 0 0 0 0.13286237764 1 0 0 0 0 0 -0.6 0.6 1.2 0.15 0.15 0 0 0 0 0 0.6 -0.6 -1.2" ctrl="0 0 -0.6 0.6 1.2 0.15 0.15 0 0 0 0 0 0.6 -0.6 -1.2" />
+    <key name="pickup" qpos="0.22 0 0.021 1 0 0 0 0 0 0.127411647857 1 0 0 0 0 0 -0.8 0.6 1.4 -0.7 0.5 0 0 0.523394774442 0 0 0.8 -0.6 -1.4" ctrl="0 0 -0.8 0.6 1.4 -0.7 0.5 0 0 0.523394774442 0 0 0.8 -0.6 -1.4" />
+    <key name="kick_left" qpos="0.22 0 0.021 1 0 0 0 0 0 0.142746729398 1 0 0 0 0 0 -0.95 0.1 1.05 0.15 0.15 0 0 0 0 0 0.4 -0.4 -0.8" ctrl="0 0 -0.95 0.1 1.05 0.15 0.15 0 0 0 0 0 0.4 -0.4 -0.8" />
+    <key name="kick_right" qpos="0.22 0 0.021 1 0 0 0 0 0 0.142746729398 1 0 0 0 0 0 -0.4 0.4 0.8 0.15 0.15 0 0 0 0 0 0.95 -0.1 -1.05" ctrl="0 0 -0.4 0.4 0.8 0.15 0.15 0 0 0 0 0 0.95 -0.1 -1.05" />
+    <key name="skating" qpos="0.22 0 0.021 1 0 0 0 0 0 0.140359665006 1 0 0 0 0 -0.1 -0.55 0.55 1.1 0.15 0.15 0 0 0 0 0.1 0.55 -0.55 -1.1" ctrl="0 -0.1 -0.55 0.55 1.1 0.15 0.15 0 0 0 0 0.1 0.55 -0.55 -1.1" />
+    <key name="getup_back" qpos="0.22 0 0.021 1 0 0 0 0 0 0.0604510849 0.707106781187 0 -0.707106781187 0 0 0 -0.7 0.7 1.4 0.15 0.15 0 0 0 0 0 0.7 -0.7 -1.4" ctrl="0 0 -0.7 0.7 1.4 0.15 0.15 0 0 0 0 0 0.7 -0.7 -1.4" />
+    <key name="getup_tuck" qpos="0.22 0 0.021 1 0 0 0 0 0 0.0588996664715 0.82533561491 0 -0.564642473395 0 0 0 -0.9 0.65 1.55 0.7 0.7 0 0 0 0 0 0.9 -0.65 -1.55" ctrl="0 0 -0.9 0.65 1.55 0.7 0.7 0 0 0 0 0 0.9 -0.65 -1.55" />
+    <key name="roll_tuck" qpos="0.22 0 0.021 1 0 0 0 0 0 0.140092417966 0.900447102353 0 0.434965534111 0 0 0 -0.9 0.65 1.55 -0.8 0.6 0 0 0 0 0 0.9 -0.65 -1.55" ctrl="0 0 -0.9 0.65 1.55 -0.8 0.6 0 0 0 0 0 0.9 -0.65 -1.55" />
+    <key name="roll_contact" qpos="0.22 0 0.021 1 0 0 0 0 0 0.10964253442 0 0 1 0 0 0 -0.9 0.65 1.55 -0.8 0.6 0 0 0 0 0 0.9 -0.65 -1.55" ctrl="0 0 -0.9 0.65 1.55 -0.8 0.6 0 0 0 0 0 0.9 -0.65 -1.55" />
+    <key name="jaw_0" qpos="0.22 0 0.021 1 0 0 0 0 0 0.1433 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" ctrl="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" />
+    <key name="jaw_15" qpos="0.22 0 0.021 1 0 0 0 0 0 0.1433 1 0 0 0 0 0 0 0 0 0 0 0 0 0.261729245905 0 0 0 0 0" ctrl="0 0 0 0 0 0 0 0 0 0.261729245905 0 0 0 0 0" />
+    <key name="jaw_30" qpos="0.22 0 0.021 1 0 0 0 0 0 0.1433 1 0 0 0 0 0 0 0 0 0 0 0 0 0.523394776363 0 0 0 0 0" ctrl="0 0 0 0 0 0 0 0 0 0.523394776363 0 0 0 0 0" />
+    <key name="sit_reduced" qpos="0.22 0 0.021 1 0 0 0 0 0 0.134376336127 1 0 0 0 0 0 -0.7 0.5 1.2 0.15 0.15 0 0 0 0 0 0.7 -0.5 -1.2" ctrl="0 0 -0.7 0.5 1.2 0.15 0.15 0 0 0 0 0 0.7 -0.5 -1.2" />
+    <key name="pickup_neck_neutral" qpos="0.22 0 0.021 1 0 0 0 0 0 0.127411647857 1 0 0 0 0 0 -0.8 0.6 1.4 0 0.5 0 0 0.523394774442 0 0 0.8 -0.6 -1.4" ctrl="0 0 -0.8 0.6 1.4 0 0.5 0 0 0.523394774442 0 0 0.8 -0.6 -1.4" />
+  </keyframe>
+</mujoco>

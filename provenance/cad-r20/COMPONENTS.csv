@@ -1,0 +1,42 @@
+revision,assembly_link,native_file,native_object,material,step,stl,volume_mm3
+R20,A_Trunk,IndieDuck_R20_Structure.FCStd,Trunk,PLA initial fit test,exports/R20/step/R20_Trunk.step,exports/R20/stl/R20_Trunk.stl,44277.92739148426
+R20,A_Neck,IndieDuck_R20_Structure.FCStd,Neck,PLA initial fit test,exports/R20/step/R20_Neck.step,exports/R20/stl/R20_Neck.stl,10690.188350035962
+R20,A_HeadPitch,IndieDuck_R20_Interfaces.FCStd,R17_HeadPitch,PLA initial fit test,exports/R20/step/R20_HeadPitch.step,exports/R20/stl/R20_HeadPitch.stl,4710.73565297739
+R20,A_HeadYaw,IndieDuck_R20_Interfaces.FCStd,R17_HeadYaw,PLA initial fit test,exports/R20/step/R20_HeadYaw.step,exports/R20/stl/R20_HeadYaw.stl,11014.231494009247
+R20,A_Yaw_L,IndieDuck_R20_Structure.FCStd,Yaw_L,PLA initial fit test,exports/R20/step/R20_Yaw_L.step,exports/R20/stl/R20_Yaw_L.stl,7221.906027288386
+R20,A_HipL_L,IndieDuck_R20_Structure.FCStd,HipL_L,PLA initial fit test,exports/R20/step/R20_HipL_L.step,exports/R20/stl/R20_HipL_L.stl,11620.808308232043
+R20,A_Thigh_L,IndieDuck_R20_Structure.FCStd,Thigh_L,PLA initial fit test,exports/R20/step/R20_Thigh_L.step,exports/R20/stl/R20_Thigh_L.stl,12356.28974082658
+R20,A_Shank_L,IndieDuck_R20_Structure.FCStd,Shank_L,PLA initial fit test,exports/R20/step/R20_Shank_L.step,exports/R20/stl/R20_Shank_L.stl,10245.797471616492
+R20,A_RoundedFoot_L,IndieDuck_R20_Structure.FCStd,R11_CompactFoot_L,PLA initial fit test,exports/R20/step/R20_RoundedFoot_L.step,exports/R20/stl/R20_RoundedFoot_L.stl,28315.681046755963
+R20,A_SoftHeadShell,IndieDuck_R20_HeadBand.FCStd,HeadShellWithBandMounts,PLA initial fit test,exports/R20/step/R20_SoftHeadShell.step,exports/R20/stl/R20_SoftHeadShell.stl,34997.971631238855
+R20,A_BodyFront,IndieDuck_R20_Structure.FCStd,R08_BodyFront,PLA initial fit test,exports/R20/step/R20_BodyFront.step,exports/R20/stl/R20_BodyFront.stl,17587.183555588643
+R20,A_BodyBack,IndieDuck_R20_Structure.FCStd,R08_BodyBack,PLA initial fit test,exports/R20/step/R20_BodyBack.step,exports/R20/stl/R20_BodyBack.stl,13710.578381597243
+R20,A_RoundedSole_L,IndieDuck_R20_Structure.FCStd,R11_CompactSole_L,TPU 95A,exports/R20/step/R20_RoundedSole_L.step,exports/R20/stl/R20_RoundedSole_L.stl,29010.262001846408
+R20,A_ThighPlate_L,IndieDuck_R20_Structure.FCStd,ThighPlate_L,PLA initial fit test,exports/R20/step/R20_ThighPlate_L.step,exports/R20/stl/R20_ThighPlate_L.stl,6231.957271678276
+R20,A_O2_HeadBase,IndieDuck_R20_Structure.FCStd,R19_UpperBillYawClearance,PLA initial fit test,exports/R20/step/R20_O2_HeadBase.step,exports/R20/stl/R20_O2_HeadBase.stl,31372.91213574358
+R20,A_O2_Jaw,IndieDuck_R20_Structure.FCStd,R17_RepairedJaw,PLA initial fit test,exports/R20/step/R20_O2_Jaw.step,exports/R20/stl/R20_O2_Jaw.stl,15146.492824678711
+R20,A_O2_UpperLip,IndieDuck_R20_Structure.FCStd,XGO_mouth_up_tpu_Source,TPU 95A,exports/R20/step/R20_O2_UpperLip.step,exports/R20/stl/R20_O2_UpperLip.stl,3571.5854312028546
+R20,A_O2_JawEdge,IndieDuck_R20_Structure.FCStd,XGO_mouth_buttom_tpu_Source,TPU 95A,exports/R20/step/R20_O2_JawEdge.step,exports/R20/stl/R20_O2_JawEdge.stl,13826.479807112106
+R20,A_Yaw_R,IndieDuck_R20_Structure.FCStd,Yaw_R,PLA initial fit test,exports/R20/step/R20_Yaw_R.step,exports/R20/stl/R20_Yaw_R.stl,7221.906027288384
+R20,A_HipL_R,IndieDuck_R20_Structure.FCStd,HipL_R,PLA initial fit test,exports/R20/step/R20_HipL_R.step,exports/R20/stl/R20_HipL_R.stl,11620.808308232014
+R20,A_Thigh_R,IndieDuck_R20_Structure.FCStd,Thigh_R,PLA initial fit test,exports/R20/step/R20_Thigh_R.step,exports/R20/stl/R20_Thigh_R.stl,12356.289740826596
+R20,A_Shank_R,IndieDuck_R20_Structure.FCStd,Shank_R,PLA initial fit test,exports/R20/step/R20_Shank_R.step,exports/R20/stl/R20_Shank_R.stl,10245.797471616492
+R20,A_RoundedFoot_R,IndieDuck_R20_Structure.FCStd,R11_CompactFoot_R,PLA initial fit test,exports/R20/step/R20_RoundedFoot_R.step,exports/R20/stl/R20_RoundedFoot_R.stl,28315.681046755963
+R20,A_RoundedSole_R,IndieDuck_R20_Structure.FCStd,R11_CompactSole_R,TPU 95A,exports/R20/step/R20_RoundedSole_R.step,exports/R20/stl/R20_RoundedSole_R.stl,29010.262001846408
+R20,A_ThighPlate_R,IndieDuck_R20_Structure.FCStd,ThighPlate_R,PLA initial fit test,exports/R20/step/R20_ThighPlate_R.step,exports/R20/stl/R20_ThighPlate_R.stl,6231.957271678276
+R20,A_O2_EyeL,IndieDuck_R20_Structure.FCStd,O2_EyeL,PLA initial fit test,exports/R20/step/R20_O2_EyeL.step,exports/R20/stl/R20_O2_EyeL.stl,648.613219260149
+R20,A_O2_EyeR,IndieDuck_R20_Structure.FCStd,O2_EyeR,PLA initial fit test,exports/R20/step/R20_O2_EyeR.step,exports/R20/stl/R20_O2_EyeR.stl,402.6516472252967
+R20,A_R10_EyeRing_L,IndieDuck_R20_Structure.FCStd,R10_EyeRing_L,PLA initial fit test,exports/R20/step/R20_R10_EyeRing_L.step,exports/R20/stl/R20_R10_EyeRing_L.stl,366.29085157216963
+R20,A_R10_EyeRing_R,IndieDuck_R20_Structure.FCStd,R10_EyeRing_R,PLA initial fit test,exports/R20/step/R20_R10_EyeRing_R.step,exports/R20/stl/R20_R10_EyeRing_R.stl,366.29085157214286
+R20,A_R16_TwoEyeFace,IndieDuck_R20_Structure.FCStd,R17_FastenedFace,PLA initial fit test,exports/R20/step/R20_R16_TwoEyeFace.step,exports/R20/stl/R20_R16_TwoEyeFace.stl,4539.988175798913
+R20,A_R17_HeadYawClampCap,IndieDuck_R20_Interfaces.FCStd,R17_HeadYawClampCap,PLA initial fit test,exports/R20/step/R20_R17_HeadYawClampCap.step,exports/R20/stl/R20_R17_HeadYawClampCap.stl,2735.7781483846798
+R20,A_R17_RollServoCradle,IndieDuck_R20_Interfaces.FCStd,R17_RollServoCradleV2,PLA initial fit test,exports/R20/step/R20_R17_RollServoCradle.step,exports/R20/stl/R20_R17_RollServoCradle.stl,4171.938268164332
+R20,A_R17_RollCradleTopClamp,IndieDuck_R20_Interfaces.FCStd,R17_RollCradleTopClamp,PLA initial fit test,exports/R20/step/R20_R17_RollCradleTopClamp.step,exports/R20/stl/R20_R17_RollCradleTopClamp.stl,585.5904057892811
+R20,A_R17_MouthServoCradle,IndieDuck_R20_Interfaces.FCStd,R17_MouthServoCradle,PLA initial fit test,exports/R20/step/R20_R17_MouthServoCradle.step,exports/R20/stl/R20_R17_MouthServoCradle.stl,4577.959993462735
+R20,A_R17_MouthServoKeeper,IndieDuck_R20_Interfaces.FCStd,R17_MouthServoKeeper,PLA initial fit test,exports/R20/step/R20_R17_MouthServoKeeper.step,exports/R20/stl/R20_R17_MouthServoKeeper.stl,428.39035496132556
+R20,A_R17_JawBearingTower,IndieDuck_R20_Interfaces.FCStd,TowerFootMount1,PLA initial fit test,exports/R20/step/R20_R17_JawBearingTower.step,exports/R20/stl/R20_R17_JawBearingTower.stl,2244.0511096061323
+R20,A_R17_JawBearingKeeper,IndieDuck_R20_Interfaces.FCStd,KeeperClearance1,PLA initial fit test,exports/R20/step/R20_R17_JawBearingKeeper.step,exports/R20/stl/R20_R17_JawBearingKeeper.stl,579.6925364195824
+R20,A_R17_JawBearingPlug,IndieDuck_R20_Interfaces.FCStd,PlugNutPocket,PLA initial fit test,exports/R20/step/R20_R17_JawBearingPlug.step,exports/R20/stl/R20_R17_JawBearingPlug.stl,1125.0967661892291
+R20,A_R17_FaceCarrier,IndieDuck_R20_Interfaces.FCStd,R17Face_Carrier_80,PLA initial fit test,exports/R20/step/R20_R17_FaceCarrier.step,exports/R20/stl/R20_R17_FaceCarrier.stl,3018.411385927126
+R20,A_R18_NeckBearingRetainer,IndieDuck_R20_Interfaces.FCStd,R18_NeckBearingRetainer,PLA initial fit test,exports/R20/step/R20_R18_NeckBearingRetainer.step,exports/R20/stl/R20_R18_NeckBearingRetainer.stl,406.7385185212833
+R20,A_R20_RemovableRearBand,IndieDuck_R20_HeadBand.FCStd,RemovableRearBand,PLA initial fit test,exports/R20/step/R20_R20_RemovableRearBand.step,exports/R20/stl/R20_R20_RemovableRearBand.stl,7729.233772642257

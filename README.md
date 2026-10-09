@@ -1,43 +1,74 @@
-# IndieDuck RL
+# IndieDuck RL and simulator
 
-Reinforcement-learning source for the IndieDuck robotics project, maintained by Armature AI Labs.
+IndieDuck by Armature AI Labs, adapted from Open Duck Mini and inspired by Pollen Robotics' MicroDuck.
 
-**Status: initial source integration base. Training and simulation cannot currently start from this snapshot because the robot models are excluded.** The package imports assert that those XML models exist. An Apache-compatible IndieDuck model exported from the project CAD, updated physical parameters and tested policies remain to be implemented.
+[Browser simulator](https://armature-ai-labs.github.io/indieduck-rl/) · [Assembly guide](https://armature-ai-labs.github.io/indieduck/) · [Editable R20 CAD](https://github.com/armature-ai-labs/indieduck-cad) · [Runtime](https://github.com/armature-ai-labs/indieduck-runtime)
 
-This repository contains actual Python source from [JoyandAI/microduck_rl](https://github.com/JoyandAI/microduck_rl/tree/22916b9d82f250caa563ed9a56976eb33243fb91), based on Pollen Robotics’ MicroDuck RL. It includes task configurations, observations/rewards, actuator modelling, training, evaluation and export code. It is an attributed source snapshot with excluded files recorded, not a placeholder of wrappers or a complete upstream GitHub fork. The upstream `mjlab_microduck` namespace and package version are preserved for integration work.
+This is the R20 CAD and simulation study. It includes actual attributed environment, reward, observation, BAM actuator, training, evaluation and ONNX-export source adapted from JoyandAI/Pollen, with an explicitly registered R20 velocity task. No trained policy or successful physical behaviour is claimed. The Apache-2.0 software licence does not cover the whole mixed-source mesh collection. Read [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
-## Source map
+## Browser study
 
-- `src/mjlab_microduck/tasks/`: locomotion, stand-up, pickup, kicking and skating task source. These describe upstream training tasks, not demonstrated IndieDuck capabilities.
-- `src/mjlab_microduck/actuator/` and `vendor/bam/`: actuator/friction modelling and vendored BAM source, including upstream HD-1910 parameter sets.
-- `src/mjlab_microduck/robot/`: robot configuration code; required model XML and meshes are deliberately absent.
-- `src/mjlab_microduck/sim/`, training/export modules and `scripts/`: simulation bridge, training and evaluation support.
-- `provenance/`: exact source revision, file inventories, changes, credits and recorded checks.
+Use Node.js 22.12 or later:
 
-## Model and policy work still needed
+```sh
+cd simulator
+npm ci
+npm test
+npm run dev
+```
 
-1. Export and document an independently redistributable MJCF model from [IndieDuck CAD](https://github.com/armature-ai-labs/indieduck), including link masses, inertias, collision geometry, joint limits and optional skate contacts.
-2. Match the runtime contract for joint ordering, signs, home poses, observations/actions and recurrent state. Confirm the mouth-control path separately from the 14-joint locomotion policy.
-3. Reproduce the upstream HD-1910 actuator measurements on the actual 5.0 V build before accepting those fitted parameters for IndieDuck.
-4. Train and evaluate in simulation, test reset/failure behaviour and export policies with model/runtime revision metadata.
-5. Validate on a supported physical robot before claiming walking, sitting, standing, pickup, getting up, kicking, skating or roulade performance.
+The production build uses relative assets and works under the GitHub Pages repository path. Controls include pose/physics modes, 15 joints, 19 illustrative presets, a 40 mm ball, provisional skates, contacts, part information, camera and two IMUs, 64 ideal ToF rays and labelled NFC/audio interaction events. The browser uses approximate XML PD actuators, not native BAM or learned balance.
 
-The upstream robot model files have separate non-commercial terms and are excluded, along with trained checkpoints, media and raw local calibration captures. Existing source references to those paths have not been replaced with a fabricated model. See the [exclusion inventory](provenance/excluded-upstream-files.csv) and [validation record](provenance/validation.json).
+## Native diagnostics and runtime connection
 
-## Contributor starting point
+Use Python 3.12. Full pinned dependencies, including vendored BAM:
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) and [upstream provenance](provenance/upstream.json). The retained package declares Python 3.12, mjlab 1.3 and Torch 2.9.1; its lockfile records upstream dependencies. Import, environment creation, GPU training and policy export have not been validated for this filtered snapshot. Syntax and manifest checks do not establish simulator correctness. Follow the model-integration priorities above before attempting a training run.
+```sh
+uv sync --frozen
+uv run python -m mjlab_microduck.sim.body_server --headless
+```
 
-## Project repositories
+In the runtime repository:
 
-| Project | Repository | Scope |
-| --- | --- | --- |
-| IndieDuck | [indieduck](https://github.com/armature-ai-labs/indieduck) | Hardware CAD, fit tests and project documentation |
-| IndieDuck Runtime | [indieduck-runtime](https://github.com/armature-ai-labs/indieduck-runtime) | Onboard Rust control and device integration |
-| IndieDuck RL | [indieduck-rl](https://github.com/armature-ai-labs/indieduck-rl) | Python environments, actuator models, training and export |
+```sh
+cargo run -p robotd -- --sim 127.0.0.1:7801 --no-policy --socket /tmp/indieduck-r20.sock
+```
 
-The hardware project is **IndieDuck by Armature AI Labs, adapted from Open Duck Mini and inspired by Pollen Robotics’ MicroDuck**. The software in this repository is credited separately below.
+The R20 contract is version 2: 15 physical joints, 14 policy actions, 61 policy observations and separate direct-drive mouth control. The logical jaw opens from 0 to +30 degrees about CAD +Y. Physical encoder sign, home and limits remain uncalibrated. No passive crank/rod mechanism remains in the current model. Reset, disconnect and incompatible contract handling are tested; simulation does not fall back to serial hardware.
 
-## Licensing and credits
+## Training, evaluation and export
 
-Eligible upstream code retains its [Apache-2.0 licence](LICENSE) and applicable third-party terms. Preserve [third-party notices](THIRD_PARTY_NOTICES.md), [upstream attribution](UPSTREAM.md), source headers and the provenance records. JoyandAI, Pollen Robotics and their contributors authored the imported code; Armature AI Labs prepared this filtered source base and the IndieDuck integration roadmap. This repository does not imply upstream endorsement.
+```sh
+uv run train Mjlab-Velocity-Flat-IndieDuck-R20 --help
+uv run python tools/verify_r20_training.py
+# On a suitable CUDA host, after inspecting task settings:
+uv run train Mjlab-Velocity-Flat-IndieDuck-R20
+uv run play Mjlab-Velocity-Flat-IndieDuck-R20 --help
+uv run python scripts/export.py Mjlab-Velocity-Flat-IndieDuck-R20 --help
+```
+
+The current task reuses the retained upstream velocity rewards and observations with current R20 model/home, explicit 14-joint ordering and HD-1910 m1 BAM. Mouth control remains outside the policy. Training delay is 6 physics substeps (30 ms), approximating the selected 29 ms native diagnostic delay at a 5 ms timestep. Parameters are inherited estimates, not IndieDuck measurements. A one-environment CPU smoke checks reset, 14 actions, 61 actor observations and two finite steps. This does not validate GPU training, reward tuning, convergence or policy transfer. Historical task implementations remain in source, with `tasks/upstream_registry.py` retained as history; their omitted upstream CAD prevents treating them as current runnable IndieDuck tasks.
+
+Use the existing export command for future checkpoints so normalization is included. R20 ONNX exports carry revision/contract metadata and assert policy joint order. The policy publisher rejects missing or incompatible R20 metadata before upload. There is no checkpoint included in this release.
+
+## Canonical model and regeneration
+
+`src/mjlab_microduck/robot/indieduck/` is the only authored model. Browser and runtime model copies are generated from it. FreeCAD remains the mechanical source. The published CAD commit is recorded in the contract and preserved source notices.
+
+```sh
+# Set these to a CAD repository checkout and a new output directory.
+export INDIEDUCK_CAD=/path/to/indieduck-cad
+export INDIEDUCK_ASSETS=/path/to/r20-assets
+/Applications/FreeCAD.app/Contents/Resources/bin/freecadcmd tools/export_r20_cad.py
+uv run python tools/generate_indieduck.py "$INDIEDUCK_ASSETS/zero/manifest.json"
+uv run python tools/finalize_indieduck.py
+uv run python tools/verify_indieduck_native.py --output validation/r20-native.json
+uv run python tools/verify_r20_cad_parity.py "$INDIEDUCK_ASSETS"
+uv run python tools/sync_indieduck_browser.py
+```
+
+The exporter reads all 124 visible CAD components, 41 printed pieces and 83 hardware/module reference entries. Source identities and colours are retained. It generates posed guide meshes and unposed model inputs with explicit millimetre-to-metre conversion. Unmapped components fail generation. The additional 22 skate parts are preserved original R07 provisional accessory geometry, not measured or physically fitted R20 hardware. Meshes are presentation tessellations; use the CAD repository's manufacturing exports for printing.
+
+## Evidence and limits
+
+See [VALIDATION.md](VALIDATION.md). CAD clearance, physical fit, strength, cable travel and learned behaviour are different questions. Pose presets are illustrative. Existing neck/deep-pose clearance concerns remain; finite integration does not certify collision-free motion. Masses, inertias and friction are estimated. Keep head sensors auxiliary to the 61-observation policy interface.

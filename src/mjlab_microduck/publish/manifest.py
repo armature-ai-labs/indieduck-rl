@@ -13,6 +13,7 @@ CLI can validate an ONNX file without a GPU.
 from __future__ import annotations
 
 import json
+import hashlib
 import subprocess
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
@@ -25,7 +26,12 @@ SCHEMA_VERSION = 2
 MODEL_API = 1
 OBS_LEN = 61
 ACTION_LEN = 14
-ROBOT: dict[str, Any] = {"model": "microduck", "hw_rev": 1, "servos": "xl330", "control_hz": 50}
+_CONTRACT_PATH = Path(__file__).resolve().parents[1] / "robot/indieduck/contract.json"
+_CONTRACT_BYTES = _CONTRACT_PATH.read_bytes()
+_CONTRACT = json.loads(_CONTRACT_BYTES)
+ROBOT: dict[str, Any] = {"model": "indieduck", "hw_rev": 1, "servos": "hd1910", "control_hz": 50,
+                         "cad_revision": _CONTRACT["cad_revision"],
+                         "contract_sha256": hashlib.sha256(_CONTRACT_BYTES).hexdigest()}
 
 # The one `.onnx` a repo carries. The daemon takes the sole `.onnx` in a repo and refuses several.
 POLICY_FILE = "policy.onnx"
@@ -48,7 +54,7 @@ class Provenance:
     """Where the weights came from. Display-only for the daemon; the part people skip by hand."""
 
     task_id: str | None = None
-    repo: str = "pollen-robotics/microduck_rl"
+    repo: str = "armature-ai-labs/indieduck-rl"
     commit: str | None = None
     branch: str | None = None
     dirty: bool | None = None
@@ -189,10 +195,12 @@ def validate_manifest(manifest: dict[str, Any]) -> None:
     no obligation to carry any field. Only a claim that is present and wrong fails.
     """
     if "policies" in manifest:
+        common = {k: v for k, v in manifest.items() if k != "policies"}
+        validate_manifest(common)
         for entry in manifest["policies"]:
             if "file" not in entry:
                 raise ManifestError("every set entry needs a `file`")
-            validate_manifest({k: v for k, v in entry.items() if k != "file"})
+            validate_manifest({**common, **{k: v for k, v in entry.items() if k != "file"}})
         return
     if (obs := manifest.get("obs_len")) is not None and obs != OBS_LEN:
         raise ManifestError(f"obs_len {obs}: this robot builds {OBS_LEN}")
@@ -273,6 +281,13 @@ def check_onnx(path: Path) -> OnnxShape:
         )
     if shape.action_len != ACTION_LEN:
         raise ManifestError(f"{path.name}: {shape.action_len} actions, the robot has {ACTION_LEN}")
+    import onnx
+    metadata = {p.key: p.value for p in onnx.load(str(path), load_external_data=False).metadata_props}
+    expected = {"robot_model": ROBOT["model"], "cad_revision": ROBOT["cad_revision"],
+                "contract_sha256": ROBOT["contract_sha256"]}
+    for key, value in expected.items():
+        if metadata.get(key) != value:
+            raise ManifestError(f"{path.name}: incompatible or missing R20 {key}; export with the current R20 task")
     return shape
 
 

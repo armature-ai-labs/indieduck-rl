@@ -1,0 +1,56 @@
+{
+  "revision": "R07",
+  "date": "2026-10-08",
+  "scope": "Local CAD and physics study; public repositories preserved",
+  "initial_import_record": "provenance/upstream.json",
+  "modified_imported_files": [
+    {
+      "path": ".gitignore",
+      "upstream_sha256": "e23c21cdbe8a2798b6085db0cc94b6945255aeae96cfc6540c3073fc722f13ba",
+      "local_sha256": "37db3ccfa238d631dfe32a5060592e74808cfc381c398639dd041daa123f6598"
+    },
+    {
+      "path": "src/mjlab_microduck/sim/__init__.py",
+      "upstream_sha256": "f13d4940266b9579529074bc60426353ed8fc6f49bf8f480691d30e8e4276e22",
+      "local_sha256": "3a1ddf18a62daee468f53530d62aa50c02c91ffea63e2acd0604b4de8e2aeda9"
+    },
+    {
+      "path": "src/mjlab_microduck/sim/body_server.py",
+      "upstream_sha256": "2040c827628c33fee998944bce1fcd456c4b993802bb473f016681688bff7b08",
+      "local_sha256": "85a7ac6605eea28576a37381b50fd47a5333a73182ea08c0e36fa39078e1cc00"
+    },
+    {
+      "path": "src/mjlab_microduck/sim/camera.py",
+      "upstream_sha256": "5f2e6c83b33e594583cbd5f3e003c3b8bb77f7a0e7b734d86ba0b2c821eaed71",
+      "local_sha256": "9eaccc18f31234208e8bdd7693e32d83548d3807ba8368473414b214666d4782"
+    }
+  ],
+  "new_source_directories": [
+    "src/mjlab_microduck/robot/indieduck",
+    "simulator",
+    "tools",
+    "tests",
+    "validation"
+  ],
+  "new_helper": "src/mjlab_microduck/sim/indieduck.py",
+  "canonical_contract_sha256": "bca2a9edb18882bee2073046f1e4515350b7affc64ca34d57664fec176bf71eb",
+  "geometry_source": "indieduck/hardware/mechanical/freecad/indieduck-r07/cad-manifest.json and skate-manifest.json",
+  "geometry_licence": "Apache-2.0 eligible IndieDuck CAD with retained Open Duck Mini attribution",
+  "upstream_restricted_models_copied": false,
+  "policies_copied_or_trained": false,
+  "native_dependencies": {
+    "mujoco": "3.10.0",
+    "numpy": "2.5.3",
+    "pytest": "9.1.1",
+    "pillow": "12.3.0",
+    "colorama": "0.4.6"
+  },
+  "historical_manifests_preserved": true,
+  "selected_bam": {
+    "model": "m1",
+    "rail_volts": 5.0,
+    "D8_delay_s": 0.029,
+    "pinned_source_delay_s": 0.03240342471539083,
+    "scope": "separate native CPU diagnostic, not GPU training migration"
+  }
+}
