@@ -62,7 +62,7 @@ for o in a.Objects:
            'facets': mesh.CountFacets, 'source_sha256': hashlib.sha256((out / rel).read_bytes()).hexdigest(), 'source_commit': commit}
     rows.append(row); z = dict(row); z['center_of_mass_mm'] = list(com(sz)); z['bounds_mm'] = [[zbb.XMin, zbb.YMin, zbb.ZMin], [zbb.XMax, zbb.YMax, zbb.ZMax]]; zeros.append(z)
     print('EXPORTED', oid, mesh.CountFacets, flush=True)
-assert len(rows) == 141 and sum(p['category'] == 'printed' for p in rows) == 51, (len(rows), sum(p['category'] == 'printed' for p in rows))
+assert len(rows) == 141 and sum(p['category'] == 'printed' for p in rows) == 55, (len(rows), sum(p['category'] == 'printed' for p in rows))
 worst = max(registration, key=lambda x: x[1])
 moved = [r for r in registration if r[1] > 0.05]
 print('REGISTRATION retained parts', len(registration), 'worst', worst, 'over 0.05 mm', moved, flush=True)

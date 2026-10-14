@@ -2289,8 +2289,8 @@
         0.7019608020782471,
         1.0
       ],
-      "material": "Reference module, estimated mass",
-      "mass_kg": 0.0005,
+      "material": "PLA fit study",
+      "mass_kg": 0.0027826233759116045,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -2309,7 +2309,7 @@
         -0.03501093252166531,
         0.23311748778055177
       ],
-      "reference": true,
+      "reference": false,
       "include_when": "always",
       "source_sha256": "dac87eb8ae9f76c39c22ba2031d53761c79c2b4b7d6b79399dc18a5ba634b6cc"
     },
@@ -2324,8 +2324,8 @@
         0.7019608020782471,
         1.0
       ],
-      "material": "Reference module, estimated mass",
-      "mass_kg": 0.0005,
+      "material": "PLA fit study",
+      "mass_kg": 0.0007188187451602821,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -2344,7 +2344,7 @@
         -0.03069999999999999,
         0.2388499992370599
       ],
-      "reference": true,
+      "reference": false,
       "include_when": "always",
       "source_sha256": "4bbcc7715fcdaa3a3017c609fdce9a8fecc9eef22a1f5a233cf1d3e41f51b804"
     },
@@ -2359,8 +2359,8 @@
         0.7019608020782471,
         1.0
       ],
-      "material": "Reference module, estimated mass",
-      "mass_kg": 0.0005,
+      "material": "PLA fit study",
+      "mass_kg": 0.0013951199900746438,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -2379,7 +2379,7 @@
         -0.03334388431010235,
         0.23884999923706002
       ],
-      "reference": true,
+      "reference": false,
       "include_when": "always",
       "source_sha256": "b90a65e6bdddbe5c068b492b231dd281d8e9b8a14d4eead4721865e23d4cf413"
     },
@@ -2534,8 +2534,8 @@
         1.0,
         1.0
       ],
-      "material": "Reference module, estimated mass",
-      "mass_kg": 0.0005,
+      "material": "PLA fit study",
+      "mass_kg": 0.0005043557629663913,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -2554,7 +2554,7 @@
         -0.026699726122979946,
         0.14790263239638224
       ],
-      "reference": true,
+      "reference": false,
       "include_when": "always",
       "source_sha256": "873dd7123c9f1643bb6aa2edcb2a64fa519b3965a65827062cd54a9f013f0ae4"
     },

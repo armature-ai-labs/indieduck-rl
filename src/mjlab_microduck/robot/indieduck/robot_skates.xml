@@ -262,7 +262,7 @@
               <joint name="head_roll" type="hinge" axis="-1 0 0" range="-0.436332313 0.436332313" />
               <body name="mouth_link" pos="0.01779999771 0 0.002599999237">
                 <joint name="mouth" type="hinge" axis="0 1 0" range="0 0.5235987756" />
-                <inertial mass="0.016258790709480844" pos="0.01191384067 -0.003614924681 -0.005696388307" diaginertia="1.515108311e-05 9.572962995e-06 2.206453389e-05" />
+                <inertial mass="0.017153910699555488" pos="0.01129258306 -0.005166231931 -0.005399141158" diaginertia="1.598521878e-05 1.009999792e-05 2.327928631e-05" />
                 <geom name="ref_horn_mouth_visual" type="mesh" mesh="ref_horn_mouth" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
                 <geom name="R17_JawBearingPlug_visual" type="mesh" mesh="R17_JawBearingPlug" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
                 <geom name="ref_R17_JawFasteners_visual" type="mesh" mesh="ref_R17_JawFasteners" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
@@ -273,7 +273,7 @@
                 <geom name="HardwarePivotWasher_L_visual" type="mesh" mesh="HardwarePivotWasher_L" rgba="0.5803921819 0.6196078658 0.650980413 1" group="2" contype="0" conaffinity="0" mass="0" />
                 <geom name="AngularJaw_collision" type="box" pos="0.02605136585 0 -0.005662567902" size="0.03504863644 0.0445 0.0146651535" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
               </body>
-              <inertial mass="0.19573172654786103" pos="0.01842995449 0.00237519503 0.008312671673" diaginertia="0.0002266358052 0.0003819634607 0.0004686289058" />
+              <inertial mass="0.1982331686689329" pos="0.01842205609 0.001908189826 0.008174576296" diaginertia="0.0002295321999 0.0003868449355 0.0004746179609" />
               <geom name="HeadBase_visual" type="mesh" mesh="HeadBase" rgba="0.1019607857 0.1411764771 0.1686274558 1" group="2" contype="0" conaffinity="0" mass="0" />
               <geom name="ref_servo_head_roll_visual" type="mesh" mesh="ref_servo_head_roll" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
               <geom name="ref_servo_mouth_visual" type="mesh" mesh="ref_servo_mouth" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
@@ -468,7 +468,7 @@
         <geom name="ref_servo_right_hip_roll_visual" type="mesh" mesh="ref_servo_right_hip_roll" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
         <geom name="Yaw_R_collision" type="box" pos="-0.00175 -4.768371566e-10 -0.01959999847" size="0.01375 0.01220000029 0.02159999847" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
       </body>
-      <inertial mass="0.30121767340966327" pos="-0.01351618427 -5.440735615e-05 -0.01286255619" diaginertia="0.0004814415311 0.0006880015507 0.000577861005" />
+      <inertial mass="0.30122202917262964" pos="-0.01351539595 -5.479265564e-05 -0.0128622993" diaginertia="0.000481448493 0.0006880114995 0.0005778693611" />
       <geom name="Trunk_visual" type="mesh" mesh="Trunk" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
       <geom name="ref_servo_left_hip_yaw_visual" type="mesh" mesh="ref_servo_left_hip_yaw" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
       <geom name="ref_servo_right_hip_yaw_visual" type="mesh" mesh="ref_servo_right_hip_yaw" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />

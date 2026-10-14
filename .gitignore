@@ -46,3 +46,4 @@ logdir/.claude/worktrees/
 node_modules/
 
 MUJOCO_LOG.TXT
+.DS_Store
