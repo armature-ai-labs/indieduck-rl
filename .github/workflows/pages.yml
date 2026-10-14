@@ -1,4 +1,4 @@
-name: R20 simulator Pages
+name: Simulator Pages
 on:
   push:
     branches: [main]
