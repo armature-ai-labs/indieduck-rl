@@ -2,9 +2,9 @@
 
 IndieDuck by Armature AI Labs, adapted from Open Duck Mini and inspired by Pollen Robotics' MicroDuck.
 
-[Browser simulator](https://armature-ai-labs.github.io/indieduck-rl/) · [Assembly guide](https://armature-ai-labs.github.io/indieduck/) · [Editable R20 CAD](https://github.com/armature-ai-labs/indieduck-cad) · [Runtime](https://github.com/armature-ai-labs/indieduck-runtime)
+[Browser simulator](https://armature-ai-labs.github.io/indieduck-rl/) · [Assembly guide](https://armature-ai-labs.github.io/indieduck/) · [Editable R25 CAD](https://github.com/armature-ai-labs/indieduck-cad) · [Runtime](https://github.com/armature-ai-labs/indieduck-runtime)
 
-This is the R20 CAD and simulation study. It includes actual attributed environment, reward, observation, BAM actuator, training, evaluation and ONNX-export source adapted from JoyandAI/Pollen, with an explicitly registered R20 velocity task. No trained policy or successful physical behaviour is claimed. The Apache-2.0 software licence does not cover the whole mixed-source mesh collection. Read [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+This is the R25 CAD and simulation study, built from the R25 exterior on the unchanged R20 joint chain. It includes actual attributed environment, reward, observation, BAM actuator, training, evaluation and ONNX-export source adapted from JoyandAI/Pollen, with an explicitly registered R25 velocity task. No trained policy or successful physical behaviour is claimed. The Apache-2.0 software licence does not cover the whole mixed-source mesh collection. Read [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ## Browser study
 
@@ -31,25 +31,25 @@ uv run python -m mjlab_microduck.sim.body_server --headless
 In the runtime repository:
 
 ```sh
-cargo run -p robotd -- --sim 127.0.0.1:7801 --no-policy --socket /tmp/indieduck-r20.sock
+cargo run -p robotd -- --sim 127.0.0.1:7801 --no-policy --socket /tmp/indieduck-r25.sock
 ```
 
-The R20 contract is version 2: 15 physical joints, 14 policy actions, 61 policy observations and separate direct-drive mouth control. The logical jaw opens from 0 to +30 degrees about CAD +Y. Physical encoder sign, home and limits remain uncalibrated. No passive crank/rod mechanism remains in the current model. Reset, disconnect and incompatible contract handling are tested; simulation does not fall back to serial hardware.
+The R25 contract (model `indieduck-r25`) is version 2: 15 physical joints, 14 policy actions, 61 policy observations and separate direct-drive mouth control. The logical jaw opens from 0 to +30 degrees about CAD +Y. Physical encoder sign, home and limits remain uncalibrated. No passive crank/rod mechanism remains in the current model. Reset, disconnect and incompatible contract handling are tested; simulation does not fall back to serial hardware.
 
 ## Training, evaluation and export
 
 ```sh
-uv run train Mjlab-Velocity-Flat-IndieDuck-R20 --help
+uv run train Mjlab-Velocity-Flat-IndieDuck-R25 --help
 uv run python tools/verify_r20_training.py
 # On a suitable CUDA host, after inspecting task settings:
-uv run train Mjlab-Velocity-Flat-IndieDuck-R20
-uv run play Mjlab-Velocity-Flat-IndieDuck-R20 --help
-uv run python scripts/export.py Mjlab-Velocity-Flat-IndieDuck-R20 --help
+uv run train Mjlab-Velocity-Flat-IndieDuck-R25
+uv run play Mjlab-Velocity-Flat-IndieDuck-R25 --help
+uv run python scripts/export.py Mjlab-Velocity-Flat-IndieDuck-R25 --help
 ```
 
-The current task reuses the retained upstream velocity rewards and observations with current R20 model/home, explicit 14-joint ordering and HD-1910 m1 BAM. Mouth control remains outside the policy. Training delay is 6 physics substeps (30 ms), approximating the selected 29 ms native diagnostic delay at a 5 ms timestep. Parameters are inherited estimates, not IndieDuck measurements. A one-environment CPU smoke checks reset, 14 actions, 61 actor observations and two finite steps. This does not validate GPU training, reward tuning, convergence or policy transfer. Historical task implementations remain in source, with `tasks/upstream_registry.py` retained as history; their omitted upstream CAD prevents treating them as current runnable IndieDuck tasks.
+The current task reuses the retained upstream velocity rewards and observations with the current R25 model and home pose, explicit 14-joint ordering and HD-1910 m1 BAM. Mouth control remains outside the policy. Training delay is 6 physics substeps (30 ms), approximating the selected 29 ms native diagnostic delay at a 5 ms timestep. Parameters are inherited estimates, not IndieDuck measurements. A one-environment CPU smoke checks reset, 14 actions, 61 actor observations and two finite steps. This does not validate GPU training, reward tuning, convergence or policy transfer. Historical task implementations remain in source, with `tasks/upstream_registry.py` retained as history; their omitted upstream CAD prevents treating them as current runnable IndieDuck tasks.
 
-Use the existing export command for future checkpoints so normalization is included. R20 ONNX exports carry revision/contract metadata and assert policy joint order. The policy publisher rejects missing or incompatible R20 metadata before upload. There is no checkpoint included in this release.
+Use the existing export command for future checkpoints so normalization is included. R25 ONNX exports carry revision/contract metadata and assert policy joint order. The policy publisher rejects missing or incompatible R25 metadata before upload. There is no checkpoint included in this release.
 
 ## Canonical model and regeneration
 
@@ -58,17 +58,27 @@ Use the existing export command for future checkpoints so normalization is inclu
 ```sh
 # Set these to a CAD repository checkout and a new output directory.
 export INDIEDUCK_CAD=/path/to/indieduck-cad
-export INDIEDUCK_ASSETS=/path/to/r20-assets
-/Applications/FreeCAD.app/Contents/Resources/bin/freecadcmd tools/export_r20_cad.py
+export INDIEDUCK_ASSETS=/path/to/r25-assets
+# R25 registers against the R20 display manifest, kept at the CAD tag r20-simulation-study-v1:
+export INDIEDUCK_R20_MANIFEST=/path/to/r20-assembly-manifest.json
+/Applications/FreeCAD.app/Contents/Resources/bin/freecadcmd tools/export_r25_cad.py
 uv run python tools/generate_indieduck.py "$INDIEDUCK_ASSETS/zero/manifest.json"
 uv run python tools/finalize_indieduck.py
-uv run python tools/verify_indieduck_native.py --output validation/r20-native.json
+uv run python tools/verify_indieduck_native.py --output validation/r25-native.json
 uv run python tools/verify_r20_cad_parity.py "$INDIEDUCK_ASSETS"
 uv run python tools/sync_indieduck_browser.py
 ```
 
-The exporter reads all 124 visible CAD components, 41 printed pieces and 83 hardware/module reference entries. Source identities and colours are retained. It generates posed guide meshes and unposed model inputs with explicit millimetre-to-metre conversion. Unmapped components fail generation. The additional 22 skate parts are preserved original R07 provisional accessory geometry, not measured or physically fitted R20 hardware. Meshes are presentation tessellations; use the CAD repository's manufacturing exports for printing.
+The R25 exporter reads all 141 visible CAD components (51 printed pieces, the rest hardware and module reference envelopes) from the single R25 native file, taking each part's joint link from its `MovingBody` property. Source identities and colours are retained. It generates posed guide meshes and unposed model inputs with explicit millimetre-to-metre conversion. Unmapped components fail generation. The additional 22 skate parts are preserved original R07 provisional accessory geometry, not measured or physically fitted R20 hardware. Meshes are presentation tessellations; use the CAD repository's manufacturing exports for printing.
+
+## Environment notes (macOS)
+
+Keep the Python environment outside iCloud-synced folders: iCloud's Desktop and Documents sync can mark files inside `.venv` hidden, and Python 3.12 then skips the hidden `.pth` files, so `bam` and this package stop importing. Use `export UV_PROJECT_ENVIRONMENT=$HOME/.venvs/indieduck-rl` before `uv sync`. If your shell sets `NODE_ENV=production`, install the simulator with `npm ci --include=dev`.
+
+## Credits
+
+[Zankar Savalia](https://www.linkedin.com/in/zankarvs/) contributed to the design of the R25 exterior and helped prepare it for publication. See [CONTRIBUTORS.md](CONTRIBUTORS.md).
 
 ## Evidence and limits
 
-See [VALIDATION.md](VALIDATION.md). CAD clearance, physical fit, strength, cable travel and learned behaviour are different questions. Pose presets are illustrative. Existing neck/deep-pose clearance concerns remain; finite integration does not certify collision-free motion. Masses, inertias and friction are estimated. Keep head sensors auxiliary to the 61-observation policy interface.
+See [VALIDATION.md](VALIDATION.md). CAD clearance, physical fit, strength, cable travel and learned behaviour are different questions. Pose presets are illustrative. The neck is limited to the CAD-verified range of -65 to +27.5 degrees; other deep poses are not clearance-checked, and finite integration does not certify collision-free motion. Masses, inertias and friction are estimated. Keep head sensors auxiliary to the 61-observation policy interface.

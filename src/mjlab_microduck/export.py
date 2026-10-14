@@ -264,14 +264,14 @@ def run_export(task_id: str, cfg: ExportConfig) -> ExportResult:
     runner.export_policy_to_onnx(path, filename)
 
     metadata = get_base_metadata(runner.env.unwrapped, run_path=cfg.checkpoint_file)
-    if task_id == "Mjlab-Velocity-Flat-IndieDuck-R20":
+    if task_id == "Mjlab-Velocity-Flat-IndieDuck-R25":
         import hashlib
         import json
         model_dir = Path(__file__).parent / "robot/indieduck"
         contract_bytes = (model_dir / "contract.json").read_bytes()
         contract = json.loads(contract_bytes)
         if metadata["joint_names"] != contract["policy_action_joints"]:
-            raise ValueError("ONNX policy joint order does not match the R20 contract")
+            raise ValueError("ONNX policy joint order does not match the R25 contract")
         metadata.update(robot_model="indieduck", cad_revision=contract["cad_revision"],
                         contract_sha256=hashlib.sha256(contract_bytes).hexdigest(),
                         observation_size=contract["policy_observation_size"])

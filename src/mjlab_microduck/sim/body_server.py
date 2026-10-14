@@ -393,7 +393,7 @@ def main() -> None:
     print(f'== {args.scene.name}: {args.ducks} duck(s), starting at {args.keyframe}', flush=True)
     for index in range(args.ducks):
         eye = f' · camera on {args.host}:{args.frame_port + index}' if index in wanted else ''
-        print(f'==   duck {index}: robotd --sim {args.host}:{args.port + index} --no-policy --socket /tmp/indieduck-r20.sock{eye}', flush=True)
+        print(f'==   duck {index}: robotd --sim {args.host}:{args.port + index} --no-policy --socket /tmp/indieduck-r25.sock{eye}', flush=True)
     run(world, headless=args.headless)
 if __name__ == '__main__':
     main()

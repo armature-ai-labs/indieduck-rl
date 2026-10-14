@@ -35,14 +35,14 @@ function App() {
   const trigger = label => setEvent(`${label}: local interaction event at ${new Date().toLocaleTimeString()}. No RF, sound propagation or physical device connection.`);
   const tof = Object.entries(stats.sensors || {}).filter(([name]) => /tof.*\d/.test(name));
   return <div className="app">
-    <header><div className="identity"><h1>IndieDuck</h1><span>Armature AI Labs · <a href="https://armature-ai-labs.github.io/indieduck/">Assembly guide</a> · <a href="https://github.com/armature-ai-labs/indieduck-rl">Source</a></span></div><div className="header-right"><span className="revision">R20 simulation study</span><button disabled={!ready} onClick={() => setExportedPose(engine.current.snapshot())}>Export pose</button></div></header>
+    <header><div className="identity"><h1>IndieDuck</h1><span>Armature AI Labs · <a href="https://armature-ai-labs.github.io/indieduck/">Assembly guide</a> · <a href="https://github.com/armature-ai-labs/indieduck-rl">Source</a></span></div><div className="header-right"><span className="revision">R25 simulation study</span><button disabled={!ready} onClick={() => setExportedPose(engine.current.snapshot())}>Export pose</button></div></header>
     <main>
       <section className="viewport" aria-label="Interactive IndieDuck CAD view">
         <div ref={host} className="canvas-host" />
         <div className="view-toolbar" aria-label="View direction">{['iso', 'front', 'side', 'back', 'top'].map(v => <button disabled={!ready} key={v} onClick={() => engine.current.view(v)}>{v === 'iso' ? '3D view' : v[0].toUpperCase() + v.slice(1)}</button>)}</div>
         {!ready && <div className="loading" role="status">{error ? <><strong>Unable to load the study</strong><p>{error}</p><button onClick={() => location.reload()}>Reload</button></> : <><span className="spinner"/><strong>{busy ? 'Changing foot assembly…' : stats.status}</strong></>}</div>}
         <div className="view-caption"><strong>{mode === 'pose' ? 'Pose preview' : 'Physics study'}</strong><span>{mode === 'pose' ? 'Illustrative joint configuration. Drag to orbit; select a part to inspect.' : 'Gravity and approximate actuators. No trained balance policy.'}</span></div>
-        <div className="view-status"><span>{skates ? 'Inline skates · provisional wheels' : 'R20 compact feet'}</span><span>{(stats.time || 0).toFixed(2)} s <i/> {stats.contacts || 0} contacts</span></div>
+        <div className="view-status"><span>{skates ? 'Inline skates · provisional wheels' : 'R25 faceted feet'}</span><span>{(stats.time || 0).toFixed(2)} s <i/> {stats.contacts || 0} contacts</span></div>
       </section>
       <aside aria-label="Simulation controls">
         <div className="mode-control" role="group" aria-label="Study mode"><button className={mode === 'pose' ? 'active' : ''} disabled={!ready} onClick={() => changeMode('pose')}>Pose preview</button><button className={mode === 'physics' ? 'active' : ''} disabled={!ready} onClick={() => changeMode('physics')}>Physics</button></div>

@@ -1,4 +1,4 @@
-"""R20 adaptation of the attributed upstream velocity reward and observation recipe."""
+"""R25 adaptation of the attributed upstream velocity reward and observation recipe."""
 import json
 from pathlib import Path
 import mujoco
@@ -47,7 +47,7 @@ def make_indieduck_velocity_env_cfg(play=False):
                 "robot", joint_names=POLICY_JOINTS, preserve_order=True,
             )
     cfg.observations["critic"].terms["base_ang_vel"].params["sensor_name"] = "robot/body_imu_gyro"
-    # R20 legs and head have explicit link names, unlike the upstream mesh-named bodies.
+    # R25 legs and head have explicit link names, unlike the upstream mesh-named bodies.
     for event in cfg.events.values():
         asset = event.params.get("asset_cfg")
         if asset is not None and getattr(asset, "body_names", None) and any(

@@ -143,7 +143,7 @@ export class DuckEngine {
     this.onStats({ values: this.values() });
   }
   updateMouth(motor) {
-    // R20 jaw is the physical mouth joint, without a passive linkage.
+    // R25 jaw is the physical mouth joint, without a passive linkage.
   }
 
   setMode(mode) {

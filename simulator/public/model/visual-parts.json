@@ -1,6 +1,6 @@
 {
-  "model_id": "indieduck-r20",
-  "cad_revision": "R20",
+  "model_id": "indieduck-r25",
+  "cad_revision": "R25",
   "mesh_coordinates": "SI body-local, orientation equal CAD world at zero",
   "parts": [
     {
@@ -9,13 +9,13 @@
       "mesh": "meshes/Trunk.stl",
       "body": "trunk_base",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.05490462996544059,
+      "mass_kg": 0.05449409844812521,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -30,13 +30,13 @@
         ]
       ],
       "com_world_m": [
-        -0.011401738394625162,
-        0.0004457564897713872,
-        0.12493558340081033
+        -0.011671166972013149,
+        0.0005077099098747448,
+        0.12467290026689319
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "88ccee1e1f42ddd28938d7e0aaf7bb661ace5d8fcc12a85b395b260f5f4f61ba"
+      "source_sha256": "3a9ab044e3b31c65dc6e139b8bd52c46460d07d83a599d7e724c71e8ae5ecbd7"
     },
     {
       "name": "Neck",
@@ -44,13 +44,13 @@
       "mesh": "meshes/Neck.stl",
       "body": "neck_pitch_link",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.013255833554044593,
+      "mass_kg": 0.012436239508467097,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -65,13 +65,13 @@
         ]
       ],
       "com_world_m": [
-        0.04101313513934163,
-        -0.0076381062960309085,
-        0.17682928482206212
+        0.04160430909053888,
+        -0.007583822003349622,
+        0.17788535315710952
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "44333323639fe795483caf9624d107fc8f9f3a363b41d3706f8a37cb090b6ca4"
+      "source_sha256": "cc8f4ac51453d31f50fb6bce82cb09d41d6994802b0421de420dee1682fde7ed"
     },
     {
       "name": "HeadPitch",
@@ -79,9 +79,9 @@
       "mesh": "meshes/HeadPitch.stl",
       "body": "head_pitch_link",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "PLA fit study",
@@ -106,7 +106,7 @@
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "41ea0d93c5331b0afe1948b3cd3936e22cc16916a6cfcdc123f999c022410f3d"
+      "source_sha256": "c05c4ab61240ce8ad9e929e807c71d20141e1f5f4c36fcb669f7b40e3756d12f"
     },
     {
       "name": "HeadYaw",
@@ -114,9 +114,9 @@
       "mesh": "meshes/HeadYaw.stl",
       "body": "head_yaw_link",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "PLA fit study",
@@ -141,7 +141,7 @@
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "f6a32c2d3a3a5231ea728a3a2ea615cf03e826e2bdbec40a8ac9ab57287ef0aa"
+      "source_sha256": "4814f2d92e54900c34cd74c1ff664ff75999d7ec46690bdf7b116b6a12e7ecdd"
     },
     {
       "name": "Yaw_L",
@@ -149,13 +149,13 @@
       "mesh": "meshes/Yaw_L.stl",
       "body": "left_hip_yaw_link",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.0089551634738376,
+      "mass_kg": 0.008955163473837603,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -171,12 +171,12 @@
       ],
       "com_world_m": [
         0.0165715743829682,
-        0.017499999999999797,
-        0.10124098130707522
+        0.017499999999999804,
+        0.10124098130707515
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "2c2fb8b3d6be965adc41c6a32228e6b6862382c3cae7607001c45954b906a0ed"
+      "source_sha256": "587be6358b0deef98638b21d31fb53076107b653c9e6946dd0bdf3ea20a2d27c"
     },
     {
       "name": "HipL_L",
@@ -184,34 +184,34 @@
       "mesh": "meshes/HipL_L.stl",
       "body": "left_hip_roll_link",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.014409802302207729,
+      "mass_kg": 0.017090742019483036,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
-          -3.375077994860476e-17,
+          -3.730349362740526e-17,
           0.004320772171020508,
           0.08930233764648438
         ],
         [
-          0.049,
+          0.054958484649658204,
           0.0745,
-          0.11569999694824219
+          0.12155326843261718
         ]
       ],
       "com_world_m": [
-        0.025540695695633404,
-        0.039426250083773456,
-        0.10251353438659755
+        0.028659376235467663,
+        0.0394270677965036,
+        0.10403267347077393
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "f4919bb6e68971cc2114c6c654174e55231179bdeda143c7e9a46082c133f9a4"
+      "source_sha256": "d0c032124ef929758f33617db468943153fd75ad5068f52ab21ac6f7006fac92"
     },
     {
       "name": "Thigh_L",
@@ -219,13 +219,13 @@
       "mesh": "meshes/Thigh_L.stl",
       "body": "left_hip_pitch_link",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.9607843160629272,
+        0.5490196347236633,
+        0.07058823853731155,
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.015321799278624959,
+      "mass_kg": 0.015321799278624936,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -240,398 +240,48 @@
         ]
       ],
       "com_world_m": [
-        -0.00563798309374232,
-        0.05963154992706247,
-        0.09233855865661167
+        -0.005637983093742178,
+        0.05963154992706254,
+        0.09233855865661164
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "248920a525905eb485c53dfcdd28daf8fde6ad6df35d1feb8feb581f522d8634"
+      "source_sha256": "d4d9ae0511f7b9399cfe514a978ead0e3fe560c5d1743f1bb102ea0b7e36e114"
     },
     {
-      "name": "Shank_L",
-      "label": "A_Shank_L",
-      "mesh": "meshes/Shank_L.stl",
-      "body": "left_knee_link",
-      "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
-        1.0
-      ],
-      "material": "PLA fit study",
-      "mass_kg": 0.01270478886480445,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          -0.032,
-          0.03,
-          0.026799999237060546
-        ],
-        [
-          -0.0035,
-          0.055,
-          0.0925
-        ]
-      ],
-      "com_world_m": [
-        -0.01775703588996275,
-        0.040153110505501154,
-        0.05558895827217662
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "3157529a3ed1393f4c25ceb856ee469169f18855109e1b26c78143dc178e5621"
-    },
-    {
-      "name": "RoundedFoot_L",
-      "label": "A_RoundedFoot_L",
-      "mesh": "meshes/RoundedFoot_L.stl",
-      "body": "left_ankle_link",
-      "color": [
-        1.0,
-        0.6509803921568628,
-        0.03137254901960784,
-        1.0
-      ],
-      "material": "PLA fit study",
-      "mass_kg": 0.035111444497977394,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          -0.04475,
-          0.024,
-          0.013
-        ],
-        [
-          0.00925,
-          0.068,
-          0.05049845504760742
-        ]
-      ],
-      "com_world_m": [
-        -0.017931848424393777,
-        0.04612062766453558,
-        0.02094246441872319
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "28920faf1ef5fa6affc2592e669b62dd3a99e19cd02e798a5bcbe96b0c96991e"
-    },
-    {
-      "name": "SoftHeadShell",
-      "label": "R20 head shell with band mount holes",
-      "mesh": "meshes/SoftHeadShell.stl",
+      "name": "HeadBase",
+      "label": "A_HeadBase",
+      "mesh": "meshes/HeadBase.stl",
       "body": "head_roll_link",
       "color": [
-        0.9215686274509803,
-        0.9294117647058824,
-        0.9019607843137255,
+        0.10196078568696976,
+        0.1411764770746231,
+        0.16862745583057404,
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.04339748482273624,
+      "mass_kg": 0.042256091695723766,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
-          -0.0189731502532959,
+          -0.018996597290039063,
           -0.044,
-          0.22755000305175782
+          0.2190532684326172
         ],
         [
-          0.10512510681152344,
+          0.0965,
           0.044,
-          0.27563128662109376
+          0.2334532775878906
         ]
       ],
       "com_world_m": [
-        0.04729529120528522,
-        -0.00021711786392260526,
-        0.2568310787427629
+        0.04342798077137327,
+        0.0006235986929085587,
+        0.22227741536061102
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "3111b01b765fbfd51e38a9ce3b8b0532222bf0a60e00e96982a1ebb140c2da52"
-    },
-    {
-      "name": "BodyFront",
-      "label": "A_BodyFront",
-      "mesh": "meshes/BodyFront.stl",
-      "body": "trunk_base",
-      "color": [
-        0.9215686274509803,
-        0.9294117647058824,
-        0.9019607843137255,
-        1.0
-      ],
-      "material": "PLA fit study",
-      "mass_kg": 0.0218081076089299,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          -0.013850000381469727,
-          -0.0360740966796875,
-          0.136
-        ],
-        [
-          0.055099998474121094,
-          0.0360740966796875,
-          0.178
-        ]
-      ],
-      "com_world_m": [
-        0.02145927636209495,
-        0.00036358963184357094,
-        0.15642663834331885
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "e09a8781cff130edf2582509f3f724d89a84017350c2b5f8040f60d298b4a29d"
-    },
-    {
-      "name": "BodyBack",
-      "label": "A_BodyBack",
-      "mesh": "meshes/BodyBack.stl",
-      "body": "trunk_base",
-      "color": [
-        0.9215686274509803,
-        0.9294117647058824,
-        0.9019607843137255,
-        1.0
-      ],
-      "material": "PLA fit study",
-      "mass_kg": 0.01700111719318056,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          -0.06015108489990234,
-          -0.0360740966796875,
-          0.136
-        ],
-        [
-          -0.014149999618530274,
-          0.0360740966796875,
-          0.178
-        ]
-      ],
-      "com_world_m": [
-        -0.040703970023693775,
-        1.7641810336271887e-07,
-        0.1556379326264395
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "3a94fc6c20909cbcbc8a540e1a5889c66ce67d6d9b4ee07c4f1c431d792a8356"
-    },
-    {
-      "name": "RoundedSole_L",
-      "label": "A_RoundedSole_L",
-      "mesh": "meshes/RoundedSole_L.stl",
-      "body": "left_ankle_link",
-      "color": [
-        0.25882352941176473,
-        0.27058823529411763,
-        0.23921568627450981,
-        1.0
-      ],
-      "material": "TPU 95A fit study",
-      "mass_kg": 0.03481231440221569,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          -0.04475,
-          0.024,
-          -2.818511618757694e-17
-        ],
-        [
-          0.00925,
-          0.068,
-          0.013
-        ]
-      ],
-      "com_world_m": [
-        -0.017751676174924163,
-        0.046000000000000006,
-        0.006731292812927002
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "e81501a254cdf68d5827bca1b0c53553cd5e2527ede45e4ae1a45e3758c869e5"
-    },
-    {
-      "name": "ThighPlate_L",
-      "label": "A_ThighPlate_L",
-      "mesh": "meshes/ThighPlate_L.stl",
-      "body": "left_hip_pitch_link",
-      "color": [
-        0.9215686274509803,
-        0.9294117647058824,
-        0.9019607843137255,
-        1.0
-      ],
-      "material": "PLA fit study",
-      "mass_kg": 0.007727627016881071,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          -0.032,
-          0.075,
-          0.067
-        ],
-        [
-          0.032,
-          0.077,
-          0.117
-        ]
-      ],
-      "com_world_m": [
-        2.898189704133358e-05,
-        0.07600000000000003,
-        0.09198069174469971
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "a7158f4bc7b15dde34d5755c9f63a4c46c703667b9308355532bcf9a0525b8cf"
-    },
-    {
-      "name": "O2_HeadBase",
-      "label": "A_O2_HeadBase",
-      "mesh": "meshes/O2_HeadBase.stl",
-      "body": "head_roll_link",
-      "color": [
-        1.0,
-        0.6509803921568628,
-        0.03137254901960784,
-        1.0
-      ],
-      "material": "PLA fit study",
-      "mass_kg": 0.03890241104832182,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          -0.019290048599243163,
-          -0.04416416549682617,
-          0.2190500030517578
-        ],
-        [
-          0.09959791564941406,
-          0.04416428756713867,
-          0.2345500030517578
-        ]
-      ],
-      "com_world_m": [
-        0.03735715568351253,
-        0.0010288816834494736,
-        0.22516820775323612
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "0caa4ed4749ac9a0dd9d027bf9ce3bfdc9bf869f91024f97beb5997536be79bb"
-    },
-    {
-      "name": "O2_Jaw",
-      "label": "A_O2_Jaw",
-      "mesh": "meshes/O2_Jaw.stl",
-      "body": "mouth_link",
-      "color": [
-        1.0,
-        0.6509803921568628,
-        0.03137254901960784,
-        1.0
-      ],
-      "material": "PLA fit study",
-      "mass_kg": 0.01878165110260152,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          0.03190329360961914,
-          -0.044,
-          0.2185500030517578
-        ],
-        [
-          0.09879683685302734,
-          0.044,
-          0.2478363800048828
-        ]
-      ],
-      "com_world_m": [
-        0.07194065409436967,
-        -0.003382556835467845,
-        0.22516521554187768
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "7d5626e1376f2c9f8427e4507514ad1a26674978a3daca976b645cb6a95dfb6e"
-    },
-    {
-      "name": "O2_UpperLip",
-      "label": "A_O2_UpperLip",
-      "mesh": "meshes/O2_UpperLip.stl",
-      "body": "head_roll_link",
-      "color": [
-        1.0,
-        0.6509803921568628,
-        0.03137254901960784,
-        1.0
-      ],
-      "material": "TPU 95A fit study",
-      "mass_kg": 0.004285902517443392,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          0.0703840560913086,
-          -0.04216492080688477,
-          0.22764999389648438
-        ],
-        [
-          0.0975999984741211,
-          0.04216492080688477,
-          0.23005000305175782
-        ]
-      ],
-      "com_world_m": [
-        0.08396949278672886,
-        -3.143802380205249e-07,
-        0.22921024067531792
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "560862907fc243d1c66e27af2d7aba840b31c7c301f56abeb52daa9519f42723"
-    },
-    {
-      "name": "O2_JawEdge",
-      "label": "A_O2_JawEdge",
-      "mesh": "meshes/O2_JawEdge.stl",
-      "body": "mouth_link",
-      "color": [
-        1.0,
-        0.6509803921568628,
-        0.03137254901960784,
-        1.0
-      ],
-      "material": "TPU 95A fit study",
-      "mass_kg": 0.016591775768534555,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          0.06594072723388672,
-          -0.04030318450927734,
-          0.22135000610351563
-        ],
-        [
-          0.0950401840209961,
-          0.04030318450927734,
-          0.22835000610351563
-        ]
-      ],
-      "com_world_m": [
-        0.08223543964876276,
-        8.729388421286258e-07,
-        0.22469863155006425
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "17c5441f396a69eef70bc501d1a30ff957a7acafb598b1b1360db8097644d762"
+      "source_sha256": "31f62df6070f91da9d032a7584e563dd45b029ae847197ee8955fc42ec85ec31"
     },
     {
       "name": "Yaw_R",
@@ -639,13 +289,13 @@
       "mesh": "meshes/Yaw_R.stl",
       "body": "right_hip_yaw_link",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.0089551634738376,
+      "mass_kg": 0.008955163473837603,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -660,13 +310,13 @@
         ]
       ],
       "com_world_m": [
-        0.016571574382968215,
-        -0.017499999999999807,
-        0.10124098130707532
+        0.0165715743829682,
+        -0.0174999999999998,
+        0.10124098130707523
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "6c6c5483f773a268d6603b1f316a755be21afb4ef47ce37164903edfb7c6af99"
+      "source_sha256": "7ea9f759339d21394bb0e8b2a2a4e25bf1cde1178022ee783100badeb617bf44"
     },
     {
       "name": "HipL_R",
@@ -674,34 +324,34 @@
       "mesh": "meshes/HipL_R.stl",
       "body": "right_hip_roll_link",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.01440980230220773,
+      "mass_kg": 0.017090742019483036,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
-          -2.842170943040401e-17,
+          -4.263256414560601e-17,
           -0.0745,
           0.08930233764648438
         ],
         [
-          0.049,
+          0.054958484649658204,
           -0.004320772171020508,
-          0.11569999694824219
+          0.12155326843261718
         ]
       ],
       "com_world_m": [
-        0.02554069569563477,
-        -0.039426250083775184,
-        0.10251353438659755
+        0.02865937623546607,
+        -0.03942706779650185,
+        0.10403267347077383
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "f6a10e7dff5a699daf730c57a41e03261dc5561723d10be8a999f21b3b7caf6d"
+      "source_sha256": "a2104197368ff0ca44feb5fc850440ed4e3e3b3401bbe6a7b083acd546f2ce35"
     },
     {
       "name": "Thigh_R",
@@ -709,13 +359,13 @@
       "mesh": "meshes/Thigh_R.stl",
       "body": "right_hip_pitch_link",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.9607843160629272,
+        0.5490196347236633,
+        0.07058823853731155,
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.01532179927862495,
+      "mass_kg": 0.015321799278624941,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -730,223 +380,13 @@
         ]
       ],
       "com_world_m": [
-        -0.005637983093742343,
-        -0.059631549927062544,
-        0.09233855865661175
+        -0.005637983093742292,
+        -0.05963154992706246,
+        0.09233855865661177
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "b14f0280a0360e30d97d5c2058e642a15b16854b75dfcd10daf8d245448837fa"
-    },
-    {
-      "name": "Shank_R",
-      "label": "A_Shank_R",
-      "mesh": "meshes/Shank_R.stl",
-      "body": "right_knee_link",
-      "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
-        1.0
-      ],
-      "material": "PLA fit study",
-      "mass_kg": 0.012704788864804445,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          -0.032,
-          -0.055,
-          0.026799999237060546
-        ],
-        [
-          -0.0035,
-          -0.03,
-          0.0925
-        ]
-      ],
-      "com_world_m": [
-        -0.017757035889962823,
-        -0.04015311050549865,
-        0.0555889582721679
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "535c067b73d05078cd569e9b8477a706e6b9453ea0a353856127792220d33f67"
-    },
-    {
-      "name": "RoundedFoot_R",
-      "label": "A_RoundedFoot_R",
-      "mesh": "meshes/RoundedFoot_R.stl",
-      "body": "right_ankle_link",
-      "color": [
-        1.0,
-        0.6509803921568628,
-        0.03137254901960784,
-        1.0
-      ],
-      "material": "PLA fit study",
-      "mass_kg": 0.0351114444979774,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          -0.04475,
-          -0.068,
-          0.013
-        ],
-        [
-          0.00925,
-          -0.024,
-          0.05049845504760742
-        ]
-      ],
-      "com_world_m": [
-        -0.01793184842427329,
-        -0.04612062766458094,
-        0.020942464418726933
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "8d6033010af8aae97d3cacf40a32c8c133eed55f528232e9e39eb3613122b1a7"
-    },
-    {
-      "name": "RoundedSole_R",
-      "label": "A_RoundedSole_R",
-      "mesh": "meshes/RoundedSole_R.stl",
-      "body": "right_ankle_link",
-      "color": [
-        0.25882352941176473,
-        0.27058823529411763,
-        0.23921568627450981,
-        1.0
-      ],
-      "material": "TPU 95A fit study",
-      "mass_kg": 0.03481231440221568,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          -0.04475,
-          -0.068,
-          -3.7751318252552715e-18
-        ],
-        [
-          0.00925,
-          -0.024,
-          0.013
-        ]
-      ],
-      "com_world_m": [
-        -0.017751676174924163,
-        -0.04600000000000003,
-        0.006731292812927032
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "97bd60d7a5345738761420d7001a248e827bd699fa185b12a25fc65bbbf20f9a"
-    },
-    {
-      "name": "ThighPlate_R",
-      "label": "A_ThighPlate_R",
-      "mesh": "meshes/ThighPlate_R.stl",
-      "body": "right_hip_pitch_link",
-      "color": [
-        0.9215686274509803,
-        0.9294117647058824,
-        0.9019607843137255,
-        1.0
-      ],
-      "material": "PLA fit study",
-      "mass_kg": 0.007727627016881072,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          -0.032,
-          -0.077,
-          0.067
-        ],
-        [
-          0.032,
-          -0.075,
-          0.117
-        ]
-      ],
-      "com_world_m": [
-        2.8981897041255424e-05,
-        -0.07600000000000007,
-        0.09198069174469982
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "45d65d5c240fc0060a39112baae7bf3cb3b1f1802dfd67479fe7319f63f223bb"
-    },
-    {
-      "name": "O2_EyeL",
-      "label": "A_O2_EyeL",
-      "mesh": "meshes/O2_EyeL.stl",
-      "body": "head_roll_link",
-      "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
-        1.0
-      ],
-      "material": "PLA fit study",
-      "mass_kg": 0.0008042803918825849,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          0.09319999694824219,
-          0.009805689811706543,
-          0.23765162658691405
-        ],
-        [
-          0.09690000152587891,
-          0.022198200225830078,
-          0.25564726257324216
-        ]
-      ],
-      "com_world_m": [
-        0.09505,
-        0.015999999999999997,
-        0.24658782083511244
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "21ec576ef32a939f7c56b6b2a9ca5bfe1ce4ea4f927e1995caca47cc165f2d45"
-    },
-    {
-      "name": "O2_EyeR",
-      "label": "A_O2_EyeR",
-      "mesh": "meshes/O2_EyeR.stl",
-      "body": "head_roll_link",
-      "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
-        1.0
-      ],
-      "material": "PLA fit study",
-      "mass_kg": 0.0004992880425593679,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          0.09319999694824219,
-          -0.022194311141967772,
-          0.23765162658691405
-        ],
-        [
-          0.09690000152587891,
-          -0.009801799774169923,
-          0.25564726257324216
-        ]
-      ],
-      "com_world_m": [
-        0.09505000000000001,
-        -0.016,
-        0.24661012800718055
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "6e528d4ac2a4d500314bcb7be3ac54cc62f2d6c0fa83dd7dc1dcb8dc08c010c8"
+      "source_sha256": "136b9e3a1286617a9b7cc471062f30ecaeddfcea35af65ca39f030490c7a57b1"
     },
     {
       "name": "ref_servo_left_ankle",
@@ -954,9 +394,9 @@
       "mesh": "meshes/ref_servo_left_ankle.stl",
       "body": "left_knee_link",
       "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
+        0.10196078568696976,
+        0.10980392247438431,
+        0.12156862765550613,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -975,13 +415,13 @@
         ]
       ],
       "com_world_m": [
-        -0.017749999999999964,
-        0.0475,
-        0.04599999999999997
+        -0.017749999999999967,
+        0.04750000000000001,
+        0.04599999999999999
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "b482cf63896d1824b202dfaaa4ad739058aec6d122844847ca02b1e553cb3586"
+      "source_sha256": "3b7389910544cb21780622285d6876397bdafefc1a8d3b36765813c00107822b"
     },
     {
       "name": "ref_horn_left_ankle",
@@ -989,9 +429,9 @@
       "mesh": "meshes/ref_horn_left_ankle.stl",
       "body": "left_ankle_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1010,13 +450,13 @@
         ]
       ],
       "com_world_m": [
-        -0.01774999999999996,
-        0.06049999999999998,
+        -0.017749999999999957,
+        0.06049999999999999,
         0.03855671382760556
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "bfc26794462de44199b319a3a3f1aeb3bf267e02e0efb8dda0c04c6d1e66b172"
+      "source_sha256": "6b254cbed9daccf6eb21424103a0fcc902183df1b5464058387f391832616f4f"
     },
     {
       "name": "ref_servo_left_knee",
@@ -1024,9 +464,9 @@
       "mesh": "meshes/ref_servo_left_knee.stl",
       "body": "left_hip_pitch_link",
       "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
+        0.10196078568696976,
+        0.10980392247438431,
+        0.12156862765550613,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1045,13 +485,13 @@
         ]
       ],
       "com_world_m": [
-        -0.017749999999999985,
-        0.0565,
+        -0.017749999999999988,
+        0.056499999999999995,
         0.088
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "f17c4d9a6e31af6e716432287061f33516654e48014ff032c4fd64a3f43e9619"
+      "source_sha256": "58554d89d5521235fed313eb928edd3a2be2fd571cd88eb9a7f9c9dcda1b7695"
     },
     {
       "name": "ref_horn_left_knee",
@@ -1059,9 +499,9 @@
       "mesh": "meshes/ref_horn_left_knee.stl",
       "body": "left_knee_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1080,13 +520,13 @@
         ]
       ],
       "com_world_m": [
-        -0.017749999999999985,
+        -0.01774999999999998,
         0.0435,
         0.08055671382760556
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "721f698832607d3bcd95741df51dd0ae3982e6581265eb1d1f5cd52c6d4bc7cf"
+      "source_sha256": "f0f1f3577b9e251ffc6224166992729d82caf7148b2fe7f8e791614e0641e3f3"
     },
     {
       "name": "ref_servo_left_hip_pitch",
@@ -1094,9 +534,9 @@
       "mesh": "meshes/ref_servo_left_hip_pitch.stl",
       "body": "left_hip_pitch_link",
       "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
+        0.10196078568696976,
+        0.10980392247438431,
+        0.12156862765550613,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1115,13 +555,13 @@
         ]
       ],
       "com_world_m": [
-        0.010500000000000015,
-        0.056499999999999995,
-        0.1025
+        0.01050000000000002,
+        0.0565,
+        0.10250000000000001
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "2813618d733c2e497749e0e7fba441f66281df1c89c5993bc253d26696a45054"
+      "source_sha256": "a3792d179b8909e047a856c18f6299c9a0d7e569462b287c6c26cc49b3c146a5"
     },
     {
       "name": "ref_servo_left_hip_roll",
@@ -1129,9 +569,9 @@
       "mesh": "meshes/ref_servo_left_hip_roll.stl",
       "body": "left_hip_yaw_link",
       "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
+        0.10196078568696976,
+        0.10980392247438431,
+        0.12156862765550613,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1151,12 +591,12 @@
       ],
       "com_world_m": [
         0.017999999999999995,
-        0.0175,
-        0.09500000000000003
+        0.017500000000000005,
+        0.095
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "b497769982fe3aa790edf835bfbe9383859bda0772c1dbed8f1a90d3c07550ef"
+      "source_sha256": "6ba8c9ef69e2c33fb900a86a6d9509219797c0c2c369ec4df03c1cac07d56306"
     },
     {
       "name": "ref_horn_left_hip_roll",
@@ -1164,9 +604,9 @@
       "mesh": "meshes/ref_horn_left_hip_roll.stl",
       "body": "left_hip_roll_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1185,13 +625,13 @@
         ]
       ],
       "com_world_m": [
-        0.031000000000000007,
-        0.0175,
+        0.03100000000000001,
+        0.017500000000000005,
         0.10244328617239447
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "26acafe8e23658db1e6ea4a8055c8afe79496b189a618680bc5f6a6dc5bfeb18"
+      "source_sha256": "809512856004e51be9260a8c314f00f21cf239bc95a09088a552c05c8ba123ee"
     },
     {
       "name": "ref_horn_left_hip_pitch",
@@ -1199,9 +639,9 @@
       "mesh": "meshes/ref_horn_left_hip_pitch.stl",
       "body": "left_hip_roll_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1220,13 +660,13 @@
         ]
       ],
       "com_world_m": [
-        0.01794328617239444,
+        0.017943286172394442,
         0.0435,
-        0.10250000000000005
+        0.10250000000000006
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "83d218b2cb891a1738728ce958547fd4a836660255c75746e6475ff45d3770e9"
+      "source_sha256": "144b1073af42c0d0fe8ada73562709323189e9af9b2494f82c99dfc41dce2cbb"
     },
     {
       "name": "ref_servo_left_hip_yaw",
@@ -1234,9 +674,9 @@
       "mesh": "meshes/ref_servo_left_hip_yaw.stl",
       "body": "trunk_base",
       "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
+        0.10196078568696976,
+        0.10980392247438431,
+        0.12156862765550613,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1255,13 +695,13 @@
         ]
       ],
       "com_world_m": [
-        0.0125,
+        0.012500000000000002,
         0.0175,
-        0.1335
+        0.13349999999999998
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "718ac9eea7ca92ae18ae1f57d4787e1501d7878adb4f04c69b20eb29e1b620de"
+      "source_sha256": "e3d0a9290b8c8716157279e4f6bfc815201265a417c15b08a7d42bcba68ca70a"
     },
     {
       "name": "ref_horn_left_hip_yaw",
@@ -1269,9 +709,9 @@
       "mesh": "meshes/ref_horn_left_hip_yaw.stl",
       "body": "left_hip_yaw_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1291,12 +731,12 @@
       ],
       "com_world_m": [
         0.01994328617239444,
-        0.0175,
+        0.017500000000000005,
         0.12050000000000004
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "e47cec9f6257ffc7bbd5090148af8933163936b77958adec362c28945f9d373c"
+      "source_sha256": "d5dbf2ac46f3bf40b3ce333086346b9ad6042e6ddeef4631886d60f9f156a9f1"
     },
     {
       "name": "ref_servo_right_hip_yaw",
@@ -1304,9 +744,9 @@
       "mesh": "meshes/ref_servo_right_hip_yaw.stl",
       "body": "trunk_base",
       "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
+        0.10196078568696976,
+        0.10980392247438431,
+        0.12156862765550613,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1325,13 +765,13 @@
         ]
       ],
       "com_world_m": [
-        0.0125,
+        0.012500000000000002,
         -0.0175,
-        0.1335
+        0.13349999999999998
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "8193344ebf4445ac8d92efa67e56058ad75b500e7b268f50595f8c1a692020a2"
+      "source_sha256": "a485c8eefbf7d5e56326c3e2f240c136d1fc67adfa8b92c6ad135ff97e4fe998"
     },
     {
       "name": "ref_horn_right_hip_yaw",
@@ -1339,9 +779,9 @@
       "mesh": "meshes/ref_horn_right_hip_yaw.stl",
       "body": "right_hip_yaw_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1360,13 +800,13 @@
         ]
       ],
       "com_world_m": [
-        0.019943286172394444,
+        0.019943286172394437,
         -0.017500000000000005,
         0.12050000000000002
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "dbeb14d8489b9f2c57ee603bdbef46b37ed61c0b251972a56fc458a6ef100cb1"
+      "source_sha256": "47cce7833a8362d3de009b6eae3d2c35d10bc3563e532abc920ca7623433d214"
     },
     {
       "name": "ref_servo_neck_pitch",
@@ -1374,9 +814,9 @@
       "mesh": "meshes/ref_servo_neck_pitch.stl",
       "body": "neck_pitch_link",
       "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
+        0.10196078568696976,
+        0.10980392247438431,
+        0.12156862765550613,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1396,7 +836,7 @@
       ],
       "com_world_m": [
         0.041,
-        -0.0019999999999999983,
+        -0.001999999999999999,
         0.16
       ],
       "reference": true,
@@ -1409,9 +849,9 @@
       "mesh": "meshes/ref_horn_neck_pitch.stl",
       "body": "trunk_base",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1432,11 +872,11 @@
       "com_world_m": [
         0.041,
         0.011,
-        0.15255671382760555
+        0.15255671382760558
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "610d36587ccbeb6597d5fe3e11a508a4583b50d731a1c886ab9f8f5a1db98630"
+      "source_sha256": "1758270d27984da566b8fd58ad62695b313d29b6e808089edcbcd9997a3e5c0a"
     },
     {
       "name": "ref_servo_head_pitch",
@@ -1444,9 +884,9 @@
       "mesh": "meshes/ref_servo_head_pitch.stl",
       "body": "neck_pitch_link",
       "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
+        0.10196078568696976,
+        0.10980392247438431,
+        0.12156862765550613,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1466,8 +906,8 @@
       ],
       "com_world_m": [
         0.041,
-        -0.0020000000000000035,
-        0.195
+        -0.002,
+        0.19499999999999998
       ],
       "reference": true,
       "include_when": "always",
@@ -1479,9 +919,9 @@
       "mesh": "meshes/ref_horn_head_pitch.stl",
       "body": "head_pitch_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1501,12 +941,12 @@
       ],
       "com_world_m": [
         0.041,
-        0.011,
-        0.20244328617239443
+        0.010999999999999998,
+        0.2024432861723944
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "ad99a9f9003ed7125d7c92a4f42c5cf4f38105199f2506de26a91fa14f89ce06"
+      "source_sha256": "e10e5a943b818b17773c1dcefcf3fea3fb3159603fe89c4ce941f372b2c6b510"
     },
     {
       "name": "ref_servo_head_yaw",
@@ -1514,9 +954,9 @@
       "mesh": "meshes/ref_servo_head_yaw.stl",
       "body": "head_yaw_link",
       "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
+        0.10196078568696976,
+        0.10980392247438431,
+        0.12156862765550613,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1535,8 +975,8 @@
         ]
       ],
       "com_world_m": [
-        0.041,
-        -0.007499999999999993,
+        0.04100000000000001,
+        -0.007499999999999997,
         0.23825
       ],
       "reference": true,
@@ -1549,9 +989,9 @@
       "mesh": "meshes/ref_horn_head_yaw.stl",
       "body": "head_pitch_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1571,12 +1011,12 @@
       ],
       "com_world_m": [
         0.041,
-        -5.6713827605554824e-05,
-        0.22525000000000003
+        -5.671382760555388e-05,
+        0.22525000000000006
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "6b387486663bbcb087050831cd8365d7d9f5f94d898e9852f3453b539923a35f"
+      "source_sha256": "1abffa6d4679fe5526d65d0ef9c4b2352c029d1652c5011a1d5fb1570b4c42b1"
     },
     {
       "name": "ref_servo_head_roll",
@@ -1584,9 +1024,9 @@
       "mesh": "meshes/ref_servo_head_roll.stl",
       "body": "head_roll_link",
       "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
+        0.10196078568696976,
+        0.10980392247438431,
+        0.12156862765550613,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1605,13 +1045,13 @@
         ]
       ],
       "com_world_m": [
-        0.006600000000000003,
-        -0.007499999999999996,
+        0.006600000000000002,
+        -0.0075,
         0.23625
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "82fcee440af850c5a92af89c5ced24cfc0466f0e1e79a1ea25d5fefd8481ff41"
+      "source_sha256": "32e1872e1d659c780722f2d644c329698e7d9125d267c975ffa45b07418523d9"
     },
     {
       "name": "ref_horn_head_roll",
@@ -1619,9 +1059,9 @@
       "mesh": "meshes/ref_horn_head_roll.stl",
       "body": "head_yaw_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1641,12 +1081,12 @@
       ],
       "com_world_m": [
         0.019600000000000003,
-        -5.67138276055652e-05,
-        0.23625
+        -5.6713827605564955e-05,
+        0.23624999999999993
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "b3c4c1bef66d1f1d7101cd987fe7a685984c28beba465dc4bc6c89130ef1eada"
+      "source_sha256": "f1ff3bd2e0bd6b97d9dca4a10396781f46742ec869f8b49b616d37808a06286f"
     },
     {
       "name": "ref_servo_mouth",
@@ -1654,9 +1094,9 @@
       "mesh": "meshes/ref_servo_mouth.stl",
       "body": "head_roll_link",
       "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
+        0.10196078568696976,
+        0.10980392247438431,
+        0.12156862765550613,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1676,8 +1116,8 @@
       ],
       "com_world_m": [
         0.048399997711181614,
-        0.026100000000000005,
-        0.23884999923706002
+        0.0261,
+        0.23884999923705996
       ],
       "reference": true,
       "include_when": "always",
@@ -1689,9 +1129,9 @@
       "mesh": "meshes/ref_horn_mouth.stl",
       "body": "mouth_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1710,7 +1150,7 @@
         ]
       ],
       "com_world_m": [
-        0.04095671153878717,
+        0.04095671153878716,
         0.0391,
         0.23884999923706005
       ],
@@ -1724,9 +1164,9 @@
       "mesh": "meshes/ref_Radxa_PCB.stl",
       "body": "trunk_base",
       "color": [
-        0.10196078431372549,
-        0.4,
-        0.23921568627450981,
+        0.10196078568696976,
+        0.4000000059604645,
+        0.239215686917305,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1759,9 +1199,9 @@
       "mesh": "meshes/ref_Radxa_GPIO.stl",
       "body": "trunk_base",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1794,9 +1234,9 @@
       "mesh": "meshes/ref_HAT_PCB.stl",
       "body": "trunk_base",
       "color": [
-        0.10196078431372549,
-        0.4,
-        0.23921568627450981,
+        0.10196078568696976,
+        0.4000000059604645,
+        0.239215686917305,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1829,9 +1269,9 @@
       "mesh": "meshes/ref_HAT_GPIO.stl",
       "body": "trunk_base",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1864,9 +1304,9 @@
       "mesh": "meshes/ref_HAT_J1.stl",
       "body": "trunk_base",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1887,7 +1327,7 @@
       "com_world_m": [
         -0.004704999999999998,
         -0.011255,
-        0.17004000000000005
+        0.17004
       ],
       "reference": true,
       "include_when": "always",
@@ -1899,9 +1339,9 @@
       "mesh": "meshes/ref_HAT_J5.stl",
       "body": "trunk_base",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1934,9 +1374,9 @@
       "mesh": "meshes/ref_HAT_J14.stl",
       "body": "trunk_base",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1957,7 +1397,7 @@
       "com_world_m": [
         -0.037449999000000005,
         -0.0034500010000000003,
-        0.17004000000000005
+        0.17004
       ],
       "reference": true,
       "include_when": "always",
@@ -1969,9 +1409,9 @@
       "mesh": "meshes/ref_HAT_J9.stl",
       "body": "trunk_base",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -1992,7 +1432,7 @@
       "com_world_m": [
         0.011165,
         -0.011255,
-        0.17004000000000005
+        0.17004
       ],
       "reference": true,
       "include_when": "always",
@@ -2004,9 +1444,9 @@
       "mesh": "meshes/ref_HAT_J6.stl",
       "body": "trunk_base",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2027,7 +1467,7 @@
       "com_world_m": [
         -0.032742618999999994,
         0.004709999,
-        0.17004000000000002
+        0.17003999999999997
       ],
       "reference": true,
       "include_when": "always",
@@ -2039,9 +1479,9 @@
       "mesh": "meshes/ref_HAT_J3.stl",
       "body": "trunk_base",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2074,9 +1514,9 @@
       "mesh": "meshes/ref_HAT_J7.stl",
       "body": "trunk_base",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2097,7 +1537,7 @@
       "com_world_m": [
         -0.014279998999999998,
         0.003424999,
-        0.17004000000000002
+        0.17004000000000005
       ],
       "reference": true,
       "include_when": "always",
@@ -2109,9 +1549,9 @@
       "mesh": "meshes/ref_HAT_J13.stl",
       "body": "trunk_base",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2132,7 +1572,7 @@
       "com_world_m": [
         -0.042249999,
         -0.0034500010000000003,
-        0.17004000000000005
+        0.17004
       ],
       "reference": true,
       "include_when": "always",
@@ -2144,9 +1584,9 @@
       "mesh": "meshes/ref_HAT_J8.stl",
       "body": "trunk_base",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2167,7 +1607,7 @@
       "com_world_m": [
         -0.006242619000000001,
         0.0034399990000000013,
-        0.17004000000000002
+        0.17004
       ],
       "reference": true,
       "include_when": "always",
@@ -2179,9 +1619,9 @@
       "mesh": "meshes/ref_HAT_J11.stl",
       "body": "trunk_base",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2202,7 +1642,7 @@
       "com_world_m": [
         -0.032599999000000005,
         -0.007750000999999999,
-        0.17004000000000002
+        0.17004000000000005
       ],
       "reference": true,
       "include_when": "always",
@@ -2214,9 +1654,9 @@
       "mesh": "meshes/ref_HAT_J2.stl",
       "body": "trunk_base",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2237,7 +1677,7 @@
       "com_world_m": [
         0.005295000000000003,
         -0.011255,
-        0.17004000000000005
+        0.17004
       ],
       "reference": true,
       "include_when": "always",
@@ -2249,9 +1689,9 @@
       "mesh": "meshes/ref_HAT_IMU.stl",
       "body": "trunk_base",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2272,7 +1712,7 @@
       "com_world_m": [
         -0.021500000000000005,
         0.0025000000000000005,
-        0.16644999999999993
+        0.16645000000000001
       ],
       "reference": true,
       "include_when": "always",
@@ -2284,9 +1724,9 @@
       "mesh": "meshes/ref_servo_right_hip_roll.stl",
       "body": "right_hip_yaw_link",
       "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
+        0.10196078568696976,
+        0.10980392247438431,
+        0.12156862765550613,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2305,13 +1745,13 @@
         ]
       ],
       "com_world_m": [
-        0.01800000000000003,
-        -0.017499999999999977,
+        0.018000000000000026,
+        -0.01749999999999998,
         0.09500000000000001
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "2eb7ebcf96fb22f3db0a036e23c2b0da4c6f71e9f9886067179da9cfb6f1f8a4"
+      "source_sha256": "f5ef3abe165b188f21a41592e86a4066e40841483b66307a807f92bd81154da5"
     },
     {
       "name": "ref_horn_right_hip_roll",
@@ -2319,9 +1759,9 @@
       "mesh": "meshes/ref_horn_right_hip_roll.stl",
       "body": "right_hip_roll_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2341,12 +1781,12 @@
       ],
       "com_world_m": [
         0.03100000000000002,
-        -0.017499999999999957,
+        -0.017499999999999974,
         0.10244328617239445
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "75e6cd8b4c79fd7beb59ded24a6efbd9bb2f9980b91ef95e7d3719e5a04775db"
+      "source_sha256": "1a0ceecadcbca3bf389f4c3794eb7e68764dbbeb1436ccae039f53b41e4e98b5"
     },
     {
       "name": "ref_servo_right_hip_pitch",
@@ -2354,9 +1794,9 @@
       "mesh": "meshes/ref_servo_right_hip_pitch.stl",
       "body": "right_hip_pitch_link",
       "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
+        0.10196078568696976,
+        0.10980392247438431,
+        0.12156862765550613,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2375,13 +1815,13 @@
         ]
       ],
       "com_world_m": [
-        0.010500000000000021,
-        -0.05650000000000001,
-        0.1025
+        0.01050000000000008,
+        -0.05650000000000002,
+        0.10249999999999997
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "62b84274de9e05087f6047d3011a174d4382b279e4212be06b9c1eefc5375c62"
+      "source_sha256": "e5e4d815295460c56614b302a35c922596b8104a49a0cba82a23856fb1114c1a"
     },
     {
       "name": "ref_horn_right_hip_pitch",
@@ -2389,9 +1829,9 @@
       "mesh": "meshes/ref_horn_right_hip_pitch.stl",
       "body": "right_hip_roll_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2410,13 +1850,13 @@
         ]
       ],
       "com_world_m": [
-        0.017943286172394497,
-        -0.04349999999999998,
-        0.1025
+        0.017943286172394483,
+        -0.04349999999999999,
+        0.10250000000000005
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "a89616e918fc549b461d62411bf58a5b5b99e37d1521602f3b6343b9dd889fbe"
+      "source_sha256": "e96ed4dd11802aae3492e7c354dc0e21a96d6c9f76064b2f8cdabb74e18fe7ab"
     },
     {
       "name": "ref_servo_right_knee",
@@ -2424,9 +1864,9 @@
       "mesh": "meshes/ref_servo_right_knee.stl",
       "body": "right_hip_pitch_link",
       "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
+        0.10196078568696976,
+        0.10980392247438431,
+        0.12156862765550613,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2445,13 +1885,13 @@
         ]
       ],
       "com_world_m": [
-        -0.017749999999999978,
-        -0.05650000000000001,
-        0.088
+        -0.017749999999999926,
+        -0.056500000000000015,
+        0.08799999999999998
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "c5a50eeac8ab868cf2fc7344bf2be2e8950e92e8cec4d34dc9b27f2805ab6d5a"
+      "source_sha256": "09cb39fc998a2a13f5fb4a2957f1654ef2d2d0b272b2dc46832013977fade36a"
     },
     {
       "name": "ref_horn_right_knee",
@@ -2459,9 +1899,9 @@
       "mesh": "meshes/ref_horn_right_knee.stl",
       "body": "right_knee_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2480,13 +1920,13 @@
         ]
       ],
       "com_world_m": [
-        -0.0177499999999999,
+        -0.01774999999999994,
         -0.0435,
-        0.08055671382760558
+        0.08055671382760564
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "f391294ae4884b86bf22580530eda57e0fc2e45db83bfe90d723c0429570061f"
+      "source_sha256": "642a373ca8c32aa8a2daf04e02a6a4fe352952e8da12b1d8a9162f2e4ecfd910"
     },
     {
       "name": "ref_servo_right_ankle",
@@ -2494,9 +1934,9 @@
       "mesh": "meshes/ref_servo_right_ankle.stl",
       "body": "right_knee_link",
       "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
+        0.10196078568696976,
+        0.10980392247438431,
+        0.12156862765550613,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2516,8 +1956,8 @@
       ],
       "com_world_m": [
         -0.017749999999999943,
-        -0.0475,
-        0.046000000000000006
+        -0.047500000000000014,
+        0.046000000000000034
       ],
       "reference": true,
       "include_when": "always",
@@ -2529,9 +1969,9 @@
       "mesh": "meshes/ref_horn_right_ankle.stl",
       "body": "right_ankle_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2550,13 +1990,13 @@
         ]
       ],
       "com_world_m": [
-        -0.017749999999999887,
-        -0.0605,
-        0.03855671382760559
+        -0.017749999999999943,
+        -0.060500000000000005,
+        0.03855671382760557
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "dce99323cf7103c0942850501f8213f44f66250e7875e08377e828d8e7a66d73"
+      "source_sha256": "dbc8e715790b68900ca82afe372d9273e0e139915f720e4e5546825090fe3ca3"
     },
     {
       "name": "ref_Battery_Provisional",
@@ -2564,9 +2004,9 @@
       "mesh": "meshes/ref_Battery_Provisional.stl",
       "body": "trunk_base",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2594,154 +2034,14 @@
       "source_sha256": "a608de956a7e030944de915267ce9ad2b96a50d34417f9f22afd6397a829dd86"
     },
     {
-      "name": "ref_CameraPCB",
-      "label": "A_ref_CameraPCB",
-      "mesh": "meshes/ref_CameraPCB.stl",
-      "body": "head_roll_link",
-      "color": [
-        0.10196078431372549,
-        0.4,
-        0.23921568627450981,
-        1.0
-      ],
-      "material": "Reference module, estimated mass",
-      "mass_kg": 0.0015,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          0.075,
-          -0.032,
-          0.23065162658691407
-        ],
-        [
-          0.07659999847412109,
-          0.0,
-          0.262651611328125
-        ]
-      ],
-      "com_world_m": [
-        0.07579999999999999,
-        -0.016,
-        0.24665162389116876
-      ],
-      "reference": true,
-      "include_when": "always",
-      "source_sha256": "a33076e36db8dfd5f095b54abe65d5b6319c2a0e07aa4bc4eecea9e9557f3289"
-    },
-    {
-      "name": "ref_CameraLens",
-      "label": "A_ref_CameraLens",
-      "mesh": "meshes/ref_CameraLens.stl",
-      "body": "head_roll_link",
-      "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
-        1.0
-      ],
-      "material": "Reference module, estimated mass",
-      "mass_kg": 0.0005,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          0.07659999847412109,
-          -0.022999677658081055,
-          0.23965162658691405
-        ],
-        [
-          0.09258000183105469,
-          -0.009000322341918946,
-          0.25365130615234377
-        ]
-      ],
-      "com_world_m": [
-        0.08459000000000001,
-        -0.016000000000000004,
-        0.24665162389116874
-      ],
-      "reference": true,
-      "include_when": "always",
-      "source_sha256": "584b6dce4093da2fa52c98ec4dfa1e9302b4a05955cc9dd03d109ed3520cfe81"
-    },
-    {
-      "name": "ref_ToFPCB",
-      "label": "A_ref_ToFPCB",
-      "mesh": "meshes/ref_ToFPCB.stl",
-      "body": "head_roll_link",
-      "color": [
-        0.10196078431372549,
-        0.4,
-        0.23921568627450981,
-        1.0
-      ],
-      "material": "Reference module, estimated mass",
-      "mass_kg": 0.0015,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          0.088,
-          -0.0065,
-          0.23615162658691408
-        ],
-        [
-          0.091,
-          0.0065,
-          0.259151611328125
-        ]
-      ],
-      "com_world_m": [
-        0.0895,
-        0.0,
-        0.24765162389116874
-      ],
-      "reference": true,
-      "include_when": "always",
-      "source_sha256": "33e9e5815af8e1eb126abf7329ba0ef0549eb30f80eaa90000a911e522f824dd"
-    },
-    {
-      "name": "ref_ToFOptics",
-      "label": "A_ref_ToFOptics",
-      "mesh": "meshes/ref_ToFOptics.stl",
-      "body": "head_roll_link",
-      "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
-        1.0
-      ],
-      "material": "Reference module, estimated mass",
-      "mass_kg": 0.0005,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          0.091,
-          -0.002199777364730835,
-          0.24545162963867187
-        ],
-        [
-          0.0924000015258789,
-          0.002197620391845703,
-          0.2498512878417969
-        ]
-      ],
-      "com_world_m": [
-        0.09169999999999999,
-        -1.6833614344001918e-18,
-        0.2476360275885772
-      ],
-      "reference": true,
-      "include_when": "always",
-      "source_sha256": "c1fe8de5c3b4d16bd8b8f919b118596a2b316c1e5b28e4703761d31e4c4d43bb"
-    },
-    {
       "name": "ref_HeadIMU",
       "label": "A_ref_HeadIMU",
       "mesh": "meshes/ref_HeadIMU.stl",
       "body": "head_roll_link",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2774,9 +2074,9 @@
       "mesh": "meshes/ref_CameraLED.stl",
       "body": "head_roll_link",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -2797,116 +2097,11 @@
       "com_world_m": [
         0.095,
         -3.1185790079409123e-18,
-        0.2631445346627181
+        0.26314453466271825
       ],
       "reference": true,
       "include_when": "always",
       "source_sha256": "59dc658dacaf65f30076034da182dcd1f4e25ea1a164e372db2c3d44495fb59c"
-    },
-    {
-      "name": "R10_EyeRing_L",
-      "label": "A_R10_EyeRing_L",
-      "mesh": "meshes/R10_EyeRing_L.stl",
-      "body": "head_roll_link",
-      "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
-        1.0
-      ],
-      "material": "PLA fit study",
-      "mass_kg": 0.0004542006559494902,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          0.095,
-          0.007019037246704101,
-          0.23415162658691407
-        ],
-        [
-          0.09740000152587891,
-          0.024985130310058595,
-          0.25915155029296877
-        ]
-      ],
-      "com_world_m": [
-        0.09617189534157389,
-        0.015999999999998685,
-        0.24659563584163163
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "c885a0e4bedd35ba949aa08bdae6fbf22a42d3a85f8e8e2887dfb01ccde0fb74"
-    },
-    {
-      "name": "R10_EyeRing_R",
-      "label": "A_R10_EyeRing_R",
-      "mesh": "meshes/R10_EyeRing_R.stl",
-      "body": "head_roll_link",
-      "color": [
-        0.10196078431372549,
-        0.10980392156862745,
-        0.12156862745098039,
-        1.0
-      ],
-      "material": "PLA fit study",
-      "mass_kg": 0.00045420065594945673,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          0.095,
-          -0.024980962753295897,
-          0.23415162658691407
-        ],
-        [
-          0.09740000152587891,
-          -0.0070148687362670895,
-          0.25915155029296877
-        ]
-      ],
-      "com_world_m": [
-        0.09617189534156548,
-        -0.0160000000000179,
-        0.2465956358415962
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "e7dff5b20454695e47dd3cb54203aa8dd11df538363c206aac2db9ccfed86155"
-    },
-    {
-      "name": "R16_TwoEyeFace",
-      "label": "A_R16_TwoEyeFace",
-      "mesh": "meshes/R16_TwoEyeFace.stl",
-      "body": "head_roll_link",
-      "color": [
-        0.9215686274509803,
-        0.9294117647058824,
-        0.9019607843137255,
-        1.0
-      ],
-      "material": "PLA fit study",
-      "mass_kg": 0.0056295853379906505,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          0.09280000305175781,
-          -0.03924880599975586,
-          0.23330000305175783
-        ],
-        [
-          0.095,
-          0.03924880599975586,
-          0.27129998779296877
-        ]
-      ],
-      "com_world_m": [
-        0.09389633569344062,
-        2.731729719656239e-09,
-        0.25115218493439756
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "fc00da6bc2d4372644d79eb4530454a5ee55c3d2f310d34427bd9bce31f2a658"
     },
     {
       "name": "R17_HeadYawClampCap",
@@ -2914,9 +2109,9 @@
       "mesh": "meshes/R17_HeadYawClampCap.stl",
       "body": "head_yaw_link",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "PLA fit study",
@@ -2949,17 +2144,17 @@
       "mesh": "meshes/R17_RollServoCradle.stl",
       "body": "head_roll_link",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.005173203452523771,
+      "mass_kg": 0.00529224345252377,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
-          -0.006900000095367432,
+          -0.008899999618530273,
           -0.032599903106689455,
           0.22405000305175782
         ],
@@ -2970,13 +2165,13 @@
         ]
       ],
       "com_world_m": [
-        0.005008204935723494,
-        -0.00702891304630534,
-        0.23015275173456984
+        0.00471725383533519,
+        -0.007040639224318714,
+        0.23010443139893394
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "4bb224d88e684e7706d8d2a293dcd976185c10814adbbd19a38fe133c45ccb9c"
+      "source_sha256": "6d6e301031148b509adfefde8638a88c2046586c10d949a6b54a52246cecd0ef"
     },
     {
       "name": "R17_RollCradleTopClamp",
@@ -2984,9 +2179,9 @@
       "mesh": "meshes/R17_RollCradleTopClamp.stl",
       "body": "head_roll_link",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "PLA fit study",
@@ -3019,9 +2214,9 @@
       "mesh": "meshes/R17_MouthServoCradle.stl",
       "body": "head_roll_link",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "PLA fit study",
@@ -3054,9 +2249,9 @@
       "mesh": "meshes/R17_MouthServoKeeper.stl",
       "body": "head_roll_link",
       "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
+        0.7019608020782471,
+        0.729411780834198,
+        0.7490196228027344,
         1.0
       ],
       "material": "PLA fit study",
@@ -3089,13 +2284,13 @@
       "mesh": "meshes/R17_JawBearingTower.stl",
       "body": "head_roll_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
-      "material": "PLA fit study",
-      "mass_kg": 0.0027826233759116045,
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -3114,7 +2309,7 @@
         -0.03501093252166531,
         0.23311748778055177
       ],
-      "reference": false,
+      "reference": true,
       "include_when": "always",
       "source_sha256": "dac87eb8ae9f76c39c22ba2031d53761c79c2b4b7d6b79399dc18a5ba634b6cc"
     },
@@ -3124,13 +2319,13 @@
       "mesh": "meshes/R17_JawBearingKeeper.stl",
       "body": "head_roll_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
-      "material": "PLA fit study",
-      "mass_kg": 0.0007188187451602821,
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -3149,7 +2344,7 @@
         -0.03069999999999999,
         0.2388499992370599
       ],
-      "reference": false,
+      "reference": true,
       "include_when": "always",
       "source_sha256": "4bbcc7715fcdaa3a3017c609fdce9a8fecc9eef22a1f5a233cf1d3e41f51b804"
     },
@@ -3159,13 +2354,13 @@
       "mesh": "meshes/R17_JawBearingPlug.stl",
       "body": "mouth_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
-      "material": "PLA fit study",
-      "mass_kg": 0.0013951199900746438,
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -3184,7 +2379,7 @@
         -0.03334388431010235,
         0.23884999923706002
       ],
-      "reference": false,
+      "reference": true,
       "include_when": "always",
       "source_sha256": "b90a65e6bdddbe5c068b492b231dd281d8e9b8a14d4eead4721865e23d4cf413"
     },
@@ -3194,9 +2389,9 @@
       "mesh": "meshes/ref_R17_JawBearing16x22x4.stl",
       "body": "head_roll_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -3224,84 +2419,14 @@
       "source_sha256": "598b8895a2adff24f299d5ad5df74e9a31d16907627ff104a7b1e9a5d89cfa4f"
     },
     {
-      "name": "R17_FaceCarrier",
-      "label": "A_R17_FaceCarrier",
-      "mesh": "meshes/R17_FaceCarrier.stl",
-      "body": "head_roll_link",
-      "color": [
-        0.7019607843137254,
-        0.7294117647058823,
-        0.7490196078431373,
-        1.0
-      ],
-      "material": "PLA fit study",
-      "mass_kg": 0.003742830118549634,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          0.07940000152587891,
-          -0.033099998474121095,
-          0.23345008850097657
-        ],
-        [
-          0.09280000305175781,
-          0.033099998474121095,
-          0.2645
-        ]
-      ],
-      "com_world_m": [
-        0.08882026047387143,
-        -1.1086327947021121e-13,
-        0.24890479028085802
-      ],
-      "reference": false,
-      "include_when": "always",
-      "source_sha256": "4271385ba9fa1b62d5df072cddcf7680996f40a7a55911ba6ca461005680d05c"
-    },
-    {
-      "name": "ref_R17_FaceFasteners",
-      "label": "A_ref_R17_FaceFasteners",
-      "mesh": "meshes/ref_R17_FaceFasteners.stl",
-      "body": "head_roll_link",
-      "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
-        1.0
-      ],
-      "material": "Reference module, estimated mass",
-      "mass_kg": 0.0005,
-      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
-      "bounds_world_m": [
-        [
-          0.08119059753417969,
-          -0.03130940055847168,
-          0.23025
-        ],
-        [
-          0.09469999694824219,
-          0.03130940055847168,
-          0.262
-        ]
-      ],
-      "com_world_m": [
-        0.08805808014319161,
-        -1.6174149211417176e-17,
-        0.2442881660321459
-      ],
-      "reference": true,
-      "include_when": "always",
-      "source_sha256": "2afeabe8975f2d31535fa967d10abba5c6053777fe00b47cc91a7443e362d2c0"
-    },
-    {
       "name": "ref_R17_FixedCarrierFasteners",
       "label": "A_ref_R17_FixedCarrierFasteners",
       "mesh": "meshes/ref_R17_FixedCarrierFasteners.stl",
       "body": "head_roll_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -3334,9 +2459,9 @@
       "mesh": "meshes/ref_R17_HeadModuleFasteners.stl",
       "body": "head_roll_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -3369,9 +2494,9 @@
       "mesh": "meshes/ref_R17_JawFasteners.stl",
       "body": "mouth_link",
       "color": [
-        0.6196078431372549,
-        0.6588235294117647,
-        0.7019607843137254,
+        0.6196078658103943,
+        0.658823549747467,
+        0.7019608020782471,
         1.0
       ],
       "material": "Reference module, estimated mass",
@@ -3404,13 +2529,13 @@
       "mesh": "meshes/R18_NeckBearingRetainer.stl",
       "body": "trunk_base",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
       ],
-      "material": "PLA fit study",
-      "mass_kg": 0.0005043557629663913,
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -3429,7 +2554,7 @@
         -0.026699726122979946,
         0.14790263239638224
       ],
-      "reference": false,
+      "reference": true,
       "include_when": "always",
       "source_sha256": "873dd7123c9f1643bb6aa2edcb2a64fa519b3965a65827062cd54a9f013f0ae4"
     },
@@ -3439,7 +2564,7 @@
       "mesh": "meshes/R18_NeckBearing693.stl",
       "body": "trunk_base",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -3474,7 +2599,7 @@
       "mesh": "meshes/R18_NeckSpacerOuter.stl",
       "body": "trunk_base",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -3509,7 +2634,7 @@
       "mesh": "meshes/R18_NeckSpacerInner.stl",
       "body": "neck_pitch_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -3544,7 +2669,7 @@
       "mesh": "meshes/R18_NeckShoulderPin.stl",
       "body": "neck_pitch_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -3579,7 +2704,7 @@
       "mesh": "meshes/R18_NeckM3Nut.stl",
       "body": "neck_pitch_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -3614,7 +2739,7 @@
       "mesh": "meshes/R18_NeckRetainerM2Screw0.stl",
       "body": "trunk_base",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -3649,7 +2774,7 @@
       "mesh": "meshes/R18_NeckRetainerM2Nut0.stl",
       "body": "trunk_base",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -3684,7 +2809,7 @@
       "mesh": "meshes/R18_NeckRetainerM2Screw1.stl",
       "body": "trunk_base",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -3719,7 +2844,7 @@
       "mesh": "meshes/R18_NeckRetainerM2Nut1.stl",
       "body": "trunk_base",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -3741,7 +2866,7 @@
       ],
       "com_world_m": [
         0.04500013637975221,
-        -0.021399999999999964,
+        -0.02139999999999997,
         0.14449999999999988
       ],
       "reference": true,
@@ -3754,7 +2879,7 @@
       "mesh": "meshes/R18C_RollBearing_L.stl",
       "body": "left_hip_roll_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -3775,13 +2900,13 @@
         ]
       ],
       "com_world_m": [
-        0.004000000000000017,
-        0.017499999999999984,
-        0.10256061102864396
+        0.004000000000000016,
+        0.01750000000000001,
+        0.102560611028644
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "5040b52df70ebc16bb91f3531a267aec1ce3cea05e14a922b87660e3e0b80d1b"
+      "source_sha256": "53d2a4bbff7ea40d9b6663db93cf39705fe96e62ee4d89dbc8b49fa0c00c384c"
     },
     {
       "name": "R18C_RollBearing_R",
@@ -3789,7 +2914,7 @@
       "mesh": "meshes/R18C_RollBearing_R.stl",
       "body": "right_hip_roll_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -3810,13 +2935,13 @@
         ]
       ],
       "com_world_m": [
-        0.004000000000000016,
-        -0.017499999999999995,
-        0.10256061102864394
+        0.0040000000000000105,
+        -0.01749999999999999,
+        0.10256061102864401
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "39a493366b3e2307b0b7cf598b229c3229eb22a9d7df9a289393d7734da172fc"
+      "source_sha256": "bc6421e4053e367c61aab7d20fe6746b545d0fc0558d6ec9a1caacc3de648d62"
     },
     {
       "name": "R18C_RollIdler_L",
@@ -3824,7 +2949,7 @@
       "mesh": "meshes/R18C_RollIdler_L.stl",
       "body": "left_hip_roll_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -3845,13 +2970,13 @@
         ]
       ],
       "com_world_m": [
-        0.005000000000000025,
-        0.017499999999999995,
-        0.10255671382760556
+        0.005000000000000024,
+        0.0175,
+        0.1025567138276056
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "de9d2fa4e083480a3b5689c60591b4e6d48a6cc3a7fb0f16d5b17b16111e9bb5"
+      "source_sha256": "b09933da21c382d982542a7498274c9d4e1fd4a5b14cc84236aef5a8abdc899b"
     },
     {
       "name": "R18C_RollIdler_R",
@@ -3859,7 +2984,7 @@
       "mesh": "meshes/R18C_RollIdler_R.stl",
       "body": "right_hip_roll_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -3880,13 +3005,13 @@
         ]
       ],
       "com_world_m": [
-        0.005000000000000025,
+        0.005000000000000021,
         -0.017499999999999995,
-        0.10255671382760556
+        0.10255671382760559
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "e6949e18a1cacf165de639250a9184d9164ba71043983c9194f7cd66484e1109"
+      "source_sha256": "6be124dae7c503f5edf9c9c974f778fd7b1b2eafb22a75109e5c0cdde00a32b8"
     },
     {
       "name": "R18C_RollClampScrew_L",
@@ -3894,7 +3019,7 @@
       "mesh": "meshes/R18C_RollClampScrew_L.stl",
       "body": "left_hip_roll_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -3915,13 +3040,13 @@
         ]
       ],
       "com_world_m": [
-        0.0019106142200787629,
-        0.033100000000000004,
+        0.0019106142200787614,
+        0.03310000000000002,
         0.1044877546674042
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "edfa8941cf3612503ab115de42aef2ed38f6528d90711b24f4558286d6ff1cf8"
+      "source_sha256": "b51e6b92473a62297362a4cf723e4f7670ea99fb09892082fd3e1907e7725d44"
     },
     {
       "name": "R18C_RollClampScrew_R",
@@ -3929,7 +3054,7 @@
       "mesh": "meshes/R18C_RollClampScrew_R.stl",
       "body": "right_hip_roll_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -3950,13 +3075,13 @@
         ]
       ],
       "com_world_m": [
-        0.0019106142200787746,
+        0.0019106142200787624,
         -0.03310000000000001,
         0.10448775466740419
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "2e156ca1e9c9ab1a7857cce82760bceda4051862e33aa2a5095f3793b7ef1c93"
+      "source_sha256": "9e7e9054479ce8f74bc056171f73359191f501ccef280c6a4323519d0e626ee7"
     },
     {
       "name": "R18C_RollClampNut_L",
@@ -3964,7 +3089,7 @@
       "mesh": "meshes/R18C_RollClampNut_L.stl",
       "body": "left_hip_roll_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -3985,13 +3110,13 @@
         ]
       ],
       "com_world_m": [
-        0.0018995990306034194,
-        0.033100000000000004,
-        0.09739999999999999
+        0.0018995990306034174,
+        0.03310000000000001,
+        0.0974
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "3993dc90fb1e5dfdbb7a5b96fdac1ed379e719fb77a320f3145d2fb21669d550"
+      "source_sha256": "309f25a6722dd2531bdaab05a2b61f6699379b60c20f78c18a9af3de8b399f1f"
     },
     {
       "name": "R18C_RollClampNut_R",
@@ -3999,7 +3124,7 @@
       "mesh": "meshes/R18C_RollClampNut_R.stl",
       "body": "right_hip_roll_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -4020,13 +3145,13 @@
         ]
       ],
       "com_world_m": [
-        0.0018995990306034313,
-        -0.03309999999999999,
-        0.09739999999999997
+        0.0018995990306034198,
+        -0.03310000000000001,
+        0.09739999999999996
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "e305f84a0854da238d42dad3781463643cf2bedbd5779a725fae05dd9677e7e8"
+      "source_sha256": "93c7f0864a1c20059a1b8758a8165f0abe3c15c81c6a448fab1ec064f255f6fd"
     },
     {
       "name": "R18C_PitchBearing_L",
@@ -4034,7 +3159,7 @@
       "mesh": "meshes/R18C_PitchBearing_L.stl",
       "body": "left_hip_pitch_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -4055,13 +3180,13 @@
         ]
       ],
       "com_world_m": [
-        0.018055826454290446,
-        0.07049999999999995,
-        0.10247639695369978
+        0.018055826454290463,
+        0.07050000000000002,
+        0.10247639695369985
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "6343adb66128f3a8543ded8696c9174050c45e8b747c91999e8fbb3001017a89"
+      "source_sha256": "b92d3ac0d766c318f61ce872a8c908d57e990e11b89eef3b2771ea3618aeae70"
     },
     {
       "name": "R18C_PitchBearing_R",
@@ -4069,7 +3194,7 @@
       "mesh": "meshes/R18C_PitchBearing_R.stl",
       "body": "right_hip_pitch_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -4090,13 +3215,13 @@
         ]
       ],
       "com_world_m": [
-        0.018055826454290474,
-        -0.07049999999999995,
-        0.10247639695369984
+        0.01805582645429046,
+        -0.07049999999999994,
+        0.10247639695369981
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "97f9f38788f5709c1f86344a04cac1bed2c248fb6db1d317fc8ab33bfdfb3fda"
+      "source_sha256": "06b0cef1338ba779551de35469091c956d867a77e78693f1fb8ccce8780b8ebc"
     },
     {
       "name": "R18C_PitchIdler_L",
@@ -4104,7 +3229,7 @@
       "mesh": "meshes/R18C_PitchIdler_L.stl",
       "body": "left_hip_pitch_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -4125,13 +3250,13 @@
         ]
       ],
       "com_world_m": [
-        0.018056713827605667,
+        0.018056713827605726,
         0.0695,
-        0.10249999999999995
+        0.10249999999999992
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "7ba6ce2e6bf2e8b9aecfa9f07ad6dc88c97b9327cc93c7e5a062b3413795b74b"
+      "source_sha256": "8bce34acc0eeba4e9581d0490a7f9d64ca13b819c5a5cc81ebffccd3f3e55cdc"
     },
     {
       "name": "R18C_PitchIdler_R",
@@ -4139,7 +3264,7 @@
       "mesh": "meshes/R18C_PitchIdler_R.stl",
       "body": "right_hip_pitch_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -4160,13 +3285,13 @@
         ]
       ],
       "com_world_m": [
-        0.018056713827605587,
-        -0.06949999999999999,
-        0.10249999999999997
+        0.018056713827605663,
+        -0.06950000000000002,
+        0.10249999999999995
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "1e84264a2528bab1a7b3efdc9374960ed9f68d6a35c03fbc8e60ece49d493e8d"
+      "source_sha256": "0f2f33c1ba4d50becd36d700d27bfa9e9ceaad360d2abfb6ea1df1b85530a023"
     },
     {
       "name": "R18C_PitchClampScrew_L",
@@ -4174,7 +3299,7 @@
       "mesh": "meshes/R18C_PitchClampScrew_L.stl",
       "body": "left_hip_pitch_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -4195,13 +3320,13 @@
         ]
       ],
       "com_world_m": [
-        0.033087008898165765,
+        0.03308700889816578,
         0.07259999999999997,
-        0.0980973936628102
+        0.09809739366281021
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "9862b7a10a085831d8eb0a6692bf6bd162ba47ab27a90497f4a9b628f817f536"
+      "source_sha256": "3aacc270f1b51ed8ee62573bb370e4669c0a857ae102a2e0233b90cd6d0a525e"
     },
     {
       "name": "R18C_PitchClampScrew_R",
@@ -4209,7 +3334,7 @@
       "mesh": "meshes/R18C_PitchClampScrew_R.stl",
       "body": "right_hip_pitch_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -4230,13 +3355,13 @@
         ]
       ],
       "com_world_m": [
-        0.03308700889816579,
-        -0.07259999999999996,
-        0.0980973936628102
+        0.03308700889816578,
+        -0.07259999999999998,
+        0.09809739366281021
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "afb7028257c3532956629d3d4bff37fa39766de25a502516bd64af6a3142e48e"
+      "source_sha256": "d886a2a102a35829b934e84ba157ba412dcd38bcec51be7475fedbaf26af4051"
     },
     {
       "name": "R18C_PitchClampNut_L",
@@ -4244,7 +3369,7 @@
       "mesh": "meshes/R18C_PitchClampNut_L.stl",
       "body": "left_hip_pitch_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -4265,13 +3390,13 @@
         ]
       ],
       "com_world_m": [
-        0.031160865716214875,
-        0.07259999999999996,
-        0.09356999149447275
+        0.0311608657162149,
+        0.07259999999999994,
+        0.09356999149447273
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "9a3d3f1bbf78b7c24c9f97785c6e5d2303e94b5d51d192d900f763e954ded978"
+      "source_sha256": "2990570f554256dfba52554653a2da1247fe6063880f3f38101b8f6d99be37f2"
     },
     {
       "name": "R18C_PitchClampNut_R",
@@ -4279,7 +3404,7 @@
       "mesh": "meshes/R18C_PitchClampNut_R.stl",
       "body": "right_hip_pitch_link",
       "color": [
-        0.4,
+        0.4000000059604645,
         1.0,
         1.0,
         1.0
@@ -4300,48 +3425,1518 @@
         ]
       ],
       "com_world_m": [
-        0.031160865716214906,
-        -0.07259999999999994,
-        0.09356999149447272
+        0.031160865716214892,
+        -0.07259999999999998,
+        0.09356999149447276
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "86c4330290f56a938a163c1b7c39bfa56995b816ad59f781dfd727a4f7ef6331"
+      "source_sha256": "817f41ae8e05fb8d4647f582ce27b0f4af3b0b5c7ef73de8cd10f6fa55d8c628"
     },
     {
-      "name": "R20_RemovableRearBand",
-      "label": "R20 removable rear colour band",
-      "mesh": "meshes/R20_RemovableRearBand.stl",
+      "name": "HelmetRoof",
+      "label": "HelmetRoof",
+      "mesh": "meshes/HelmetRoof.stl",
       "body": "head_roll_link",
       "color": [
-        1.0,
-        0.6509803921568628,
-        0.03137254901960784,
+        0.8784313797950745,
+        0.9019607901573181,
+        0.8784313797950745,
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.009584249878076387,
+      "mass_kg": 0.034652493795835446,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
-          -0.024938020706176758,
-          -0.0314211597442627,
-          0.23596424865722657
+          -0.015077777862548828,
+          -0.048,
+          0.26675326538085936
         ],
         [
-          0.005516519546508789,
-          0.03141470336914062,
-          0.2558409423828125
+          0.108,
+          0.048,
+          0.28455328369140626
         ]
       ],
       "com_world_m": [
-        -0.014279516940073522,
-        0.0006625344979976443,
-        0.24620163473064216
+        0.04481078813621111,
+        -3.54866167661646e-07,
+        0.27670974207490756
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "05b1852a47e71b5534bce979810e37018ae6edeeab900897f871b15474c3a25b"
+      "source_sha256": "39105e49ac00f62dbed3427efe1e07e567b3d77e10a6969f086903efeb953ee8"
+    },
+    {
+      "name": "HelmetLower",
+      "label": "HelmetLower",
+      "mesh": "meshes/HelmetLower.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.8784313797950745,
+        0.9019607901573181,
+        0.8784313797950745,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.028386632532721723,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.023,
+          -0.048,
+          0.2305532684326172
+        ],
+        [
+          0.108,
+          0.048,
+          0.26655328369140624
+        ]
+      ],
+      "com_world_m": [
+        0.02471477163703456,
+        5.7112729117587945e-06,
+        0.2523713387130939
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "5ca3bd7a1443cb29b8b75a9dfe952f74ce9540d14a5b850d1e1d5692e72ee240"
+    },
+    {
+      "name": "CameraFace",
+      "label": "CameraFace",
+      "mesh": "meshes/CameraFace.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078568696976,
+        0.1411764770746231,
+        0.16862745583057404,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.009573165530088688,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.0975,
+          -0.043,
+          0.2305532684326172
+        ],
+        [
+          0.1105,
+          0.043,
+          0.27555328369140625
+        ]
+      ],
+      "com_world_m": [
+        0.10863120714436059,
+        -6.290487652894667e-06,
+        0.2524255368757751
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "ab762e27f2d1ae99874a6e8912859eba0083f449714b1390507a5323f59f2eae"
+    },
+    {
+      "name": "CameraBoard_R",
+      "label": "CameraBoard_R",
+      "mesh": "meshes/CameraBoard_R.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.12156862765550613,
+        0.3019607961177826,
+        0.20000000298023224,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.089,
+          -0.034200000762939456,
+          0.23755326843261718
+        ],
+        [
+          0.09059999847412109,
+          -0.0022000000476837156,
+          0.26955328369140624
+        ]
+      ],
+      "com_world_m": [
+        0.08979999999999998,
+        -0.018200000000000008,
+        0.2535532706018213
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "6ec9fec76d38abf5840b94c66cff37e0a560d248bb9bab38bbc60451840a1872"
+    },
+    {
+      "name": "CameraLens_R",
+      "label": "CameraLens_R",
+      "mesh": "meshes/CameraLens_R.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.20000000298023224,
+        0.34117648005485535,
+        0.41960784792900085,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.09059999847412109,
+          -0.025199018478393554,
+          0.24656285095214844
+        ],
+        [
+          0.10658000183105469,
+          -0.011215747833251953,
+          0.26055328369140623
+        ]
+      ],
+      "com_world_m": [
+        0.09858999999999998,
+        -0.018199999999999997,
+        0.2536028952009762
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "64a7098c955c9a1cb508c3ee7bab07172ab07ada37758ef063eaa3f2adfcb51c"
+    },
+    {
+      "name": "CameraBoard_L",
+      "label": "CameraBoard_L",
+      "mesh": "meshes/CameraBoard_L.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.12156862765550613,
+        0.3019607961177826,
+        0.20000000298023224,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.089,
+          0.0022000000476837156,
+          0.23755326843261718
+        ],
+        [
+          0.09059999847412109,
+          0.034200000762939456,
+          0.26955328369140624
+        ]
+      ],
+      "com_world_m": [
+        0.0898,
+        0.018200000000000004,
+        0.2535532706018213
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "9319a5e0833ff331d86be8b55a985c0897dedb9cfb293e31354b1346666838ef"
+    },
+    {
+      "name": "CameraLens_L",
+      "label": "CameraLens_L",
+      "mesh": "meshes/CameraLens_L.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.20000000298023224,
+        0.34117648005485535,
+        0.41960784792900085,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.09059999847412109,
+          0.011200981140136719,
+          0.24656285095214844
+        ],
+        [
+          0.10658000183105469,
+          0.02518425178527832,
+          0.26055328369140623
+        ]
+      ],
+      "com_world_m": [
+        0.09858999999999998,
+        0.018200000000000004,
+        0.2536028952009761
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "119a90f0f49905cb36ca52595d402d218c96cc38ed62fd890980c096cb272574"
+    },
+    {
+      "name": "CameraCarrier",
+      "label": "CameraCarrier",
+      "mesh": "meshes/CameraCarrier.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.8784313797950745,
+        0.9019607901573181,
+        0.8784313797950745,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.006322983472587782,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.07940000152587891,
+          -0.042,
+          0.23345008850097657
+        ],
+        [
+          0.093,
+          0.042,
+          0.27055328369140624
+        ]
+      ],
+      "com_world_m": [
+        0.08634115439246347,
+        4.749121438521397e-06,
+        0.24431542179369636
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "b783b0599991b061754fba8113670aca1eba69df16fcb492c2ecc8787f30baef"
+    },
+    {
+      "name": "Relocated_A_ref_ToFPCB",
+      "label": "Relocated_A_ref_ToFPCB",
+      "mesh": "meshes/Relocated_A_ref_ToFPCB.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078568696976,
+        0.1411764770746231,
+        0.16862745583057404,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0015,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.098,
+          -0.0065,
+          0.23615162658691408
+        ],
+        [
+          0.101,
+          0.0065,
+          0.259151611328125
+        ]
+      ],
+      "com_world_m": [
+        0.0995,
+        4.183449078297705e-20,
+        0.24765162389116874
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "24cfc2c24a13274a8b6adbbf7f1c666ddbebb7a2f5e2e1fda1e7dc554bd8d969"
+    },
+    {
+      "name": "Relocated_A_ref_ToFOptics",
+      "label": "Relocated_A_ref_ToFOptics",
+      "mesh": "meshes/Relocated_A_ref_ToFOptics.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.10196078568696976,
+        0.1411764770746231,
+        0.16862745583057404,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.101,
+          -0.002199777364730835,
+          0.24545162963867187
+        ],
+        [
+          0.1024000015258789,
+          0.002197620391845703,
+          0.2498512878417969
+        ]
+      ],
+      "com_world_m": [
+        0.1017,
+        1.214888377840726e-18,
+        0.24763602758857722
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "8eda8f5986e2c7adb3470511f7290b7da2a620d92c30c38ca600db7be9b68051"
+    },
+    {
+      "name": "AngularJaw",
+      "label": "AngularJaw",
+      "mesh": "meshes/AngularJaw.stl",
+      "body": "mouth_link",
+      "color": [
+        0.9607843160629272,
+        0.5490196347236633,
+        0.07058823853731155,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.009240855783169842,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.031902727127075196,
+          -0.0445,
+          0.21852227783203124
+        ],
+        [
+          0.102,
+          0.0445,
+          0.24785258483886718
+        ]
+      ],
+      "com_world_m": [
+        0.06164652744423916,
+        -0.007021582211172506,
+        0.2297835032972346
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "32d47a62735c9cd3a4dfd1bf05e4299e20c3fc4b59b5183b3f50c1eaf76fe73b"
+    },
+    {
+      "name": "TorsoFront",
+      "label": "TorsoFront",
+      "mesh": "meshes/TorsoFront.stl",
+      "body": "trunk_base",
+      "color": [
+        0.8784313797950745,
+        0.9019607901573181,
+        0.8784313797950745,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.02470991499808358,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.007800000190734863,
+          -0.042,
+          0.1335532684326172
+        ],
+        [
+          0.061,
+          0.042,
+          0.18155326843261718
+        ]
+      ],
+      "com_world_m": [
+        0.026857870072028774,
+        0.0013716393456813013,
+        0.16259111397346268
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "3cea09a156bf494a12d7c63bec1e0e5137a4bc12856add7f7e711c180b4aeadd"
+    },
+    {
+      "name": "TorsoRear",
+      "label": "TorsoRear",
+      "mesh": "meshes/TorsoRear.stl",
+      "body": "trunk_base",
+      "color": [
+        0.8784313797950745,
+        0.9019607901573181,
+        0.8784313797950745,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.025460962308808604,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.064,
+          -0.042,
+          0.1335532684326172
+        ],
+        [
+          -0.008,
+          0.042,
+          0.18155326843261718
+        ]
+      ],
+      "com_world_m": [
+        -0.038064543856717405,
+        1.9464221394516507e-06,
+        0.16381793253236532
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "9e8d45068f5bbf2a307bf319f2d73fa3b758f2769beb899f5c52147a5a9289aa"
+    },
+    {
+      "name": "PelvisFront",
+      "label": "PelvisFront",
+      "mesh": "meshes/PelvisFront.stl",
+      "body": "trunk_base",
+      "color": [
+        0.8784313797950745,
+        0.9019607901573181,
+        0.8784313797950745,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.012426764725220899,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.054,
+          -0.043,
+          0.08255326843261719
+        ],
+        [
+          0.059,
+          0.043,
+          0.1395532684326172
+        ]
+      ],
+      "com_world_m": [
+        0.057032897576951354,
+        -2.986654725647707e-06,
+        0.11043116519841593
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "aaca8e3299395eed057ba37fc77b8e29f5a207d381dd1116523086aa06e6c4cf"
+    },
+    {
+      "name": "PelvisRear",
+      "label": "PelvisRear",
+      "mesh": "meshes/PelvisRear.stl",
+      "body": "trunk_base",
+      "color": [
+        0.8784313797950745,
+        0.9019607901573181,
+        0.8784313797950745,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.012307185790470099,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.06,
+          -0.043,
+          0.08255326843261719
+        ],
+        [
+          -0.055,
+          0.043,
+          0.1395532684326172
+        ]
+      ],
+      "com_world_m": [
+        -0.05804006134323706,
+        -2.0034841772875732e-06,
+        0.11015742913490702
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "7a9983777db6d26716d5aa0bce44b0b72247a9c88ee9156aedf92951a91d1641"
+    },
+    {
+      "name": "ThighCap_L",
+      "label": "ThighCap_L",
+      "mesh": "meshes/ThighCap_L.stl",
+      "body": "left_hip_pitch_link",
+      "color": [
+        0.8784313797950745,
+        0.9019607901573181,
+        0.8784313797950745,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.007543194266805043,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.032,
+          0.075,
+          0.067
+        ],
+        [
+          0.032,
+          0.08,
+          0.117
+        ]
+      ],
+      "com_world_m": [
+        -5.4500332415763356e-05,
+        0.07835821328724242,
+        0.09210860502179907
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "9b8aabfa83d215e5910b479e0532a8941cf2e0d8f98f13f98f38d118e620ff60"
+    },
+    {
+      "name": "ThighCap_R",
+      "label": "ThighCap_R",
+      "mesh": "meshes/ThighCap_R.stl",
+      "body": "right_hip_pitch_link",
+      "color": [
+        0.8784313797950745,
+        0.9019607901573181,
+        0.8784313797950745,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.007546253478483622,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.032,
+          -0.08,
+          0.067
+        ],
+        [
+          0.032,
+          -0.075,
+          0.117
+        ]
+      ],
+      "com_world_m": [
+        -5.342140063714141e-05,
+        -0.07835797690992019,
+        0.092108972873796
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "9c077eb1094ab09f5a81f64e14d965aa168ab00d285f18c491b0edbc3085b024"
+    },
+    {
+      "name": "ShankStructure_L",
+      "label": "ShankStructure_L",
+      "mesh": "meshes/ShankStructure_L.stl",
+      "body": "left_knee_link",
+      "color": [
+        0.6509804129600525,
+        0.6901960968971252,
+        0.7098039388656616,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.013682871273680458,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.03379997634887695,
+          0.03,
+          0.026799999237060546
+        ],
+        [
+          -0.0017000240087509154,
+          0.06,
+          0.0925
+        ]
+      ],
+      "com_world_m": [
+        -0.017766773679647047,
+        0.04082644184687112,
+        0.055832873424269694
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "40f5e1914542c61151af3850e96d735a7b15f984708eb34eb1c954b99958af28"
+    },
+    {
+      "name": "ShinCap_L",
+      "label": "ShinCap_L",
+      "mesh": "meshes/ShinCap_L.stl",
+      "body": "left_knee_link",
+      "color": [
+        0.8784313797950745,
+        0.9019607901573181,
+        0.8784313797950745,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.00093330218133192,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.035,
+          0.060299999237060545,
+          0.04420018005371094
+        ],
+        [
+          7.105427357601002e-17,
+          0.064,
+          0.062
+        ]
+      ],
+      "com_world_m": [
+        -0.017431542824134953,
+        0.062437777657317686,
+        0.05592134873333842
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "39353eba3b7117cf0a13c471c7a3d202d61fdf6f2ef75b3801503c6cb396fb49"
+    },
+    {
+      "name": "FacetedFoot_L",
+      "label": "FacetedFoot_L",
+      "mesh": "meshes/FacetedFoot_L.stl",
+      "body": "left_ankle_link",
+      "color": [
+        0.9607843160629272,
+        0.5490196347236633,
+        0.07058823853731155,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.034895104689390395,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.04475,
+          0.024,
+          0.013
+        ],
+        [
+          0.00925,
+          0.068,
+          0.05049845504760742
+        ]
+      ],
+      "com_world_m": [
+        -0.017932775239904067,
+        0.04612152505995118,
+        0.020963840446290006
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "42cb20b3a0d1f17155171acb653fa626cd7c53dbd07afabdec320810cc63b6fa"
+    },
+    {
+      "name": "FacetedSole_L",
+      "label": "FacetedSole_L",
+      "mesh": "meshes/FacetedSole_L.stl",
+      "body": "left_ankle_link",
+      "color": [
+        0.10196078568696976,
+        0.1411764770746231,
+        0.16862745583057404,
+        1.0
+      ],
+      "material": "TPU 95A fit study",
+      "mass_kg": 0.029484355742780584,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.04475,
+          0.024,
+          -8.077604340614442e-18
+        ],
+        [
+          0.00925,
+          0.068,
+          0.013
+        ]
+      ],
+      "com_world_m": [
+        -0.017699239158518103,
+        0.04599999999907588,
+        0.006432584248431115
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "922225100448e8c5c8ac592e8c9cc2cd7ed90440a11327656229f1166a914d5d"
+    },
+    {
+      "name": "ShankStructure_R",
+      "label": "ShankStructure_R",
+      "mesh": "meshes/ShankStructure_R.stl",
+      "body": "right_knee_link",
+      "color": [
+        0.6509804129600525,
+        0.6901960968971252,
+        0.7098039388656616,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.013682411852611766,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.03379997634887695,
+          -0.06,
+          0.026799999237060546
+        ],
+        [
+          -0.001700043201446533,
+          -0.03,
+          0.0925
+        ]
+      ],
+      "com_world_m": [
+        -0.01776548221891828,
+        -0.040823015106425095,
+        0.055832125549748944
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "4afe1262e35c820570db4ecb170ca5fb0d149a9c03c6e65d7e3c6d6891149f22"
+    },
+    {
+      "name": "ShinCap_R",
+      "label": "ShinCap_R",
+      "mesh": "meshes/ShinCap_R.stl",
+      "body": "right_knee_link",
+      "color": [
+        0.8784313797950745,
+        0.9019607901573181,
+        0.8784313797950745,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0009335981943368344,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.035,
+          -0.064,
+          0.04420018005371094
+        ],
+        [
+          5.684341886080802e-17,
+          -0.060299999237060545,
+          0.062
+        ]
+      ],
+      "com_world_m": [
+        -0.01743625349485886,
+        -0.06243760390690437,
+        0.055922083396656906
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "fe679142eebfc0d85be2baf64ed070c90b0e754c65f215e12646c244a5b56784"
+    },
+    {
+      "name": "FacetedFoot_R",
+      "label": "FacetedFoot_R",
+      "mesh": "meshes/FacetedFoot_R.stl",
+      "body": "right_ankle_link",
+      "color": [
+        0.9607843160629272,
+        0.5490196347236633,
+        0.07058823853731155,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.03489510491579377,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.04475,
+          -0.068,
+          0.013
+        ],
+        [
+          0.00925,
+          -0.024,
+          0.05049845504760742
+        ]
+      ],
+      "com_world_m": [
+        -0.01793277522154018,
+        -0.04612152505659457,
+        0.020963840371067296
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "8eecc50d1419aa427af990264c13db7a4cc4eba95145eaa8b55454ce17a80485"
+    },
+    {
+      "name": "FacetedSole_R",
+      "label": "FacetedSole_R",
+      "mesh": "meshes/FacetedSole_R.stl",
+      "body": "right_ankle_link",
+      "color": [
+        0.10196078568696976,
+        0.1411764770746231,
+        0.16862745583057404,
+        1.0
+      ],
+      "material": "TPU 95A fit study",
+      "mass_kg": 0.029484355896988643,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.04475,
+          -0.068,
+          -2.307760407738949e-17
+        ],
+        [
+          0.00925,
+          -0.024,
+          0.013
+        ]
+      ],
+      "com_world_m": [
+        -0.017699239108715344,
+        -0.04600000002980365,
+        0.0064325844182151455
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "300fb20e6e07aa99c97ab00467b1276a32cf424a69e39c96c72eb5d300726dd5"
+    },
+    {
+      "name": "FaceBezel",
+      "label": "FaceBezel",
+      "mesh": "meshes/FaceBezel.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.8784313797950745,
+        0.9019607901573181,
+        0.8784313797950745,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0020124543777100138,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.1105,
+          -0.043,
+          0.2305532684326172
+        ],
+        [
+          0.11230000305175782,
+          0.043,
+          0.27555328369140625
+        ]
+      ],
+      "com_world_m": [
+        0.11137835959384186,
+        -5.028426347773458e-07,
+        0.2529311547412574
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "b5899a0594aa3d7ced11f3751c4cba25a6a302d67c9fd2fed09dd440758d1951"
+    },
+    {
+      "name": "OpticalRing_R",
+      "label": "OpticalRing_R",
+      "mesh": "meshes/OpticalRing_R.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.9607843160629272,
+        0.5490196347236633,
+        0.07058823853731155,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 8.795477682347305e-05,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.1105,
+          -0.029441947937011718,
+          0.2423287353515625
+        ],
+        [
+          0.1113499984741211,
+          -0.0069734005928039555,
+          0.26480328369140627
+        ]
+      ],
+      "com_world_m": [
+        0.11092499999999997,
+        -0.018199999999999977,
+        0.25362089948333105
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "8006bfb67cbeaaa90ac954f42c9b9c532a3a3aa998d2907bc999157d801a910c"
+    },
+    {
+      "name": "OpticalRing_L",
+      "label": "OpticalRing_L",
+      "mesh": "meshes/OpticalRing_L.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.9607843160629272,
+        0.5490196347236633,
+        0.07058823853731155,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 8.795477682347309e-05,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.1105,
+          0.006958053112030029,
+          0.2423287353515625
+        ],
+        [
+          0.1113499984741211,
+          0.029426599502563478,
+          0.26480328369140627
+        ]
+      ],
+      "com_world_m": [
+        0.11092500000000004,
+        0.018200000000000018,
+        0.2536208994833311
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "b9bb82922b676de0084037ca5c858ce6ff01030d79f9738848dd1ee5445d920e"
+    },
+    {
+      "name": "HeadRim_L",
+      "label": "HeadRim_L",
+      "mesh": "meshes/HeadRim_L.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.9607843160629272,
+        0.5490196347236633,
+        0.07058823853731155,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0035128851609872364,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.024,
+          -4.99999991225835e-18,
+          0.2229732666015625
+        ],
+        [
+          0.11,
+          0.049,
+          0.2335532684326172
+        ]
+      ],
+      "com_world_m": [
+        0.017404442814635004,
+        0.0366379762488624,
+        0.22885155121437817
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "e921fc9831818536da4d1aa01bc72cf31df102e52ebc5c0ef8082bd87bc5ca3d"
+    },
+    {
+      "name": "HeadRim_R",
+      "label": "HeadRim_R",
+      "mesh": "meshes/HeadRim_R.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.9607843160629272,
+        0.5490196347236633,
+        0.07058823853731155,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0035074816813886575,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.024,
+          -0.049,
+          0.2229732666015625
+        ],
+        [
+          0.11,
+          -0.00020000000298023223,
+          0.2335532684326172
+        ]
+      ],
+      "com_world_m": [
+        0.017467133954168417,
+        -0.036694778652117795,
+        0.22885124047461008
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "9ac5c8ee1e6b6718b2f076ca4aa61bfe79b314db7a3f837d17fff745534d99ac"
+    },
+    {
+      "name": "JawSurround_R",
+      "label": "JawSurround_R",
+      "mesh": "meshes/JawSurround_R.stl",
+      "body": "mouth_link",
+      "color": [
+        0.9607843160629272,
+        0.5490196347236633,
+        0.07058823853731155,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.001968286347987628,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.024,
+          -0.049700000762939456,
+          0.2255532684326172
+        ],
+        [
+          0.063,
+          -0.044,
+          0.24984715270996094
+        ]
+      ],
+      "com_world_m": [
+        0.041387370950510524,
+        -0.047830815357170445,
+        0.23660450716070502
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "b456dd8d52e81b05c14993bccd77b42797c28e629634e489f6e7abc0d255f6ba"
+    },
+    {
+      "name": "HardwarePivotWasher_R",
+      "label": "HardwarePivotWasher_R",
+      "mesh": "meshes/HardwarePivotWasher_R.stl",
+      "body": "mouth_link",
+      "color": [
+        0.5803921818733215,
+        0.6196078658103943,
+        0.6509804129600525,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.03610113525390625,
+          -0.0505,
+          0.23405027770996092
+        ],
+        [
+          0.0456846923828125,
+          -0.049700000762939456,
+          0.24364784240722656
+        ]
+      ],
+      "com_world_m": [
+        0.040899999999999985,
+        -0.05009999999999999,
+        0.23882952851198802
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "a5cbeaeaeddeb3342e987777aadd9a26809de0223c6216bff35e3ce383c93d58"
+    },
+    {
+      "name": "JawSurround_L",
+      "label": "JawSurround_L",
+      "mesh": "meshes/JawSurround_L.stl",
+      "body": "mouth_link",
+      "color": [
+        0.9607843160629272,
+        0.5490196347236633,
+        0.07058823853731155,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0020496485783233747,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.024,
+          0.042,
+          0.2255532684326172
+        ],
+        [
+          0.063,
+          0.049700000762939456,
+          0.24985026550292969
+        ]
+      ],
+      "com_world_m": [
+        0.0413689408925487,
+        0.04764942588303404,
+        0.2366961159534446
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "ce720a1384414d00f394885ebf552238ea0dc55b2d282ed40663cb7d616a4008"
+    },
+    {
+      "name": "HardwarePivotWasher_L",
+      "label": "HardwarePivotWasher_L",
+      "mesh": "meshes/HardwarePivotWasher_L.stl",
+      "body": "mouth_link",
+      "color": [
+        0.5803921818733215,
+        0.6196078658103943,
+        0.6509804129600525,
+        1.0
+      ],
+      "material": "Reference module, estimated mass",
+      "mass_kg": 0.0005,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.03610113525390625,
+          0.049700000762939456,
+          0.23405270385742188
+        ],
+        [
+          0.0456846923828125,
+          0.0505,
+          0.2436502685546875
+        ]
+      ],
+      "com_world_m": [
+        0.04089999999999999,
+        0.05009999999999999,
+        0.2388710126916546
+      ],
+      "reference": true,
+      "include_when": "always",
+      "source_sha256": "c897bd107920f58264e290317be5e4de3ef9fee20d0b0e0701118287cf8eb3ba"
+    },
+    {
+      "name": "RearHeadBumper",
+      "label": "RearHeadBumper",
+      "mesh": "meshes/RearHeadBumper.stl",
+      "body": "head_roll_link",
+      "color": [
+        0.9607843160629272,
+        0.5490196347236633,
+        0.07058823853731155,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.003605378759422443,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.026,
+          -0.031,
+          0.2335532684326172
+        ],
+        [
+          -0.022,
+          0.031,
+          0.25205326843261716
+        ]
+      ],
+      "com_world_m": [
+        -0.02437422579840537,
+        -2.3828580441698751e-07,
+        0.2431624515878896
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "45568cf9b170fef1e09e542be830b0de48ba86c277fd338d3263152b6889a523"
+    },
+    {
+      "name": "TorsoAccent_Front_L",
+      "label": "TorsoAccent_Front_L",
+      "mesh": "meshes/TorsoAccent_Front_L.stl",
+      "body": "trunk_base",
+      "color": [
+        0.9607843160629272,
+        0.5490196347236633,
+        0.07058823853731155,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.000572442352942166,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.03,
+          0.034670589447021484,
+          0.1335532684326172
+        ],
+        [
+          0.038,
+          0.042,
+          0.1625532684326172
+        ]
+      ],
+      "com_world_m": [
+        0.03400000000005899,
+        0.0387715212569439,
+        0.1490917347543932
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "4c115852aa05ae8e27c013f8ebe877103db02b3f124eed238c10a527df79344a"
+    },
+    {
+      "name": "TorsoAccent_Rear_L",
+      "label": "TorsoAccent_Rear_L",
+      "mesh": "meshes/TorsoAccent_Rear_L.stl",
+      "body": "trunk_base",
+      "color": [
+        0.9607843160629272,
+        0.5490196347236633,
+        0.07058823853731155,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.000586931216393334,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.052,
+          0.030341176986694335,
+          0.1335532684326172
+        ],
+        [
+          -0.044,
+          0.042,
+          0.1625532684326172
+        ]
+      ],
+      "com_world_m": [
+        -0.048106124883992456,
+        0.03861383547971168,
+        0.14934458917819518
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "893ba28a8e1d628bbfa909b2d9529d5c844b6f82a17a60e586a2f666d4205327"
+    },
+    {
+      "name": "TorsoAccent_Front_R",
+      "label": "TorsoAccent_Front_R",
+      "mesh": "meshes/TorsoAccent_Front_R.stl",
+      "body": "trunk_base",
+      "color": [
+        0.9607843160629272,
+        0.5490196347236633,
+        0.07058823853731155,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0005724423529422104,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.03,
+          -0.042,
+          0.1335532684326172
+        ],
+        [
+          0.038,
+          -0.034670589447021484,
+          0.1625532684326172
+        ]
+      ],
+      "com_world_m": [
+        0.03400000000005895,
+        -0.03877152125694391,
+        0.1490917347543932
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "abdc118c61fbdeeb4ff816cfb3f237509d335037a13acb60a96340a7d389952b"
+    },
+    {
+      "name": "TorsoAccent_Rear_R",
+      "label": "TorsoAccent_Rear_R",
+      "mesh": "meshes/TorsoAccent_Rear_R.stl",
+      "body": "trunk_base",
+      "color": [
+        0.9607843160629272,
+        0.5490196347236633,
+        0.07058823853731155,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.00058693121667716,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.052,
+          -0.042,
+          0.1335532684326172
+        ],
+        [
+          -0.044,
+          -0.030341176986694335,
+          0.1625532684326172
+        ]
+      ],
+      "com_world_m": [
+        -0.04810612488399247,
+        -0.03861383547971164,
+        0.14934458917819524
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "75fa63707a248cf4b9bfffc9ce54a6eeaa00a056966c00d2ccd2bc15f0735623"
+    },
+    {
+      "name": "HipCowl_L",
+      "label": "HipCowl_L",
+      "mesh": "meshes/HipCowl_L.stl",
+      "body": "left_hip_roll_link",
+      "color": [
+        0.8784313797950745,
+        0.9019607901573181,
+        0.8784313797950745,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0041062263828809,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.04615863800048828,
+          0.022396490097045897,
+          0.08855326843261718
+        ],
+        [
+          0.060823390960693356,
+          0.06103352355957031,
+          0.1275532684326172
+        ]
+      ],
+      "com_world_m": [
+        0.05445942700268436,
+        0.04083560238034625,
+        0.1084835230976124
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "e2af7417763aecd4ac08470ececc1ff0d2e37fc962ebd4f7f7be006981c2b83d"
+    },
+    {
+      "name": "HipCowl_R",
+      "label": "HipCowl_R",
+      "mesh": "meshes/HipCowl_R.stl",
+      "body": "right_hip_roll_link",
+      "color": [
+        0.8784313797950745,
+        0.9019607901573181,
+        0.8784313797950745,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0041062263828809,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          0.04615863800048828,
+          -0.06103352355957031,
+          0.08855326843261718
+        ],
+        [
+          0.060823390960693356,
+          -0.022396490097045897,
+          0.1275532684326172
+        ]
+      ],
+      "com_world_m": [
+        0.05445899937199388,
+        -0.04083399763273554,
+        0.10848357448953667
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "27efc4a5cdc8c42eae32ab528e171fab79239be4a22982f010038a28c3b82748"
+    },
+    {
+      "name": "ToeCap_L",
+      "label": "ToeCap_L",
+      "mesh": "meshes/ToeCap_L.stl",
+      "body": "left_ankle_link",
+      "color": [
+        0.8784313797950745,
+        0.9019607901573181,
+        0.8784313797950745,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0031709494748995842,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.012,
+          0.026,
+          0.017
+        ],
+        [
+          0.010699999809265138,
+          0.066,
+          0.02920000076293945
+        ]
+      ],
+      "com_world_m": [
+        0.0027139859687719207,
+        0.045966602120799956,
+        0.02627974548112662
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "dcc7fd0dc97b5615d38dfde9957d21037821a61560e11117e87bdc55756fe546"
+    },
+    {
+      "name": "ToeCap_R",
+      "label": "ToeCap_R",
+      "mesh": "meshes/ToeCap_R.stl",
+      "body": "right_ankle_link",
+      "color": [
+        0.8784313797950745,
+        0.9019607901573181,
+        0.8784313797950745,
+        1.0
+      ],
+      "material": "PLA fit study",
+      "mass_kg": 0.0031704169679480617,
+      "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
+      "bounds_world_m": [
+        [
+          -0.012,
+          -0.066,
+          0.017
+        ],
+        [
+          0.010699999809265138,
+          -0.026,
+          0.02920000076293945
+        ]
+      ],
+      "com_world_m": [
+        0.002714160331735503,
+        -0.045966694364101064,
+        0.026279588582301568
+      ],
+      "reference": false,
+      "include_when": "always",
+      "source_sha256": "6db3a92afc6bba851b67082e8ae5ff5cf7ffdf1cf7d3df2a58d8d3eb005ac0e2"
     },
     {
       "name": "SkateFrame_L",

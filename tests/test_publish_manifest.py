@@ -91,7 +91,7 @@ def test_constants_are_the_daemons():
     here is a refusal on every robot, before the download."""
     assert (m.OBS_LEN, m.ACTION_LEN) == (61, 14)
     assert m.ROBOT["model"] == "indieduck"
-    assert m.ROBOT["cad_revision"] == "R20"
+    assert m.ROBOT["cad_revision"] == "R25"
     assert m.ROBOT["servos"] == "hd1910"
     assert m.MODEL_API == 1
     assert m.SCHEMA_VERSION == 2

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<mujoco model="indieduck-r20">
+<mujoco model="indieduck-r25">
   <compiler angle="radian" autolimits="true" meshdir="meshes" inertiafromgeom="false" fusestatic="false" />
   <option timestep=".005" gravity="0 0 -9.81" integrator="implicitfast" iterations="50" />
   <visual>
@@ -19,26 +19,10 @@
     <mesh name="Yaw_L" file="Yaw_L.stl" />
     <mesh name="HipL_L" file="HipL_L.stl" />
     <mesh name="Thigh_L" file="Thigh_L.stl" />
-    <mesh name="Shank_L" file="Shank_L.stl" />
-    <mesh name="RoundedFoot_L" file="RoundedFoot_L.stl" />
-    <mesh name="SoftHeadShell" file="SoftHeadShell.stl" />
-    <mesh name="BodyFront" file="BodyFront.stl" />
-    <mesh name="BodyBack" file="BodyBack.stl" />
-    <mesh name="RoundedSole_L" file="RoundedSole_L.stl" />
-    <mesh name="ThighPlate_L" file="ThighPlate_L.stl" />
-    <mesh name="O2_HeadBase" file="O2_HeadBase.stl" />
-    <mesh name="O2_Jaw" file="O2_Jaw.stl" />
-    <mesh name="O2_UpperLip" file="O2_UpperLip.stl" />
-    <mesh name="O2_JawEdge" file="O2_JawEdge.stl" />
+    <mesh name="HeadBase" file="HeadBase.stl" />
     <mesh name="Yaw_R" file="Yaw_R.stl" />
     <mesh name="HipL_R" file="HipL_R.stl" />
     <mesh name="Thigh_R" file="Thigh_R.stl" />
-    <mesh name="Shank_R" file="Shank_R.stl" />
-    <mesh name="RoundedFoot_R" file="RoundedFoot_R.stl" />
-    <mesh name="RoundedSole_R" file="RoundedSole_R.stl" />
-    <mesh name="ThighPlate_R" file="ThighPlate_R.stl" />
-    <mesh name="O2_EyeL" file="O2_EyeL.stl" />
-    <mesh name="O2_EyeR" file="O2_EyeR.stl" />
     <mesh name="ref_servo_left_ankle" file="ref_servo_left_ankle.stl" />
     <mesh name="ref_horn_left_ankle" file="ref_horn_left_ankle.stl" />
     <mesh name="ref_servo_left_knee" file="ref_servo_left_knee.stl" />
@@ -86,15 +70,8 @@
     <mesh name="ref_servo_right_ankle" file="ref_servo_right_ankle.stl" />
     <mesh name="ref_horn_right_ankle" file="ref_horn_right_ankle.stl" />
     <mesh name="ref_Battery_Provisional" file="ref_Battery_Provisional.stl" />
-    <mesh name="ref_CameraPCB" file="ref_CameraPCB.stl" />
-    <mesh name="ref_CameraLens" file="ref_CameraLens.stl" />
-    <mesh name="ref_ToFPCB" file="ref_ToFPCB.stl" />
-    <mesh name="ref_ToFOptics" file="ref_ToFOptics.stl" />
     <mesh name="ref_HeadIMU" file="ref_HeadIMU.stl" />
     <mesh name="ref_CameraLED" file="ref_CameraLED.stl" />
-    <mesh name="R10_EyeRing_L" file="R10_EyeRing_L.stl" />
-    <mesh name="R10_EyeRing_R" file="R10_EyeRing_R.stl" />
-    <mesh name="R16_TwoEyeFace" file="R16_TwoEyeFace.stl" />
     <mesh name="R17_HeadYawClampCap" file="R17_HeadYawClampCap.stl" />
     <mesh name="R17_RollServoCradle" file="R17_RollServoCradle.stl" />
     <mesh name="R17_RollCradleTopClamp" file="R17_RollCradleTopClamp.stl" />
@@ -104,8 +81,6 @@
     <mesh name="R17_JawBearingKeeper" file="R17_JawBearingKeeper.stl" />
     <mesh name="R17_JawBearingPlug" file="R17_JawBearingPlug.stl" />
     <mesh name="ref_R17_JawBearing16x22x4" file="ref_R17_JawBearing16x22x4.stl" />
-    <mesh name="R17_FaceCarrier" file="R17_FaceCarrier.stl" />
-    <mesh name="ref_R17_FaceFasteners" file="ref_R17_FaceFasteners.stl" />
     <mesh name="ref_R17_FixedCarrierFasteners" file="ref_R17_FixedCarrierFasteners.stl" />
     <mesh name="ref_R17_HeadModuleFasteners" file="ref_R17_HeadModuleFasteners.stl" />
     <mesh name="ref_R17_JawFasteners" file="ref_R17_JawFasteners.stl" />
@@ -135,7 +110,49 @@
     <mesh name="R18C_PitchClampScrew_R" file="R18C_PitchClampScrew_R.stl" />
     <mesh name="R18C_PitchClampNut_L" file="R18C_PitchClampNut_L.stl" />
     <mesh name="R18C_PitchClampNut_R" file="R18C_PitchClampNut_R.stl" />
-    <mesh name="R20_RemovableRearBand" file="R20_RemovableRearBand.stl" />
+    <mesh name="HelmetRoof" file="HelmetRoof.stl" />
+    <mesh name="HelmetLower" file="HelmetLower.stl" />
+    <mesh name="CameraFace" file="CameraFace.stl" />
+    <mesh name="CameraBoard_R" file="CameraBoard_R.stl" />
+    <mesh name="CameraLens_R" file="CameraLens_R.stl" />
+    <mesh name="CameraBoard_L" file="CameraBoard_L.stl" />
+    <mesh name="CameraLens_L" file="CameraLens_L.stl" />
+    <mesh name="CameraCarrier" file="CameraCarrier.stl" />
+    <mesh name="Relocated_A_ref_ToFPCB" file="Relocated_A_ref_ToFPCB.stl" />
+    <mesh name="Relocated_A_ref_ToFOptics" file="Relocated_A_ref_ToFOptics.stl" />
+    <mesh name="AngularJaw" file="AngularJaw.stl" />
+    <mesh name="TorsoFront" file="TorsoFront.stl" />
+    <mesh name="TorsoRear" file="TorsoRear.stl" />
+    <mesh name="PelvisFront" file="PelvisFront.stl" />
+    <mesh name="PelvisRear" file="PelvisRear.stl" />
+    <mesh name="ThighCap_L" file="ThighCap_L.stl" />
+    <mesh name="ThighCap_R" file="ThighCap_R.stl" />
+    <mesh name="ShankStructure_L" file="ShankStructure_L.stl" />
+    <mesh name="ShinCap_L" file="ShinCap_L.stl" />
+    <mesh name="FacetedFoot_L" file="FacetedFoot_L.stl" />
+    <mesh name="FacetedSole_L" file="FacetedSole_L.stl" />
+    <mesh name="ShankStructure_R" file="ShankStructure_R.stl" />
+    <mesh name="ShinCap_R" file="ShinCap_R.stl" />
+    <mesh name="FacetedFoot_R" file="FacetedFoot_R.stl" />
+    <mesh name="FacetedSole_R" file="FacetedSole_R.stl" />
+    <mesh name="FaceBezel" file="FaceBezel.stl" />
+    <mesh name="OpticalRing_R" file="OpticalRing_R.stl" />
+    <mesh name="OpticalRing_L" file="OpticalRing_L.stl" />
+    <mesh name="HeadRim_L" file="HeadRim_L.stl" />
+    <mesh name="HeadRim_R" file="HeadRim_R.stl" />
+    <mesh name="JawSurround_R" file="JawSurround_R.stl" />
+    <mesh name="HardwarePivotWasher_R" file="HardwarePivotWasher_R.stl" />
+    <mesh name="JawSurround_L" file="JawSurround_L.stl" />
+    <mesh name="HardwarePivotWasher_L" file="HardwarePivotWasher_L.stl" />
+    <mesh name="RearHeadBumper" file="RearHeadBumper.stl" />
+    <mesh name="TorsoAccent_Front_L" file="TorsoAccent_Front_L.stl" />
+    <mesh name="TorsoAccent_Rear_L" file="TorsoAccent_Rear_L.stl" />
+    <mesh name="TorsoAccent_Front_R" file="TorsoAccent_Front_R.stl" />
+    <mesh name="TorsoAccent_Rear_R" file="TorsoAccent_Rear_R.stl" />
+    <mesh name="HipCowl_L" file="HipCowl_L.stl" />
+    <mesh name="HipCowl_R" file="HipCowl_R.stl" />
+    <mesh name="ToeCap_L" file="ToeCap_L.stl" />
+    <mesh name="ToeCap_R" file="ToeCap_R.stl" />
   </asset>
   <worldbody>
     <body name="trunk_base" pos="0 0 0.143">
@@ -150,47 +167,50 @@
               <joint name="left_knee" type="hinge" axis="0 -1 0" range="-1.570796327 1.570796327" />
               <body name="left_ankle_link" pos="0 0.024 -0.042">
                 <joint name="left_ankle" type="hinge" axis="0 1 0" range="-1.570796327 1.570796327" />
-                <inertial mass="0.07092375890019308" pos="-9.084843342e-05 -0.0177358373 -0.0242846117" diaginertia="2.651422055e-05 3.230632753e-05 2.867683985e-05" />
-                <geom name="RoundedFoot_L_visual" type="mesh" mesh="RoundedFoot_L" rgba="1 0.6509803922 0.03137254902 1" group="2" contype="0" conaffinity="0" mass="0" />
-                <geom name="RoundedSole_L_visual" type="mesh" mesh="RoundedSole_L" rgba="0.2588235294 0.2705882353 0.2392156863 1" group="2" contype="0" conaffinity="0" mass="0" />
-                <geom name="ref_horn_left_ankle_visual" type="mesh" mesh="ref_horn_left_ankle" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <inertial mass="0.06855040990707056" pos="0.000875398925 -0.01772816024 -0.02328368737" diaginertia="2.5626965e-05 3.213184181e-05 2.862380907e-05" />
+                <geom name="ref_horn_left_ankle_visual" type="mesh" mesh="ref_horn_left_ankle" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="FacetedFoot_L_visual" type="mesh" mesh="FacetedFoot_L" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="FacetedSole_L_visual" type="mesh" mesh="FacetedSole_L" rgba="0.1019607857 0.1411764771 0.1686274558 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="ToeCap_L_visual" type="mesh" mesh="ToeCap_L" rgba="0.8784313798 0.9019607902 0.8784313798 1" group="2" contype="0" conaffinity="0" mass="0" />
                 <geom name="left_foot_collision" type="box" pos="0 -0.018 -0.032" size="0.027 0.022 0.0065" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
                 <site name="left_foot" pos="0.01275 0 -0.0385" size=".001" />
               </body>
-              <inertial mass="0.03470478886480445" pos="-2.575710712e-06 0.004695180175 -0.02999392435" diaginertia="1.491580042e-05 1.483265353e-05 4.781307683e-06" />
-              <geom name="Shank_L_visual" type="mesh" mesh="Shank_L" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="ref_servo_left_ankle_visual" type="mesh" mesh="ref_servo_left_ankle" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="ref_horn_left_knee_visual" type="mesh" mesh="ref_horn_left_knee" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="Shank_L_collision" type="box" pos="-3.469446952e-18 0.0025 -0.02085000038" size="0.01425 0.0125 0.03285000038" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+              <inertial mass="0.03661617345501238" pos="1.849037491e-06 0.005277703976 -0.02962897568" diaginertia="1.669847056e-05 1.690901356e-05 7.265259083e-06" />
+              <geom name="ref_servo_left_ankle_visual" type="mesh" mesh="ref_servo_left_ankle" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_horn_left_knee_visual" type="mesh" mesh="ref_horn_left_knee" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ShankStructure_L_visual" type="mesh" mesh="ShankStructure_L" rgba="0.650980413 0.6901960969 0.7098039389 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ShinCap_L_visual" type="mesh" mesh="ShinCap_L" rgba="0.8784313798 0.9019607902 0.8784313798 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ShankStructure_L_collision" type="box" pos="-1.788139359e-10 0.005 -0.02085000038" size="0.01604997617 0.015 0.03285000038" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
             </body>
-            <inertial mass="0.06704942629550603" pos="-0.02080733016 0.01990449902 -0.008175446004" diaginertia="1.969018152e-05 3.9973545e-05 3.172646557e-05" />
-            <geom name="Thigh_L_visual" type="mesh" mesh="Thigh_L" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-            <geom name="ThighPlate_L_visual" type="mesh" mesh="ThighPlate_L" rgba="0.9215686275 0.9294117647 0.9019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-            <geom name="ref_servo_left_knee_visual" type="mesh" mesh="ref_servo_left_knee" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
-            <geom name="ref_servo_left_hip_pitch_visual" type="mesh" mesh="ref_servo_left_hip_pitch" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
-            <geom name="R18C_PitchBearing_L_visual" type="mesh" mesh="R18C_PitchBearing_L" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-            <geom name="R18C_PitchIdler_L_visual" type="mesh" mesh="R18C_PitchIdler_L" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-            <geom name="R18C_PitchClampScrew_L_visual" type="mesh" mesh="R18C_PitchClampScrew_L" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-            <geom name="R18C_PitchClampNut_L_visual" type="mesh" mesh="R18C_PitchClampNut_L" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <inertial mass="0.06686499354542998" pos="-0.02082457134 0.02012613852 -0.00815455077" diaginertia="2.075600841e-05 3.986358983e-05 3.275918427e-05" />
+            <geom name="Thigh_L_visual" type="mesh" mesh="Thigh_L" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="ref_servo_left_knee_visual" type="mesh" mesh="ref_servo_left_knee" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="ref_servo_left_hip_pitch_visual" type="mesh" mesh="ref_servo_left_hip_pitch" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="R18C_PitchBearing_L_visual" type="mesh" mesh="R18C_PitchBearing_L" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="R18C_PitchIdler_L_visual" type="mesh" mesh="R18C_PitchIdler_L" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="R18C_PitchClampScrew_L_visual" type="mesh" mesh="R18C_PitchClampScrew_L" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="R18C_PitchClampNut_L_visual" type="mesh" mesh="R18C_PitchClampNut_L" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="ThighCap_L_visual" type="mesh" mesh="ThighCap_L" rgba="0.8784313798 0.9019607902 0.8784313798 1" group="2" contype="0" conaffinity="0" mass="0" />
             <geom name="Thigh_L_collision" type="box" pos="-0.018125 0.02010000038 -0.01075" size="0.02982500076 0.01489999962 0.02294999695" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
           </body>
-          <inertial mass="0.018409802302207727" pos="-0.01150220994 0.01942187771 -7.382731266e-05" diaginertia="8.62493168e-06 4.767596346e-06 1.125442458e-05" />
-          <geom name="HipL_L_visual" type="mesh" mesh="HipL_L" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-          <geom name="ref_horn_left_hip_roll_visual" type="mesh" mesh="ref_horn_left_hip_roll" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-          <geom name="ref_horn_left_hip_pitch_visual" type="mesh" mesh="ref_horn_left_hip_pitch" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-          <geom name="R18C_RollBearing_L_visual" type="mesh" mesh="R18C_RollBearing_L" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-          <geom name="R18C_RollIdler_L_visual" type="mesh" mesh="R18C_RollIdler_L" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-          <geom name="R18C_RollClampScrew_L_visual" type="mesh" mesh="R18C_RollClampScrew_L" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-          <geom name="R18C_RollClampNut_L_visual" type="mesh" mesh="R18C_RollClampNut_L" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <inertial mass="0.025196968402363934" pos="-0.003989141624 0.02032669633 0.001953014841" diaginertia="1.353523193e-05 1.098726315e-05 1.813506359e-05" />
+          <geom name="HipL_L_visual" type="mesh" mesh="HipL_L" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="ref_horn_left_hip_roll_visual" type="mesh" mesh="ref_horn_left_hip_roll" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="ref_horn_left_hip_pitch_visual" type="mesh" mesh="ref_horn_left_hip_pitch" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="R18C_RollBearing_L_visual" type="mesh" mesh="R18C_RollBearing_L" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="R18C_RollIdler_L_visual" type="mesh" mesh="R18C_RollIdler_L" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="R18C_RollClampScrew_L_visual" type="mesh" mesh="R18C_RollClampScrew_L" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="R18C_RollClampNut_L_visual" type="mesh" mesh="R18C_RollClampNut_L" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="HipCowl_L_visual" type="mesh" mesh="HipCowl_L" rgba="0.8784313798 0.9019607902 0.8784313798 1" group="2" contype="0" conaffinity="0" mass="0" />
         </body>
-        <inertial mass="0.030955163473837602" pos="-0.002350458454 -5.898059818e-17 -0.01937074534" diaginertia="7.041783116e-06 7.456814398e-06 3.486609114e-06" />
-        <geom name="Yaw_L_visual" type="mesh" mesh="Yaw_L" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-        <geom name="ref_servo_left_hip_roll_visual" type="mesh" mesh="ref_servo_left_hip_roll" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
-        <geom name="ref_horn_left_hip_yaw_visual" type="mesh" mesh="ref_horn_left_hip_yaw" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <inertial mass="0.030955163473837605" pos="-0.002350458454 -5.551115123e-17 -0.01937074534" diaginertia="7.041783116e-06 7.456814398e-06 3.486609114e-06" />
+        <geom name="Yaw_L_visual" type="mesh" mesh="Yaw_L" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="ref_servo_left_hip_roll_visual" type="mesh" mesh="ref_servo_left_hip_roll" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="ref_horn_left_hip_yaw_visual" type="mesh" mesh="ref_horn_left_hip_yaw" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
         <geom name="Yaw_L_collision" type="box" pos="-0.00175 4.768371566e-10 -0.01959999847" size="0.01375 0.01220000029 0.02159999847" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
       </body>
       <body name="neck_pitch_link" pos="0.041 0.0145 0.0095">
-        <joint name="neck_pitch" type="hinge" axis="0 -1 0" range="-1.570796327 1.047197551" />
+        <joint name="neck_pitch" type="hinge" axis="0 -1 0" range="-1.134464014 0.4799655443" />
         <body name="head_pitch_link" pos="0 0 0.05">
           <joint name="head_pitch" type="hinge" axis="0 1 0" range="-1.570796327 1.570796327" />
           <body name="head_yaw_link" pos="0 -0.0145 0.01925">
@@ -199,45 +219,51 @@
               <joint name="head_roll" type="hinge" axis="-1 0 0" range="-0.436332313 0.436332313" />
               <body name="mouth_link" pos="0.01779999771 0 0.002599999237">
                 <joint name="mouth" type="hinge" axis="0 1 0" range="0 0.5235987756" />
-                <inertial mass="0.03826854686121072" pos="0.03315775166 -0.002371948138 -0.01285178541" diaginertia="2.914370486e-05 1.70053878e-05 4.06786557e-05" />
-                <geom name="O2_Jaw_visual" type="mesh" mesh="O2_Jaw" rgba="1 0.6509803922 0.03137254902 1" group="2" contype="0" conaffinity="0" mass="0" />
-                <geom name="O2_JawEdge_visual" type="mesh" mesh="O2_JawEdge" rgba="1 0.6509803922 0.03137254902 1" group="2" contype="0" conaffinity="0" mass="0" />
-                <geom name="ref_horn_mouth_visual" type="mesh" mesh="ref_horn_mouth" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-                <geom name="R17_JawBearingPlug_visual" type="mesh" mesh="R17_JawBearingPlug" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-                <geom name="ref_R17_JawFasteners_visual" type="mesh" mesh="ref_R17_JawFasteners" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-                <geom name="O2_Jaw_collision" type="box" pos="0.02445006752 0 -0.005656807709" size="0.03344677162 0.044 0.01464318848" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+                <inertial mass="0.016258790709480844" pos="0.01191384067 -0.003614924681 -0.005696388307" diaginertia="1.515108311e-05 9.572962995e-06 2.206453389e-05" />
+                <geom name="ref_horn_mouth_visual" type="mesh" mesh="ref_horn_mouth" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="R17_JawBearingPlug_visual" type="mesh" mesh="R17_JawBearingPlug" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="ref_R17_JawFasteners_visual" type="mesh" mesh="ref_R17_JawFasteners" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="AngularJaw_visual" type="mesh" mesh="AngularJaw" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="JawSurround_R_visual" type="mesh" mesh="JawSurround_R" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="HardwarePivotWasher_R_visual" type="mesh" mesh="HardwarePivotWasher_R" rgba="0.5803921819 0.6196078658 0.650980413 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="JawSurround_L_visual" type="mesh" mesh="JawSurround_L" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="HardwarePivotWasher_L_visual" type="mesh" mesh="HardwarePivotWasher_L" rgba="0.5803921819 0.6196078658 0.650980413 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="AngularJaw_collision" type="box" pos="0.02605136585 0 -0.005662567902" size="0.03504863644 0.0445 0.0146651535" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
               </body>
-              <inertial mass="0.17236308557827923" pos="0.01792504363 0.002103292578 0.00468974318" diaginertia="0.0001580477176 0.0002889646847 0.0003550440087" />
-              <geom name="SoftHeadShell_visual" type="mesh" mesh="SoftHeadShell" rgba="0.9215686275 0.9294117647 0.9019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="O2_HeadBase_visual" type="mesh" mesh="O2_HeadBase" rgba="1 0.6509803922 0.03137254902 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="O2_UpperLip_visual" type="mesh" mesh="O2_UpperLip" rgba="1 0.6509803922 0.03137254902 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="O2_EyeL_visual" type="mesh" mesh="O2_EyeL" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="O2_EyeR_visual" type="mesh" mesh="O2_EyeR" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="ref_servo_head_roll_visual" type="mesh" mesh="ref_servo_head_roll" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="ref_servo_mouth_visual" type="mesh" mesh="ref_servo_mouth" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="ref_CameraPCB_visual" type="mesh" mesh="ref_CameraPCB" rgba="0.1019607843 0.4 0.2392156863 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="ref_CameraLens_visual" type="mesh" mesh="ref_CameraLens" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="ref_ToFPCB_visual" type="mesh" mesh="ref_ToFPCB" rgba="0.1019607843 0.4 0.2392156863 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="ref_ToFOptics_visual" type="mesh" mesh="ref_ToFOptics" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="ref_HeadIMU_visual" type="mesh" mesh="ref_HeadIMU" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="ref_CameraLED_visual" type="mesh" mesh="ref_CameraLED" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="R10_EyeRing_L_visual" type="mesh" mesh="R10_EyeRing_L" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="R10_EyeRing_R_visual" type="mesh" mesh="R10_EyeRing_R" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="R16_TwoEyeFace_visual" type="mesh" mesh="R16_TwoEyeFace" rgba="0.9215686275 0.9294117647 0.9019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="R17_RollServoCradle_visual" type="mesh" mesh="R17_RollServoCradle" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="R17_RollCradleTopClamp_visual" type="mesh" mesh="R17_RollCradleTopClamp" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="R17_MouthServoCradle_visual" type="mesh" mesh="R17_MouthServoCradle" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="R17_MouthServoKeeper_visual" type="mesh" mesh="R17_MouthServoKeeper" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="R17_JawBearingTower_visual" type="mesh" mesh="R17_JawBearingTower" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="R17_JawBearingKeeper_visual" type="mesh" mesh="R17_JawBearingKeeper" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="ref_R17_JawBearing16x22x4_visual" type="mesh" mesh="ref_R17_JawBearing16x22x4" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="R17_FaceCarrier_visual" type="mesh" mesh="R17_FaceCarrier" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="ref_R17_FaceFasteners_visual" type="mesh" mesh="ref_R17_FaceFasteners" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="ref_R17_FixedCarrierFasteners_visual" type="mesh" mesh="ref_R17_FixedCarrierFasteners" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="ref_R17_HeadModuleFasteners_visual" type="mesh" mesh="ref_R17_HeadModuleFasteners" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="R20_RemovableRearBand_visual" type="mesh" mesh="R20_RemovableRearBand" rgba="1 0.6509803922 0.03137254902 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="SoftHeadShell_collision" type="box" pos="0.01997597828 0 0.01534064484" size="0.05584421568 0.0396 0.02163657761" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
-              <geom name="O2_HeadBase_collision" type="box" pos="0.01705393353 6.103515625e-08 -0.009449996948" size="0.05944398212 0.04416422653 0.00775" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+              <inertial mass="0.19573172654786103" pos="0.01842995449 0.00237519503 0.008312671673" diaginertia="0.0002266358052 0.0003819634607 0.0004686289058" />
+              <geom name="HeadBase_visual" type="mesh" mesh="HeadBase" rgba="0.1019607857 0.1411764771 0.1686274558 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_servo_head_roll_visual" type="mesh" mesh="ref_servo_head_roll" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_servo_mouth_visual" type="mesh" mesh="ref_servo_mouth" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_HeadIMU_visual" type="mesh" mesh="ref_HeadIMU" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_CameraLED_visual" type="mesh" mesh="ref_CameraLED" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="R17_RollServoCradle_visual" type="mesh" mesh="R17_RollServoCradle" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="R17_RollCradleTopClamp_visual" type="mesh" mesh="R17_RollCradleTopClamp" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="R17_MouthServoCradle_visual" type="mesh" mesh="R17_MouthServoCradle" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="R17_MouthServoKeeper_visual" type="mesh" mesh="R17_MouthServoKeeper" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="R17_JawBearingTower_visual" type="mesh" mesh="R17_JawBearingTower" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="R17_JawBearingKeeper_visual" type="mesh" mesh="R17_JawBearingKeeper" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_R17_JawBearing16x22x4_visual" type="mesh" mesh="ref_R17_JawBearing16x22x4" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_R17_FixedCarrierFasteners_visual" type="mesh" mesh="ref_R17_FixedCarrierFasteners" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_R17_HeadModuleFasteners_visual" type="mesh" mesh="ref_R17_HeadModuleFasteners" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="HelmetRoof_visual" type="mesh" mesh="HelmetRoof" rgba="0.8784313798 0.9019607902 0.8784313798 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="HelmetLower_visual" type="mesh" mesh="HelmetLower" rgba="0.8784313798 0.9019607902 0.8784313798 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="CameraFace_visual" type="mesh" mesh="CameraFace" rgba="0.1019607857 0.1411764771 0.1686274558 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="CameraBoard_R_visual" type="mesh" mesh="CameraBoard_R" rgba="0.1215686277 0.3019607961 0.200000003 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="CameraLens_R_visual" type="mesh" mesh="CameraLens_R" rgba="0.200000003 0.3411764801 0.4196078479 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="CameraBoard_L_visual" type="mesh" mesh="CameraBoard_L" rgba="0.1215686277 0.3019607961 0.200000003 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="CameraLens_L_visual" type="mesh" mesh="CameraLens_L" rgba="0.200000003 0.3411764801 0.4196078479 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="CameraCarrier_visual" type="mesh" mesh="CameraCarrier" rgba="0.8784313798 0.9019607902 0.8784313798 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="Relocated_A_ref_ToFPCB_visual" type="mesh" mesh="Relocated_A_ref_ToFPCB" rgba="0.1019607857 0.1411764771 0.1686274558 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="Relocated_A_ref_ToFOptics_visual" type="mesh" mesh="Relocated_A_ref_ToFOptics" rgba="0.1019607857 0.1411764771 0.1686274558 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="FaceBezel_visual" type="mesh" mesh="FaceBezel" rgba="0.8784313798 0.9019607902 0.8784313798 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="OpticalRing_R_visual" type="mesh" mesh="OpticalRing_R" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="OpticalRing_L_visual" type="mesh" mesh="OpticalRing_L" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="HeadRim_L_visual" type="mesh" mesh="HeadRim_L" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="HeadRim_R_visual" type="mesh" mesh="HeadRim_R" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="RearHeadBumper_visual" type="mesh" mesh="RearHeadBumper" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="HelmetRoof_collision" type="box" pos="0.02336111107 0 0.03940327454" size="0.06153888893 0.048 0.008900009155" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+              <geom name="HelmetLower_collision" type="box" pos="0.0194 0 0.01230327606" size="0.0655 0.048 0.01800000763" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+              <geom name="HeadBase_collision" type="box" pos="0.01565170135 0 -0.00999672699" size="0.05774829865 0.044 0.007200004578" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
               <site name="head_camera" pos="0.06958000183 -0.016 0.01040146637" size=".001" rgba=".1 .7 .7 1" />
               <camera name="head_camera" pos="0.06958000183 -0.016 0.01040146637" xyaxes="0 -1 0 0 0 1" fovy="49" />
               <site name="tof" pos="0.06940000153 -1.078486443e-06 0.01140145874" size=".001" rgba=".1 .7 .7 1" />
@@ -308,23 +334,23 @@
               <site name="head_imu" pos="0.03142500153 -0.01419000006 0.02970161438" size=".001" rgba=".1 .7 .7 1" />
             </body>
             <inertial mass="0.03905001195656848" pos="-0.002596706132 -0.00684806992 0.01884313033" diaginertia="7.841665035e-06 7.917519007e-06 9.823323091e-06" />
-            <geom name="HeadYaw_visual" type="mesh" mesh="HeadYaw" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-            <geom name="ref_servo_head_yaw_visual" type="mesh" mesh="ref_servo_head_yaw" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
-            <geom name="ref_horn_head_roll_visual" type="mesh" mesh="ref_horn_head_roll" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-            <geom name="R17_HeadYawClampCap_visual" type="mesh" mesh="R17_HeadYawClampCap" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="HeadYaw_visual" type="mesh" mesh="HeadYaw" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="ref_servo_head_yaw_visual" type="mesh" mesh="ref_servo_head_yaw" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="ref_horn_head_roll_visual" type="mesh" mesh="ref_horn_head_roll" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="R17_HeadYawClampCap_visual" type="mesh" mesh="R17_HeadYawClampCap" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
           </body>
           <inertial mass="0.007841312209691961" pos="-5.031382188e-05 -0.006966523311 0.010677738" diaginertia="1.389423347e-06 1.235047513e-06 9.071418063e-07" />
-          <geom name="HeadPitch_visual" type="mesh" mesh="HeadPitch" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-          <geom name="ref_horn_head_pitch_visual" type="mesh" mesh="ref_horn_head_pitch" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-          <geom name="ref_horn_head_yaw_visual" type="mesh" mesh="ref_horn_head_yaw" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="HeadPitch_visual" type="mesh" mesh="HeadPitch" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="ref_horn_head_pitch_visual" type="mesh" mesh="ref_horn_head_pitch" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="ref_horn_head_yaw_visual" type="mesh" mesh="ref_horn_head_yaw" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
         </body>
-        <inertial mass="0.056755833554044594" pos="3.308956747e-06 -0.01831131699 0.02418262343" diaginertia="3.286072476e-05 2.829713042e-05 1.019528722e-05" />
-        <geom name="Neck_visual" type="mesh" mesh="Neck" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-        <geom name="ref_servo_neck_pitch_visual" type="mesh" mesh="ref_servo_neck_pitch" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
-        <geom name="ref_servo_head_pitch_visual" type="mesh" mesh="ref_servo_head_pitch" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
-        <geom name="R18_NeckSpacerInner_visual" type="mesh" mesh="R18_NeckSpacerInner" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-        <geom name="R18_NeckShoulderPin_visual" type="mesh" mesh="R18_NeckShoulderPin" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-        <geom name="R18_NeckM3Nut_visual" type="mesh" mesh="R18_NeckM3Nut" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <inertial mass="0.0559362395084671" pos="0.0001346000023 -0.0182431768 0.02441526895" diaginertia="3.238619284e-05 2.788850001e-05 1.004806012e-05" />
+        <geom name="Neck_visual" type="mesh" mesh="Neck" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="ref_servo_neck_pitch_visual" type="mesh" mesh="ref_servo_neck_pitch" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="ref_servo_head_pitch_visual" type="mesh" mesh="ref_servo_head_pitch" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="R18_NeckSpacerInner_visual" type="mesh" mesh="R18_NeckSpacerInner" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="R18_NeckShoulderPin_visual" type="mesh" mesh="R18_NeckShoulderPin" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="R18_NeckM3Nut_visual" type="mesh" mesh="R18_NeckM3Nut" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
       </body>
       <body name="right_hip_yaw_link" pos="0.02 -0.0175 -0.026">
         <joint name="right_hip_yaw" type="hinge" axis="0 0 -1" range="-0.5235987756 0.436332313" />
@@ -336,79 +362,88 @@
               <joint name="right_knee" type="hinge" axis="0 1 0" range="-1.570796327 1.570796327" />
               <body name="right_ankle_link" pos="0 -0.024 -0.042">
                 <joint name="right_ankle" type="hinge" axis="0 -1 0" range="-1.570796327 1.570796327" />
-                <inertial mass="0.07092375890019308" pos="-9.084843336e-05 0.0177358373 -0.0242846117" diaginertia="2.651422055e-05 3.230632753e-05 2.867683985e-05" />
-                <geom name="RoundedFoot_R_visual" type="mesh" mesh="RoundedFoot_R" rgba="1 0.6509803922 0.03137254902 1" group="2" contype="0" conaffinity="0" mass="0" />
-                <geom name="RoundedSole_R_visual" type="mesh" mesh="RoundedSole_R" rgba="0.2588235294 0.2705882353 0.2392156863 1" group="2" contype="0" conaffinity="0" mass="0" />
-                <geom name="ref_horn_right_ankle_visual" type="mesh" mesh="ref_horn_right_ankle" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <inertial mass="0.06854987778073048" pos="0.0008752548472 0.0177281536 -0.02328378053" diaginertia="2.562676607e-05 3.213159238e-05 2.862358688e-05" />
+                <geom name="ref_horn_right_ankle_visual" type="mesh" mesh="ref_horn_right_ankle" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="FacetedFoot_R_visual" type="mesh" mesh="FacetedFoot_R" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="FacetedSole_R_visual" type="mesh" mesh="FacetedSole_R" rgba="0.1019607857 0.1411764771 0.1686274558 1" group="2" contype="0" conaffinity="0" mass="0" />
+                <geom name="ToeCap_R_visual" type="mesh" mesh="ToeCap_R" rgba="0.8784313798 0.9019607902 0.8784313798 1" group="2" contype="0" conaffinity="0" mass="0" />
                 <geom name="right_foot_collision" type="box" pos="0 0.018 -0.032" size="0.027 0.022 0.0065" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
                 <site name="right_foot" pos="0.01275 0 -0.0385" size=".001" />
               </body>
-              <inertial mass="0.034704788864804444" pos="-2.575710712e-06 -0.004695180175 -0.02999392435" diaginertia="1.491580042e-05 1.483265353e-05 4.781307683e-06" />
-              <geom name="Shank_R_visual" type="mesh" mesh="Shank_R" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="ref_horn_right_knee_visual" type="mesh" mesh="ref_horn_right_knee" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="ref_servo_right_ankle_visual" type="mesh" mesh="ref_servo_right_ankle" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
-              <geom name="Shank_R_collision" type="box" pos="-3.469446952e-18 -0.0025 -0.02085000038" size="0.01425 0.0125 0.03285000038" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+              <inertial mass="0.0366160100469486" pos="2.214306664e-06 -0.005276613642 -0.02962925783" diaginertia="1.669839604e-05 1.69089381e-05 7.26522666e-06" />
+              <geom name="ref_horn_right_knee_visual" type="mesh" mesh="ref_horn_right_knee" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ref_servo_right_ankle_visual" type="mesh" mesh="ref_servo_right_ankle" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ShankStructure_R_visual" type="mesh" mesh="ShankStructure_R" rgba="0.650980413 0.6901960969 0.7098039389 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ShinCap_R_visual" type="mesh" mesh="ShinCap_R" rgba="0.8784313798 0.9019607902 0.8784313798 1" group="2" contype="0" conaffinity="0" mass="0" />
+              <geom name="ShankStructure_R_collision" type="box" pos="-9.775161743e-09 -0.005 -0.02085000038" size="0.01604996657 0.015 0.03285000038" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
             </body>
-            <inertial mass="0.06704942629550603" pos="-0.02080733016 -0.01990449902 -0.008175446004" diaginertia="1.969018152e-05 3.9973545e-05 3.172646557e-05" />
-            <geom name="Thigh_R_visual" type="mesh" mesh="Thigh_R" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-            <geom name="ThighPlate_R_visual" type="mesh" mesh="ThighPlate_R" rgba="0.9215686275 0.9294117647 0.9019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-            <geom name="ref_servo_right_hip_pitch_visual" type="mesh" mesh="ref_servo_right_hip_pitch" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
-            <geom name="ref_servo_right_knee_visual" type="mesh" mesh="ref_servo_right_knee" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
-            <geom name="R18C_PitchBearing_R_visual" type="mesh" mesh="R18C_PitchBearing_R" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-            <geom name="R18C_PitchIdler_R_visual" type="mesh" mesh="R18C_PitchIdler_R" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-            <geom name="R18C_PitchClampScrew_R_visual" type="mesh" mesh="R18C_PitchClampScrew_R" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-            <geom name="R18C_PitchClampNut_R_visual" type="mesh" mesh="R18C_PitchClampNut_R" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <inertial mass="0.06686805275710857" pos="-0.02082432285 -0.02012694596 -0.008154611593" diaginertia="2.075695804e-05 3.986541368e-05 3.276068307e-05" />
+            <geom name="Thigh_R_visual" type="mesh" mesh="Thigh_R" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="ref_servo_right_hip_pitch_visual" type="mesh" mesh="ref_servo_right_hip_pitch" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="ref_servo_right_knee_visual" type="mesh" mesh="ref_servo_right_knee" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="R18C_PitchBearing_R_visual" type="mesh" mesh="R18C_PitchBearing_R" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="R18C_PitchIdler_R_visual" type="mesh" mesh="R18C_PitchIdler_R" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="R18C_PitchClampScrew_R_visual" type="mesh" mesh="R18C_PitchClampScrew_R" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="R18C_PitchClampNut_R_visual" type="mesh" mesh="R18C_PitchClampNut_R" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+            <geom name="ThighCap_R_visual" type="mesh" mesh="ThighCap_R" rgba="0.8784313798 0.9019607902 0.8784313798 1" group="2" contype="0" conaffinity="0" mass="0" />
             <geom name="Thigh_R_collision" type="box" pos="-0.018125 -0.02010000038 -0.01075" size="0.02982500076 0.01489999962 0.02294999695" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
           </body>
-          <inertial mass="0.01840980230220773" pos="-0.01150220994 -0.01942187771 -7.382731266e-05" diaginertia="8.62493168e-06 4.767596346e-06 1.125442458e-05" />
-          <geom name="HipL_R_visual" type="mesh" mesh="HipL_R" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-          <geom name="ref_horn_right_hip_roll_visual" type="mesh" mesh="ref_horn_right_hip_roll" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-          <geom name="ref_horn_right_hip_pitch_visual" type="mesh" mesh="ref_horn_right_hip_pitch" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-          <geom name="R18C_RollBearing_R_visual" type="mesh" mesh="R18C_RollBearing_R" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-          <geom name="R18C_RollIdler_R_visual" type="mesh" mesh="R18C_RollIdler_R" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-          <geom name="R18C_RollClampScrew_R_visual" type="mesh" mesh="R18C_RollClampScrew_R" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-          <geom name="R18C_RollClampNut_R_visual" type="mesh" mesh="R18C_RollClampNut_R" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <inertial mass="0.025196968402363934" pos="-0.003989211313 -0.02032643481 0.001953023216" diaginertia="1.353523193e-05 1.098726315e-05 1.813506359e-05" />
+          <geom name="HipL_R_visual" type="mesh" mesh="HipL_R" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="ref_horn_right_hip_roll_visual" type="mesh" mesh="ref_horn_right_hip_roll" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="ref_horn_right_hip_pitch_visual" type="mesh" mesh="ref_horn_right_hip_pitch" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="R18C_RollBearing_R_visual" type="mesh" mesh="R18C_RollBearing_R" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="R18C_RollIdler_R_visual" type="mesh" mesh="R18C_RollIdler_R" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="R18C_RollClampScrew_R_visual" type="mesh" mesh="R18C_RollClampScrew_R" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="R18C_RollClampNut_R_visual" type="mesh" mesh="R18C_RollClampNut_R" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+          <geom name="HipCowl_R_visual" type="mesh" mesh="HipCowl_R" rgba="0.8784313798 0.9019607902 0.8784313798 1" group="2" contype="0" conaffinity="0" mass="0" />
         </body>
-        <inertial mass="0.030955163473837602" pos="-0.002350458454 7.285838599e-17 -0.01937074534" diaginertia="7.041783116e-06 7.456814398e-06 3.486609114e-06" />
-        <geom name="Yaw_R_visual" type="mesh" mesh="Yaw_R" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-        <geom name="ref_horn_right_hip_yaw_visual" type="mesh" mesh="ref_horn_right_hip_yaw" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-        <geom name="ref_servo_right_hip_roll_visual" type="mesh" mesh="ref_servo_right_hip_roll" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <inertial mass="0.030955163473837605" pos="-0.002350458454 7.632783294e-17 -0.01937074534" diaginertia="7.041783116e-06 7.456814398e-06 3.486609114e-06" />
+        <geom name="Yaw_R_visual" type="mesh" mesh="Yaw_R" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="ref_horn_right_hip_yaw_visual" type="mesh" mesh="ref_horn_right_hip_yaw" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+        <geom name="ref_servo_right_hip_roll_visual" type="mesh" mesh="ref_servo_right_hip_roll" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
         <geom name="Yaw_R_collision" type="box" pos="-0.00175 -4.768371566e-10 -0.01959999847" size="0.01375 0.01220000029 0.02159999847" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
       </body>
-      <inertial mass="0.26321821053051747" pos="-0.01503139432 -0.0001734170675 -0.0135988964" diaginertia="0.0003560105659 0.0005331882362 0.0004055353402" />
-      <geom name="Trunk_visual" type="mesh" mesh="Trunk" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="BodyFront_visual" type="mesh" mesh="BodyFront" rgba="0.9215686275 0.9294117647 0.9019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="BodyBack_visual" type="mesh" mesh="BodyBack" rgba="0.9215686275 0.9294117647 0.9019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_servo_left_hip_yaw_visual" type="mesh" mesh="ref_servo_left_hip_yaw" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_servo_right_hip_yaw_visual" type="mesh" mesh="ref_servo_right_hip_yaw" rgba="0.1019607843 0.1098039216 0.1215686275 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_horn_neck_pitch_visual" type="mesh" mesh="ref_horn_neck_pitch" rgba="0.6196078431 0.6588235294 0.7019607843 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_Radxa_PCB_visual" type="mesh" mesh="ref_Radxa_PCB" rgba="0.1019607843 0.4 0.2392156863 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_Radxa_GPIO_visual" type="mesh" mesh="ref_Radxa_GPIO" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_HAT_PCB_visual" type="mesh" mesh="ref_HAT_PCB" rgba="0.1019607843 0.4 0.2392156863 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_HAT_GPIO_visual" type="mesh" mesh="ref_HAT_GPIO" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_HAT_J1_visual" type="mesh" mesh="ref_HAT_J1" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_HAT_J5_visual" type="mesh" mesh="ref_HAT_J5" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_HAT_J14_visual" type="mesh" mesh="ref_HAT_J14" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_HAT_J9_visual" type="mesh" mesh="ref_HAT_J9" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_HAT_J6_visual" type="mesh" mesh="ref_HAT_J6" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_HAT_J3_visual" type="mesh" mesh="ref_HAT_J3" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_HAT_J7_visual" type="mesh" mesh="ref_HAT_J7" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_HAT_J13_visual" type="mesh" mesh="ref_HAT_J13" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_HAT_J8_visual" type="mesh" mesh="ref_HAT_J8" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_HAT_J11_visual" type="mesh" mesh="ref_HAT_J11" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_HAT_J2_visual" type="mesh" mesh="ref_HAT_J2" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_HAT_IMU_visual" type="mesh" mesh="ref_HAT_IMU" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="ref_Battery_Provisional_visual" type="mesh" mesh="ref_Battery_Provisional" rgba="0.7019607843 0.7294117647 0.7490196078 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="R18_NeckBearingRetainer_visual" type="mesh" mesh="R18_NeckBearingRetainer" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="R18_NeckBearing693_visual" type="mesh" mesh="R18_NeckBearing693" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="R18_NeckSpacerOuter_visual" type="mesh" mesh="R18_NeckSpacerOuter" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="R18_NeckRetainerM2Screw0_visual" type="mesh" mesh="R18_NeckRetainerM2Screw0" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="R18_NeckRetainerM2Nut0_visual" type="mesh" mesh="R18_NeckRetainerM2Nut0" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="R18_NeckRetainerM2Screw1_visual" type="mesh" mesh="R18_NeckRetainerM2Screw1" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="R18_NeckRetainerM2Nut1_visual" type="mesh" mesh="R18_NeckRetainerM2Nut1" rgba="0.4 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <inertial mass="0.30121767340966327" pos="-0.01351618427 -5.440735615e-05 -0.01286255619" diaginertia="0.0004814415311 0.0006880015507 0.000577861005" />
+      <geom name="Trunk_visual" type="mesh" mesh="Trunk" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_servo_left_hip_yaw_visual" type="mesh" mesh="ref_servo_left_hip_yaw" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_servo_right_hip_yaw_visual" type="mesh" mesh="ref_servo_right_hip_yaw" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_horn_neck_pitch_visual" type="mesh" mesh="ref_horn_neck_pitch" rgba="0.6196078658 0.6588235497 0.7019608021 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_Radxa_PCB_visual" type="mesh" mesh="ref_Radxa_PCB" rgba="0.1019607857 0.400000006 0.2392156869 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_Radxa_GPIO_visual" type="mesh" mesh="ref_Radxa_GPIO" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_PCB_visual" type="mesh" mesh="ref_HAT_PCB" rgba="0.1019607857 0.400000006 0.2392156869 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_GPIO_visual" type="mesh" mesh="ref_HAT_GPIO" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J1_visual" type="mesh" mesh="ref_HAT_J1" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J5_visual" type="mesh" mesh="ref_HAT_J5" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J14_visual" type="mesh" mesh="ref_HAT_J14" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J9_visual" type="mesh" mesh="ref_HAT_J9" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J6_visual" type="mesh" mesh="ref_HAT_J6" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J3_visual" type="mesh" mesh="ref_HAT_J3" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J7_visual" type="mesh" mesh="ref_HAT_J7" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J13_visual" type="mesh" mesh="ref_HAT_J13" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J8_visual" type="mesh" mesh="ref_HAT_J8" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J11_visual" type="mesh" mesh="ref_HAT_J11" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_J2_visual" type="mesh" mesh="ref_HAT_J2" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_HAT_IMU_visual" type="mesh" mesh="ref_HAT_IMU" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="ref_Battery_Provisional_visual" type="mesh" mesh="ref_Battery_Provisional" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="R18_NeckBearingRetainer_visual" type="mesh" mesh="R18_NeckBearingRetainer" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="R18_NeckBearing693_visual" type="mesh" mesh="R18_NeckBearing693" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="R18_NeckSpacerOuter_visual" type="mesh" mesh="R18_NeckSpacerOuter" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="R18_NeckRetainerM2Screw0_visual" type="mesh" mesh="R18_NeckRetainerM2Screw0" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="R18_NeckRetainerM2Nut0_visual" type="mesh" mesh="R18_NeckRetainerM2Nut0" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="R18_NeckRetainerM2Screw1_visual" type="mesh" mesh="R18_NeckRetainerM2Screw1" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="R18_NeckRetainerM2Nut1_visual" type="mesh" mesh="R18_NeckRetainerM2Nut1" rgba="0.400000006 1 1 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="TorsoFront_visual" type="mesh" mesh="TorsoFront" rgba="0.8784313798 0.9019607902 0.8784313798 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="TorsoRear_visual" type="mesh" mesh="TorsoRear" rgba="0.8784313798 0.9019607902 0.8784313798 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="PelvisFront_visual" type="mesh" mesh="PelvisFront" rgba="0.8784313798 0.9019607902 0.8784313798 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="PelvisRear_visual" type="mesh" mesh="PelvisRear" rgba="0.8784313798 0.9019607902 0.8784313798 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="TorsoAccent_Front_L_visual" type="mesh" mesh="TorsoAccent_Front_L" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="TorsoAccent_Rear_L_visual" type="mesh" mesh="TorsoAccent_Rear_L" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="TorsoAccent_Front_R_visual" type="mesh" mesh="TorsoAccent_Front_R" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
+      <geom name="TorsoAccent_Rear_R_visual" type="mesh" mesh="TorsoAccent_Rear_R" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
       <geom name="Trunk_collision" type="box" pos="0.001 0 -0.024" size="0.037 0.023 0.035" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
-      <geom name="BodyFront_collision" type="box" pos="0.02062499905 0 0.014" size="0.03447499943 0.03607409668 0.021" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
-      <geom name="BodyBack_collision" type="box" pos="-0.03715054226 0 0.014" size="0.02300054264 0.03607409668 0.021" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+      <geom name="TorsoFront_collision" type="box" pos="0.0265999999 0 0.01455326843" size="0.0344000001 0.042 0.024" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+      <geom name="TorsoRear_collision" type="box" pos="-0.036 0 0.01455326843" size="0.028 0.042 0.024" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
       <site name="body_imu" pos="-0.0215 0.0025 0.02344999695" size=".001" rgba=".1 .7 .7 1" />
     </body>
   </worldbody>
@@ -490,7 +525,7 @@
     <position name="left_hip_pitch" joint="left_hip_pitch" kp="4" kv=".08" ctrlrange="-1.570796327 1.570796327" forcerange="-.85 .85" />
     <position name="left_knee" joint="left_knee" kp="4" kv=".08" ctrlrange="-1.570796327 1.570796327" forcerange="-.85 .85" />
     <position name="left_ankle" joint="left_ankle" kp="4" kv=".08" ctrlrange="-1.570796327 1.570796327" forcerange="-.85 .85" />
-    <position name="neck_pitch" joint="neck_pitch" kp="4" kv=".08" ctrlrange="-1.570796327 1.047197551" forcerange="-.85 .85" />
+    <position name="neck_pitch" joint="neck_pitch" kp="4" kv=".08" ctrlrange="-1.134464014 0.4799655443" forcerange="-.85 .85" />
     <position name="head_pitch" joint="head_pitch" kp="4" kv=".08" ctrlrange="-1.570796327 1.570796327" forcerange="-.85 .85" />
     <position name="head_yaw" joint="head_yaw" kp="4" kv=".08" ctrlrange="-1.570796327 1.570796327" forcerange="-.85 .85" />
     <position name="head_roll" joint="head_roll" kp="4" kv=".08" ctrlrange="-0.436332313 0.436332313" forcerange="-.85 .85" />
@@ -512,10 +547,10 @@
     <key name="kick_left" qpos="0 0 0.142746729398 1 0 0 0 0 0 -0.95 0.1 1.05 0.15 0.15 0 0 0 0 0 0.4 -0.4 -0.8" ctrl="0 0 -0.95 0.1 1.05 0.15 0.15 0 0 0 0 0 0.4 -0.4 -0.8" />
     <key name="kick_right" qpos="0 0 0.142746729398 1 0 0 0 0 0 -0.4 0.4 0.8 0.15 0.15 0 0 0 0 0 0.95 -0.1 -1.05" ctrl="0 0 -0.4 0.4 0.8 0.15 0.15 0 0 0 0 0 0.95 -0.1 -1.05" />
     <key name="skating" qpos="0 0 0.140359665006 1 0 0 0 0 -0.1 -0.55 0.55 1.1 0.15 0.15 0 0 0 0 0.1 0.55 -0.55 -1.1" ctrl="0 -0.1 -0.55 0.55 1.1 0.15 0.15 0 0 0 0 0.1 0.55 -0.55 -1.1" />
-    <key name="getup_back" qpos="0 0 0.0604510849 0.707106781187 0 -0.707106781187 0 0 0 -0.7 0.7 1.4 0.15 0.15 0 0 0 0 0 0.7 -0.7 -1.4" ctrl="0 0 -0.7 0.7 1.4 0.15 0.15 0 0 0 0 0 0.7 -0.7 -1.4" />
-    <key name="getup_tuck" qpos="0 0 0.0588996664715 0.82533561491 0 -0.564642473395 0 0 0 -0.9 0.65 1.55 0.7 0.7 0 0 0 0 0 0.9 -0.65 -1.55" ctrl="0 0 -0.9 0.65 1.55 0.7 0.7 0 0 0 0 0 0.9 -0.65 -1.55" />
+    <key name="getup_back" qpos="0 0 0.0643 0.707106781187 0 -0.707106781187 0 0 0 -0.7 0.7 1.4 0.15 0.15 0 0 0 0 0 0.7 -0.7 -1.4" ctrl="0 0 -0.7 0.7 1.4 0.15 0.15 0 0 0 0 0 0.7 -0.7 -1.4" />
+    <key name="getup_tuck" qpos="0 0 0.0633735979408 0.82533561491 0 -0.564642473395 0 0 0 -0.9 0.65 1.55 0.7 0.7 0 0 0 0 0 0.9 -0.65 -1.55" ctrl="0 0 -0.9 0.65 1.55 0.7 0.7 0 0 0 0 0 0.9 -0.65 -1.55" />
     <key name="roll_tuck" qpos="0 0 0.140092417966 0.900447102353 0 0.434965534111 0 0 0 -0.9 0.65 1.55 -0.8 0.6 0 0 0 0 0 0.9 -0.65 -1.55" ctrl="0 0 -0.9 0.65 1.55 -0.8 0.6 0 0 0 0 0 0.9 -0.65 -1.55" />
-    <key name="roll_contact" qpos="0 0 0.10964253442 0 0 1 0 0 0 -0.9 0.65 1.55 -0.8 0.6 0 0 0 0 0 0.9 -0.65 -1.55" ctrl="0 0 -0.9 0.65 1.55 -0.8 0.6 0 0 0 0 0 0.9 -0.65 -1.55" />
+    <key name="roll_contact" qpos="0 0 0.118591071809 0 0 1 0 0 0 -0.9 0.65 1.55 -0.8 0.6 0 0 0 0 0 0.9 -0.65 -1.55" ctrl="0 0 -0.9 0.65 1.55 -0.8 0.6 0 0 0 0 0 0.9 -0.65 -1.55" />
     <key name="jaw_0" qpos="0 0 0.1433 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" ctrl="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" />
     <key name="jaw_15" qpos="0 0 0.1433 1 0 0 0 0 0 0 0 0 0 0 0 0 0.261729245905 0 0 0 0 0" ctrl="0 0 0 0 0 0 0 0 0 0.261729245905 0 0 0 0 0" />
     <key name="jaw_30" qpos="0 0 0.1433 1 0 0 0 0 0 0 0 0 0 0 0 0 0.523394776363 0 0 0 0 0" ctrl="0 0 0 0 0 0 0 0 0 0.523394776363 0 0 0 0 0" />

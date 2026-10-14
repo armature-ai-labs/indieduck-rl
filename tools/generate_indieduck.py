@@ -1,4 +1,4 @@
-"""Generate the R20 SI model from eligible CAD meshes and the joint contract."""
+"""Generate the R20/R25 SI model from eligible CAD meshes and the joint contract."""
 from __future__ import annotations
 import argparse, hashlib, json, math, shutil, struct
 from pathlib import Path
@@ -18,11 +18,13 @@ def load_stl(path):
     return rows
 
 def save_stl(path, rows):
-    path.write_bytes(b'IndieDuck R20 SI body-local CAD mesh'.ljust(80,b' ')+struct.pack('<I',len(rows))+rows.tobytes())
+    path.write_bytes(b'IndieDuck SI body-local CAD mesh'.ljust(80,b' ')+struct.pack('<I',len(rows))+rows.tobytes())
 
 def generate(manifest_path):
     c=read('contract.json');mapping=read('part-bodies.json');mapping['ref_ToFOptics']='head_roll_link'; manifest=json.loads(manifest_path.read_text())
-    if manifest.get('revision') != 'R20': raise ValueError('R20 generator requires R20 CAD manifest')
+    rev=manifest.get('revision')
+    if rev not in ('R20','R25'): raise ValueError('generator supports R20 and R25 CAD manifests')
+    if rev=='R25': mapping.update({p['name']:p['body'] for p in manifest['parts'] if p.get('body')})
     missing={p['name'] for p in manifest['parts']}-set(mapping)
     if missing: raise ValueError(f'Unmapped CAD components: {sorted(missing)}')
     skate_path=manifest_path.parent/'skate-manifest.json'
@@ -69,7 +71,7 @@ def generate(manifest_path):
         color=p.get('color',[.85,.85,.83]);color=list(color[:3])+[1.]
         parts.append({'name':name,'label':p.get('label',name),'mesh':'meshes/'+name+'.stl','body':body,'color':color,'material':material,'mass_kg':mass,'mass_status':'estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured','bounds_world_m':bounds.tolist(),'com_world_m':com.tolist(),'reference':ref,'include_when':p.get('include_when','always'),'source_sha256':hashlib.sha256(src.read_bytes()).hexdigest()})
         mass_by_body[body].append((mass,com,bounds,p.get('include_when','always')))
-    c['cad_revision']=manifest.get('revision','R20');c['cad_manifest_sha256']=hashlib.sha256(manifest_path.read_bytes()).hexdigest();c['visual_mesh_source']='Complete R20 visible CAD assembly plus attributed provisional skate accessory; see asset notices';c['mouth_motor_limits_rad']=[0,math.pi/6]
+    c['cad_revision']=manifest.get('revision','R20');c['cad_manifest_sha256']=hashlib.sha256(manifest_path.read_bytes()).hexdigest();c['visual_mesh_source']='Complete '+c['cad_revision']+' visible CAD assembly plus attributed provisional skate accessory; see asset notices';c['mouth_motor_limits_rad']=[0,math.pi/6]
     next(j for j in c['joints'] if j['name']=='mouth')['limits_rad']=c['mouth_motor_limits_rad']
     # Use explicit CAD sensor envelopes to place optical origin at outward lens/front plane.
     for name,part in [('head_camera','ref_CameraLens'),('tof','ref_ToFOptics'),('head_imu','ref_HeadIMU'),('body_imu','ref_HAT_IMU')]:
@@ -78,7 +80,7 @@ def generate(manifest_path):
             lo,hi=np.array(ps['bounds_world_m']);pt=(lo+hi)/2
             if name in ['head_camera','tof']:pt[0]=hi[0]+.0001
             c['sensors'][name]['origin_mm']=(pt*1000).tolist()
-    c['sensors']['head_camera']['status']='R20 camera envelope lens plane, physical mount and field of view unverified'
+    c['sensors']['head_camera']['status']=c['cad_revision']+' camera envelope lens plane, physical mount and field of view unverified'
     c['actuators']={'xml': 'Estimated position PD, kp 4 Nm/rad, kv 0.08 Nms/rad, torque cap 0.85 Nm at nominal 5V. Not BAM.', 'selected_native_bam': {'model': 'hd1910/m1', 'implementation': 'src/mjlab_microduck/sim/bam_native.py', 'scope': 'CPU diagnostic on canonical R20 model; GPU task migration and IndieDuck measurement pending', 'decision': 'D8 in decisions-2026-10-06.md', 'servo_voltage_v': 5.0, 'command_delay_s': 0.029, 'source_command_delay_s': 0.03240342471539083, 'source_params_sha256': 'fda4366b2610bfb1911e67d8543ff157d86414c72dc4c2292683e995793f1c59', 'delay_status': 'D8 override selected; pinned-file delay tested separately, source JSON unchanged'}, 'retained_upstream_training_reference': 'Existing upstream task source selects HD-1910 m5 BAM, 4.75..5.25V and 4..7 physical-substep delays. This configuration is not migrated or selected for IndieDuck; D8 m1 remains selected.', 'servo_voltage_v': 5, 'kp_firmware_reference': 32, 'mass_and_friction_status': 'Body mass/contact estimates; BAM uses upstream m1 fitted friction. IndieDuck physical measurements pending'}
     write('contract.json',c);write('visual-parts.json',{'model_id':c['model_id'],'cad_revision':c['cad_revision'],'mesh_coordinates':'SI body-local, orientation equal CAD world at zero','parts':parts})
     coeff=[0,1,0,0,0]
@@ -124,7 +126,9 @@ def generate(manifest_path):
             add(bodies[p['body']],'geom',name=p['name']+'_visual',type='mesh',mesh=p['name'],rgba=nums(p['color']),group='2',contype='0',conaffinity='0',mass='0')
         # Separate broad conservative proxies. They interact with ground/props, not each other;
         # precise self clearance is measured in CAD, not inferred from these hollow-part boxes.
-        collision_parts=['Trunk','BodyFront','BodyBack','SoftHeadShell','O2_HeadBase','O2_Jaw','Thigh_L','Thigh_R','Shank_L','Shank_R','Yaw_L','Yaw_R','RoundedSole_L','RoundedSole_R']
+        collision_parts=(['Trunk','TorsoFront','TorsoRear','HelmetRoof','HelmetLower','HeadBase','AngularJaw','Thigh_L','Thigh_R','ShankStructure_L','ShankStructure_R','Yaw_L','Yaw_R','FacetedSole_L','FacetedSole_R']
+            if c.get('cad_revision')=='R25' else
+            ['Trunk','BodyFront','BodyBack','SoftHeadShell','O2_HeadBase','O2_Jaw','Thigh_L','Thigh_R','Shank_L','Shank_R','Yaw_L','Yaw_R','RoundedSole_L','RoundedSole_R'])
         for name in collision_parts:
             p=next((p for p in parts if p['name']==name),None)
             if not p:continue
