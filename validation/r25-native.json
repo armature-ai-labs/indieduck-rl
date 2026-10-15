@@ -1,6 +1,6 @@
 {
   "model_id": "indieduck-r25",
-  "cad_manifest_sha256": "b3374c774b56259211ec016ea583d7bd2369a98170a4a4c65ebaf02efdb6ed9a",
+  "cad_manifest_sha256": "9ce8ecb3e3b82cc4cc42a28f3efc18dffa78876c26857c9c4a2b51a8fca04265",
   "mujoco_version": "3.10.0",
   "machine": "macOS-27.2-arm64-arm-64bit",
   "processor": "arm",
@@ -13,7 +13,7 @@
   },
   "models": {
     "scene.xml": {
-      "mass_kg": 1.0958064534605492,
+      "mass_kg": 1.0918924059564523,
       "bodies": 18,
       "joints": 17,
       "actuators": 15,
@@ -22,8 +22,8 @@
         {
           "pose": "zero",
           "initial_contacts": 0,
-          "end_contacts": 13,
-          "max_abs_velocity": 9.356817167246787,
+          "end_contacts": 10,
+          "max_abs_velocity": 53.2028977827795,
           "finite": true,
           "warnings": [
             0,
@@ -40,7 +40,7 @@
           "pose": "stand",
           "initial_contacts": 0,
           "end_contacts": 7,
-          "max_abs_velocity": 1.1607870008340564,
+          "max_abs_velocity": 1.1558226791589548,
           "finite": true,
           "warnings": [
             0,
@@ -56,8 +56,8 @@
         {
           "pose": "walk_left",
           "initial_contacts": 0,
-          "end_contacts": 3,
-          "max_abs_velocity": 6.32618090399719,
+          "end_contacts": 2,
+          "max_abs_velocity": 6.334235633417404,
           "finite": true,
           "warnings": [
             0,
@@ -74,7 +74,7 @@
           "pose": "walk_right",
           "initial_contacts": 0,
           "end_contacts": 3,
-          "max_abs_velocity": 6.173989584166899,
+          "max_abs_velocity": 6.275694755732882,
           "finite": true,
           "warnings": [
             0,
@@ -90,8 +90,8 @@
         {
           "pose": "sit",
           "initial_contacts": 0,
-          "end_contacts": 6,
-          "max_abs_velocity": 7.26221377265095,
+          "end_contacts": 9,
+          "max_abs_velocity": 7.560097442575911,
           "finite": true,
           "warnings": [
             0,
@@ -107,8 +107,8 @@
         {
           "pose": "sit_transition",
           "initial_contacts": 0,
-          "end_contacts": 3,
-          "max_abs_velocity": 6.776857366343903,
+          "end_contacts": 1,
+          "max_abs_velocity": 8.438942680798716,
           "finite": true,
           "warnings": [
             0,
@@ -124,8 +124,8 @@
         {
           "pose": "pickup",
           "initial_contacts": 0,
-          "end_contacts": 7,
-          "max_abs_velocity": 1.177016002855079,
+          "end_contacts": 9,
+          "max_abs_velocity": 1.2738618635050798,
           "finite": true,
           "warnings": [
             0,
@@ -142,7 +142,7 @@
           "pose": "kick_left",
           "initial_contacts": 0,
           "end_contacts": 6,
-          "max_abs_velocity": 1.8281177151552757,
+          "max_abs_velocity": 1.8231092257959929,
           "finite": true,
           "warnings": [
             0,
@@ -159,7 +159,7 @@
           "pose": "kick_right",
           "initial_contacts": 0,
           "end_contacts": 6,
-          "max_abs_velocity": 1.825471866529362,
+          "max_abs_velocity": 1.8204509831557414,
           "finite": true,
           "warnings": [
             0,
@@ -176,7 +176,7 @@
           "pose": "skating",
           "initial_contacts": 0,
           "end_contacts": 5,
-          "max_abs_velocity": 1.167625837731655,
+          "max_abs_velocity": 1.1629177145553444,
           "finite": true,
           "warnings": [
             0,
@@ -193,7 +193,7 @@
           "pose": "getup_back",
           "initial_contacts": 0,
           "end_contacts": 3,
-          "max_abs_velocity": 4.026651654137292,
+          "max_abs_velocity": 3.979703623545615,
           "finite": true,
           "warnings": [
             0,
@@ -210,7 +210,7 @@
           "pose": "getup_tuck",
           "initial_contacts": 0,
           "end_contacts": 3,
-          "max_abs_velocity": 4.799594815551603,
+          "max_abs_velocity": 6.43160539086909,
           "finite": true,
           "warnings": [
             0,
@@ -227,7 +227,7 @@
           "pose": "roll_tuck",
           "initial_contacts": 0,
           "end_contacts": 7,
-          "max_abs_velocity": 1.1701756454897763,
+          "max_abs_velocity": 5.551448122830231,
           "finite": true,
           "warnings": [
             0,
@@ -244,7 +244,7 @@
           "pose": "roll_contact",
           "initial_contacts": 0,
           "end_contacts": 5,
-          "max_abs_velocity": 5.502936446352777,
+          "max_abs_velocity": 6.507169444867343,
           "finite": true,
           "warnings": [
             0,
@@ -260,8 +260,8 @@
         {
           "pose": "jaw_0",
           "initial_contacts": 0,
-          "end_contacts": 13,
-          "max_abs_velocity": 9.356817167246787,
+          "end_contacts": 10,
+          "max_abs_velocity": 53.2028977827795,
           "finite": true,
           "warnings": [
             0,
@@ -277,8 +277,8 @@
         {
           "pose": "jaw_15",
           "initial_contacts": 0,
-          "end_contacts": 7,
-          "max_abs_velocity": 42.653345197489244,
+          "end_contacts": 9,
+          "max_abs_velocity": 39.788251151517706,
           "finite": true,
           "warnings": [
             0,
@@ -295,7 +295,7 @@
           "pose": "jaw_30",
           "initial_contacts": 0,
           "end_contacts": 7,
-          "max_abs_velocity": 18.16291677819518,
+          "max_abs_velocity": 18.354011476474138,
           "finite": true,
           "warnings": [
             0,
@@ -312,7 +312,7 @@
           "pose": "sit_reduced",
           "initial_contacts": 0,
           "end_contacts": 3,
-          "max_abs_velocity": 6.5796058940635085,
+          "max_abs_velocity": 6.941433094175868,
           "finite": true,
           "warnings": [
             0,
@@ -328,8 +328,8 @@
         {
           "pose": "pickup_neck_neutral",
           "initial_contacts": 0,
-          "end_contacts": 3,
-          "max_abs_velocity": 7.159736608030775,
+          "end_contacts": 7,
+          "max_abs_velocity": 1.0127991808064323,
           "finite": true,
           "warnings": [
             0,
@@ -350,9 +350,9 @@
           0.0
         ],
         "body_imu_accel": [
-          -1.6232155661008533e-16,
-          2.0782933837837357e-17,
-          -1.374852467834778e-16
+          -4.593140936680423e-17,
+          -2.542452967519783e-17,
+          -3.558230466313888e-15
         ],
         "body_imu_quat": [
           1.0,
@@ -366,9 +366,9 @@
           0.0
         ],
         "head_imu_accel": [
-          -5.910603417940835e-16,
-          2.1392768784874384e-17,
-          1.7321473498887814e-16
+          4.0273366402778925e-16,
+          -5.055089545621048e-17,
+          -3.602000086809302e-15
         ],
         "head_imu_quat": [
           1.0,
@@ -444,30 +444,30 @@
         0.7343592739506387
       ],
       "cold_load_s": [
-        0.03742437495384365,
-        0.02588245808146894,
-        0.02147145802155137,
-        0.021148749976418912,
-        0.02089354209601879
+        0.036213334067724645,
+        0.02477308304514736,
+        0.021088707959279418,
+        0.02098866703454405,
+        0.019668499939143658
       ],
       "steady_elapsed_s": [
-        0.07559000002220273,
-        0.07563612493686378,
-        0.07587225001771003,
-        0.08536020899191499,
-        0.07804845797363669
+        0.07481429202016443,
+        0.07449595804791898,
+        0.07459491700865328,
+        0.07554341608192772,
+        0.07481854106299579
       ],
       "steps_per_s": {
-        "median": 13180.049356208376,
-        "min": 11715.060352004484,
-        "max": 13229.26312615788,
-        "stddev": 647.757901802557
+        "median": 13366.430036261969,
+        "min": 13237.420967506796,
+        "max": 13423.547078309368,
+        "stddev": 72.8511184869807
       },
-      "real_time_factor_median": 65.90024678104189,
+      "real_time_factor_median": 66.83215018130984,
       "decision": "promote local study numerical execution, hold hardware fidelity"
     },
     "scene_skates.xml": {
-      "mass_kg": 1.1734244398674525,
+      "mass_kg": 1.169510392363356,
       "bodies": 22,
       "joints": 21,
       "actuators": 15,
@@ -477,7 +477,7 @@
           "pose": "zero",
           "initial_contacts": 0,
           "end_contacts": 7,
-          "max_abs_velocity": 50.98345004439301,
+          "max_abs_velocity": 2.956462890090531,
           "finite": true,
           "warnings": [
             0,
@@ -494,7 +494,7 @@
           "pose": "stand",
           "initial_contacts": 0,
           "end_contacts": 5,
-          "max_abs_velocity": 2.8184333803515895,
+          "max_abs_velocity": 2.7937149341632455,
           "finite": true,
           "warnings": [
             0,
@@ -511,7 +511,7 @@
           "pose": "walk_left",
           "initial_contacts": 0,
           "end_contacts": 4,
-          "max_abs_velocity": 40.89461382643771,
+          "max_abs_velocity": 41.98024212929416,
           "finite": true,
           "warnings": [
             0,
@@ -528,7 +528,7 @@
           "pose": "walk_right",
           "initial_contacts": 0,
           "end_contacts": 4,
-          "max_abs_velocity": 41.20570932637549,
+          "max_abs_velocity": 41.78332572502369,
           "finite": true,
           "warnings": [
             0,
@@ -544,8 +544,8 @@
         {
           "pose": "sit",
           "initial_contacts": 0,
-          "end_contacts": 7,
-          "max_abs_velocity": 46.350860815291746,
+          "end_contacts": 9,
+          "max_abs_velocity": 47.44181830762712,
           "finite": true,
           "warnings": [
             0,
@@ -562,7 +562,7 @@
           "pose": "sit_transition",
           "initial_contacts": 0,
           "end_contacts": 7,
-          "max_abs_velocity": 2.225544547381623,
+          "max_abs_velocity": 2.236802963268773,
           "finite": true,
           "warnings": [
             0,
@@ -579,7 +579,7 @@
           "pose": "pickup",
           "initial_contacts": 0,
           "end_contacts": 9,
-          "max_abs_velocity": 2.571025747873387,
+          "max_abs_velocity": 8.545646300429846,
           "finite": true,
           "warnings": [
             0,
@@ -596,7 +596,7 @@
           "pose": "kick_left",
           "initial_contacts": 0,
           "end_contacts": 7,
-          "max_abs_velocity": 2.4969714446722078,
+          "max_abs_velocity": 2.5017512327564893,
           "finite": true,
           "warnings": [
             0,
@@ -613,7 +613,7 @@
           "pose": "kick_right",
           "initial_contacts": 0,
           "end_contacts": 7,
-          "max_abs_velocity": 2.5051400877820957,
+          "max_abs_velocity": 2.511360717592578,
           "finite": true,
           "warnings": [
             0,
@@ -630,7 +630,7 @@
           "pose": "skating",
           "initial_contacts": 0,
           "end_contacts": 5,
-          "max_abs_velocity": 2.376106093165014,
+          "max_abs_velocity": 2.3844042577033764,
           "finite": true,
           "warnings": [
             0,
@@ -647,7 +647,7 @@
           "pose": "getup_back",
           "initial_contacts": 0,
           "end_contacts": 7,
-          "max_abs_velocity": 28.280380981877865,
+          "max_abs_velocity": 23.491067277783863,
           "finite": true,
           "warnings": [
             0,
@@ -664,7 +664,7 @@
           "pose": "getup_tuck",
           "initial_contacts": 0,
           "end_contacts": 7,
-          "max_abs_velocity": 21.913856872835495,
+          "max_abs_velocity": 13.097774769399075,
           "finite": true,
           "warnings": [
             0,
@@ -681,7 +681,7 @@
           "pose": "roll_tuck",
           "initial_contacts": 0,
           "end_contacts": 7,
-          "max_abs_velocity": 34.107548401486106,
+          "max_abs_velocity": 35.76372010557086,
           "finite": true,
           "warnings": [
             0,
@@ -698,7 +698,7 @@
           "pose": "roll_contact",
           "initial_contacts": 0,
           "end_contacts": 5,
-          "max_abs_velocity": 5.116879115337268,
+          "max_abs_velocity": 6.189403643766992,
           "finite": true,
           "warnings": [
             0,
@@ -715,7 +715,7 @@
           "pose": "jaw_0",
           "initial_contacts": 0,
           "end_contacts": 7,
-          "max_abs_velocity": 50.98345004439301,
+          "max_abs_velocity": 2.956462890090531,
           "finite": true,
           "warnings": [
             0,
@@ -732,7 +732,7 @@
           "pose": "jaw_15",
           "initial_contacts": 0,
           "end_contacts": 7,
-          "max_abs_velocity": 50.47956580265207,
+          "max_abs_velocity": 2.925891655919853,
           "finite": true,
           "warnings": [
             0,
@@ -749,7 +749,7 @@
           "pose": "jaw_30",
           "initial_contacts": 0,
           "end_contacts": 7,
-          "max_abs_velocity": 50.67967376993586,
+          "max_abs_velocity": 3.2643208890755853,
           "finite": true,
           "warnings": [
             0,
@@ -766,7 +766,7 @@
           "pose": "sit_reduced",
           "initial_contacts": 0,
           "end_contacts": 7,
-          "max_abs_velocity": 2.7606277901283423,
+          "max_abs_velocity": 2.7734876331565457,
           "finite": true,
           "warnings": [
             0,
@@ -782,8 +782,8 @@
         {
           "pose": "pickup_neck_neutral",
           "initial_contacts": 0,
-          "end_contacts": 7,
-          "max_abs_velocity": 2.546316237652665,
+          "end_contacts": 9,
+          "max_abs_velocity": 5.732920951948482,
           "finite": true,
           "warnings": [
             0,
@@ -804,9 +804,9 @@
           0.0
         ],
         "body_imu_accel": [
-          -6.691315770187711e-16,
-          2.7647800975027244e-16,
-          -2.2648320979469352e-15
+          -4.568544390251215e-16,
+          -1.2966460113548707e-17,
+          -2.14427750549546e-15
         ],
         "body_imu_quat": [
           1.0,
@@ -820,9 +820,9 @@
           0.0
         ],
         "head_imu_accel": [
-          -9.145926074531252e-16,
-          6.580491827887571e-16,
-          -1.3011430485506252e-15
+          -6.620397282365941e-16,
+          -2.6710256117733144e-17,
+          -1.47213894801821e-15
         ],
         "head_imu_quat": [
           1.0,
@@ -898,26 +898,26 @@
         0.8382507970928182
       ],
       "cold_load_s": [
-        0.030058667063713074,
-        0.02699745900463313,
-        0.02423920901492238,
-        0.022669499972835183,
-        0.02732270793057978
+        0.026237334008328617,
+        0.02428120793774724,
+        0.022473457967862487,
+        0.023087749956175685,
+        0.022150250035338104
       ],
       "steady_elapsed_s": [
-        0.09759466699324548,
-        0.0937562909675762,
-        0.08906712499447167,
-        0.09097308304626495,
-        0.09491533401887864
+        0.0944936249870807,
+        0.09013000002596527,
+        0.08983883401378989,
+        0.10974020801950246,
+        0.09123916702810675
       ],
       "steps_per_s": {
-        "median": 10665.950942383488,
-        "min": 10246.461520988743,
-        "max": 11227.487134698344,
-        "stddev": 384.66650753157336
+        "median": 10960.205277761295,
+        "min": 9112.430330205727,
+        "max": 11131.04384064584,
+        "stddev": 846.6429916167212
       },
-      "real_time_factor_median": 53.32975471191744,
+      "real_time_factor_median": 54.80102638880648,
       "decision": "promote local study numerical execution, hold hardware fidelity"
     }
   },

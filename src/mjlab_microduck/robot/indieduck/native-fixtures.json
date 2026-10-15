@@ -1,6 +1,6 @@
 {
   "mujoco_version": "3.10.0",
-  "cad_manifest_sha256": "b3374c774b56259211ec016ea583d7bd2369a98170a4a4c65ebaf02efdb6ed9a",
+  "cad_manifest_sha256": "9ce8ecb3e3b82cc4cc42a28f3efc18dffa78876c26857c9c4a2b51a8fca04265",
   "fixtures": {
     "scene.xml": [
       {

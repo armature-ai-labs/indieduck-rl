@@ -353,8 +353,8 @@
     },
     {
       "name": "ref_R17_FixedCarrierFasteners",
-      "body": "head_roll_link",
-      "bounds_max_error_mm": 0.00206652455993217
+      "body": "head_yaw_link",
+      "bounds_max_error_mm": 0.002066531715562425
     },
     {
       "name": "ref_R17_HeadModuleFasteners",
@@ -478,23 +478,23 @@
     },
     {
       "name": "R18C_PitchClampScrew_L",
-      "body": "left_hip_pitch_link",
-      "bounds_max_error_mm": 0.006433141478912052
+      "body": "left_hip_roll_link",
+      "bounds_max_error_mm": 0.006431377280013972
     },
     {
       "name": "R18C_PitchClampScrew_R",
-      "body": "right_hip_pitch_link",
-      "bounds_max_error_mm": 0.006433148353926499
+      "body": "right_hip_roll_link",
+      "bounds_max_error_mm": 0.006431377279972339
     },
     {
       "name": "R18C_PitchClampNut_L",
-      "body": "left_hip_pitch_link",
-      "bounds_max_error_mm": 4.819298224378876e-06
+      "body": "left_hip_roll_link",
+      "bounds_max_error_mm": 5.425107849066357e-06
     },
     {
       "name": "R18C_PitchClampNut_R",
-      "body": "right_hip_pitch_link",
-      "bounds_max_error_mm": 4.8275769076733255e-06
+      "body": "right_hip_roll_link",
+      "bounds_max_error_mm": 5.425107849066357e-06
     },
     {
       "name": "HelmetRoof",
@@ -564,12 +564,12 @@
     {
       "name": "PelvisFront",
       "body": "trunk_base",
-      "bounds_max_error_mm": 4.896831024003845e-06
+      "bounds_max_error_mm": 5.499090641181148e-06
     },
     {
       "name": "PelvisRear",
       "body": "trunk_base",
-      "bounds_max_error_mm": 5.372565753392067e-06
+      "bounds_max_error_mm": 5.536346034396011e-06
     },
     {
       "name": "ThighCap_L",
@@ -589,7 +589,7 @@
     {
       "name": "ShinCap_L",
       "body": "left_knee_link",
-      "bounds_max_error_mm": 0.0027115313357903292
+      "bounds_max_error_mm": 0.0027111529718754773
     },
     {
       "name": "FacetedFoot_L",
@@ -609,7 +609,7 @@
     {
       "name": "ShinCap_R",
       "body": "right_knee_link",
-      "bounds_max_error_mm": 7.071267515978974e-06
+      "bounds_max_error_mm": 7.225877327043939e-06
     },
     {
       "name": "FacetedFoot_R",
@@ -694,22 +694,22 @@
     {
       "name": "HipCowl_L",
       "body": "left_hip_roll_link",
-      "bounds_max_error_mm": 6.246360470529844e-06
+      "bounds_max_error_mm": 6.492559573301193e-06
     },
     {
       "name": "HipCowl_R",
       "body": "right_hip_roll_link",
-      "bounds_max_error_mm": 5.572985822821508e-06
+      "bounds_max_error_mm": 6.261063112411591e-06
     },
     {
       "name": "ToeCap_L",
       "body": "left_ankle_link",
-      "bounds_max_error_mm": 6.25126586606406e-06
+      "bounds_max_error_mm": 5.3705922625768565e-06
     },
     {
       "name": "ToeCap_R",
       "body": "right_ankle_link",
-      "bounds_max_error_mm": 6.3756571827555675e-06
+      "bounds_max_error_mm": 6.940659200149746e-06
     }
   ]
 }

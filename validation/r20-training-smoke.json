@@ -5,6 +5,6 @@
   "action_size": 14,
   "actor_observation_size": 61,
   "steps": 2,
-  "elapsed_s": 2.026104749995284,
+  "elapsed_s": 1.0036295000463724,
   "scope": "configuration, reset and two environment steps only; no learned policy or GPU validation"
 }

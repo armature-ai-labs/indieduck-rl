@@ -2422,7 +2422,7 @@
       "name": "ref_R17_FixedCarrierFasteners",
       "label": "A_ref_R17_FixedCarrierFasteners",
       "mesh": "meshes/ref_R17_FixedCarrierFasteners.stl",
-      "body": "head_roll_link",
+      "body": "head_yaw_link",
       "color": [
         0.6196078658103943,
         0.658823549747467,
@@ -3297,7 +3297,7 @@
       "name": "R18C_PitchClampScrew_L",
       "label": "A_R18C_PitchClampScrew_L",
       "mesh": "meshes/R18C_PitchClampScrew_L.stl",
-      "body": "left_hip_pitch_link",
+      "body": "left_hip_roll_link",
       "color": [
         0.4000000059604645,
         1.0,
@@ -3309,30 +3309,30 @@
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
-          0.029889957427978515,
+          0.03170000648498535,
           0.07070167541503906,
-          0.09235140991210937
+          0.0985
         ],
         [
-          0.03622142791748047,
+          0.0355,
           0.07449793243408204,
-          0.10213869476318359
+          0.1079000015258789
         ]
       ],
       "com_world_m": [
-        0.03308700889816578,
-        0.07259999999999997,
-        0.09809739366281021
+        0.033610511073940946,
+        0.0726,
+        0.10432008902638419
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "3aacc270f1b51ed8ee62573bb370e4669c0a857ae102a2e0233b90cd6d0a525e"
+      "source_sha256": "228c3bf8728000b991a22d42abccbc0d549953604da52b8b4ee105b75858470b"
     },
     {
       "name": "R18C_PitchClampScrew_R",
       "label": "A_R18C_PitchClampScrew_R",
       "mesh": "meshes/R18C_PitchClampScrew_R.stl",
-      "body": "right_hip_pitch_link",
+      "body": "right_hip_roll_link",
       "color": [
         0.4000000059604645,
         1.0,
@@ -3344,30 +3344,30 @@
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
-          0.029889957427978515,
+          0.03170000648498535,
           -0.07449793243408204,
-          0.09235140991210937
+          0.0985
         ],
         [
-          0.03622142791748047,
+          0.0355,
           -0.07070167541503906,
-          0.10213869476318359
+          0.1079000015258789
         ]
       ],
       "com_world_m": [
-        0.03308700889816578,
-        -0.07259999999999998,
-        0.09809739366281021
+        0.03361051107394094,
+        -0.0726,
+        0.10432008902638415
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "d886a2a102a35829b934e84ba157ba412dcd38bcec51be7475fedbaf26af4051"
+      "source_sha256": "3e0e58f72b3170de559a66a36aa90b9c87a45f6d102a0e52ef05a9487f6bb17f"
     },
     {
       "name": "R18C_PitchClampNut_L",
       "label": "A_R18C_PitchClampNut_L",
       "mesh": "meshes/R18C_PitchClampNut_L.stl",
-      "body": "left_hip_pitch_link",
+      "body": "left_hip_roll_link",
       "color": [
         0.4000000059604645,
         1.0,
@@ -3379,30 +3379,30 @@
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
-          0.028722721099853514,
+          0.03129059982299805,
           0.0705999984741211,
-          0.0919336166381836
+          0.0985999984741211
         ],
         [
-          0.033599987030029296,
+          0.035909400939941404,
           0.07459999847412109,
-          0.09520595550537109
+          0.10019999694824219
         ]
       ],
       "com_world_m": [
-        0.0311608657162149,
-        0.07259999999999994,
-        0.09356999149447273
+        0.03359946916753995,
+        0.07259999999999996,
+        0.0994
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "2990570f554256dfba52554653a2da1247fe6063880f3f38101b8f6d99be37f2"
+      "source_sha256": "e0ebd01b0d4cf7099cb77fec69e00241c05dddf3d030d42851adda693ebc366e"
     },
     {
       "name": "R18C_PitchClampNut_R",
       "label": "A_R18C_PitchClampNut_R",
       "mesh": "meshes/R18C_PitchClampNut_R.stl",
-      "body": "right_hip_pitch_link",
+      "body": "right_hip_roll_link",
       "color": [
         0.4000000059604645,
         1.0,
@@ -3414,24 +3414,24 @@
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
-          0.028722721099853514,
+          0.03129059982299805,
           -0.07459999847412109,
-          0.0919336166381836
+          0.0985999984741211
         ],
         [
-          0.033599987030029296,
+          0.035909400939941404,
           -0.0705999984741211,
-          0.09520595550537109
+          0.10019999694824219
         ]
       ],
       "com_world_m": [
-        0.031160865716214892,
+        0.033599469167539954,
         -0.07259999999999998,
-        0.09356999149447276
+        0.09940000000000002
       ],
       "reference": true,
       "include_when": "always",
-      "source_sha256": "817f41ae8e05fb8d4647f582ce27b0f4af3b0b5c7ef73de8cd10f6fa55d8c628"
+      "source_sha256": "a54df39ee21cda05d20ac4aee276aa9092eeb88f1c3359e4021c79713acaab0e"
     },
     {
       "name": "HelmetRoof",
@@ -3900,7 +3900,7 @@
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.012426764725220899,
+      "mass_kg": 0.01004583279910807,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -3915,13 +3915,13 @@
         ]
       ],
       "com_world_m": [
-        0.057032897576951354,
-        -2.986654725647707e-06,
-        0.11043116519841593
+        0.057471788323201586,
+        -3.758725153718841e-06,
+        0.11089097283914738
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "aaca8e3299395eed057ba37fc77b8e29f5a207d381dd1116523086aa06e6c4cf"
+      "source_sha256": "37361047f0af18a13c7b8ea449feb11b6bf928aed661d611a9f630328dae0e75"
     },
     {
       "name": "PelvisRear",
@@ -3935,7 +3935,7 @@
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.012307185790470099,
+      "mass_kg": 0.012224274196025342,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -3950,13 +3950,13 @@
         ]
       ],
       "com_world_m": [
-        -0.05804006134323706,
-        -2.0034841772875732e-06,
-        0.11015742913490702
+        -0.05803585947401302,
+        -2.2750162004139523e-06,
+        0.11034237932867734
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "7a9983777db6d26716d5aa0bce44b0b72247a9c88ee9156aedf92951a91d1641"
+      "source_sha256": "0c04d3c09e20713c25a16904bc23727ff0ea7850ea23ce3dbbd65e1544a4f8f9"
     },
     {
       "name": "ThighCap_L",
@@ -3985,13 +3985,13 @@
         ]
       ],
       "com_world_m": [
-        -5.4500332415763356e-05,
-        0.07835821328724242,
-        0.09210860502179907
+        -5.450033241594098e-05,
+        0.07835821328724249,
+        0.09210860502179895
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "9b8aabfa83d215e5910b479e0532a8941cf2e0d8f98f13f98f38d118e620ff60"
+      "source_sha256": "939ce81365d7873d85ef64a2532379963c9f6210fecc7853261d75b3991cc786"
     },
     {
       "name": "ThighCap_R",
@@ -4075,28 +4075,28 @@
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.00093330218133192,
+      "mass_kg": 0.0008307085535583557,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
-          -0.035,
+          -0.033856037139892575,
           0.060299999237060545,
           0.04420018005371094
         ],
         [
-          7.105427357601002e-17,
+          4.263256414560601e-17,
           0.064,
           0.062
         ]
       ],
       "com_world_m": [
-        -0.017431542824134953,
-        0.062437777657317686,
-        0.05592134873333842
+        -0.015511377386213459,
+        0.06251342792242778,
+        0.05646234690388438
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "39353eba3b7117cf0a13c471c7a3d202d61fdf6f2ef75b3801503c6cb396fb49"
+      "source_sha256": "93d71751bc74ed651f4045fb00fa31731babd1869ed150a9d3149913f53b40d9"
     },
     {
       "name": "FacetedFoot_L",
@@ -4215,28 +4215,28 @@
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.0009335981943368344,
+      "mass_kg": 0.0008309489035549519,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
-          -0.035,
+          -0.033856037139892575,
           -0.064,
           0.04420018005371094
         ],
         [
-          5.684341886080802e-17,
+          4.263256414560601e-17,
           -0.060299999237060545,
           0.062
         ]
       ],
       "com_world_m": [
-        -0.01743625349485886,
-        -0.06243760390690437,
-        0.055922083396656906
+        -0.015517315715136096,
+        -0.06251320743325615,
+        0.0564628372791262
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "fe679142eebfc0d85be2baf64ed070c90b0e754c65f215e12646c244a5b56784"
+      "source_sha256": "f4ba9460db42eeee22921549877575f846a537ded6edcb567a968781db6dbec3"
     },
     {
       "name": "FacetedFoot_R",
@@ -4442,7 +4442,7 @@
       "com_world_m": [
         0.017404442814635004,
         0.0366379762488624,
-        0.22885155121437817
+        0.2288515512143781
       ],
       "reference": false,
       "include_when": "always",
@@ -4475,9 +4475,9 @@
         ]
       ],
       "com_world_m": [
-        0.017467133954168417,
-        -0.036694778652117795,
-        0.22885124047461008
+        0.01746713395416841,
+        -0.036694778652117815,
+        0.2288512404746101
       ],
       "reference": false,
       "include_when": "always",
@@ -4810,7 +4810,7 @@
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.0041062263828809,
+      "mass_kg": 0.003985899506216853,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -4825,13 +4825,13 @@
         ]
       ],
       "com_world_m": [
-        0.05445942700268436,
-        0.04083560238034625,
-        0.1084835230976124
+        0.05446170137263829,
+        0.040680755050834766,
+        0.10903921243737547
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "e2af7417763aecd4ac08470ececc1ff0d2e37fc962ebd4f7f7be006981c2b83d"
+      "source_sha256": "e0f8af5dcf9b07465ea5773e9e58db4805778fe868693ebba52bac3fe1d5103d"
     },
     {
       "name": "HipCowl_R",
@@ -4845,7 +4845,7 @@
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.0041062263828809,
+      "mass_kg": 0.003985901237775136,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -4860,13 +4860,13 @@
         ]
       ],
       "com_world_m": [
-        0.05445899937199388,
-        -0.04083399763273554,
-        0.10848357448953667
+        0.054461303745032226,
+        -0.04067914108738028,
+        0.10903953745251346
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "27efc4a5cdc8c42eae32ab528e171fab79239be4a22982f010038a28c3b82748"
+      "source_sha256": "5aa7a1f65a9a2342d880a16e70e5d5025b552d62b25e4a1190b8973eb76de9f7"
     },
     {
       "name": "ToeCap_L",
@@ -4880,7 +4880,7 @@
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.0031709494748995842,
+      "mass_kg": 0.002668371388806342,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -4895,13 +4895,13 @@
         ]
       ],
       "com_world_m": [
-        0.0027139859687719207,
-        0.045966602120799956,
-        0.02627974548112662
+        0.004655048372471343,
+        0.046015252669296604,
+        0.025916247743578782
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "dcc7fd0dc97b5615d38dfde9957d21037821a61560e11117e87bdc55756fe546"
+      "source_sha256": "0e5734ee23354e9d858ca498145a5f4d7bc0cc9eb82bc0cad6fc128f5eb99bad"
     },
     {
       "name": "ToeCap_R",
@@ -4915,7 +4915,7 @@
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.0031704169679480617,
+      "mass_kg": 0.0026686860108274166,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -4930,13 +4930,13 @@
         ]
       ],
       "com_world_m": [
-        0.002714160331735503,
-        -0.045966694364101064,
-        0.026279588582301568
+        0.00465523655084807,
+        -0.04601733907188264,
+        0.02591609563945757
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "6db3a92afc6bba851b67082e8ae5ff5cf7ffdf1cf7d3df2a58d8d3eb005ac0e2"
+      "source_sha256": "48af44a37e310b500cd87e86da385a6194225f84a2a9179e84309a66ef78d16a"
     },
     {
       "name": "SkateFrame_L",
