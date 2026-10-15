@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { DuckEngine } from './engine.js';
+import { MOTIONS, MotionPlayer } from './motions.js';
 import './style.css';
 
 const pretty = s => String(s || '').replace(/^(ref_|visual_|vis_)/, '').replace(/_visual$/, '').replaceAll('_', ' ');
@@ -14,6 +15,7 @@ function App() {
   const [mode, setMode] = useState('pose'), [skates, setSkates] = useState(false), [poseId, setPoseId] = useState('');
   const [tab, setTab] = useState('Pose'), [collision, setCollision] = useState(false), [contacts, setContacts] = useState(false);
   const [poseEdited, setPoseEdited] = useState(false);
+  const player = useRef(null), [motionFrame, setMotionFrame] = useState(null), [motionId, setMotionId] = useState(''), [speed, setSpeed] = useState(1);
   const [event, setEvent] = useState(''), [busy, setBusy] = useState(false), [exportedPose, setExportedPose] = useState(null);
   useEffect(() => {
     const e = new DuckEngine(host.current, s => setStats(previous => ({ ...previous, ...s })), setSelection, setError); engine.current = e;
@@ -27,7 +29,9 @@ function App() {
   const chosen = poseList.find(p => p.id === poseId);
   const floorPenetration = chosen?.cad_floor_clearance?.min_z_mm < -0.001;
   const ready = !!data && !error && !busy;
-  const selectPose = id => { setPoseEdited(false); setPoseId(id); engine.current.setPose(id); setStats(s => ({ ...s, running: false })); };
+  useEffect(() => { if (data && engine.current && !player.current) player.current = new MotionPlayer(engine.current, poseList, setMotionFrame); }, [data]);
+  const playMotion = id => { setMode('pose'); engine.current.setMode('pose'); setMotionId(id); player.current.speed = speed; player.current.start(id); };
+  const selectPose = id => { player.current?.stop(); setPoseEdited(false); setPoseId(id); engine.current.setPose(id); setStats(s => ({ ...s, running: false })); };
   const changeMode = next => { setMode(next); engine.current.setMode(next); };
   const changeSkates = value => {
     setBusy(true); requestAnimationFrame(() => { try { engine.current.load(value); setSkates(value); const id = value ? poseList.find(p => /skat/.test(p.id))?.id : engine.current.firstPose().id; if (id && poseList.some(p => p.id === id)) selectPose(id); else selectPose(poseId); } catch (err) { setError(String(err)); } finally { setBusy(false); } });
@@ -47,7 +51,7 @@ function App() {
       <aside aria-label="Simulation controls">
         <div className="mode-control" role="group" aria-label="Study mode"><button className={mode === 'pose' ? 'active' : ''} disabled={!ready} onClick={() => changeMode('pose')}>Pose preview</button><button className={mode === 'physics' ? 'active' : ''} disabled={!ready} onClick={() => changeMode('physics')}>Physics</button></div>
         <div className="playback"><button className="primary" disabled={!ready || mode !== 'physics'} onClick={() => engine.current.setRunning(!stats.running)}>{stats.running ? 'Pause physics' : 'Run physics'}</button><button disabled={!ready} onClick={() => selectPose(poseId)}>Reset pose</button></div>
-        <div className="tabs" role="tablist">{['Pose', 'Parts', 'Sensors'].map(t => <button role="tab" aria-selected={tab === t} className={tab === t ? 'selected' : ''} onClick={() => setTab(t)} key={t}>{t}</button>)}</div>
+        <div className="tabs" role="tablist">{['Pose', 'Motions', 'Parts', 'Sensors'].map(t => <button role="tab" aria-selected={tab === t} className={tab === t ? 'selected' : ''} onClick={() => { if (t !== 'Motions') player.current?.stop(); setTab(t); }} key={t}>{t}</button>)}</div>
         <div className="panel">
           {tab === 'Pose' && <>
             <label className="field-label" htmlFor="pose">Behaviour position</label><select id="pose" value={poseId} disabled={!ready} onChange={e => selectPose(e.target.value)}>{poseList.map(p => <option key={p.id} value={p.id}>{p.label || pretty(p.id)}</option>)}</select>
@@ -57,6 +61,18 @@ function App() {
             <div className="ball-control"><button disabled={!ready || mode !== 'pose'} onClick={() => engine.current.setBall(.12, 0, .0201)}>Place test ball ahead</button><span>40 mm ball, 120 mm forward. Reset pose restores it.</span></div><div className="section-heading"><h2>Joint angles</h2><span>degrees</span></div>
             {(stats.jointList || []).map(j => <label className="joint" key={j.name}><span>{j.name === 'mouth' ? 'Mouth / direct-drive jaw' : pretty(j.name)}</span><output>{degrees(stats.values?.[j.name] || 0)}°</output><input aria-label={pretty(j.name)} type="range" min={j.limits[0]} max={j.limits[1]} step="any" value={stats.values?.[j.name] || 0} disabled={!ready} onChange={e => { setPoseEdited(true); engine.current.setJoint(j.name, Number(e.target.value)); }}/></label>)}
             <p className="note">Jaw opening: {data ? degrees(data.contract.mouth_linkage.motor_to_jaw_polynomial.reduceRight((v,c) => v * (stats.values?.mouth || 0) + c, 0)) : '0.0'}°. The mouth slider shows direct-drive jaw opening.</p><p className="note">In physics mode, sliders set actuator targets. Joint readings show the simulated position.</p>
+          </>}
+          {tab === 'Motions' && <>
+            <h2>Motion preview</h2>
+            <p className="note">Scripted keyframe motions through the real joint chain, with every joint held inside the R25 CAD-verified limits. This is kinematic playback: no gravity, balance or contact forces. Running and recovering from a fall for real need a trained policy.</p>
+            <div className="motion-buttons">{MOTIONS.map(m => <button key={m.id} disabled={!ready} className={motionId === m.id ? 'active' : ''} onClick={() => playMotion(m.id)}>{m.label}</button>)}</div>
+            <div className="playback"><button className="primary" disabled={!ready || !motionId} onClick={() => { player.current.toggle(); setMotionFrame(f => f && { ...f, playing: player.current.playing }); }}>{motionFrame?.playing ? 'Pause' : 'Play'}</button><select aria-label="Playback speed" value={speed} onChange={e => { const v = Number(e.target.value); setSpeed(v); if (player.current) player.current.speed = v; }}>{[0.25, 0.5, 1, 1.5].map(v => <option key={v} value={v}>{v}x speed</option>)}</select></div>
+            {motionId && <p className="note">{MOTIONS.find(m => m.id === motionId)?.note}</p>}
+            {motionFrame && <p className="note"><strong>Now:</strong> {pretty(motionFrame.segment)} · {motionFrame.time.toFixed(1)} / {motionFrame.total.toFixed(1)} s</p>}
+            <div className="section-heading"><h2>Joints against their limits</h2><span>degrees</span></div>
+            <div className="limit-table">{(stats.jointList || []).map(j => { const lo = j.limits[0], hi = j.limits[1], v = motionFrame?.applied?.[j.name] ?? 0, req = motionFrame?.clamped?.[j.name]; const pct = x => `${Math.min(100, Math.max(0, (x - lo) / ((hi - lo) || 1) * 100))}%`; const peak = motionFrame?.peak?.[j.name];
+              return <div className={`limit-row${req !== undefined ? ' over' : ''}`} key={j.name}><span>{j.name === 'mouth' ? 'mouth' : pretty(j.name)}</span><div className="limit-bar" title={`Limit ${degrees(lo)} to ${degrees(hi)} deg`}><i style={{ left: pct(v) }}/></div><output>{degrees(v)}°</output><small>{req !== undefined ? `asks ${degrees(req)}°` : peak ? `max over ${degrees(peak)}°` : `${degrees(lo)}…${degrees(hi)}`}</small></div>; })}</div>
+            <p className="note">Red rows: the motion is asking for more than the joint can do on the R25 build, so it is held at the limit. These are the places where a behaviour needs adapting to the new mechanics.</p>
           </>}
           {tab === 'Parts' && <>
             <h2>Inspect the assembly</h2><p className="note">Click a component in the 3D view to see its identity and material category.</p>
@@ -76,7 +92,7 @@ function App() {
         <div className="limits"><strong>Prototype evidence</strong><span>No trained policy or physical-fit claim. CAD and physics are reviewed separately.</span><small>MuJoCo 3.10.0 · {(stats.fps || 0).toFixed(0)} fps{stats.stepMs > 0 ? ` · ${stats.stepMs.toFixed(2)} ms/step` : ''}</small></div>
       </aside>
     </main>
-    {exportedPose && <div className="dialog-backdrop" onKeyDown={e => { if (e.key === 'Escape') setExportedPose(null); }}><section className="export-dialog" role="dialog" aria-modal="true" aria-labelledby="export-title"><h2 id="export-title">Export this pose</h2><p className="note">Named joint angles in radians, robot and test-ball positions in metres, with the CAD revision and source hash. This is a pose record, not a full physics checkpoint.</p><textarea autoFocus readOnly aria-label="Pose JSON" value={JSON.stringify(exportedPose, null, 2)}/><div><button onClick={() => setExportedPose(null)}>Close</button><button className="primary" onClick={() => download('indieduck-r20-pose.json', exportedPose)}>Download JSON</button></div><p className="note">You can also select and copy the JSON if your browser does not support downloads.</p></section></div>}
+    {exportedPose && <div className="dialog-backdrop" onKeyDown={e => { if (e.key === 'Escape') setExportedPose(null); }}><section className="export-dialog" role="dialog" aria-modal="true" aria-labelledby="export-title"><h2 id="export-title">Export this pose</h2><p className="note">Named joint angles in radians, robot and test-ball positions in metres, with the CAD revision and source hash. This is a pose record, not a full physics checkpoint.</p><textarea autoFocus readOnly aria-label="Pose JSON" value={JSON.stringify(exportedPose, null, 2)}/><div><button onClick={() => setExportedPose(null)}>Close</button><button className="primary" onClick={() => download('indieduck-r25-pose.json', exportedPose)}>Download JSON</button></div><p className="note">You can also select and copy the JSON if your browser does not support downloads.</p></section></div>}
     <footer><span>IndieDuck by Armature AI Labs, adapted from Open Duck Mini and inspired by Pollen Robotics’ MicroDuck.</span><span><a href="LICENSE.txt" target="_blank" rel="noreferrer">Software licence</a> · <a href="CAD-NOTICE.txt" target="_blank" rel="noreferrer">CAD credits</a> · <a href="THIRD_PARTY_NOTICES.txt" target="_blank" rel="noreferrer">Software notices</a></span></footer>
   </div>;
 }
