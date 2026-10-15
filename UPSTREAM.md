@@ -22,3 +22,7 @@ The selected JoyandAI commit and the Pollen comparison commit `273afe0b31c4ab365
 Neither selected upstream tree contains Git submodule entries or a `.gitmodules` file. Third-party code is vendored or obtained through package dependencies. The retained root lockfile records training dependencies. The current R20 configuration has passed a clean locked installation and two CPU environment steps with the BAM actuator model; policy training and hardware transfer remain untested. The CPU study requirements and browser lockfile pin the diagnostic dependencies.
 
 Upstream developer paths in test fixtures and examples remain unchanged for source fidelity. They are public upstream examples, not paths from an IndieDuck maintainer's machine. Some manual scripts retain upstream-specific defaults that need review before use. The R20 Pages workflow builds the original browser simulator. No deployment keys are included.
+
+## Training on GPU hosts (14 October 2026)
+
+`scripts/hf/uploader.py`, `scripts/hf/train_hf.py` and `scripts/hf/README.md` are copied unmodified from JoyandAI/microduck_rl `develop` at `22916b9` (Apache-2.0). They were missing from this fork, so the Hugging Face Jobs bootstrap in `src/mjlab_microduck/hf_jobs.py`, which launches `scripts/hf/uploader.py`, could not save checkpoints. `scripts/train_gpu.sh` and `Dockerfile` are IndieDuck additions for rented GPUs and lab machines; the HF Jobs submission defaults now name the source dataset `indieduck-rl-src`.

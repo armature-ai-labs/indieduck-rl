@@ -47,3 +47,6 @@ node_modules/
 
 MUJOCO_LOG.TXT
 .DS_Store
+exported
+# iCloud Drive conflict copies
+* 2.*

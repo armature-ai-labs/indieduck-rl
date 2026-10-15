@@ -38,6 +38,8 @@ The R25 contract (model `indieduck-r25`) is version 2: 15 physical joints, 14 po
 
 ## Training, evaluation and export
 
+**Where to train:** Hugging Face Jobs, a rented GPU or a lab machine, all with the same code and settings. Step-by-step guide: [docs/TRAINING.md](docs/TRAINING.md). Check any machine first with `scripts/train_gpu.sh --smoke`.
+
 ```sh
 uv run train Mjlab-Velocity-Flat-IndieDuck-R25 --help
 uv run python tools/verify_r20_training.py

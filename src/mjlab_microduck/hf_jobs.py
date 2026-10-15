@@ -2,8 +2,8 @@
 
 Invoked by the --hf-jobs interception (see train_hook.py):
 
-    uv run train Mjlab-Kick-Flat-MicroDuck \
-        --env.scene.num-envs 4096 --agent.max_iterations 4000 --hf-jobs
+    uv run train Mjlab-Velocity-Flat-IndieDuck-R25 \
+        --env.scene.num-envs 4096 --agent.max-iterations 3000 --hf-jobs
 
 Anything that isn't an --hf-* / submission flag is forwarded verbatim to
 `uv run train` inside the job.
@@ -96,11 +96,11 @@ CKPT_ONE_SHOT=1 uv run python scripts/hf/uploader.py || true
 if [ "$TRAIN_RC" -eq 0 ] && [ "${AUTO_EXPORT:-1}" = "1" ]; then
     set +e
     TASK_ID=${TRAIN_ARGS%% *}
-    CKPT=$(ls -t logs/rsl_rl/*/model_*.pt 2>/dev/null | head -1)
+    CKPT=$(ls -t logs/rsl_rl/*/*/model_*.pt logs/rsl_rl/*/model_*.pt 2>/dev/null | head -1)
     if [ -n "$CKPT" ]; then
         echo "[bootstrap] auto-exporting ONNX from $(basename "$CKPT")"
         uv run python scripts/export.py "$TASK_ID" \
-            --checkpoint-file "$(basename "$CKPT")" \
+            --checkpoint-file "$CKPT" \
             --num-envs 1 --onnx-file /work/policy.onnx \
         && uv run python - <<'PY'
 import os
@@ -242,10 +242,10 @@ def submit(argv: list[str]) -> int:
     """Parse submission args from ``argv`` and launch the HF job."""
     ap = argparse.ArgumentParser(
         prog="train --hf-jobs",
-        description="Submit a microduck training run to HF Jobs.",
+        description="Submit an IndieDuck training run to HF Jobs.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    ap.add_argument("task", help="mjlab task id, e.g. Mjlab-Kick-Flat-MicroDuck")
+    ap.add_argument("task", help="mjlab task id, e.g. Mjlab-Velocity-Flat-IndieDuck-R25")
     ap.add_argument("--flavor", default=DEFAULT_FLAVOR, help="HF Jobs hardware flavor")
     ap.add_argument("--image", default=DEFAULT_IMAGE, help="Docker image to run in")
     ap.add_argument("--timeout", default=DEFAULT_TIMEOUT, help="Job max duration")
@@ -270,7 +270,7 @@ def submit(argv: list[str]) -> int:
     ap.add_argument(
         "--src-repo",
         default=None,
-        help="HF dataset repo for source tarballs. Defaults to <namespace>/mjlab-microduck-src",
+        help="HF dataset repo for source tarballs. Defaults to <namespace>/indieduck-rl-src",
     )
     ap.add_argument(
         "--ckpt-repo",
@@ -315,7 +315,7 @@ def submit(argv: list[str]) -> int:
     repo_root = _repo_root()
     stamp = dt.datetime.now().strftime("%Y%m%d-%H%M%S")
     run_name = args.run_name or f"{args.task}-{stamp}".lower()
-    src_repo = args.src_repo or f"{namespace}/mjlab-microduck-src"
+    src_repo = args.src_repo or f"{namespace}/indieduck-rl-src"
     ckpt_repo = args.ckpt_repo or f"{namespace}/{run_name}"
 
     env: dict[str, str] = {
