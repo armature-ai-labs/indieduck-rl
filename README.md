@@ -4,7 +4,7 @@ IndieDuck by Armature AI Labs, adapted from Open Duck Mini and inspired by Polle
 
 [Browser simulator](https://armature-ai-labs.github.io/indieduck-rl/) · [Assembly guide](https://armature-ai-labs.github.io/indieduck/) · [Editable R25 CAD](https://github.com/armature-ai-labs/indieduck-cad) · [Runtime](https://github.com/armature-ai-labs/indieduck-runtime)
 
-This is the R25 CAD and simulation study, built from the R25 exterior on the unchanged R20 joint chain. It includes actual attributed environment, reward, observation, BAM actuator, training, evaluation and ONNX-export source adapted from JoyandAI/Pollen, with an explicitly registered R25 velocity task. No trained policy or successful physical behaviour is claimed. The Apache-2.0 software licence does not cover the whole mixed-source mesh collection. Read [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+This is the simulation and training repository for **IndieDuck Cyber Edition** (design R25, by Zankar Savalia) on platform P1, the shared IndieDuck mechanism. Each edition gets its own model ID (`indieduck-<edition>`), training task and policies; this repository currently holds Cyber Edition (`indieduck-cyber`). It includes actual attributed environment, reward, observation, BAM actuator, training, evaluation and ONNX-export source adapted from JoyandAI/Pollen, with an explicitly registered R25 velocity task. No trained policy or successful physical behaviour is claimed. The Apache-2.0 software licence does not cover the whole mixed-source mesh collection. Read [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ## Browser study
 
@@ -31,22 +31,22 @@ uv run python -m mjlab_microduck.sim.body_server --headless
 In the runtime repository:
 
 ```sh
-cargo run -p robotd -- --sim 127.0.0.1:7801 --no-policy --socket /tmp/indieduck-r25.sock
+cargo run -p robotd -- --sim 127.0.0.1:7801 --no-policy --socket /tmp/indieduck-cyber.sock
 ```
 
-The R25 contract (model `indieduck-r25`) is version 2: 15 physical joints, 14 policy actions, 61 policy observations and separate direct-drive mouth control. The logical jaw opens from 0 to +30 degrees about CAD +Y. Physical encoder sign, home and limits remain uncalibrated. No passive crank/rod mechanism remains in the current model. Reset, disconnect and incompatible contract handling are tested; simulation does not fall back to serial hardware.
+The Cyber Edition contract (model `indieduck-cyber`, design revision R25) is version 2: 15 physical joints, 14 policy actions, 61 policy observations and separate direct-drive mouth control. The logical jaw opens from 0 to +30 degrees about CAD +Y. Physical encoder sign, home and limits remain uncalibrated. No passive crank/rod mechanism remains in the current model. Reset, disconnect and incompatible contract handling are tested; simulation does not fall back to serial hardware.
 
 ## Training, evaluation and export
 
 **Where to train:** Hugging Face Jobs, a rented GPU or a lab machine, all with the same code and settings. Step-by-step guide: [docs/TRAINING.md](docs/TRAINING.md). Check any machine first with `scripts/train_gpu.sh --smoke`.
 
 ```sh
-uv run train Mjlab-Velocity-Flat-IndieDuck-R25 --help
+uv run train Mjlab-Velocity-Flat-IndieDuck-Cyber --help
 uv run python tools/verify_r20_training.py
 # On a suitable CUDA host, after inspecting task settings:
-uv run train Mjlab-Velocity-Flat-IndieDuck-R25
-uv run play Mjlab-Velocity-Flat-IndieDuck-R25 --help
-uv run python scripts/export.py Mjlab-Velocity-Flat-IndieDuck-R25 --help
+uv run train Mjlab-Velocity-Flat-IndieDuck-Cyber
+uv run play Mjlab-Velocity-Flat-IndieDuck-Cyber --help
+uv run python scripts/export.py Mjlab-Velocity-Flat-IndieDuck-Cyber --help
 ```
 
 The current task reuses the retained upstream velocity rewards and observations with the current R25 model and home pose, explicit 14-joint ordering and HD-1910 m1 BAM. Mouth control remains outside the policy. Training delay is 6 physics substeps (30 ms), approximating the selected 29 ms native diagnostic delay at a 5 ms timestep. Parameters are inherited estimates, not IndieDuck measurements. A one-environment CPU smoke checks reset, 14 actions, 61 actor observations and two finite steps. This does not validate GPU training, reward tuning, convergence or policy transfer. Historical task implementations remain in source, with `tasks/upstream_registry.py` retained as history; their omitted upstream CAD prevents treating them as current runnable IndieDuck tasks.

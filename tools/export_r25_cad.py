@@ -17,7 +17,7 @@ poses = json.loads((model / 'poses.json').read_text()); stand = next(p for p in 
 r20 = json.loads(Path(os.environ.get('INDIEDUCK_R20_MANIFEST', str(cad / 'assembly/manifest.json'))).read_text())
 assert r20['revision'] == 'R20', 'expected the R20 display manifest as the registration reference'
 stand['base_position_m'] = r20['standing_pose']['base_position_m']
-a = A.openDocument(str(cad / 'native/robot/IndieDuck_R25_Assembly.FCStd')); a.recompute()
+a = A.openDocument(str(cad / 'editions/cyber/native/IndieDuck_Cyber_Assembly.FCStd')); a.recompute()
 commit = os.environ.get('INDIEDUCK_CAD_COMMIT', 'unrecorded')
 printed = {}
 with open(cad / 'COMPONENTS.csv') as f:
@@ -56,7 +56,7 @@ for o in a.Objects:
         registration.append((oid, float(np.abs(rb - nb).max())))
     row = {'id': oid, 'name': oid[2:] if oid.startswith('A_') else oid, 'label': oid, 'mesh': rel, 'body': body, 'color': rgb(o),
            'category': 'printed' if p else 'purchased', 'material': p['material'] if p else 'Purchased hardware envelope, material estimate',
-           'native_file': 'IndieDuck_R25_Assembly.FCStd', 'native_object': o.Name, 'native': 'native/robot/IndieDuck_R25_Assembly.FCStd',
+           'native_file': 'IndieDuck_Cyber_Assembly.FCStd', 'native_object': o.Name, 'native': 'editions/cyber/native/IndieDuck_Cyber_Assembly.FCStd',
            'step': p['step'] if p else None, 'stl': p['stl'] if p else None, 'reference': not bool(p), 'provisional': not bool(p),
            'volume_mm3': s.Volume, 'center_of_mass_mm': list(com(s)), 'bounds_mm': [[bb.XMin, bb.YMin, bb.ZMin], [bb.XMax, bb.YMax, bb.ZMax]],
            'facets': mesh.CountFacets, 'source_sha256': hashlib.sha256((out / rel).read_bytes()).hexdigest(), 'source_commit': commit}

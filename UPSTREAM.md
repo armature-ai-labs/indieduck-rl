@@ -26,3 +26,7 @@ Upstream developer paths in test fixtures and examples remain unchanged for sour
 ## Training on GPU hosts (14 October 2026)
 
 `scripts/hf/uploader.py`, `scripts/hf/train_hf.py` and `scripts/hf/README.md` are copied unmodified from JoyandAI/microduck_rl `develop` at `22916b9` (Apache-2.0). They were missing from this fork, so the Hugging Face Jobs bootstrap in `src/mjlab_microduck/hf_jobs.py`, which launches `scripts/hf/uploader.py`, could not save checkpoints. `scripts/train_gpu.sh` and `Dockerfile` are IndieDuck additions for rented GPUs and lab machines; the HF Jobs submission defaults now name the source dataset `indieduck-rl-src`.
+
+## IndieDuck Cyber Edition (15 October 2026)
+
+The R25 design is named IndieDuck Cyber Edition (`indieduck-cyber`, training task `Mjlab-Velocity-Flat-IndieDuck-Cyber`) on platform P1. The CAD exporter reads `editions/cyber/native/IndieDuck_Cyber_Assembly.FCStd` from indieduck-cad. `cad_revision` stays `R25` (the design revision); the contract's `edition` block names the edition and platform.

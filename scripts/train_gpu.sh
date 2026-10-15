@@ -7,7 +7,7 @@
 # Usage, from the repository root:
 #   scripts/train_gpu.sh [--smoke] [--hub-repo <user>/<repo>] [--no-export] -- <train args>
 #
-#   scripts/train_gpu.sh -- Mjlab-Velocity-Flat-IndieDuck-R25 \
+#   scripts/train_gpu.sh -- Mjlab-Velocity-Flat-IndieDuck-Cyber \
 #       --env.scene.num-envs 4096 --agent.max-iterations 3000 --agent.logger tensorboard
 #
 # --smoke      Check the setup only: build the task and run two training steps
@@ -54,7 +54,7 @@ fi
 
 if [ ${#TRAIN_ARGS[@]} -eq 0 ]; then
   echo "error: no training arguments. Example:" >&2
-  echo "  scripts/train_gpu.sh -- Mjlab-Velocity-Flat-IndieDuck-R25 --env.scene.num-envs 4096 --agent.max-iterations 3000 --agent.logger tensorboard" >&2
+  echo "  scripts/train_gpu.sh -- Mjlab-Velocity-Flat-IndieDuck-Cyber --env.scene.num-envs 4096 --agent.max-iterations 3000 --agent.logger tensorboard" >&2
   exit 2
 fi
 

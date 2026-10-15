@@ -264,7 +264,7 @@ def run_export(task_id: str, cfg: ExportConfig) -> ExportResult:
     runner.export_policy_to_onnx(path, filename)
 
     metadata = get_base_metadata(runner.env.unwrapped, run_path=cfg.checkpoint_file)
-    if task_id == "Mjlab-Velocity-Flat-IndieDuck-R25":
+    if task_id == "Mjlab-Velocity-Flat-IndieDuck-Cyber":
         import hashlib
         import json
         model_dir = Path(__file__).parent / "robot/indieduck"

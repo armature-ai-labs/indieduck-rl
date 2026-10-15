@@ -1,4 +1,4 @@
-// Scripted keyframe motions for previewing IndieDuck's joints within the CAD-verified limits.
+// Scripted keyframe motions for previewing IndieDuck's joints within the Cyber Edition limits.
 // Kinematic playback only: no physics, no balance. Joints are clamped to the model's joint ranges
 // (the R25 contract limits) and any request beyond a limit is reported.
 
@@ -9,16 +9,16 @@ export const MOTIONS = [
     note: 'From the CAD zero configuration into the standing pose.',
     keys: [{ pose: 'zero', t: 0.8 }, { pose: 'stand', t: 1.6 }, { pose: 'stand', t: 1.0 }] },
   { id: 'sit', label: 'Sit and stand', loop: true,
-    note: 'The sit pose asks for 89 deg at each ankle; the R25 ankle stops at 78 deg, so it is clamped and shown in red.',
+    note: 'The sit pose asks for 89 deg at each ankle; the Cyber Edition ankle stops at 78 deg, so it is clamped and shown in red.',
     keys: [{ pose: 'stand', t: 0.8 }, { pose: 'sit_transition', t: 1.2 }, { pose: 'sit', t: 1.2 }, { pose: 'sit', t: 1.2 }, { pose: 'sit_transition', t: 1.2 }, { pose: 'stand', t: 1.2 }] },
   { id: 'talk', label: 'Talk', loop: true,
-    note: 'Jaw opening and closing at speaking pace, with small head movements. In the R25 CAD the head rims block the jaw surrounds, so the real jaw cannot open yet (open design item); watch the rims.',
+    note: 'Jaw opening and closing at speaking pace, with small head movements. In the Cyber Edition CAD the head rims block the jaw surrounds, so the real jaw cannot open yet (open design item); watch the rims.',
     keys: [0, 18, 6, 24, 4, 14, 26, 8, 0].map((m, i) => ({ pose: 'stand', t: 0.22, joints: { mouth: m * D, head_pitch: (i % 2 ? 4 : -2) * D, head_yaw: (i % 3 - 1) * 6 * D } })) },
   { id: 'run', label: 'Gait cycle', loop: true, tempo: 2.2,
     note: 'Alternating stepping poses at running tempo, in place. A real run needs a trained policy and physics; this checks that the leg joints move through the gait within their limits.',
     keys: [{ pose: 'walk_left', t: 0.35 }, { pose: 'stand', t: 0.2 }, { pose: 'walk_right', t: 0.35 }, { pose: 'stand', t: 0.2 }] },
   { id: 'getup', label: 'Fall and get up', loop: true,
-    note: 'Falls onto its back, tucks and rises through sitting to standing. Scripted poses, not a balancing controller; the tuck asks for 40 deg of neck and 89 deg of ankle, beyond the R25 limits.',
+    note: 'Falls onto its back, tucks and rises through sitting to standing. Scripted poses, not a balancing controller; the tuck asks for 40 deg of neck and 89 deg of ankle, beyond the Cyber Edition limits.',
     keys: [{ pose: 'stand', t: 1.0 }, { pose: 'getup_back', t: 0.7 }, { pose: 'getup_back', t: 1.0 }, { pose: 'getup_tuck', t: 1.4 }, { pose: 'getup_tuck', t: 0.6 }, { pose: 'sit', t: 1.2 }, { pose: 'sit_transition', t: 1.0 }, { pose: 'stand', t: 1.2 }] },
 ];
 

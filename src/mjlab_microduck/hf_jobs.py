@@ -2,7 +2,7 @@
 
 Invoked by the --hf-jobs interception (see train_hook.py):
 
-    uv run train Mjlab-Velocity-Flat-IndieDuck-R25 \
+    uv run train Mjlab-Velocity-Flat-IndieDuck-Cyber \
         --env.scene.num-envs 4096 --agent.max-iterations 3000 --hf-jobs
 
 Anything that isn't an --hf-* / submission flag is forwarded verbatim to
@@ -245,7 +245,7 @@ def submit(argv: list[str]) -> int:
         description="Submit an IndieDuck training run to HF Jobs.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    ap.add_argument("task", help="mjlab task id, e.g. Mjlab-Velocity-Flat-IndieDuck-R25")
+    ap.add_argument("task", help="mjlab task id, e.g. Mjlab-Velocity-Flat-IndieDuck-Cyber")
     ap.add_argument("--flavor", default=DEFAULT_FLAVOR, help="HF Jobs hardware flavor")
     ap.add_argument("--image", default=DEFAULT_IMAGE, help="Docker image to run in")
     ap.add_argument("--timeout", default=DEFAULT_TIMEOUT, help="Job max duration")

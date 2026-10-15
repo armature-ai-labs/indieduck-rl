@@ -54,7 +54,7 @@ def test_tcp_handshake_reset_and_disconnect(body):
             def call(x):stream.write((json.dumps(x)+'\n').encode());stream.flush();return json.loads(stream.readline())
             assert 'error' in call({'op':'read'})
             assert 'error' in call({'op':'hello','protocol':1,'model_id':'microduck','contract_version':1})
-            hello=call({'op':'hello','protocol':1,'model_id':'indieduck-r25','contract_version':2,'contract_sha256':CONTRACT_SHA256})
+            hello=call({'op':'hello','protocol':1,'model_id':'indieduck-cyber','contract_version':2,'contract_sha256':CONTRACT_SHA256})
             assert hello['servo_volts']==5 and hello['contract_sha256']==CONTRACT_SHA256
             assert hello['mujoco_version']=='3.10.0'
             read=call({'op':'read'});assert read['session_id']==hello['session_id']

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<mujoco model="indieduck-r25_skates">
+<mujoco model="indieduck-cyber_skates">
   <compiler angle="radian" autolimits="true" meshdir="meshes" inertiafromgeom="false" fusestatic="false" />
   <option timestep=".005" gravity="0 0 -9.81" integrator="implicitfast" iterations="50" />
   <visual>

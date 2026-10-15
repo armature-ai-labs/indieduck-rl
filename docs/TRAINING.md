@@ -8,7 +8,7 @@ Policies train in MuJoCo (mjlab) on an NVIDIA GPU. There are three ways to get o
 | [Rented GPU](#2-rented-gpu) | Longer runs, or when you want a full Linux machine for a few hours | An account with a GPU cloud (RunPod, Lambda, Vast.ai, or a cloud VM) |
 | [Lab machine](#3-lab-machine) | Repeated runs at no per-hour cost | A Linux workstation with an NVIDIA GPU |
 
-The current task is `Mjlab-Velocity-Flat-IndieDuck-R25` (walking on flat ground, R25 model, HD-1910 actuator model). No IndieDuck policy has been trained yet: the settings below are starting points, and the first runs are experiments.
+The current task is `Mjlab-Velocity-Flat-IndieDuck-Cyber` (walking on flat ground, IndieDuck Cyber Edition model, HD-1910 actuator model). No Cyber Edition policy has been trained yet: the settings below are starting points, and the first runs are experiments.
 
 ## Before any path: check the setup on your laptop
 
@@ -24,7 +24,7 @@ On macOS, keep the Python environment outside iCloud-synced folders first: `expo
 ## Recommended starting settings
 
 ```
-Mjlab-Velocity-Flat-IndieDuck-R25 --env.scene.num-envs 4096 --agent.max-iterations 3000 --agent.logger tensorboard
+Mjlab-Velocity-Flat-IndieDuck-Cyber --env.scene.num-envs 4096 --agent.max-iterations 3000 --agent.logger tensorboard
 ```
 
 - `--env.scene.num-envs 4096`: parallel simulations. The default is 1, which is far too few on a GPU.
@@ -40,7 +40,7 @@ The repository submits itself as a Hugging Face Job: it uploads a snapshot of yo
 3. Check what would be submitted, at no cost:
 
    ```sh
-   uv run train Mjlab-Velocity-Flat-IndieDuck-R25 --env.scene.num-envs 4096 \
+   uv run train Mjlab-Velocity-Flat-IndieDuck-Cyber --env.scene.num-envs 4096 \
        --agent.max-iterations 3000 --agent.logger tensorboard \
        --hf-jobs --namespace <your-hf-username> --no-wandb --dry-run
    ```
@@ -58,7 +58,7 @@ Any provider that gives you a Linux machine with an NVIDIA GPU works. Choose an 
 ssh <your-machine>
 git clone https://github.com/armature-ai-labs/indieduck-rl.git && cd indieduck-rl
 scripts/train_gpu.sh --smoke     # about a minute: confirms the machine is set up
-scripts/train_gpu.sh -- Mjlab-Velocity-Flat-IndieDuck-R25 --env.scene.num-envs 4096 \
+scripts/train_gpu.sh -- Mjlab-Velocity-Flat-IndieDuck-Cyber --env.scene.num-envs 4096 \
     --agent.max-iterations 3000 --agent.logger tensorboard
 ```
 
@@ -75,7 +75,7 @@ A Linux workstation with an NVIDIA GPU, driver installed (`nvidia-smi` shows the
 ```sh
 git clone https://github.com/armature-ai-labs/indieduck-rl.git && cd indieduck-rl
 scripts/train_gpu.sh --smoke
-scripts/train_gpu.sh -- Mjlab-Velocity-Flat-IndieDuck-R25 --env.scene.num-envs 4096 \
+scripts/train_gpu.sh -- Mjlab-Velocity-Flat-IndieDuck-Cyber --env.scene.num-envs 4096 \
     --agent.max-iterations 3000 --agent.logger tensorboard
 ```
 
@@ -84,7 +84,7 @@ or use the container, which needs Docker and the NVIDIA Container Toolkit:
 ```sh
 docker build -t indieduck-rl .
 docker run --gpus all --rm -v "$PWD/logs:/work/logs" -v "$PWD/exported:/work/exported" indieduck-rl \
-    -- Mjlab-Velocity-Flat-IndieDuck-R25 --env.scene.num-envs 4096 --agent.max-iterations 3000 --agent.logger tensorboard
+    -- Mjlab-Velocity-Flat-IndieDuck-Cyber --env.scene.num-envs 4096 --agent.max-iterations 3000 --agent.logger tensorboard
 ```
 
 Watch training with `uv run tensorboard --logdir logs/rsl_rl` and open the printed address. When several people share one machine, give each person their own clone so logs and checkpoints stay separate, and use `--gpu-ids` to pick a GPU on multi-GPU machines. ARM machines such as NVIDIA DGX Spark are handled by `pyproject.toml`, which selects the CUDA build of PyTorch there.
@@ -97,4 +97,4 @@ Watch training with `uv run tensorboard --logdir logs/rsl_rl` and open the print
 | Exported policy for the runtime | `exported/policy.onnx` (Hugging Face Jobs: `exported/policy.onnx` in the checkpoint repo) |
 | Training curves | TensorBoard files in the run folder, or your W&B project |
 
-Exported policies carry the R25 model, revision and contract metadata, and the runtime refuses a policy built for a different robot model. See the README's training, evaluation and export section for evaluation and publishing.
+Exported policies carry the edition's model, revision and contract metadata, and the runtime refuses a policy built for a different robot model. See the README's training, evaluation and export section for evaluation and publishing.

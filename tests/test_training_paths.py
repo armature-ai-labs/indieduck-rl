@@ -33,4 +33,4 @@ def test_training_guide_covers_all_three_paths():
     guide = (ROOT / "docs/TRAINING.md").read_text()
     for heading in ("Hugging Face Jobs", "Rented GPU", "Lab machine"):
         assert heading in guide
-    assert "Mjlab-Velocity-Flat-IndieDuck-R25" in guide
+    assert "Mjlab-Velocity-Flat-IndieDuck-Cyber" in guide
