@@ -3,13 +3,13 @@
   "parts": 141,
   "printed": 55,
   "pose": "published Cyber Edition (unchanged R20 joint chain) natural stance with exact CAD root, not seated collision-proxy pose",
-  "max_bounds_error_mm": 0.035081298054327054,
+  "max_bounds_error_mm": 0.03508134475934885,
   "tolerance_mm": 0.15,
   "details": [
     {
       "name": "Trunk",
       "body": "trunk_base",
-      "bounds_max_error_mm": 1.1744829886417563e-05
+      "bounds_max_error_mm": 5.963638083361644e-06
     },
     {
       "name": "Neck",
@@ -34,17 +34,17 @@
     {
       "name": "HipL_L",
       "body": "left_hip_roll_link",
-      "bounds_max_error_mm": 0.035081298054327054
+      "bounds_max_error_mm": 0.03508134475934885
     },
     {
       "name": "Thigh_L",
       "body": "left_hip_pitch_link",
-      "bounds_max_error_mm": 5.210395864763129e-06
+      "bounds_max_error_mm": 8.739029222493144e-06
     },
     {
       "name": "HeadBase",
       "body": "head_roll_link",
-      "bounds_max_error_mm": 0.012625133412748346
+      "bounds_max_error_mm": 0.012628328053577997
     },
     {
       "name": "Yaw_R",
@@ -54,12 +54,12 @@
     {
       "name": "HipL_R",
       "body": "right_hip_roll_link",
-      "bounds_max_error_mm": 0.03508079080211807
+      "bounds_max_error_mm": 0.035081340315219756
     },
     {
       "name": "Thigh_R",
       "body": "right_hip_pitch_link",
-      "bounds_max_error_mm": 5.210395864763129e-06
+      "bounds_max_error_mm": 8.739029222493144e-06
     },
     {
       "name": "ref_servo_left_ankle",
@@ -334,7 +334,7 @@
     {
       "name": "R17_JawBearingTower",
       "body": "head_roll_link",
-      "bounds_max_error_mm": 0.003506563499178217
+      "bounds_max_error_mm": 0.00031648075234785855
     },
     {
       "name": "R17_JawBearingKeeper",
@@ -499,17 +499,17 @@
     {
       "name": "HelmetRoof",
       "body": "head_roll_link",
-      "bounds_max_error_mm": 2.083278449749315e-05
+      "bounds_max_error_mm": 2.0805942357871032e-05
     },
     {
       "name": "HelmetLower",
       "body": "head_roll_link",
-      "bounds_max_error_mm": 1.0330664435009851e-05
+      "bounds_max_error_mm": 1.0323474408657773e-05
     },
     {
       "name": "CameraFace",
       "body": "head_roll_link",
-      "bounds_max_error_mm": 1.2014593042675159e-05
+      "bounds_max_error_mm": 1.0783667070413117e-05
     },
     {
       "name": "CameraBoard_R",
@@ -534,7 +534,7 @@
     {
       "name": "CameraCarrier",
       "body": "head_roll_link",
-      "bounds_max_error_mm": 1.1479760975152686e-05
+      "bounds_max_error_mm": 3.0264286549064323e-05
     },
     {
       "name": "Relocated_A_ref_ToFPCB",
@@ -554,37 +554,37 @@
     {
       "name": "TorsoFront",
       "body": "trunk_base",
-      "bounds_max_error_mm": 1.1090947882319568e-05
+      "bounds_max_error_mm": 1.116731793149306e-05
     },
     {
       "name": "TorsoRear",
       "body": "trunk_base",
-      "bounds_max_error_mm": 1.0556250207294227e-05
+      "bounds_max_error_mm": 1.1013051637309701e-05
     },
     {
       "name": "PelvisFront",
       "body": "trunk_base",
-      "bounds_max_error_mm": 5.499090641181148e-06
+      "bounds_max_error_mm": 5.518629456191526e-06
     },
     {
       "name": "PelvisRear",
       "body": "trunk_base",
-      "bounds_max_error_mm": 5.536346034396011e-06
+      "bounds_max_error_mm": 6.16178696954961e-06
     },
     {
       "name": "ThighCap_L",
       "body": "left_hip_pitch_link",
-      "bounds_max_error_mm": 5.886625249751365e-06
+      "bounds_max_error_mm": 5.56154089448313e-06
     },
     {
       "name": "ThighCap_R",
       "body": "right_hip_pitch_link",
-      "bounds_max_error_mm": 5.850437190257907e-06
+      "bounds_max_error_mm": 5.569396138715987e-06
     },
     {
       "name": "ShankStructure_L",
       "body": "left_knee_link",
-      "bounds_max_error_mm": 1.7821891809544077e-06
+      "bounds_max_error_mm": 2.3395929776848234e-06
     },
     {
       "name": "ShinCap_L",
@@ -604,12 +604,12 @@
     {
       "name": "ShankStructure_R",
       "body": "right_knee_link",
-      "bounds_max_error_mm": 2.2872074477431337e-06
+      "bounds_max_error_mm": 2.3151843428492747e-06
     },
     {
       "name": "ShinCap_R",
       "body": "right_knee_link",
-      "bounds_max_error_mm": 7.225877327043939e-06
+      "bounds_max_error_mm": 0.002710854595662851
     },
     {
       "name": "FacetedFoot_R",
@@ -624,7 +624,7 @@
     {
       "name": "FaceBezel",
       "body": "head_roll_link",
-      "bounds_max_error_mm": 1.0809286632440518e-05
+      "bounds_max_error_mm": 1.1846632674838986e-05
     },
     {
       "name": "OpticalRing_R",
@@ -669,7 +669,7 @@
     {
       "name": "RearHeadBumper",
       "body": "head_roll_link",
-      "bounds_max_error_mm": 2.0466663142038044e-05
+      "bounds_max_error_mm": 2.0712760007146613e-05
     },
     {
       "name": "TorsoAccent_Front_L",
@@ -694,22 +694,22 @@
     {
       "name": "HipCowl_L",
       "body": "left_hip_roll_link",
-      "bounds_max_error_mm": 6.492559573301193e-06
+      "bounds_max_error_mm": 6.530210872046638e-06
     },
     {
       "name": "HipCowl_R",
       "body": "right_hip_roll_link",
-      "bounds_max_error_mm": 6.261063112411591e-06
+      "bounds_max_error_mm": 6.177373071403203e-06
     },
     {
       "name": "ToeCap_L",
       "body": "left_ankle_link",
-      "bounds_max_error_mm": 5.3705922625768565e-06
+      "bounds_max_error_mm": 6.765335625047442e-06
     },
     {
       "name": "ToeCap_R",
       "body": "right_ankle_link",
-      "bounds_max_error_mm": 6.940659200149746e-06
+      "bounds_max_error_mm": 5.744880821056952e-06
     }
   ]
 }
