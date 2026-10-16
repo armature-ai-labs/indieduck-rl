@@ -468,7 +468,7 @@
         <geom name="ref_servo_right_hip_roll_visual" type="mesh" mesh="ref_servo_right_hip_roll" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
         <geom name="Yaw_R_collision" type="box" pos="-0.00175 -4.768371566e-10 -0.01959999847" size="0.01375 0.01220000029 0.02159999847" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
       </body>
-      <inertial mass="0.30367050430366127" pos="-0.01373174113 -0.0001124969017 -0.01245949989" diaginertia="0.0004853619341 0.0006936039824 0.0005825665566" />
+      <inertial mass="0.30290775035594" pos="-0.0138152822 -1.089350396e-05 -0.0124708095" diaginertia="0.000484142811 0.0006918618008 0.0005811032767" />
       <geom name="Trunk_visual" type="mesh" mesh="Trunk" rgba="0.7019608021 0.7294117808 0.7490196228 1" group="2" contype="0" conaffinity="0" mass="0" />
       <geom name="ref_servo_left_hip_yaw_visual" type="mesh" mesh="ref_servo_left_hip_yaw" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
       <geom name="ref_servo_right_hip_yaw_visual" type="mesh" mesh="ref_servo_right_hip_yaw" rgba="0.1019607857 0.1098039225 0.1215686277 1" group="2" contype="0" conaffinity="0" mass="0" />
@@ -505,7 +505,7 @@
       <geom name="TorsoAccent_Rear_L_visual" type="mesh" mesh="TorsoAccent_Rear_L" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
       <geom name="TorsoAccent_Front_R_visual" type="mesh" mesh="TorsoAccent_Front_R" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
       <geom name="TorsoAccent_Rear_R_visual" type="mesh" mesh="TorsoAccent_Rear_R" rgba="0.9607843161 0.5490196347 0.07058823854 1" group="2" contype="0" conaffinity="0" mass="0" />
-      <geom name="Trunk_collision" type="box" pos="-0.0001706542969 0.0004763660431 -0.022625" size="0.037 0.023 0.035" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
+      <geom name="Trunk_collision" type="box" pos="-0.0001706542969 0.001700063705 -0.022625" size="0.037 0.023 0.035" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
       <geom name="TorsoFront_collision" type="box" pos="0.0265999999 0 0.01455326843" size="0.0344000001 0.042 0.024" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
       <geom name="TorsoRear_collision" type="box" pos="-0.036 0 0.01455326843" size="0.028 0.042 0.024" rgba=".9 .2 .2 0" group="3" contype="2" conaffinity="1" mass="0" />
       <site name="body_imu" pos="-0.0215 0.0025 0.02344999695" size=".001" rgba=".1 .7 .7 1" />

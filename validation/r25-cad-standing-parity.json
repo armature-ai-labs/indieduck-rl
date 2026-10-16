@@ -9,7 +9,7 @@
     {
       "name": "Trunk",
       "body": "trunk_base",
-      "bounds_max_error_mm": 5.963638083361644e-06
+      "bounds_max_error_mm": 5.846102935080921e-06
     },
     {
       "name": "Neck",
@@ -554,7 +554,7 @@
     {
       "name": "TorsoFront",
       "body": "trunk_base",
-      "bounds_max_error_mm": 1.116731793149306e-05
+      "bounds_max_error_mm": 1.1128632765311508e-05
     },
     {
       "name": "TorsoRear",
@@ -564,7 +564,7 @@
     {
       "name": "PelvisFront",
       "body": "trunk_base",
-      "bounds_max_error_mm": 5.518629456191526e-06
+      "bounds_max_error_mm": 5.276040271340321e-06
     },
     {
       "name": "PelvisRear",

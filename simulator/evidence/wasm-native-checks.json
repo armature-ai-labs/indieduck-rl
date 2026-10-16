@@ -2,14 +2,14 @@
   "mujoco": "3.10.0",
   "node": "v26.5.0",
   "arch": "arm64",
-  "cad_manifest_sha256": "d0072b5dbabb252b8683d3517dd62de74bde5bff9797c3ba34df7543882707bd",
+  "cad_manifest_sha256": "5c60173fe2c854e5dc9c8539071012d41f3ced9e10afb621270c0a81708be8e7",
   "results": [
     {
       "scene": "scene.xml",
       "pose": "zero",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 34.76858400000003,
+      "milliseconds_for_200_steps": 39.67316600000004,
       "contacts": 7
     },
     {
@@ -17,7 +17,7 @@
       "pose": "stand",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 27.114041000000043,
+      "milliseconds_for_200_steps": 26.240750000000048,
       "contacts": 7
     },
     {
@@ -25,7 +25,7 @@
       "pose": "walk_left",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 26.980125000000044,
+      "milliseconds_for_200_steps": 25.024,
       "contacts": 3
     },
     {
@@ -33,7 +33,7 @@
       "pose": "walk_right",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 40.31849999999997,
+      "milliseconds_for_200_steps": 25.99112500000001,
       "contacts": 2
     },
     {
@@ -41,15 +41,15 @@
       "pose": "sit",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 32.615542000000005,
-      "contacts": 9
+      "milliseconds_for_200_steps": 26.476208000000042,
+      "contacts": 7
     },
     {
       "scene": "scene.xml",
       "pose": "sit_transition",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 26.160958999999934,
+      "milliseconds_for_200_steps": 26.832583,
       "contacts": 3
     },
     {
@@ -57,7 +57,7 @@
       "pose": "pickup",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 25.158374999999978,
+      "milliseconds_for_200_steps": 28.178125000000023,
       "contacts": 9
     },
     {
@@ -65,7 +65,7 @@
       "pose": "kick_left",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 25.34137499999997,
+      "milliseconds_for_200_steps": 41.852667,
       "contacts": 6
     },
     {
@@ -73,7 +73,7 @@
       "pose": "kick_right",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 25.51750000000004,
+      "milliseconds_for_200_steps": 27.49487499999998,
       "contacts": 6
     },
     {
@@ -81,7 +81,7 @@
       "pose": "skating",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 23.702042000000006,
+      "milliseconds_for_200_steps": 24.214624999999955,
       "contacts": 5
     },
     {
@@ -89,7 +89,7 @@
       "pose": "getup_back",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 23.48300000000006,
+      "milliseconds_for_200_steps": 24.07899999999995,
       "contacts": 3
     },
     {
@@ -97,7 +97,7 @@
       "pose": "getup_tuck",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 23.639542000000006,
+      "milliseconds_for_200_steps": 24.107124999999996,
       "contacts": 3
     },
     {
@@ -105,7 +105,7 @@
       "pose": "roll_tuck",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 24.018208999999956,
+      "milliseconds_for_200_steps": 24.87041600000009,
       "contacts": 7
     },
     {
@@ -113,7 +113,7 @@
       "pose": "roll_contact",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 23.555041000000074,
+      "milliseconds_for_200_steps": 24.162959,
       "contacts": 5
     },
     {
@@ -121,7 +121,7 @@
       "pose": "jaw_0",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 25.529416999999967,
+      "milliseconds_for_200_steps": 25.501124999999888,
       "contacts": 7
     },
     {
@@ -129,7 +129,7 @@
       "pose": "jaw_15",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 25.05154200000004,
+      "milliseconds_for_200_steps": 25.708624999999984,
       "contacts": 9
     },
     {
@@ -137,7 +137,7 @@
       "pose": "jaw_30",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 25.399916000000076,
+      "milliseconds_for_200_steps": 25.333583999999973,
       "contacts": 7
     },
     {
@@ -145,7 +145,7 @@
       "pose": "sit_reduced",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 24.065000000000055,
+      "milliseconds_for_200_steps": 24.39479099999994,
       "contacts": 3
     },
     {
@@ -153,7 +153,7 @@
       "pose": "pickup_neck_neutral",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 23.665875000000028,
+      "milliseconds_for_200_steps": 24.308250000000044,
       "contacts": 7
     },
     {
@@ -161,7 +161,7 @@
       "pose": "zero",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 29.36170900000002,
+      "milliseconds_for_200_steps": 29.659124999999904,
       "contacts": 7
     },
     {
@@ -169,7 +169,7 @@
       "pose": "stand",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 28.333665999999994,
+      "milliseconds_for_200_steps": 32.82487500000002,
       "contacts": 5
     },
     {
@@ -177,7 +177,7 @@
       "pose": "walk_left",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 28.666750000000093,
+      "milliseconds_for_200_steps": 33.790707999999995,
       "contacts": 4
     },
     {
@@ -185,15 +185,15 @@
       "pose": "walk_right",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 28.442250000000058,
-      "contacts": 4
+      "milliseconds_for_200_steps": 30.609750000000076,
+      "contacts": 3
     },
     {
       "scene": "scene_skates.xml",
       "pose": "sit",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 28.800250000000005,
+      "milliseconds_for_200_steps": 30.91949999999997,
       "contacts": 7
     },
     {
@@ -201,7 +201,7 @@
       "pose": "sit_transition",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 28.766667000000098,
+      "milliseconds_for_200_steps": 45.95662500000003,
       "contacts": 7
     },
     {
@@ -209,7 +209,7 @@
       "pose": "pickup",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 28.543375000000196,
+      "milliseconds_for_200_steps": 70.43208300000015,
       "contacts": 9
     },
     {
@@ -217,7 +217,7 @@
       "pose": "kick_left",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 28.32029199999988,
+      "milliseconds_for_200_steps": 31.621124999999893,
       "contacts": 7
     },
     {
@@ -225,7 +225,7 @@
       "pose": "kick_right",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 30.395457999999962,
+      "milliseconds_for_200_steps": 28.88437500000009,
       "contacts": 7
     },
     {
@@ -233,7 +233,7 @@
       "pose": "skating",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 27.665042000000085,
+      "milliseconds_for_200_steps": 28.007542000000058,
       "contacts": 5
     },
     {
@@ -241,7 +241,7 @@
       "pose": "getup_back",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 28.20183299999985,
+      "milliseconds_for_200_steps": 28.374458000000004,
       "contacts": 7
     },
     {
@@ -249,7 +249,7 @@
       "pose": "getup_tuck",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 28.908959000000095,
+      "milliseconds_for_200_steps": 29.175040999999965,
       "contacts": 7
     },
     {
@@ -257,7 +257,7 @@
       "pose": "roll_tuck",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 32.128832999999986,
+      "milliseconds_for_200_steps": 33.18908300000021,
       "contacts": 7
     },
     {
@@ -265,7 +265,7 @@
       "pose": "roll_contact",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 30.351000000000113,
+      "milliseconds_for_200_steps": 31.457167000000027,
       "contacts": 5
     },
     {
@@ -273,7 +273,7 @@
       "pose": "jaw_0",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 29.120083000000022,
+      "milliseconds_for_200_steps": 29.119874999999865,
       "contacts": 7
     },
     {
@@ -281,7 +281,7 @@
       "pose": "jaw_15",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 28.70616700000005,
+      "milliseconds_for_200_steps": 28.98854099999994,
       "contacts": 7
     },
     {
@@ -289,7 +289,7 @@
       "pose": "jaw_30",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 36.09816599999999,
+      "milliseconds_for_200_steps": 29.126166999999896,
       "contacts": 7
     },
     {
@@ -297,7 +297,7 @@
       "pose": "sit_reduced",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 37.09295799999995,
+      "milliseconds_for_200_steps": 28.96024999999986,
       "contacts": 7
     },
     {
@@ -305,7 +305,7 @@
       "pose": "pickup_neck_neutral",
       "maximum_initial_qpos_error": 0,
       "simulated_seconds": 1.0000000000000007,
-      "milliseconds_for_200_steps": 28.939000000000078,
+      "milliseconds_for_200_steps": 29.29166599999985,
       "contacts": 9
     }
   ]
