@@ -3985,13 +3985,13 @@
         ]
       ],
       "com_world_m": [
-        -5.450033241594098e-05,
-        0.07835821328724249,
-        0.09210860502179895
+        -5.4500332415763356e-05,
+        0.07835821328724242,
+        0.09210860502179907
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "939ce81365d7873d85ef64a2532379963c9f6210fecc7853261d75b3991cc786"
+      "source_sha256": "9b8aabfa83d215e5910b479e0532a8941cf2e0d8f98f13f98f38d118e620ff60"
     },
     {
       "name": "ThighCap_R",
@@ -4092,7 +4092,7 @@
       "com_world_m": [
         -0.015511377386213459,
         0.06251342792242778,
-        0.05646234690388438
+        0.05646234690388439
       ],
       "reference": false,
       "include_when": "always",
@@ -4425,7 +4425,7 @@
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.0035128851609872364,
+      "mass_kg": 0.003315958893489646,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -4440,13 +4440,13 @@
         ]
       ],
       "com_world_m": [
-        0.017404442814635004,
-        0.0366379762488624,
-        0.2288515512143781
+        0.01603558653428547,
+        0.03604098768671395,
+        0.22881006879492985
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "e921fc9831818536da4d1aa01bc72cf31df102e52ebc5c0ef8082bd87bc5ca3d"
+      "source_sha256": "440a471f68ed25c6cf2cd80d40bd1b0246dcbb975a16f00af5324c05c799b848"
     },
     {
       "name": "HeadRim_R",
@@ -4460,7 +4460,7 @@
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.0035074816813886575,
+      "mass_kg": 0.0033105553767580954,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -4475,13 +4475,13 @@
         ]
       ],
       "com_world_m": [
-        0.01746713395416841,
-        -0.036694778652117815,
-        0.2288512404746101
+        0.016099774287423284,
+        -0.03610019442421893,
+        0.22880967197825483
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "9ac5c8ee1e6b6718b2f076ca4aa61bfe79b314db7a3f837d17fff745534d99ac"
+      "source_sha256": "ad85a9a31cec85077c2e8b49511bb507b938a21ba15987f4e6fd5460c60058be"
     },
     {
       "name": "JawSurround_R",
@@ -4495,28 +4495,28 @@
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.001968286347987628,
+      "mass_kg": 0.001568403588891502,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
-          0.024,
+          0.029108644485473633,
           -0.049700000762939456,
-          0.2255532684326172
+          0.22687643432617188
         ],
         [
-          0.063,
+          0.05274867630004883,
           -0.044,
           0.24984715270996094
         ]
       ],
       "com_world_m": [
-        0.041387370950510524,
-        -0.047830815357170445,
-        0.23660450716070502
+        0.040898574272051694,
+        -0.04763659050261099,
+        0.23839567861453376
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "b456dd8d52e81b05c14993bccd77b42797c28e629634e489f6e7abc0d255f6ba"
+      "source_sha256": "04232c19c3b6d580e92f8541a59595aed8369774659a73acd24f05d435e3a47f"
     },
     {
       "name": "HardwarePivotWasher_R",
@@ -4565,28 +4565,28 @@
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.0020496485783233747,
+      "mass_kg": 0.00164976581922727,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
-          0.024,
+          0.029108644485473633,
           0.042,
-          0.2255532684326172
+          0.22687643432617188
         ],
         [
-          0.063,
+          0.05274867630004883,
           0.049700000762939456,
           0.24985026550292969
         ]
       ],
       "com_world_m": [
-        0.0413689408925487,
-        0.04764942588303404,
-        0.2366961159534446
+        0.040898446544043156,
+        0.047420296906129755,
+        0.23841658667904195
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "ce720a1384414d00f394885ebf552238ea0dc55b2d282ed40663cb7d616a4008"
+      "source_sha256": "fbc95367007e49121a5973b9d9c6bdeca04fcb3548999fc6dc54e448704bdef8"
     },
     {
       "name": "HardwarePivotWasher_L",
@@ -4880,7 +4880,7 @@
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.002668371388806342,
+      "mass_kg": 0.0026683713888063405,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -4895,13 +4895,13 @@
         ]
       ],
       "com_world_m": [
-        0.004655048372471343,
-        0.046015252669296604,
-        0.025916247743578782
+        0.004655048372471338,
+        0.046015252669296555,
+        0.02591624774357876
       ],
       "reference": false,
       "include_when": "always",
-      "source_sha256": "0e5734ee23354e9d858ca498145a5f4d7bc0cc9eb82bc0cad6fc128f5eb99bad"
+      "source_sha256": "670e4e1f3678413a9a6112141a46d18094671fac109cbe335cbbd9d64c1070e5"
     },
     {
       "name": "ToeCap_R",
@@ -4915,7 +4915,7 @@
         1.0
       ],
       "material": "PLA fit study",
-      "mass_kg": 0.0026686860108274166,
+      "mass_kg": 0.0026686860108274145,
       "mass_status": "estimated full-solid density: PLA 1.24, TPU 1.20 g/cm3; purchased modules nominal estimates; unmeasured",
       "bounds_world_m": [
         [
@@ -4931,8 +4931,8 @@
       ],
       "com_world_m": [
         0.00465523655084807,
-        -0.04601733907188264,
-        0.02591609563945757
+        -0.04601733907188261,
+        0.02591609563945754
       ],
       "reference": false,
       "include_when": "always",

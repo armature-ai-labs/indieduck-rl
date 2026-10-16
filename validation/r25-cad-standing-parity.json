@@ -639,17 +639,17 @@
     {
       "name": "HeadRim_L",
       "body": "head_roll_link",
-      "bounds_max_error_mm": 9.658350091923396e-06
+      "bounds_max_error_mm": 9.656097033072797e-06
     },
     {
       "name": "HeadRim_R",
       "body": "head_roll_link",
-      "bounds_max_error_mm": 9.67280155972361e-06
+      "bounds_max_error_mm": 9.65621280157869e-06
     },
     {
       "name": "JawSurround_R",
       "body": "mouth_link",
-      "bounds_max_error_mm": 0.016564806279845135
+      "bounds_max_error_mm": 0.02528136327309416
     },
     {
       "name": "HardwarePivotWasher_R",
@@ -659,7 +659,7 @@
     {
       "name": "JawSurround_L",
       "body": "mouth_link",
-      "bounds_max_error_mm": 9.17255446597487e-06
+      "bounds_max_error_mm": 0.02528150520825223
     },
     {
       "name": "HardwarePivotWasher_L",
